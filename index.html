@@ -74,7 +74,7 @@
           <button onclick="switchTab('quiz')" id="nav-quiz"
             class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center space-x-2 bg-white/20 text-white shadow-sm">
             <i class="fa-solid fa-circle-question"></i>
-            <span>Trắc Nghiệm (90 câu)</span>
+            <span>Trắc Nghiệm (62 câu)</span>
           </button>
           <button onclick="switchTab('essay')" id="nav-essay"
             class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center space-x-2 text-blue-100 hover:bg-white/10 hover:text-white">
@@ -112,7 +112,7 @@
     <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 bg-blue-800 border-t border-blue-600">
       <button onclick="switchTab('quiz'); toggleMobileMenu();"
         class="w-full text-left px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 flex items-center space-x-2">
-        <i class="fa-solid fa-circle-question w-5"></i><span>Trắc Nghiệm (90 câu)</span>
+        <i class="fa-solid fa-circle-question w-5"></i><span>Trắc Nghiệm (62 câu)</span>
       </button>
       <button onclick="switchTab('essay'); toggleMobileMenu();"
         class="w-full text-left px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 flex items-center space-x-2">
@@ -146,19 +146,19 @@
             <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-1">Chương:</span>
             <button onclick="filterQuizChapter(0)"
               class="quiz-ch-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow-sm"
-              data-ch="0">Tất cả (90)</button>
+              data-ch="0">Tất cả (62)</button>
             <button onclick="filterQuizChapter(1)"
               class="quiz-ch-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200"
-              data-ch="1">Chương 1 (28)</button>
+              data-ch="1">Chương 1 (19)</button>
             <button onclick="filterQuizChapter(2)"
               class="quiz-ch-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200"
-              data-ch="2">Chương 2 (21)</button>
+              data-ch="2">Chương 2 (15)</button>
             <button onclick="filterQuizChapter(3)"
               class="quiz-ch-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200"
-              data-ch="3">Chương 3 (18)</button>
+              data-ch="3">Chương 3 (14)</button>
             <button onclick="filterQuizChapter(4)"
               class="quiz-ch-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200"
-              data-ch="4">Chương 4 (23)</button>
+              data-ch="4">Chương 4 (14)</button>
           </div>
 
           <!-- Mode Selector & Search -->
@@ -250,7 +250,8 @@
         <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div>
             <div class="flex items-center space-x-2">
-              <span class="px-2.5 py-1 bg-indigo-100 text-indigo-800 rounded-md text-xs font-bold uppercase tracking-wider">
+              <span
+                class="px-2.5 py-1 bg-indigo-100 text-indigo-800 rounded-md text-xs font-bold uppercase tracking-wider">
                 <i class="fa-solid fa-sitemap mr-1"></i>Dự Án Mẫu TMĐT
               </span>
               <span class="text-xs text-slate-400 font-medium">187 mã WBS • 4 Cấp độ</span>
@@ -287,16 +288,20 @@
             <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-1 flex items-center">
               <i class="fa-solid fa-layer-group mr-1.5"></i>Thu gọn theo cấp:
             </span>
-            <button onclick="setWBSLevel(1)" id="btn-wbs-lvl-1" class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
+            <button onclick="setWBSLevel(1)" id="btn-wbs-lvl-1"
+              class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
               Chỉ Cấp 1 (Thu gọn hết)
             </button>
-            <button onclick="setWBSLevel(2)" id="btn-wbs-lvl-2" class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
+            <button onclick="setWBSLevel(2)" id="btn-wbs-lvl-2"
+              class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
               Hiện đến Cấp 2
             </button>
-            <button onclick="setWBSLevel(3)" id="btn-wbs-lvl-3" class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
+            <button onclick="setWBSLevel(3)" id="btn-wbs-lvl-3"
+              class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
               Hiện đến Cấp 3
             </button>
-            <button onclick="setWBSLevel(4)" id="btn-wbs-lvl-4" class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-600 text-white shadow-sm transition-all">
+            <button onclick="setWBSLevel(4)" id="btn-wbs-lvl-4"
+              class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-600 text-white shadow-sm transition-all">
               Mở tất cả (Cấp 4)
             </button>
           </div>
@@ -304,22 +309,26 @@
           <!-- Search & View Toggle -->
           <div class="flex flex-wrap items-center gap-2.5">
             <div class="relative">
-              <input type="text" id="wbs-search" oninput="searchWBS()" placeholder="Tìm mã WBS (3.2), tên (giỏ hàng, ERD)..."
+              <input type="text" id="wbs-search" oninput="searchWBS()"
+                placeholder="Tìm mã WBS (3.2), tên (giỏ hàng, ERD)..."
                 class="pl-9 pr-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-52 sm:w-64">
               <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
             </div>
 
             <!-- View switch -->
             <div class="flex items-center bg-slate-100 p-0.5 rounded-lg border border-slate-200 text-xs font-semibold">
-              <button onclick="setWBSViewMode('tree')" id="btn-wbs-view-tree" class="px-2.5 py-1 rounded-md bg-white text-indigo-700 shadow-sm transition-all">
+              <button onclick="setWBSViewMode('tree')" id="btn-wbs-view-tree"
+                class="px-2.5 py-1 rounded-md bg-white text-indigo-700 shadow-sm transition-all">
                 <i class="fa-solid fa-network-wired mr-1"></i>Dạng Cây
               </button>
-              <button onclick="setWBSViewMode('table')" id="btn-wbs-view-table" class="px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all">
+              <button onclick="setWBSViewMode('table')" id="btn-wbs-view-table"
+                class="px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all">
                 <i class="fa-solid fa-table-list mr-1"></i>Dạng Bảng
               </button>
             </div>
 
-            <button onclick="copyWBSMarkdown()" title="Sao chép bảng WBS dạng Markdown" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center space-x-1 border border-slate-200">
+            <button onclick="copyWBSMarkdown()" title="Sao chép bảng WBS dạng Markdown"
+              class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center space-x-1 border border-slate-200">
               <i class="fa-regular fa-copy"></i>
               <span class="hidden sm:inline">Sao chép</span>
             </button>
@@ -349,7 +358,7 @@
           </select>
         </div>
         <div class="flex items-center space-x-4">
-          <span id="flashcard-counter" class="text-xs font-bold text-slate-500">Thẻ 1 / 90</span>
+          <span id="flashcard-counter" class="text-xs font-bold text-slate-500">Thẻ 1 / 62</span>
           <button onclick="shuffleFlashcards()"
             class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center space-x-1">
             <i class="fa-solid fa-shuffle"></i><span>Xáo thẻ</span>
@@ -1170,7 +1179,7 @@ Hệ thống sẽ hiển thị lại bài thi kèm đáp án chi tiết và gi�
       examQuestions.forEach((q, idx) => {
         const userChoice = examUserAnswers[q.id];
         const isMulti = q.type === 'multiple';
-        
+
         let isRight = false;
         if (isMulti) {
           const userAns = Array.isArray(userChoice) ? userChoice.slice().sort() : [];

@@ -6,988 +6,945 @@ const MCQ_QUESTIONS = [
   {
     "id": 1,
     "chapter": 1,
-    "tag": "Khái niệm",
+    "tag": "Slide 5",
     "type": "multiple",
-    "question": "Theo định nghĩa chuẩn trong bài giảng, một DỰ ÁN được cấu thành từ những đặc trưng cơ bản nào sau đây? (Chọn tất cả các đáp án đúng)",
+    "question": "Trong buổi họp khởi động, một khách hàng yêu cầu nhóm phát triển: *\"Hãy xây dựng và duy trì hệ thống bán hàng này liên tục, không cần chốt ngày kết thúc, cứ làm đến khi nào thấy tối ưu nhất thì thôi\"*. Dựa vào định nghĩa chuẩn về **Dự án** trong bài giảng, người quản lý dự án (PM) cần giải thích cho khách hàng hiểu một dự án bắt buộc phải hội tụ đủ những đặc trưng nào sau đây?",
     "options": [
-      "A. Có mục tiêu cụ thể",
-      "B. Kế hoạch tài chính hàng năm của tổ chức",
-      "C. Thời gian xác định (có bắt đầu và kết thúc)",
-      "D. Nguồn lực giới hạn (ngân sách, nhân sự, thiết bị)",
-      "E. Quy trình vận hành lặp đi lặp lại vô thời hạn",
-      "F. Kết quả đầu ra rõ ràng"
+      "A. Phải tạo ra kết quả đầu ra rõ ràng (sản phẩm, dịch vụ bàn giao)",
+      "B. Phải có thời gian xác định (có điểm bắt đầu và kết thúc rõ ràng)",
+      "C. Bị ràng buộc bởi nguồn lực giới hạn (ngân sách, nhân sự, thiết bị)",
+      "D. Là hoạt động vận hành thường nhật (Operations) lặp đi lặp lại vô thời hạn",
+      "E. Phải có mục tiêu cụ thể",
+      "F. Có thể tùy ý sử dụng nguồn lực không giới hạn của tổ chức"
     ],
     "answer": [
       0,
+      1,
       2,
-      3,
-      5
+      4
     ],
-    "explanation": "Theo slide bài giảng: Dự án = Tập hợp các hoạt động có: • Mục tiêu cụ thể • Thời gian xác định • Nguồn lực giới hạn • Kết quả đầu ra rõ ràng. Kế hoạch tài chính hàng năm hay quy trình lặp lại vô hạn là hoạt động vận hành thường nhật (Operations).",
-    "tip": "Nhớ 4 gạch đầu dòng: Mục tiêu cụ thể - Thời gian xác định - Nguồn lực giới hạn - Kết quả rõ ràng."
+    "explanation": "Theo Slide 5, *Dự án = tập hợp các hoạt động có: Mục tiêu cụ thể • Thời gian xác định • Nguồn lực giới hạn • Kết quả đầu ra rõ ràng*. Hoạt động không có thời hạn kết thúc là vận hành kinh doanh (Operations), không phải dự án.",
+    "tip": "Theo Slide 5, *Dự án = tập hợp các hoạt động có: Mục tiêu cụ thể • Thời gian xác..."
   },
   {
     "id": 2,
     "chapter": 1,
-    "tag": "Khái niệm",
+    "tag": "Slide 6",
     "type": "multiple",
-    "question": "Đặc thù nổi bật của DỰ ÁN PHẦN MỀM so với các dự án xây dựng/sản xuất truyền thống gồm những ý nào sau đây? (Chọn tất cả các đáp án đúng)",
+    "question": "So với việc quản lý một dự án xây dựng cầu đường, việc quản lý một **Dự án phần mềm** gặp nhiều thách thức đặc thù hơn xuất phát từ những đặc điểm bản chất nào sau đây?",
     "options": [
-      "A. Sản phẩm vô hình (Intangible)",
-      "B. Yêu cầu cố định tuyệt đối, không bao giờ thay đổi",
-      "C. Yêu cầu thay đổi liên tục",
-      "D. Phụ thuộc máy móc nhiều hơn con người",
-      "E. Phụ thuộc con người nhiều hơn máy móc",
-      "F. Rủi ro cao"
+      "A. Mức độ rủi ro cao (công nghệ mới, rủi ro tích hợp, sai lệch ước lượng)",
+      "B. Sản phẩm vô hình (khó định lượng trực tiếp tiến độ hoàn thành bằng mắt thường)",
+      "C. Phụ thuộc con người nhiều hơn máy móc (năng suất và chất lượng phụ thuộc năng lực lập trình viên)",
+      "D. Sản phẩm hữu hình, dễ dàng kiểm đếm khối lượng công việc từng ngày",
+      "E. Máy móc tự động hóa đóng vai trò chính, yếu tố con người chỉ là thứ yếu",
+      "F. Yêu cầu thay đổi liên tục trong suốt vòng đời dự án"
     ],
     "answer": [
       0,
+      1,
       2,
-      4,
       5
     ],
-    "explanation": "Theo slide bài giảng, 4 đặc điểm dự án phần mềm là: • Sản phẩm vô hình • Yêu cầu thay đổi liên tục • Phụ thuộc con người nhiều hơn máy móc • Rủi ro cao.",
-    "tip": "4 đặc điểm PM: Vô hình - Đổi liên tục - Phụ thuộc con người - Rủi ro cao."
+    "explanation": "Slide 6 chỉ rõ 4 đặc điểm cốt lõi của dự án phần mềm: *Sản phẩm vô hình • Yêu cầu thay đổi liên tục • Phụ thuộc con người nhiều hơn máy móc • Rủi ro cao*.",
+    "tip": "Slide 6 chỉ rõ 4 đặc điểm cốt lõi của dự án phần mềm: *Sản phẩm vô hình • Yêu cầ..."
   },
   {
     "id": 3,
     "chapter": 1,
-    "tag": "Khái niệm",
+    "tag": "Slide 7",
     "type": "multiple",
-    "question": "Theo Roger Pressman, 4 yếu tố cốt lõi (4P) trong Quản lý dự án phần mềm bao gồm những yếu tố nào? (Chọn tất cả các đáp án đúng)",
+    "question": "Theo định nghĩa trong giáo trình, hoạt động **Quản lý dự án** áp dụng kiến thức, kỹ năng, công cụ và kỹ thuật vào các hoạt động nhằm đáp ứng những yêu cầu cốt lõi nào?",
     "options": [
-      "A. Con người (People)",
-      "B. Lợi nhuận (Profit)",
-      "C. Sản phẩm (Product)",
-      "D. Quy trình (Process)",
-      "E. Kế hoạch (Plan)",
-      "F. Dự án (Project)"
+      "A. Bằng mọi giá chỉ tập trung giảm chi phí thấp nhất mà chấp nhận hy sinh chất lượng sản phẩm",
+      "B. Đạt hoặc vượt các yêu cầu hay kỳ vọng của những người có quyền lợi và nghĩa vụ liên quan (stakeholders)",
+      "C. Cân bằng giữa các yếu tố ràng buộc: thời gian, chi phí và chất lượng sản phẩm",
+      "D. Đạt được mục tiêu dự án đã cam kết",
+      "E. Chỉ cần làm hài lòng giám đốc công ty phát triển, bỏ qua kỳ vọng của khách hàng và người dùng"
     ],
     "answer": [
-      0,
+      1,
       2,
-      3,
-      5
+      3
     ],
-    "explanation": "4P của Pressman bao gồm: People (Con người), Product (Sản phẩm), Process (Quy trình), Project (Dự án). Trong đó People là yếu tố quan trọng nhất.",
-    "tip": "4P = People + Product + Process + Project (Không có Plan hay Profit)."
+    "explanation": "Slide 7 nêu rõ mục tiêu QLDA: *Đạt mục tiêu dự án • Đạt hoặc vượt các yêu cầu hay kỳ vọng của stakeholders • Cân bằng giữa các yếu tố: thời gian, chi phí, chất lượng sản phẩm*.",
+    "tip": "Slide 7 nêu rõ mục tiêu QLDA: *Đạt mục tiêu dự án • Đạt hoặc vượt các yêu cầu ha..."
   },
   {
     "id": 4,
     "chapter": 1,
-    "tag": "Khái niệm",
+    "tag": "Slide 8",
     "type": "multiple",
-    "question": "Tam giác Quản lý dự án (Project Management Triangle) thể hiện sự cân bằng giữa 3 yếu tố ràng buộc cốt lõi nào? (Chọn tất cả các đáp án đúng)",
+    "question": "Xét dưới góc độ quy trình điều hành, **Quản lý dự án là một quá trình liên tục** bao gồm các hoạt động quản trị nào sau đây nhằm hướng tới mục tiêu trong các ràng buộc?",
     "options": [
-      "A. Thời gian (Time)",
-      "B. Lợi nhuận kỳ vọng (Profit)",
-      "C. Chi phí / Ngân sách (Cost)",
-      "D. Uy tín thương hiệu (Reputation)",
-      "E. Chất lượng / Phạm vi (Quality / Scope)"
+      "A. Tổ chức (Organizing)",
+      "B. Điều phối (Coordinating)",
+      "C. Theo dõi & kiểm soát (Monitoring & Controlling)",
+      "D. Trực tiếp thay thế toàn bộ lập trình viên viết mã nguồn nghiệp vụ",
+      "E. Xóa bỏ các mốc kiểm soát để đẩy nhanh tiến độ bàn giao",
+      "F. Lập kế hoạch (Planning)"
     ],
     "answer": [
       0,
+      1,
       2,
-      4
+      5
     ],
-    "explanation": "Tam giác dự án là sự cân bằng giữa 3 yếu tố: Thời gian (Time), Chi phí (Cost), Chất lượng sản phẩm / Phạm vi (Quality/Scope). Khi một yếu tố thay đổi, ít nhất một yếu tố khác phải được điều chỉnh.",
-    "tip": "Tam giác dự án = Thời gian + Chi phí + Chất lượng."
+    "explanation": "Theo Slide 8, QLDA là quá trình: *Lập kế hoạch (Planning) • Tổ chức (Organizing) • Điều phối (Coordinating) • Theo dõi & kiểm soát (Monitoring & Controlling)*.",
+    "tip": "Theo Slide 8, QLDA là quá trình: *Lập kế hoạch (Planning) • Tổ chức (Organizing)..."
   },
   {
     "id": 5,
     "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "multiple",
-    "question": "Theo slide bài giảng, các NHIỆM VỤ CỐT LÕI trong Quản lý dự án gồm những nhiệm vụ nào sau đây? (Chọn tất cả các đáp án đúng)",
+    "tag": "Slide 10",
+    "type": "single",
+    "question": "Trong mô hình **Tam giác quản lý dự án (Project Triangle)** gồm 3 đỉnh ràng buộc: Phạm vi (Scope) - Thời gian (Time) - Chi phí (Cost), yếu tố **Chất lượng sản phẩm (Quality)** được định vị như thế nào?",
     "options": [
-      "A. Kiểm soát (Controlling)",
-      "B. Trực tiếp viết toàn bộ mã nguồn hệ thống",
-      "C. Chỉ đạo (Directing)",
-      "D. Cắt giảm lương nhân viên khi trễ hạn",
-      "E. Tạo động lực (Motivation)",
-      "F. Tổ chức (Organizing)"
+      "A. Là yếu tố bất biến, không hề chịu tác động khi phạm vi hoặc chi phí thay đổi",
+      "B. Thuộc trách nhiệm riêng của bên kiểm thử, không nằm trong các yếu tố của tam giác dự án",
+      "C. Nằm ở trung tâm của tam giác, là kết quả của sự cân bằng giữa 3 yếu tố Scope - Time - Cost",
+      "D. Là một đỉnh độc lập thứ tư tạo thành hình tứ giác ràng buộc"
     ],
-    "answer": [
-      0,
-      2,
-      4,
-      5
-    ],
-    "explanation": "Theo slide bài giảng, các nhiệm vụ trong quản lý dự án là: • Kiểm soát (controlling) • Chỉ đạo (directing) • Tạo động lực (motivation) • Tổ chức (organizing).",
-    "tip": "4 nhiệm vụ PM: Kiểm soát - Chỉ đạo - Tạo động lực - Tổ chức."
+    "answer": 2,
+    "explanation": "Slide 10 ghi nhận: *Phạm vi (Scope), Thời gian (Time), Chi phí (Cost) — Chất lượng là kết quả cân bằng 3 yếu tố*. Khi một trong 3 đỉnh bị ép (ví dụ rút ngắn thời gian nhưng không tăng chi phí), chất lượng sẽ bị ảnh hưởng.",
+    "tip": "Slide 10 ghi nhận: *Phạm vi (Scope), Thời gian (Time), Chi phí (Cost) — Chất lượ..."
   },
   {
     "id": 6,
     "chapter": 1,
-    "tag": "Khái niệm",
+    "tag": "Slide 12",
     "type": "multiple",
-    "question": "Người Quản lý dự án (Project Manager) đảm nhiệm những VAI TRÒ cơ bản nào sau đây? (Chọn tất cả các đáp án đúng)",
+    "question": "Mô hình **4P trong Quản lý dự án phần mềm** xác định 4 yếu tố then chốt cần quản lý. Hãy chọn những yếu tố cấu thành đúng cùng định nghĩa chuẩn của chúng theo bài giảng:",
     "options": [
-      "A. Lập kế hoạch (Planning)",
-      "B. Tổ chức và điều phối nguồn lực (Organizing & Coordinating)",
-      "C. Thay mặt Ban giám đốc ký kết báo cáo tài chính toàn công ty",
-      "D. Theo dõi và kiểm soát (Monitoring & Controlling)",
-      "E. Lãnh đạo và tạo động lực cho đội ngũ (Leading)"
+      "A. **Khuyến mãi (Promotion)** — Kế hoạch tiếp thị giới thiệu phần mềm ra thị trường",
+      "B. **Sản phẩm (Product)** — Phần mềm được xây dựng",
+      "C. **Dự án (Project)** — Tất cả các công việc để sản phẩm trở thành hiện thực",
+      "D. **Con người (People)** — Yếu tố quan trọng nhất của dự án",
+      "E. **Quy trình (Process)** — Tập hợp các hoạt động chương trình khung và nhiệm vụ của phần mềm để thực hiện công việc",
+      "F. **Lợi nhuận (Profit)** — Tổng số tiền thu được sau khi bàn giao"
     ],
     "answer": [
-      0,
       1,
+      2,
       3,
       4
     ],
-    "explanation": "Quản lý dự án là quá trình: Lập kế hoạch, Tổ chức, Điều phối, Theo dõi & kiểm soát, Lãnh đạo nhằm đạt mục tiêu dự án trong các ràng buộc.",
-    "tip": "PM vai trò: Planning, Organizing, Coordinating, Monitoring & Controlling."
+    "explanation": "4P kinh điển trong công nghệ phần mềm (Pressman) gồm *People (quan trọng nhất) • Product • Process • Project*. Profit và Promotion là thuật ngữ của Marketing 4P.",
+    "tip": "4P kinh điển trong công nghệ phần mềm (Pressman) gồm *People (quan trọng nhất) •..."
   },
   {
     "id": 7,
     "chapter": 1,
-    "tag": "Phương pháp",
-    "type": "multiple",
-    "question": "Kỹ thuật Phân rã cấu trúc công việc (WBS) mang lại những LỢI ÍCH quan trọng nào cho dự án? (Chọn tất cả các đáp án đúng)",
+    "tag": "Slide 12",
+    "type": "single",
+    "question": "Trong 4 yếu tố của mô hình 4P (Con người, Sản phẩm, Quy trình, Dự án), bài giảng khẳng định yếu tố nào đóng vai trò **quan trọng nhất của dự án**?",
     "options": [
-      "A. Giúp xác định rõ ràng và đầy đủ phạm vi công việc",
-      "B. Đảm bảo phần mềm viết ra tuyệt đối không có lỗi",
-      "C. Tạo cơ sở chính xác để ước lượng thời gian và chi phí",
-      "D. Giúp phân công trách nhiệm minh bạch cho từng nhóm/cá nhân",
-      "E. Tự động sinh mã nguồn chương trình"
+      "A. Dự án (Project) — vì hợp đồng dự án ràng buộc pháp lý giữa hai bên",
+      "B. Sản phẩm (Product) — vì khách hàng trả tiền mua sản phẩm cuối cùng",
+      "C. Quy trình (Process) — vì quy trình chuẩn CMMI sẽ đảm bảo mọi khâu tự động chạy tốt",
+      "D. Con người (People) — vì kỹ năng, sự phối hợp và tinh thần làm việc của nhân sự quyết định thành bại"
     ],
-    "answer": [
-      0,
-      2,
-      3
-    ],
-    "explanation": "WBS là kỹ thuật phân chia dự án thành các phần việc nhỏ hơn giúp: định rõ phạm vi, làm cơ sở ước lượng thời gian/chi phí, phân công trách nhiệm và theo dõi tiến độ.",
-    "tip": "WBS lợi ích: Rõ phạm vi + Cơ sở ước lượng + Phân công trách nhiệm."
+    "answer": 3,
+    "explanation": "Slide 12 nêu rõ: *Con người — yếu tố quan trọng nhất của dự án*.",
+    "tip": "Slide 12 nêu rõ: *Con người — yếu tố quan trọng nhất của dự án*...."
   },
   {
     "id": 8,
     "chapter": 1,
-    "tag": "Phương pháp",
+    "tag": "Slide 13",
     "type": "multiple",
-    "question": "Những nguyên tắc và đặc điểm nào sau đây là ĐÚNG khi xây dựng biểu đồ WBS chuẩn? (Chọn tất cả các đáp án đúng)",
+    "question": "Một người Quản lý dự án (PM) chuyên nghiệp cần đảm nhận những vai trò cốt lõi nào để dẫn dắt dự án thành công?",
     "options": [
-      "A. Tuân thủ nguyên tắc 100% (bao quát toàn bộ và duy nhất phạm vi dự án)",
-      "B. Số mức phân rã thông thường từ 3 đến 6 mức",
-      "C. Phần tử nhỏ nhất ở mức đáy cùng được gọi là Gói công việc (Work Package)",
-      "D. Các gói công việc ở các nhánh khác nhau được phép trùng lặp nội dung",
-      "E. Cần phân rã càng sâu càng tốt, tối thiểu phải từ 12 đến 15 mức"
+      "A. Tự mình làm tất cả mọi tác vụ kỹ thuật vì không tin tưởng năng lực cấp dưới",
+      "B. Tránh né nhận trách nhiệm khi dự án phát sinh sự cố trễ hạn",
+      "C. Đảm bảo giao tiếp minh bạch và hiệu quả giữa các bên",
+      "D. Làm cầu nối kết nối giữa khách hàng – đội dự án – tổ chức",
+      "E. Nhận diện và chủ động quản lý rủi ro trong suốt vòng đời dự án",
+      "F. Ra quyết định kịp thời trong phạm vi quyền hạn được ủy quyền"
     ],
     "answer": [
-      0,
-      1,
-      2
+      2,
+      3,
+      4,
+      5
     ],
-    "explanation": "WBS chuẩn: Tuân thủ quy tắc 100%, số mức thường từ 3 đến 6 mức, đáy cùng là Work Package, các nhánh không được chồng chéo/trùng lặp.",
-    "tip": "WBS: Quy tắc 100%, 3-6 mức, đáy là Work Package."
+    "explanation": "Slide 13 quy định 4 vai trò của PM: *Kết nối giữa khách hàng – đội dự án – tổ chức • Ra quyết định • Quản lý rủi ro • Đảm bảo giao tiếp hiệu quả*.",
+    "tip": "Slide 13 quy định 4 vai trò của PM: *Kết nối giữa khách hàng – đội dự án – tổ ch..."
   },
   {
     "id": 9,
     "chapter": 1,
-    "tag": "Công cụ",
+    "tag": "Slide 15, 16",
     "type": "multiple",
-    "question": "Biểu đồ Gantt (Gantt Chart) có những ĐẶC ĐIỂM và CÔNG DỤNG nào sau đây trong theo dõi tiến độ? (Chọn tất cả các đáp án đúng)",
+    "question": "Khi tiến hành nghiệm thu tổng kết dự án, hội đồng đánh giá sẽ phân định **Dự án thành công** hoặc **Dự án thất bại** dựa trên những tiêu chí chuẩn mực nào sau đây?",
     "options": [
-      "A. Thể hiện trực quan các công việc trên trục thời gian ngang",
-      "B. Cho thấy các mốc thời gian bắt đầu và kết thúc của từng tác vụ",
-      "C. Dùng để đo lường độ phức tạp thuật toán của mã nguồn",
-      "D. Thể hiện mối quan hệ phụ thuộc trước - sau giữa các công việc",
-      "E. Giúp xác định và theo dõi tỷ lệ phần trăm hoàn thành"
+      "A. Tiêu chí dự án thành công: Đạt chất lượng chấp nhận được",
+      "B. Tiêu chí dự án thành công: Trong ngân sách đã duyệt",
+      "C. Dự án hoàn thành trễ hạn 1 năm và đội vốn 300% nhưng vẫn coi là thành công vì có sản phẩm",
+      "D. Tiêu chí dự án thất bại: Trễ tiến độ hoặc Vượt chi phí ngân sách",
+      "E. Tiêu chí dự án thất bại: Sản phẩm làm ra không dùng được hoặc Bị hủy giữa chừng",
+      "F. Tiêu chí dự án thành công: Đáp ứng đúng và đủ yêu cầu của người dùng",
+      "G. Tiêu chí dự án thành công: Hoàn thành đúng hạn"
     ],
     "answer": [
       0,
       1,
       3,
-      4
+      4,
+      5,
+      6
     ],
-    "explanation": "Biểu đồ Gantt là đồ thị thanh ngang biểu diễn lịch trình: thời gian bắt đầu/kết thúc, phụ thuộc giữa các công việc, theo dõi tiến độ hoàn thành.",
-    "tip": "Gantt Chart: Biểu đồ thanh ngang, thời gian, sự phụ thuộc, tiến độ."
+    "explanation": "Slide 15 xác định dự án thành công: *Hoàn thành đúng hạn • Trong ngân sách • Đáp ứng yêu cầu người dùng • Chất lượng chấp nhận được*. Slide 16 xác định dự án thất bại: *Trễ tiến độ • Vượt chi phí • Sản phẩm không dùng được • Bị hủy giữa chừng*.",
+    "tip": "Slide 15 xác định dự án thành công: *Hoàn thành đúng hạn • Trong ngân sách • Đáp..."
   },
   {
     "id": 10,
     "chapter": 1,
-    "tag": "Khái niệm",
+    "tag": "Slide 17",
     "type": "multiple",
-    "question": "Theo các khảo sát chuẩn công nghiệp, đâu là những NGUYÊN NHÂN HÀNG ĐẦU dẫn đến sự thất bại của dự án phần mềm? (Chọn tất cả các đáp án đúng)",
+    "question": "Các nghiên cứu của Standish Group (Chaos Report) và giáo trình môn học đã tổng kết những **Nguyên nhân hàng đầu khiến các dự án phần mềm thất bại** gồm những nguyên nhân nào?",
     "options": [
-      "A. Yêu cầu của người dùng không hoàn chỉnh hoặc thay đổi liên tục",
-      "B. Thiếu sự tham gia tích cực của người dùng (End-users)",
-      "C. Áp dụng quy trình kiểm thử và nghiệm thu nghiêm ngặt",
-      "D. Kỳ vọng phi thực tế và ước lượng thời gian quá ngắn",
-      "E. Quản lý rủi ro yếu kém hoặc bỏ qua quản lý rủi ro"
+      "A. Do nhóm phát triển áp dụng quy trình kiểm thử chất lượng từ sớm",
+      "B. Thiếu hoạt động quản lý rủi ro từ giai đoạn khởi đầu",
+      "C. Giao tiếp kém giữa khách hàng, quản lý và nhóm phát triển",
+      "D. Do sử dụng các công cụ quản lý dự án hiện đại như Jira, Trello, Git",
+      "E. Ước lượng sai về thời gian, công sức và chi phí",
+      "F. Yêu cầu không rõ ràng, mơ hồ hoặc biến động liên tục",
+      "G. Thiếu sự cam kết và đồng hành từ các bên liên quan (stakeholders)"
     ],
     "answer": [
-      0,
       1,
-      3,
-      4
+      2,
+      4,
+      5,
+      6
     ],
-    "explanation": "Nguyên nhân thất bại hàng đầu: Yêu cầu mơ hồ/thay đổi liên tục, thiếu người dùng tham gia, ước lượng phi thực tế, thiếu quản trị rủi ro.",
-    "tip": "Thất bại vì: Yêu cầu thay đổi + Thiếu người dùng + Ước lượng phi thực tế + Rủi ro."
+    "explanation": "Slide 17 chỉ rõ 5 nguyên nhân thất bại: *Yêu cầu không rõ ràng • Thiếu quản lý rủi ro • Giao tiếp kém • Ước lượng sai • Thiếu cam kết từ stakeholders*.",
+    "tip": "Slide 17 chỉ rõ 5 nguyên nhân thất bại: *Yêu cầu không rõ ràng • Thiếu quản lý r..."
   },
   {
     "id": 11,
     "chapter": 1,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Khách hàng yêu cầu nhóm dự án phải bàn giao phần mềm sớm hơn 1 tháng so với hợp đồng nhưng kiên quyết không tăng ngân sách. Dựa trên Tam giác Quản lý dự án, phương án khả thi nhất của PM là gì?",
+    "tag": "Slide 18",
+    "type": "multiple",
+    "question": "Bảng đối chiếu trong bài giảng (Slide 18) so sánh sự khác biệt bản chất giữa các dự án thành công và thất bại thông qua những cặp trạng thái đối lập nào?",
     "options": [
-      "A. Đàm phán giảm bớt một số tính năng chưa cấp thiết để thu hẹp phạm vi",
-      "B. Ép toàn bộ lập trình viên làm thêm giờ (OT) liên tục mà không trả thêm lương",
-      "C. Bỏ qua hoàn toàn giai đoạn kiểm thử phần mềm để kịp bàn giao đúng hạn",
-      "D. Vay thêm vốn bên ngoài để tự ý tuyển thêm nhân sự cấp cao vào dự án"
+      "A. Về yêu cầu: Rõ ràng (Thành công) đối lập với Mơ hồ (Thất bại)",
+      "B. Về kế hoạch: Thực tế, khả thi (Thành công) đối lập với Hình thức, đối phó (Thất bại)",
+      "C. Về kiểm soát thay đổi: Có quy trình kiểm soát (Thành công) đối lập với Buông lỏng (Thất bại)",
+      "D. Về yêu cầu: Càng nhiều yêu cầu phát sinh không kiểm soát càng đảm bảo thành công",
+      "E. Về giao tiếp: Thường xuyên (Thành công) đối lập với Rời rạc (Thất bại)"
     ],
-    "answer": 0,
-    "explanation": "Theo tam giác dự án (Thời gian - Chi phí - Chất lượng/Phạm vi), khi Thời gian giảm mà Chi phí giữ nguyên, để bảo đảm Chất lượng thì bắt buộc phải đàm phán giảm Phạm vi (Scope).",
-    "tip": "Thời gian giảm + Chi phí giữ nguyên => Phải giảm Phạm vi (Scope)."
+    "answer": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "explanation": "Slide 18 tổng kết bảng so sánh theo 3 tiêu chí chủ chốt: *Yêu cầu (Rõ ràng vs Mơ hồ), Giao tiếp (Thường xuyên vs Rời rạc), Kế hoạch (Thực tế vs Hình thức)* cùng kiểm soát thay đổi.",
+    "tip": "Slide 18 tổng kết bảng so sánh theo 3 tiêu chí chủ chốt: *Yêu cầu (Rõ ràng vs Mơ..."
   },
   {
     "id": 12,
     "chapter": 1,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Một công ty liên tục ký hợp đồng bảo trì, vá lỗi nhỏ và hỗ trợ người dùng cho một cổng dịch vụ công suốt 8 năm qua mà không có ngày kết thúc. Hoạt động này được phân loại chính xác là gì?",
+    "tag": "Slide 20",
+    "type": "multiple",
+    "question": "Theo nội dung bài học, để điều hành một dự án phần mềm toàn diện, PM cần tập trung quản lý chặt chẽ **4 nhóm vấn đề cốt lõi** nào sau đây?",
     "options": [
-      "A. Dự án phát triển phần mềm dài hạn trọng điểm quốc gia",
-      "B. Hoạt động vận hành thường nhật (Operations), không phải một dự án",
-      "C. Dự án phần mềm quy mô lớn áp dụng mô hình xoắn ốc",
-      "D. Dự án nghiên cứu và thử nghiệm công nghệ thông tin (R&D)"
+      "A. Các hoạt động kinh doanh ngoài ngành của chủ đầu tư",
+      "B. Môi trường & tài nguyên (Environment & Resources)",
+      "C. Giá trị thị trường cổ phiếu của doanh nghiệp đối tác",
+      "D. Sản phẩm phần mềm (Product)",
+      "E. Tiến trình thực hiện dự án (Process / Schedule)",
+      "F. Nhân lực tham gia dự án (People)"
     ],
-    "answer": 1,
-    "explanation": "Dự án mang tính tạm thời, bắt buộc phải có thời gian xác định (bắt đầu và kết thúc). Hoạt động hỗ trợ lặp đi lặp lại vô thời hạn là vận hành (Operations).",
-    "tip": "Không có thời hạn kết thúc = Operations, không phải Project."
+    "answer": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Slide 20 phân loại 4 nhóm vấn đề cần quản lý: *Tiến trình (Process/Schedule) • Sản phẩm (Product) • Nhân lực (People) • Môi trường & tài nguyên (Environment & Resources)*.",
+    "tip": "Slide 20 phân loại 4 nhóm vấn đề cần quản lý: *Tiến trình (Process/Schedule) • S..."
   },
   {
     "id": 13,
     "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Theo phân tích của Roger Pressman, trong 4 yếu tố cốt lõi (4P), yếu tố nào giữ vai trò quan trọng nhất quyết định trực tiếp đến sự thành bại của dự án?",
+    "tag": "Slide 21",
+    "type": "multiple",
+    "question": "Trong hoạt động **Quản lý tiến trình**, PM cần thực hiện những nhiệm vụ kỹ thuật nào và thường sử dụng những công cụ đắc lực nào sau đây?",
     "options": [
-      "A. Yếu tố Sản phẩm (Product) vì tạo ra giá trị nghiệp vụ cho khách hàng",
-      "B. Yếu tố Quy trình (Process) vì chuẩn hóa các bước thực hiện khoa học",
-      "C. Yếu tố Con người (People) vì trực tiếp tạo ra và vận hành mọi sản phẩm",
-      "D. Yếu tố Dự án (Project) vì điều phối tiến độ và ngân sách tổng thể"
+      "A. Nhiệm vụ: Xác định các công việc cần làm",
+      "B. Công cụ: Biểu đồ Gantt (Gantt Chart)",
+      "C. Công cụ: Các mốc kiểm soát tiến độ quan trọng (Milestone)",
+      "D. Nhiệm vụ: Xác định thứ tự và quan hệ phụ thuộc khi thực hiện các công việc",
+      "E. Nhiệm vụ: Để mặc các lập trình viên tự chọn thứ tự làm việc tùy hứng không theo dõi",
+      "F. Công cụ: Cấu trúc phân rã công việc WBS (Work Breakdown Structure)",
+      "G. Nhiệm vụ: Thường xuyên theo dõi và giám sát tiến độ thực tế so với kế hoạch"
     ],
-    "answer": 2,
-    "explanation": "Pressman khẳng định Con người (People) là yếu tố quan trọng nhất. Một đội ngũ có kỹ năng, đoàn kết và được tạo động lực tốt có thể vượt qua mọi hạn chế công nghệ.",
-    "tip": "Quan trọng nhất trong 4P = People (Con người)."
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "explanation": "Slide 21 chỉ rõ: Nội dung gồm *Xác định công việc cần làm • Thứ tự thực hiện • Theo dõi tiến độ*; Công cụ gồm *WBS • Gantt Chart • Milestone*.",
+    "tip": "Slide 21 chỉ rõ: Nội dung gồm *Xác định công việc cần làm • Thứ tự thực hiện • T..."
   },
   {
     "id": 14,
     "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Nguyên tắc cốt lõi '100% Rule' trong xây dựng Cấu trúc phân rã công việc (WBS) được phát biểu chính xác như thế nào?",
+    "tag": "Slide 22, 23",
+    "type": "multiple",
+    "question": "Về kỹ thuật xây dựng **Cấu trúc phân rã công việc (WBS - Work Breakdown Structure)**, những phát biểu nào sau đây đúng với bài giảng?",
     "options": [
-      "A. Mọi thành viên trong đội dự án phải dành 100% thời gian làm việc tại công ty",
-      "B. Dự án phải đạt 100% độ chính xác tuyệt đối không được phép có rủi ro",
-      "C. Toàn bộ 100% yêu cầu của khách hàng phải hoàn thành ngay trong giai đoạn 1",
-      "D. Tổng các công việc con ở mức dưới phải bao quát 100% công việc của mức cha"
+      "A. CWBS luôn phải chi tiết hơn PWBS và phân rã sâu đến từng dòng lệnh",
+      "B. Một cấu trúc WBS đầy đủ thông thường có từ 3 đến 6 mức (3 mức trên dùng cho quản lý/báo cáo, 3 mức dưới cho kỹ thuật nội bộ)",
+      "C. WBS là danh sách thời gian biểu ghi rõ số ngày làm việc cụ thể của từng nhân viên",
+      "D. Mục đích chính của WBS là chia nhỏ công việc giúp dự án dễ ước lượng và dễ quản lý hơn",
+      "E. Project WBS (PWBS): Được định nghĩa bởi PM và đội dự án, gắn liền với các sản phẩm bàn giao cụ thể, dùng để theo dõi công việc chi tiết ở mức thấp nhất",
+      "F. Contract WBS (CWBS): Chỉ gồm 2–3 mức đầu tiên, thường dùng để khách hàng và cấp quản lý theo dõi công việc ở mức cao"
     ],
-    "answer": 3,
-    "explanation": "Quy tắc 100%: WBS phải bao gồm 100% công việc được xác định bởi phạm vi dự án và không chứa công việc nào nằm ngoài phạm vi đó.",
-    "tip": "Quy tắc 100%: Mức con cộng lại bằng đúng 100% mức cha."
+    "answer": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Slide 22 & 23 phân biệt rõ: *CWBS (2-3 mức đầu, theo dõi mức cao)* vs *PWBS (gắn với sản phẩm bàn giao, theo dõi mức thấp nhất)*; thông thường WBS có 3-6 mức.",
+    "tip": "Slide 22 & 23 phân biệt rõ: *CWBS (2-3 mức đầu, theo dõi mức cao)* vs *PWBS (gắn..."
   },
   {
     "id": 15,
     "chapter": 1,
-    "tag": "Khái niệm",
+    "tag": "Slide 24",
     "type": "single",
-    "question": "Khái niệm nguyên tắc W5HH nổi tiếng trong quản lý dự án phần mềm do chuyên gia nào sau đây đề xuất?",
+    "question": "Công cụ nào cho phép người quản lý dự án **trực quan hóa tiến độ theo trục thời gian ngang**, nhìn rõ mối quan hệ gối đầu giữa các tác vụ và xác định các cột mốc quan trọng (Milestone)?",
     "options": [
-      "A. Barry Boehm",
-      "B. Frederick Brooks",
-      "C. Roger Pressman",
-      "D. Tom DeMarco"
+      "A. Biểu đồ Use Case",
+      "B. Biểu đồ Gantt (Gantt Chart)",
+      "C. Sổ đăng ký rủi ro (Risk Register)",
+      "D. Biểu đồ thực thể liên kết ERD"
     ],
-    "answer": 0,
-    "explanation": "Nguyên tắc W5HH (Why, What, When, Who, Where, How, How much) do Barry Boehm đề xuất nhằm hướng dẫn lập kế hoạch và quản lý dự án hiệu quả.",
-    "tip": "W5HH => Barry Boehm."
+    "answer": 1,
+    "explanation": "Slide 24 nêu rõ vai trò của Gantt Chart: *Trực quan tiến độ • Theo dõi thời gian • Xác định milestone*.",
+    "tip": "Slide 24 nêu rõ vai trò của Gantt Chart: *Trực quan tiến độ • Theo dõi thời gian..."
   },
   {
     "id": 16,
     "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Trong cấu trúc WBS, thành phần ở mức phân rã thấp nhất mà tại đó chi phí và thời gian có thể ước lượng đáng tin cậy được gọi là gì?",
+    "tag": "Slide 26, 27, 28",
+    "type": "multiple",
+    "question": "Trong nhóm nhiệm vụ **Quản lý sản phẩm**, người quản lý dự án cần nắm vững những nguyên tắc cốt lõi nào về Phạm vi (Scope) và Yêu cầu phần mềm?",
     "options": [
-      "A. Milestone (Cột mốc dự án)",
-      "B. Work Package (Gói công việc)",
-      "C. Deliverable (Sản phẩm bàn giao)",
-      "D. Project Phase (Giai đoạn dự án)"
+      "A. Bản chất của Phạm vi (Scope) là định rõ: \"Những gì được làm\" và \"Những gì không làm\"",
+      "B. Quản lý sản phẩm chỉ đơn thuần là việc thiết kế giao diện bắt mắt theo sở thích cá nhân",
+      "C. Phạm vi dự án là khái niệm mở, cho phép khách hàng bổ sung bất cứ lúc nào mà không cần đánh giá tác động",
+      "D. Quản lý sản phẩm bao gồm 3 việc trọng tâm: Xác định phạm vi (Scope), Quản lý yêu cầu, Kiểm soát thay đổi",
+      "E. Yêu cầu phần mềm bắt buộc phải bao quát: Yêu cầu chức năng, Yêu cầu phi chức năng và Mức độ ưu tiên"
     ],
-    "answer": 1,
-    "explanation": "Gói công việc (Work Package) là phần tử ở mức thấp nhất của WBS, có thể gán cho một nhóm/cá nhân, dễ dàng ước lượng chi phí và theo dõi tiến độ.",
-    "tip": "Đáy cùng WBS = Work Package."
+    "answer": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "Slide 26, 27, 28 xác định: *Quản lý sản phẩm: Scope, Quản lý yêu cầu, Kiểm soát thay đổi*; *Scope là: Những gì được làm và Những gì không làm*; *Yêu cầu gồm: Chức năng, Phi chức năng, Ưu tiên*.",
+    "tip": "Slide 26, 27, 28 xác định: *Quản lý sản phẩm: Scope, Quản lý yêu cầu, Kiểm soát ..."
   },
   {
     "id": 17,
     "chapter": 1,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Một dự án có một công việc A nằm trên Đường găng (Critical Path) bị chậm tiến độ 4 ngày. Tiến độ tổng thể của toàn dự án sẽ bị ảnh hưởng như thế nào?",
+    "tag": "Slide 29",
+    "type": "multiple",
+    "question": "Để xác định đầy đủ và toàn diện phạm vi của một dự án phần mềm trước khi bắt tay thực hiện, Roger Pressman đề xuất **Bộ câu hỏi cốt lõi W5HH**. Bộ câu hỏi này bao gồm những từ khóa nào?",
     "options": [
-      "A. Không bị ảnh hưởng vì các công việc khác có thể làm bù lại thời gian",
-      "B. Dự án chỉ bị trễ 2 ngày nhờ có thời gian dự trữ tự do (Free Float)",
-      "C. Toàn bộ ngày bàn giao của dự án chắc chắn sẽ bị trễ ít nhất 4 ngày",
-      "D. Chi phí dự án sẽ tự động tăng gấp đôi nhưng thời gian không đổi"
+      "A. **Where** (Các thành phần được triển khai ở đâu?)",
+      "B. **How much** (Cần bao nhiêu nguồn lực và kinh phí?)",
+      "C. **Which** (Khách hàng thích màu sắc nào hơn?)",
+      "D. **What** (Hệ thống sẽ làm những gì?)",
+      "E. **Why** (Tại sao phát triển hệ thống?)",
+      "F. **When** (Các mốc thời gian hoàn thành khi nào?)",
+      "G. **Who** (Ai chịu trách nhiệm thực hiện từng công việc?)",
+      "H. **How** (Công việc sẽ được thực hiện như thế nào về mặt kỹ thuật và quản lý?)"
     ],
-    "answer": 2,
-    "explanation": "Đường găng (Critical Path) là chuỗi các công việc có thời gian dự trữ bằng 0 (Zero Float). Bất kỳ sự chậm trễ nào trên đường găng đều làm chậm tiến độ toàn dự án đúng bằng khoảng thời gian đó.",
-    "tip": "Chậm trên đường găng => Toàn dự án chậm tương ứng."
+    "answer": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "explanation": "Slide 29 liệt kê đầy đủ 7 câu hỏi của nguyên tắc W5HH: *Why, What, When, Who, Where, How, How much*.",
+    "tip": "Slide 29 liệt kê đầy đủ 7 câu hỏi của nguyên tắc W5HH: *Why, What, When, Who, Wh..."
   },
   {
     "id": 18,
     "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Đặc thù 'Sản phẩm vô hình' (Intangible) của phần mềm dẫn đến khó khăn lớn nhất nào sau đây cho người quản lý dự án?",
+    "tag": "Slide 31, 32, 33",
+    "type": "multiple",
+    "question": "Khi tiếp cận nhiệm vụ **Quản lý nhân lực (People Management)**, người quản lý dự án cần nhận thức được những nguyên lý tổ chức và vấn đề thực tế nào sau đây?",
     "options": [
-      "A. Không thể lưu trữ phần mềm trên các thiết bị vật lý thông thường",
-      "B. Khách hàng không bao giờ chịu thanh toán chi phí theo từng giai đoạn",
-      "C. Không thể áp dụng các ngôn ngữ lập trình hiện đại để xây dựng mã",
-      "D. Khó nhìn thấy bằng mắt thường để đánh giá chính xác mức độ hoàn thiện"
+      "A. Con người là yếu tố quyết định sự thành bại của dự án phần mềm",
+      "B. Không bao giờ phát sinh xung đột nội bộ nếu các thành viên đều có trình độ đại học",
+      "C. Cơ cấu nhóm dự án phần mềm cơ bản gồm: PM, Dev (Lập trình), Tester (Kiểm thử), Stakeholder (Bên liên quan)",
+      "D. Chỉ cần tuyển những lập trình viên giỏi nhất thì dự án sẽ tự động thành công mà không cần người điều phối",
+      "E. Các vấn đề nhân sự thường trực gồm: Thiếu kỹ năng, Xung đột nội bộ, Thiếu động lực làm việc",
+      "F. Kỹ năng chuyên môn cá nhân cao không đồng nghĩa với hiệu quả công việc chung nếu thiếu sự phối hợp và tinh thần làm việc nhóm"
     ],
-    "answer": 3,
-    "explanation": "Tính vô hình khiến tiến độ phần mềm không thể quan sát bằng mắt thường như xây dựng công trình, mà phải dựa trên kiểm thử chức năng và tài liệu nghiệm thu.",
-    "tip": "Vô hình => Không nhìn thấy được tiến độ bằng mắt thường."
+    "answer": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "explanation": "Slide 31, 32, 33 ghi nhận: *Con người là yếu tố quyết định thành bại • Kỹ năng ≠ Hiệu quả nếu thiếu phối hợp • Cơ cấu: PM, Dev, Tester, Stakeholder • Vấn đề: Thiếu kỹ năng, Xung đột, Thiếu động lực*.",
+    "tip": "Slide 31, 32, 33 ghi nhận: *Con người là yếu tố quyết định thành bại • Kỹ năng ≠..."
   },
   {
     "id": 19,
     "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Trong nguyên tắc W5HH của Barry Boehm, câu hỏi 'WHY is the system being developed?' tập trung giải quyết vấn đề gì?",
+    "tag": "Slide 35, 36, 37, 38",
+    "type": "multiple",
+    "question": "Về phương diện **Quản lý môi trường & tài nguyên**, những nhận định nào sau đây phản ánh chính xác nội dung bài giảng?",
     "options": [
-      "A. Xác định rõ lý do kinh doanh và mục tiêu chiến lược của dự án",
-      "B. Lập danh sách công nghệ và ngôn ngữ lập trình sử dụng cho hệ thống",
-      "C. Xác định lịch trình chi tiết và ngày bàn giao chính xác của dự án",
-      "D. Phân bổ ngân sách tiền lương cho từng kỹ sư trong nhóm phát triển"
+      "A. Thời gian và ngân sách là vô hạn nên không được xếp vào nhóm tài nguyên cần quản lý",
+      "B. Môi trường chỉ đề cập đến nhiệt độ phòng làm việc, không liên quan đến công cụ và hạ tầng máy chủ",
+      "C. Môi trường dự án bao gồm: Công cụ (IDE, Jira, Git), Hạ tầng (Server, đường truyền mạng), Văn hóa tổ chức",
+      "D. Các rủi ro môi trường phổ biến trong phát triển phần mềm gồm: Mạng yếu/chập chờn, Thiếu máy chủ (Server), Thiếu bản quyền phần mềm (License)",
+      "E. Quản lý tài nguyên dự án bao gồm việc phân bổ và tối ưu: Thời gian, Ngân sách, Thiết bị"
     ],
-    "answer": 0,
-    "explanation": "Câu hỏi 'Why' nhằm xác định tính hợp lý về mặt kinh doanh (Business reason) và mục tiêu cốt lõi tại sao phần mềm này cần được phát triển.",
-    "tip": "Why = Mục tiêu và lý do kinh doanh của dự án."
+    "answer": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 35, 36, 37, 38 chỉ rõ: *Môi trường gồm: Công cụ (IDE, Jira, Git), Hạ tầng (Server, mạng), Văn hóa tổ chức*; *Tài nguyên gồm: Thời gian, Ngân sách, Thiết bị*; *Rủi ro: Mạng yếu, Thiếu server, Thiếu license*.",
+    "tip": "Slide 35, 36, 37, 38 chỉ rõ: *Môi trường gồm: Công cụ (IDE, Jira, Git), Hạ tầng ..."
   },
   {
     "id": 20,
-    "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Khái niệm 'Milestone' (Cột mốc) trong quản lý tiến độ dự án phần mềm có đặc trưng kỹ thuật quan trọng nào sau đây?",
+    "chapter": 2,
+    "tag": "Slide 3",
+    "type": "multiple",
+    "question": "Một giám đốc kỹ thuật tuyên bố: *\"Nhóm chúng tôi toàn lập trình viên giỏi nên cứ tập trung viết mã nguồn, không cần tốn thời gian đo đạc các số liệu làm gì cho rườm rà\"*. Dựa trên lý thuyết kỹ nghệ phần mềm (Slide 3), người quản lý dự án cần phản biện nhận định trên bằng những luận điểm chuẩn mực nào?",
     "options": [
-      "A. Là một công việc có thời lượng dài nhất trong toàn bộ chu kỳ dự án",
-      "B. Là một sự kiện có thời lượng bằng 0, đánh dấu hoàn thành một mốc lớn",
-      "C. Luôn đòi hỏi ít nhất 5 lập trình viên cùng thực hiện trong một tuần",
-      "D. Là tài liệu thiết kế kiến trúc hệ thống trước khi bắt đầu viết mã"
+      "A. Không đo lường $\rightarrow$ Sẽ không thể kiểm soát được tiến độ và chất lượng",
+      "B. Không kiểm soát $\rightarrow$ Sẽ không có cơ sở dữ liệu thực chứng để cải tiến quy trình",
+      "C. Đo lường chỉ là thủ tục hành chính hình thức, không mang lại giá trị thực tế cho việc quản trị",
+      "D. Phần mềm vốn mang tính chất vô hình, nếu không đo lường bằng các số liệu cụ thể thì không thể biết được trạng thái thực tế của sản phẩm",
+      "E. Chỉ cần sản phẩm chạy được là đủ, không cần biết năng suất và chất lượng ở mức độ nào"
     ],
-    "answer": 1,
-    "explanation": "Milestone là một điểm mốc thời gian (thời lượng = 0), đánh dấu sự hoàn thành của một giai đoạn quan trọng hoặc một sản phẩm bàn giao then chốt.",
-    "tip": "Milestone = Sự kiện đánh dấu, thời lượng bằng 0."
+    "answer": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Slide 3 nêu rõ triết lý cốt lõi: *Không đo → không kiểm soát • Không kiểm soát → không cải tiến • Phần mềm mang tính vô hình*.",
+    "tip": "Slide 3 nêu rõ triết lý cốt lõi: *Không đo → không kiểm soát • Không kiểm soát →..."
   },
   {
     "id": 21,
-    "chapter": 1,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Khách hàng liên tục gửi các yêu cầu bổ sung nhỏ qua tin nhắn mà không bổ sung kinh phí hay gia hạn thời gian. Hiện tượng tiêu cực này được gọi là gì?",
+    "chapter": 2,
+    "tag": "Slide 4, 6",
+    "type": "multiple",
+    "question": "Để quản trị và cải tiến quy trình công nghệ phần mềm, dữ liệu phải trải qua chu trình chuyển hóa 3 cấp độ: **Measurement $\rightarrow$ Metrics $\rightarrow$ Indicators**. Hãy chọn những phát biểu đúng về bản chất của từng cấp độ:",
     "options": [
-      "A. Hiện tượng mạ vàng tính năng kỹ thuật (Gold Plating)",
-      "B. Hiện tượng vỡ nợ dự án phần mềm (Project Bankruptcy)",
-      "C. Hiện tượng phình phạm vi dự án mất kiểm soát (Scope Creep)",
-      "D. Hiện tượng tái cấu trúc quy trình nghiệp vụ (Business Reengineering)"
+      "A. **Metrics**: Là đại lượng định lượng được tính toán và chuẩn hóa từ một hoặc nhiều phép đo (ví dụ: Defect Density = 50 lỗi / 10 KLOC = 5 lỗi/KLOC)",
+      "B. Metric và Measurement là hai từ đồng nghĩa hoàn toàn, có thể dùng thay thế cho nhau trong mọi tình huống",
+      "C. **Measurement**: Là phép đo thô (raw data) thu thập trực tiếp từ hoạt động đo (ví dụ: đếm được 50 lỗi trong quá trình kiểm thử)",
+      "D. **Indicators**: Là chỉ báo định hướng quản lý được đúc kết từ metrics, giúp PM đưa ra quyết định hành động (ví dụ: nhận thấy chất lượng mã nguồn chưa đạt, cần cải tiến khâu kiểm thử)",
+      "E. Measurement bản thân nó không có nhiều ý nghĩa quản lý nếu không được chuyển hóa thành Metric và Indicator",
+      "F. Measurement là cấp độ cao nhất dùng trực tiếp để ra quyết định sa thải nhân viên"
     ],
-    "answer": 2,
-    "explanation": "Scope Creep là hiện tượng phạm vi dự án liên tục mở rộng không kiểm soát do các yêu cầu phát sinh không thông qua quy trình phê duyệt thay đổi chính thức.",
-    "tip": "Yêu cầu tự do tăng dần không kiểm soát = Scope Creep."
+    "answer": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 4 & 6 phân biệt chuẩn: *Measurement = Phép đo thô (raw data) • Metrics = Đại lượng tính từ measurement • Indicators = Chỉ báo giúp ra quyết định quản lý*. Measurement vô nghĩa nếu không chuyển thành Metric và Indicator.",
+    "tip": "Slide 4 & 6 phân biệt chuẩn: *Measurement = Phép đo thô (raw data) • Metrics = Đ..."
   },
   {
     "id": 22,
-    "chapter": 1,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Trong ma trận phân công trách nhiệm RACI, chữ cái nào thể hiện người DUY NHẤT có thẩm quyền phê duyệt và chịu trách nhiệm giải trình cuối cùng?",
+    "chapter": 2,
+    "tag": "Slide 7",
+    "type": "multiple",
+    "question": "Theo Roger Pressman, việc áp dụng số liệu tràn lan không chọn lọc sẽ gây lãng phí nguồn lực. Một **Số liệu tốt (Pressman)** bắt buộc phải thỏa mãn 4 đặc điểm cốt lõi nào sau đây?",
     "options": [
-      "A. Chữ cái R (Responsible - Người trực tiếp làm công việc)",
-      "B. Chữ cái C (Consulted - Người được hỏi ý kiến tư vấn)",
-      "C. Chữ cái I (Informed - Người được thông báo kết quả)",
-      "D. Chữ cái A (Accountable - Người chịu trách nhiệm giải trình)"
+      "A. **Có ý nghĩa** (Phản ánh đúng bản chất mục tiêu quản lý và chất lượng thực tế)",
+      "B. **Thu thập được** (Khả thi về chi phí và công sức khi lấy dữ liệu trong quá trình làm việc)",
+      "C. Giữ bí mật tuyệt đối, không cho các thành viên trong nhóm biết kết quả đo",
+      "D. **Đơn giản** (Dễ hiểu, dễ tính toán, không đòi hỏi công thức toán học quá phức tạp)",
+      "E. **Có thể hành động** (Cung cấp cơ sở rõ ràng để PM đưa ra quyết định cải tiến cụ thể)",
+      "F. Phức tạp tối đa với hàng chục biến số ngầm để thể hiện tính hàn lâm"
     ],
-    "answer": 3,
-    "explanation": "Trong RACI: R = Responsible (Người thực hiện), A = Accountable (Người chịu trách nhiệm giải trình duy nhất), C = Consulted (Tư vấn), I = Informed (Thông báo).",
-    "tip": "RACI: A = Accountable (Chịu trách nhiệm cuối cùng, duy nhất 1 người)."
+    "answer": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "explanation": "Slide 7 nêu chính xác 4 đặc điểm: *Đơn giản • Có ý nghĩa • Thu thập được • Có thể hành động*.",
+    "tip": "Slide 7 nêu chính xác 4 đặc điểm: *Đơn giản • Có ý nghĩa • Thu thập được • Có th..."
   },
   {
     "id": 23,
-    "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Theo chuẩn quản lý dự án chuyên nghiệp, tỷ lệ thời gian mà một PM thường dành cho hoạt động GIAO TIẾP (Communication) là khoảng bao nhiêu?",
+    "chapter": 2,
+    "tag": "Slide 8, 9",
+    "type": "multiple",
+    "question": "Trong quản lý kỹ nghệ phần mềm, hệ thống số liệu được phân thành 3 nhóm lớn: **Số liệu quy trình (Process Metrics)**, **Số liệu dự án (Project Metrics)** và **Số liệu sản phẩm (Product Metrics)**. Hãy chọn các nhận định đúng về mục tiêu và ví dụ điển hình của từng loại:",
     "options": [
-      "A. Khoảng 75% đến 90% tổng thời gian làm việc",
-      "B. Khoảng 10% đến 20% tổng thời gian làm việc",
-      "C. Khoảng 30% đến 40% tổng thời gian làm việc",
-      "D. Khoảng 50% đến 60% tổng thời gian làm việc"
+      "A. **Process Metrics**: Tập trung vào việc đánh giá hiệu quả của quy trình nhằm cải tiến quy trình phần mềm (ví dụ: Defect Removal Efficiency - Hiệu quả loại bỏ lỗi)",
+      "B. Process Metrics chỉ dùng riêng cho lập trình viên mới vào nghề, không áp dụng cho quản lý cấp cao",
+      "C. Số liệu quy trình giúp tổ chức so sánh hiệu quả giữa các dự án khác nhau và nâng cao độ trưởng thành quy trình",
+      "D. Project Metrics chỉ tính toán một lần sau khi dự án đã bàn giao và thanh lý hợp đồng",
+      "E. **Project Metrics**: Dùng để điều hành và theo dõi dự án đang chạy (ví dụ: Cost Variance - Chênh lệch chi phí, Schedule Variance - Chênh lệch tiến độ)"
     ],
-    "answer": 0,
-    "explanation": "PM dành từ 75% đến 90% thời gian để giao tiếp với khách hàng, đội ngũ phát triển, nhà quản lý và các bên liên quan để bảo đảm thông tin thông suốt.",
-    "tip": "PM dành 75% - 90% thời gian cho giao tiếp."
+    "answer": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Slide 8, 9, 12 xác định rõ mục tiêu: *Process Metrics: Cải tiến quy trình, so sánh giữa các dự án (ví dụ Defect removal efficiency)*; *Project Metrics: Quản lý dự án (ví dụ Cost variance, Schedule variance)*.",
+    "tip": "Slide 8, 9, 12 xác định rõ mục tiêu: *Process Metrics: Cải tiến quy trình, so sá..."
   },
   {
     "id": 24,
-    "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Trong nguyên tắc W5HH, câu hỏi 'WHEN will it be done?' nhằm xác định nội dung trọng tâm nào sau đây?",
+    "chapter": 2,
+    "tag": "Slide 11, 13, 14",
+    "type": "multiple",
+    "question": "Khi theo dõi sức khỏe của một dự án phần mềm đang diễn ra, người quản lý dự án thường xuyên thu thập các **Số liệu quy trình (Process Metrics)** và **Số liệu dự án (Project Metrics)** cụ thể nào sau đây?",
     "options": [
-      "A. Xác định chi phí tài chính và tiền công theo từng giờ lập trình",
-      "B. Lập lịch trình tổng thể và xác định các mốc bàn giao mấu chốt",
-      "C. Đánh giá trình độ kỹ thuật của các thành viên trong nhóm dự án",
-      "D. Thiết kế chi tiết cơ sở dữ liệu quan hệ và mô hình thực thể ERD"
+      "A. Số liệu dự án: Chỉ số huyết áp và nhịp tim trung bình của lập trình viên",
+      "B. Các đơn vị đo lường dự án phổ biến: Số dòng lệnh trên tháng (LOC/tháng), Điểm chức năng trên người-tháng (FP/person-month)",
+      "C. Số liệu dự án: Tiến độ thực tế, Chi phí tiêu hao, Năng suất của đội ngũ",
+      "D. Số liệu quy trình: Thời gian thực hiện các công đoạn, Hiệu suất làm việc, Tỷ lệ lỗi theo từng giai đoạn phát triển",
+      "E. Số liệu quy trình: Số lượng email rác nhận được trong hòm thư công ty"
     ],
-    "answer": 1,
-    "explanation": "Câu hỏi 'When' trong W5HH nhằm xây dựng lịch trình (Schedule) và xác định thời điểm hoàn thành các mốc quan trọng (Milestones).",
-    "tip": "When = Lịch trình thời gian và mốc hoàn thành."
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Slide 11, 13, 14 liệt kê: *Process Metrics gồm Thời gian thực hiện, Hiệu suất, Tỷ lệ lỗi theo giai đoạn*; *Project Metrics gồm Tiến độ, Chi phí, Năng suất (LOC/tháng, FP/người-tháng)*.",
+    "tip": "Slide 11, 13, 14 liệt kê: *Process Metrics gồm Thời gian thực hiện, Hiệu suất, T..."
   },
   {
     "id": 25,
-    "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Một dự án phần mềm được công nhận là THÀNH CÔNG TOÀN DIỆN khi đáp ứng đầy đủ điều kiện nào sau đây?",
+    "chapter": 2,
+    "tag": "Slide 15, 16",
+    "type": "multiple",
+    "question": "Một dự án hoàn thành việc viết 8,000 dòng lệnh (8,000 LOC) với tổng nỗ lực công sức là 10 người-tháng (10 person-month). Dựa trên bài tập thực hành trong bài giảng:",
     "options": [
-      "A. Hoàn thành đúng hạn nhưng vượt 50% ngân sách cho phép ban đầu",
-      "B. Viết được số dòng lệnh nhiều nhất trong lịch sử các dự án của công ty",
-      "C. Đạt mục tiêu, đúng hạn, trong ngân sách và làm hài lòng các bên liên quan",
-      "D. Không phát sinh bất kỳ yêu cầu thay đổi nào trong suốt chu kỳ dự án"
+      "A. Nguyên tắc quản trị: Không nên dùng chỉ số LOC/PM này để so sánh trực tiếp giữa các dự án sử dụng các ngôn ngữ lập trình khác nhau (ví dụ Assembly vs Python)",
+      "B. Đội ngũ nào viết được 100,000 LOC cho cùng một tính năng chắc chắn có năng suất cao gấp 10 lần đội ngũ viết 10,000 LOC",
+      "C. Nguyên tắc quản trị: Chỉ nên so sánh năng suất LOC trong cùng tổ chức và có sự tương đồng về công nghệ/môi trường",
+      "D. Năng suất tính theo công thức: $Productivity = \frac{8,000\text{ LOC}}{10\text{ person-month}} = 800\text{ LOC/person-month}$",
+      "E. Mức năng suất 800 LOC/PM được đánh giá là ở mức trung bình – khá"
     ],
-    "answer": 2,
-    "explanation": "Thành công dự án toàn diện là đạt mục tiêu đã đề ra, hoàn thành trong thời gian và chi phí cho phép, bảo đảm chất lượng và làm thỏa mãn stakeholder.",
-    "tip": "Thành công = Mục tiêu + Đúng hạn + Trong ngân sách + Thỏa mãn stakeholder."
+    "answer": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 15, 16 tính chuẩn: $Productivity = 800\text{ LOC/PM}$; Nhận xét: *Mức trung bình – khá • Không nên so sánh giữa các ngôn ngữ khác nhau • Chỉ so sánh trong cùng tổ chức*.",
+    "tip": "Slide 15, 16 tính chuẩn: $Productivity = 800\text{ LOC/PM}$; Nhận xét: *Mức trun..."
   },
   {
     "id": 26,
-    "chapter": 1,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Khi hai lập trình viên kỳ cựu bất đồng sâu sắc về kiến trúc phần mềm, nhiệm vụ quản trị nào của PM cần phát huy để thống nhất định hướng?",
+    "chapter": 2,
+    "tag": "Slide 18, 19, 20, 21",
+    "type": "multiple",
+    "question": "Hai phương pháp phổ biến nhất để **Đo kích thước phần mềm** là đo bằng số dòng mã lệnh (LOC - Lines of Code) và đo bằng Điểm chức năng (FP - Function Point). Những nhận định nào sau đây đúng về ưu/nhược điểm bản chất của chúng?",
     "options": [
-      "A. Nhiệm vụ Kiểm soát (Controlling)",
-      "B. Nhiệm vụ Cắt giảm biên chế nhân sự",
-      "C. Nhiệm vụ Báo cáo xử lý kỷ luật lên ban giám đốc",
-      "D. Nhiệm vụ Chỉ đạo và Tạo động lực (Directing & Motivation)"
+      "A. LOC có nhược điểm lớn là phụ thuộc nặng nề vào ngôn ngữ lập trình (ngôn ngữ bậc cao tốn ít dòng code hơn ngôn ngữ bậc thấp để cùng giải quyết một bài toán)",
+      "B. LOC có thể đo lường chính xác ngay từ giai đoạn lấy yêu cầu trước khi thiết kế hệ thống",
+      "C. Function Point không thể dùng để ước lượng chi phí vì không đo được số dòng lệnh thực tế",
+      "D. Function Point đo kích thước dựa trên các chức năng nghiệp vụ mà người dùng nhìn thấy, hoàn toàn độc lập với công nghệ và ngôn ngữ triển khai",
+      "E. LOC có ưu điểm là dễ đo, trực quan, có thể đếm tự động bằng công cụ",
+      "F. Đơn vị đo năng suất và chi phí tương ứng là: FP / Person-month hoặc LOC / Person-month"
     ],
-    "answer": 3,
-    "explanation": "Nhiệm vụ Chỉ đạo (Directing) và Tạo động lực (Motivation) giúp PM định hướng đội ngũ, giải quyết xung đột xây dựng và duy trì tinh thần làm việc tích cực.",
-    "tip": "Bất đồng kỹ thuật => PM phát huy vai trò Chỉ đạo & Tạo động lực."
+    "answer": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Slide 18, 19, 20, 21 phân tích: *LOC: Dễ đo, Phụ thuộc ngôn ngữ*; *FP: Đo theo chức năng, Độc lập công nghệ*; *Đo năng suất: FP/Person-month, LOC/Person-month*.",
+    "tip": "Slide 18, 19, 20, 21 phân tích: *LOC: Dễ đo, Phụ thuộc ngôn ngữ*; *FP: Đo theo c..."
   },
   {
     "id": 27,
-    "chapter": 1,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Vì sao Quản lý dự án thường được coi là sự kết hợp nhuần nhuyễn giữa 'KHOA HỌC' và 'NGHỆ THUẬT'?",
+    "chapter": 2,
+    "tag": "Slide 22, 23",
+    "type": "multiple",
+    "question": "Bảng tổng kết so sánh giữa **LOC và Function Point (FP)** ở Slide 23 đưa ra những kết luận quan trọng nào sau đây mà người làm quản lý dự án phải ghi nhớ?",
     "options": [
-      "A. Khoa học về quy trình, công cụ chuẩn và Nghệ thuật lãnh đạo con người",
-      "B. Khoa học về thuật toán máy tính và Nghệ thuật vẽ giao diện người dùng",
-      "C. Khoa học về công cụ toán học và Nghệ thuật thuyết phục nhà đầu tư",
-      "D. Khoa học về phần cứng máy chủ và Nghệ thuật viết tài liệu quảng cáo"
+      "A. Tiêu chí \"Khả năng dùng sớm (ở pha phân tích/đặc tả yêu cầu)\": LOC rất khó dùng; FP rất dễ dùng",
+      "B. Không thể ước lượng nỗ lực sớm bằng FP vì khách hàng không hiểu điểm chức năng",
+      "C. Kết luận bài học: Phương pháp Function Point (FP) phù hợp hơn cho công tác quản lý dự án phần mềm",
+      "D. Tiêu chí \"So sánh giữa các dự án khác nhau\": LOC thể hiện kém; FP thể hiện tốt",
+      "E. Tiêu chí \"Phụ thuộc ngôn ngữ\": LOC có phụ thuộc; FP không phụ thuộc",
+      "F. LOC phù hợp cho quản lý dự án hơn FP vì LOC phản ánh đúng số byte lưu trữ trên ổ đĩa"
     ],
-    "answer": 0,
-    "explanation": "QLDA là Khoa học vì áp dụng quy trình, công cụ, số liệu chuẩn; là Nghệ thuật vì đòi hỏi kỹ năng mềm lãnh đạo, giao tiếp và tạo động lực cho con người.",
-    "tip": "Khoa học (công cụ, quy trình) + Nghệ thuật (lãnh đạo con người)."
+    "answer": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 23 khẳng định: *Phụ thuộc ngôn ngữ (LOC: Có, FP: Không) • Dùng sớm (LOC: Khó, FP: Dễ) • So sánh dự án (LOC: Kém, FP: Tốt) $\rightarrow$ FP phù hợp hơn cho quản lý dự án*.",
+    "tip": "Slide 23 khẳng định: *Phụ thuộc ngôn ngữ (LOC: Có, FP: Không) • Dùng sớm (LOC: K..."
   },
   {
     "id": 28,
-    "chapter": 1,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Đối tượng nào sau đây KHÔNG PHẢI là một Bên liên quan (Stakeholder) trực tiếp của dự án phát triển cổng học tập trực tuyến cho trường đại học?",
+    "chapter": 2,
+    "tag": "Slide 25, 26, 27",
+    "type": "multiple",
+    "question": "Tại sao trong quản trị dự án phần mềm hiện đại, các chuyên gia khuyến nghị **Cần nhiều cách đo và kết hợp cả LOC lẫn FP** thay vì chỉ dựa vào một thước đo duy nhất?",
     "options": [
-      "A. Sinh viên và giảng viên trực tiếp sử dụng hệ thống học tập",
-      "B. Một công dân hoàn toàn không có mối liên hệ nào với ngành giáo dục",
-      "C. Phòng Đào tạo và Ban Giám hiệu nhà trường quản lý dữ liệu",
-      "D. Đội ngũ kỹ sư phần mềm chịu trách nhiệm phát triển và bảo trì hệ thống"
+      "A. Vì đo càng nhiều cách thì càng làm khách hàng bối rối và dễ dàng ký nghiệm thu dự án hơn",
+      "B. Giúp người quản lý điều phối số liệu linh hoạt phù hợp với từng mục tiêu quản trị cụ thể",
+      "C. Mỗi phương pháp đo đều có những hạn chế cố hữu riêng",
+      "D. LOC và FP bổ sung cho nhau rất tốt: FP dùng để ước lượng sớm ở pha yêu cầu/thiết kế, còn LOC dùng để kiểm soát chi tiết ở pha lập trình và kiểm thử",
+      "E. Trong kỹ nghệ phần mềm không tồn tại một số liệu đo lường nào là hoàn hảo tuyệt đối"
     ],
-    "answer": 1,
-    "explanation": "Stakeholder là cá nhân hoặc tổ chức có quyền lợi, nghĩa vụ hoặc bị ảnh hưởng bởi dự án. Người không có bất kỳ liên hệ nào thì không phải stakeholder.",
-    "tip": "Không liên quan, không bị ảnh hưởng => Không phải Stakeholder."
+    "answer": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 25, 26, 27 khẳng định: *Mỗi cách có hạn chế • Không có số liệu hoàn hảo • Kết hợp LOC & FP bổ sung cho nhau, phù hợp từng giai đoạn • Lựa chọn phù hợp mục tiêu*.",
+    "tip": "Slide 25, 26, 27 khẳng định: *Mỗi cách có hạn chế • Không có số liệu hoàn hảo • ..."
   },
   {
     "id": 29,
     "chapter": 2,
-    "tag": "Khái niệm",
+    "tag": "Slide 29, 30, 31",
     "type": "multiple",
-    "question": "Theo bài giảng, một SỐ LIỆU PHẦN MỀM TỐT (Good Metric) cần thỏa mãn những ĐẶC TÍNH cơ bản nào sau đây? (Chọn tất cả các đáp án đúng)",
+    "question": "Về khía cạnh **Số liệu cho chất lượng phần mềm**, những phát biểu nào sau đây đúng theo định nghĩa bài giảng?",
     "options": [
-      "A. Đơn giản, dễ hiểu và dễ tính toán",
-      "B. Đo lường khách quan và có tính nhất quán cao",
-      "C. Cần phức tạp và sử dụng công thức toán học cao cấp nhất",
-      "D. Chi phí thu thập và phân tích hợp lý, không tốn kém",
-      "E. Cung cấp thông tin có ý nghĩa hỗ trợ ra quyết định"
+      "A. Phần mềm có chất lượng cao nhất là phần mềm viết nhiều dòng lệnh nhất bất kể số lỗi",
+      "B. Khái niệm chất lượng phần mềm bao hàm các thuộc tính cốt lõi: Độ tin cậy (Reliability), Dễ bảo trì (Maintainability), Dễ sử dụng (Usability)",
+      "C. Các số liệu đánh giá chất lượng phần mềm gồm: Số lượng lỗi, Mật độ lỗi (Defect Density), Thời gian sửa lỗi",
+      "D. Mật độ lỗi (Defect Density) được tính chuẩn hóa theo quy mô: Lỗi / KLOC (nghìn dòng lệnh) hoặc Lỗi / FP (điểm chức năng)",
+      "E. Mật độ lỗi chỉ là con số lý thuyết, không phản ánh được mức độ ổn định của sản phẩm"
     ],
     "answer": [
-      0,
       1,
-      3,
-      4
+      2,
+      3
     ],
-    "explanation": "Đặc tính của số liệu tốt: Đơn giản dễ hiểu, Khách quan nhất quán, Chi phí thu thập hợp lý, Có tính ứng dụng cao hỗ trợ quyết định quản lý.",
-    "tip": "Số liệu tốt: Đơn giản + Khách quan + Chi phí hợp lý + Có ý nghĩa hành động."
+    "explanation": "Slide 29, 30, 31 chỉ rõ: *Chất lượng gồm Độ tin cậy, Dễ bảo trì, Dễ sử dụng*; *Số liệu: Số lỗi, Mật độ lỗi, Thời gian sửa lỗi*; *Defect Density = Lỗi/KLOC hoặc Lỗi/FP*.",
+    "tip": "Slide 29, 30, 31 chỉ rõ: *Chất lượng gồm Độ tin cậy, Dễ bảo trì, Dễ sử dụng*; *S..."
   },
   {
     "id": 30,
     "chapter": 2,
-    "tag": "Khái niệm",
+    "tag": "Slide 32, 33",
     "type": "multiple",
-    "question": "Những số liệu nào sau đây được phân loại chính xác vào nhóm SỐ LIỆU QUY TRÌNH (Process Metrics)? (Chọn tất cả các đáp án đúng)",
+    "question": "Một dự án phần mềm có quy mô 12,000 dòng lệnh (12,000 LOC = 12 KLOC). Giai đoạn kiểm thử phát hiện tổng cộng 60 lỗi. Phân tích số liệu này dưới góc độ quản lý:",
     "options": [
-      "A. Hiệu quả phát hiện lỗi trong quá trình Review tài liệu (DRE)",
-      "B. Tốc độ sửa lỗi trung bình của quy trình kiểm thử",
-      "C. Chi phí chất lượng (Cost of Quality - CoQ) của tổ chức",
-      "D. Tổng số dòng mã nguồn (LOC) của một phần mềm cụ thể",
-      "E. Mức độ tuân thủ quy trình chuẩn CMMI của các dự án"
+      "A. Mức 5 lỗi/KLOC được đánh giá là ở mức trung bình trong ngành phần mềm thương mại",
+      "B. Hành động cần thiết của PM: Tăng cường kiểm thử và rà soát lại quy trình phát triển",
+      "C. Khi mật độ lỗi đạt 5 lỗi/KLOC, PM có thể yên tâm bàn giao hệ thống thanh toán tự động ngay mà không cần kiểm thử thêm",
+      "D. Điểm nhấn bài học: \"Defect density là chỉ báo chất lượng, không phải chỉ để báo cáo hình thức\"",
+      "E. Đối với các hệ thống có độ quan trọng cao (như ngân hàng, y tế, hàng không), mức 5 lỗi/KLOC là CHƯA ĐẠT yêu cầu chất lượng",
+      "F. Mật độ lỗi: $Defect\ Density = \frac{60\text{ lỗi}}{12\text{ KLOC}} = 5\text{ lỗi/KLOC}$"
     ],
     "answer": [
       0,
       1,
-      2,
-      4
+      3,
+      4,
+      5
     ],
-    "explanation": "Process Metrics đo lường đặc tính của quy trình phát triển nhằm cải tiến quy trình lâu dài. Tổng số dòng code của một sản phẩm là Product/Project metric.",
-    "tip": "Process metrics: Đo lường quy trình để cải tiến tổ chức lâu dài."
+    "explanation": "Slide 32, 33 giải quyết bài toán: $Defect\ Density = 5\text{ lỗi/KLOC}$; Đánh giá: *Mức trung bình; Với hệ thống quan trọng: chưa đạt; Cần tăng kiểm thử, rà soát quy trình; Defect density là chỉ báo chất lượng, không phải chỉ để báo cáo*.",
+    "tip": "Slide 32, 33 giải quyết bài toán: $Defect\ Density = 5\text{ lỗi/KLOC}$; Đánh gi..."
   },
   {
     "id": 31,
     "chapter": 2,
-    "tag": "Khái niệm",
+    "tag": "Slide 35, 36, 37",
     "type": "multiple",
-    "question": "Những số liệu nào sau đây thuộc nhóm SỐ LIỆU DỰ ÁN (Project Metrics) phục vụ quản lý dự án hiện tại? (Chọn tất cả các đáp án đúng)",
+    "question": "Để việc đo lường phát huy hiệu quả thực tế, **Số liệu phải được tích hợp xuyên suốt vòng đời phần mềm**. Hoạt động này bao gồm những nội dung nào?",
     "options": [
-      "A. Tiến độ thực tế so với kế hoạch mốc bàn giao",
-      "B. Chi phí thực tế tiêu hao so với ngân sách dự kiến",
-      "C. Năng suất làm việc trung bình của đội ngũ trong đợt bàn giao này",
-      "D. Đạo luật bảo hộ quyền tác giả phần mềm của quốc gia",
-      "E. Số lượng lỗi phát sinh theo từng module trong giai đoạn kiểm thử"
+      "A. Khai thác dữ liệu để phát hiện các điểm nghẽn, điểm yếu trong quy trình và ra quyết định cải tiến",
+      "B. Thu thập số liệu nhằm mục đích chính là tìm lỗi của lập trình viên để trừ lương thưởng",
+      "C. Chỉ thu thập số liệu vào ngày cuối cùng trước khi đóng dự án",
+      "D. Đo lường liên tục trong các giai đoạn: Phân tích $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử",
+      "E. Xây dựng quy trình thu thập và công cụ lưu trữ số liệu tập trung để tạo kho dữ liệu lịch sử"
     ],
     "answer": [
       0,
-      1,
-      2,
+      3,
       4
     ],
-    "explanation": "Project Metrics giúp theo dõi, đánh giá và kiểm soát tiến độ, chi phí, năng suất và chất lượng của chính dự án đang diễn ra.",
-    "tip": "Project metrics: Tiến độ, Chi phí, Năng suất, Lỗi của dự án hiện tại."
+    "explanation": "Slide 35, 36, 37 nêu rõ: *Đo lường trong vòng đời: Phân tích, Thiết kế, Lập trình, Kiểm thử • Thu thập & lưu trữ: Công cụ, Quy trình • Sử dụng số liệu: Phát hiện điểm yếu, Ra quyết định cải tiến*.",
+    "tip": "Slide 35, 36, 37 nêu rõ: *Đo lường trong vòng đời: Phân tích, Thiết kế, Lập trìn..."
   },
   {
     "id": 32,
     "chapter": 2,
-    "tag": "Phương pháp",
+    "tag": "Slide 39, 40, 41",
     "type": "multiple",
-    "question": "Đo lường quy mô bằng Điểm chức năng (Function Points - FP) có những ƯU ĐIỂM nổi trội nào so với đo bằng Số dòng lệnh (LOC)? (Chọn tất cả các đáp án đúng)",
+    "question": "Phương pháp **Kiểm soát quy trình dựa trên thống kê (Statistical Process Control - SPC)** và **Biểu đồ kiểm soát (Control Chart)** ứng dụng trong quản lý phần mềm như thế nào?",
     "options": [
-      "A. Độc lập hoàn toàn với ngôn ngữ lập trình được sử dụng",
-      "B. Có thể ước lượng sớm ngay từ khâu phân tích yêu cầu khi chưa có code",
-      "C. Luôn tự động đếm được chính xác 100% bằng câu lệnh dòng lệnh",
-      "D. Đánh giá quy mô dựa trên góc nhìn chức năng của người sử dụng",
-      "E. Phù hợp tốt với các công nghệ và nền tảng lập trình hiện đại"
+      "A. Biểu đồ kiểm soát (Control Chart) thiết lập hai đường biên thống kê quan trọng: Giới hạn kiểm soát trên (Upper Control Limit - UCL) và Giới hạn kiểm soát dưới (Lower Control Limit - LCL)",
+      "B. Nếu số lỗi nằm trong dải giữa UCL và LCL thì quy trình được coi là ổn định và nằm trong tầm kiểm soát thống kê",
+      "C. SPC chứng minh rằng mọi dự án phần mềm đều không có bất kỳ sự biến đổi nào xảy ra",
+      "D. SPC dựa trên việc phân tích Dữ liệu lịch sử, Xu hướng biến thiên và thiết lập các Ngưỡng kiểm soát",
+      "E. Control Chart là biểu đồ dùng để vẽ sơ đồ đường đi của cáp mạng máy chủ",
+      "F. Giúp quản lý các nguồn biến đổi nội tại của dự án: biến đổi về Yêu cầu, Nhân lực, Công nghệ"
     ],
     "answer": [
       0,
       1,
       3,
-      4
+      5
     ],
-    "explanation": "Ưu điểm của FP: Độc lập ngôn ngữ, đo từ góc nhìn người dùng, tính được từ giai đoạn yêu cầu. Nhược điểm là tính toán cần chuyên môn, không đếm tự động như LOC.",
-    "tip": "Ưu điểm FP: Độc lập ngôn ngữ + Ước lượng sớm từ yêu cầu + Góc nhìn người dùng."
+    "explanation": "Slide 39, 40, 41 xác định: *Biến đổi: Yêu cầu, Nhân lực, Công nghệ • SPC: Dữ liệu lịch sử, Xu hướng, Ngưỡng kiểm soát • Control Chart: Upper Control Limit (UCL) và Lower Control Limit (LCL)*.",
+    "tip": "Slide 39, 40, 41 xác định: *Biến đổi: Yêu cầu, Nhân lực, Công nghệ • SPC: Dữ liệ..."
   },
   {
     "id": 33,
     "chapter": 2,
-    "tag": "Phương pháp",
+    "tag": "Slide 42, 43",
     "type": "multiple",
-    "question": "Phương pháp đo lường quy mô dựa trên Số dòng mã nguồn (LOC) tồn tại những HẠN CHẾ và NHƯỢC ĐIỂM lớn nào? (Chọn tất cả các đáp án đúng)",
+    "question": "Một dự án theo dõi số lượng lỗi phát hiện mỗi tuần bằng biểu đồ kiểm soát SPC. Trong 3 tuần đầu, số lỗi dao động rất ổn định dưới ngưỡng UCL. Đến tuần thứ 4, số lỗi tăng vọt vượt qua đường giới hạn kiểm soát trên (UCL). Dưới góc độ quản lý dự án chuyên nghiệp:",
     "options": [
-      "A. Phụ thuộc nặng nề vào ngôn ngữ lập trình được sử dụng",
-      "B. Khó ước lượng chính xác ở đầu dự án khi chưa có mã nguồn",
-      "C. Dễ dẫn đến hành vi tiêu cực: viết code dài dòng để tăng số dòng",
-      "D. Không phản ánh được công sức dành cho phân tích, thiết kế và tài liệu",
-      "E. Hoàn toàn không có ai trong ngành công nghiệp sử dụng nữa"
+      "A. Hiện tượng này có ý nghĩa: Quy trình phát triển phần mềm đang có dấu hiệu mất kiểm soát",
+      "B. Bắt đội kiểm thử giảm bớt số ca test để tuần sau số lỗi giảm xuống dưới ngưỡng UCL",
+      "C. Nguyên tắc xử lý vàng của PM: \"Sửa quy trình, không sửa triệu chứng\"",
+      "D. Hành động đúng đắn của PM: Dừng lại phân tích nguyên nhân gốc rễ, không vội vàng thúc ép nhân viên sửa code một cách chắp vá",
+      "E. Hiện tượng này chứng tỏ đã xuất hiện biến đổi đặc biệt (special cause - ví dụ thay đổi công nghệ đột ngột, nhân sự mới chưa qua đào tạo)",
+      "F. Hành động đúng của PM: Lập tức xóa bỏ dữ liệu tuần 4 khỏi biểu đồ để báo cáo dự án trông vẫn đẹp và an toàn"
     ],
     "answer": [
       0,
-      1,
       2,
-      3
+      3,
+      4
     ],
-    "explanation": "Nhược điểm LOC: Phụ thuộc ngôn ngữ, không đo được hoạt động phi lập trình, không khuyến khích tối ưu code, khó ước lượng sớm.",
-    "tip": "Nhược điểm LOC: Phụ thuộc ngôn ngữ + Khó ước lượng sớm + Khuyến khích code dài."
+    "explanation": "Slide 42, 43 kết luận: *1. Ý nghĩa: Quy trình có dấu hiệu mất kiểm soát, Xuất hiện biến đổi đặc biệt (special cause); 2. Hành động: Phân tích nguyên nhân, Không vội sửa code, \"Sửa quy trình, không sửa triệu chứng\"*.",
+    "tip": "Slide 42, 43 kết luận: *1. Ý nghĩa: Quy trình có dấu hiệu mất kiểm soát, Xuất hi..."
   },
   {
     "id": 34,
     "chapter": 2,
-    "tag": "Khái niệm",
+    "tag": "Slide 46",
     "type": "multiple",
-    "question": "Theo phương pháp Function Points (FP), 5 THÀNH PHẦN CHỨC NĂNG cơ bản được sử dụng để tính toán kích thước phần mềm là gì? (Chọn tất cả các đáp án đúng)",
+    "question": "Để khép lại Chương 2, bài giảng đúc kết **3 thông điệp tổng kết mang tính nguyên tắc cốt tử** cho người làm quản lý dự án phần mềm gồm:",
     "options": [
-      "A. Dữ liệu đầu vào từ bên ngoài (External Inputs - EI)",
-      "B. Dữ liệu đầu ra gửi ra bên ngoài (External Outputs - EO)",
-      "C. Yêu cầu truy vấn tương tác từ bên ngoài (External Inquiries - EQ)",
-      "D. Các tệp dữ liệu logic nội bộ (Internal Logical Files - ILF)",
-      "E. Các tệp giao diện liên kết bên ngoài (External Interface Files - EIF)",
-      "F. Dung lượng bộ nhớ RAM tiêu thụ của ứng dụng"
+      "A. Đo lường là nền tảng để cải tiến quy trình",
+      "B. Đo càng nhiều số liệu không dùng đến càng thể hiện trình độ chuyên môn cao",
+      "C. Tuyệt đối không đo lường theo kiểu hình thức, đối phó",
+      "D. Số liệu sinh ra chỉ để phục vụ cho các đợt thanh tra bên ngoài công ty",
+      "E. Số liệu thu thập bắt buộc phải phục vụ cho việc ra quyết định hành động"
     ],
     "answer": [
       0,
-      1,
       2,
-      3,
       4
     ],
-    "explanation": "5 thành phần FP: EI (Inputs), EO (Outputs), EQ (Inquiries), ILF (Internal Logical Files), EIF (External Interface Files).",
-    "tip": "5 thành phần FP = EI + EO + EQ + ILF + EIF."
+    "explanation": "Slide 46 nêu nguyên văn 3 kết luận: *Đo lường là nền tảng cải tiến quy trình • Số liệu phải phục vụ quyết định • Không đo hình thức*.",
+    "tip": "Slide 46 nêu nguyên văn 3 kết luận: *Đo lường là nền tảng cải tiến quy trình • S..."
   },
   {
     "id": 35,
-    "chapter": 2,
-    "tag": "Công cụ",
-    "type": "multiple",
-    "question": "Biểu đồ kiểm soát quy trình thống kê (SPC Control Chart) bao gồm những ĐƯỜNG GIỚI HẠN VÀ THÀNH PHẦN CƠ BẢN nào? (Chọn tất cả các đáp án đúng)",
-    "options": [
-      "A. Đường trung bình của quy trình (Center Line / Mean)",
-      "B. Giới hạn kiểm soát trên (Upper Control Limit - UCL)",
-      "C. Giới hạn kiểm soát dưới (Lower Control Limit - LCL)",
-      "D. Đường dự báo tăng trưởng doanh thu quý tiếp theo",
-      "E. Các điểm dữ liệu đo lường thu thập tuần tự theo thời gian"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
-      4
-    ],
-    "explanation": "Biểu đồ SPC gồm: Đường trung bình (Mean), Giới hạn kiểm soát trên (UCL), Giới hạn kiểm soát dưới (LCL) và các điểm dữ liệu đo đạc thực tế.",
-    "tip": "SPC Chart: Mean + UCL + LCL + Data points."
-  },
-  {
-    "id": 36,
-    "chapter": 2,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Trong tháp giá trị đo lường phần mềm, trật tự nâng cao giá trị thông tin nào sau đây là ĐÚNG?",
-    "options": [
-      "A. Metric (Số đo) -> Measurement (Đo lường) -> Indicator (Chỉ báo)",
-      "B. Indicator (Chỉ báo) -> Metric (Số đo) -> Measurement (Đo lường)",
-      "C. Measurement (Đo lường) -> Metric (Số đo) -> Indicator (Chỉ báo)",
-      "D. Metric (Số đo) -> Indicator (Chỉ báo) -> Measurement (Đo lường)"
-    ],
-    "answer": 2,
-    "explanation": "Trật tự nâng cao giá trị: Measurement (hành động thu thập số liệu thô) -> Metric (chỉ số kết hợp phản ánh đặc tính) -> Indicator (chỉ báo hỗ trợ ra quyết định).",
-    "tip": "Tháp đo lường: Measurement -> Metric -> Indicator."
-  },
-  {
-    "id": 37,
-    "chapter": 2,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Kiểm thử phát hiện 120 lỗi, tính ra mật độ 1.2 lỗi/KLOC. PM so sánh với ngưỡng cho phép (< 2.0 lỗi/KLOC) và quyết định cho phép release phần mềm. Hành động kết luận này thuộc cấp độ nào?",
-    "options": [
-      "A. Cấp độ Measurement (Đo lường số liệu thô)",
-      "B. Cấp độ Metric (Chỉ số đo lường trung gian)",
-      "C. Cấp độ Raw Data (Thu thập dữ liệu kiểm thử)",
-      "D. Cấp độ Indicator (Chỉ báo hỗ trợ ra quyết định)"
-    ],
-    "answer": 3,
-    "explanation": "Khi số liệu được phân tích so sánh với mục tiêu để cung cấp cái nhìn sâu sắc và đưa ra quyết định hành động, nó đạt cấp độ Indicator (Chỉ báo).",
-    "tip": "Dùng số liệu để đưa ra quyết định = Indicator."
-  },
-  {
-    "id": 38,
-    "chapter": 2,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Lập trình viên A viết 500 dòng code Python, Lập trình viên B viết 2000 dòng code Assembly để cùng hoàn thành chức năng như nhau. Nhận định nào sau đây là CHUẨN XÁC?",
-    "options": [
-      "A. Năng suất theo LOC cao hơn chỉ do ngôn ngữ bậc thấp tốn nhiều dòng mã hơn",
-      "B. Lập trình viên B chắc chắn có năng suất lao động thực tế cao gấp 4 lần A",
-      "C. Lập trình viên A lười biếng hơn vì không chịu viết nhiều dòng code như B",
-      "D. Số dòng lệnh LOC hoàn toàn không thể dùng để so sánh hai dự án cùng ngôn ngữ"
-    ],
-    "answer": 0,
-    "explanation": "LOC phụ thuộc vào ngôn ngữ lập trình. Ngôn ngữ bậc thấp (như Assembly) tốn nhiều dòng code cho cùng một chức năng, nên số LOC cao không đồng nghĩa năng suất cao hơn.",
-    "tip": "Ngôn ngữ bậc thấp nhiều LOC nhưng không có nghĩa năng suất cao hơn."
-  },
-  {
-    "id": 39,
-    "chapter": 2,
-    "tag": "Tính toán",
-    "type": "single",
-    "question": "Một dự án có tổng quy mô là 30.000 dòng lệnh (30 KLOC), tổng công sức thực tế tiêu hao là 6 người-tháng (Person-Months). NĂNG SUẤT trung bình của nhóm là bao nhiêu?",
-    "options": [
-      "A. 3.0 KLOC / Person-Month",
-      "B. 5.0 KLOC / Person-Month",
-      "C. 4.0 KLOC / Person-Month",
-      "D. 6.0 KLOC / Person-Month"
-    ],
-    "answer": 1,
-    "explanation": "Năng suất = Kích thước / Công sức = 30 KLOC / 6 PM = 5 KLOC/PM (tương đương 5.000 LOC/người-tháng).",
-    "tip": "Productivity = KLOC / Effort = 30 / 6 = 5 KLOC/PM."
-  },
-  {
-    "id": 40,
-    "chapter": 2,
-    "tag": "Tính toán",
-    "type": "single",
-    "question": "Một phần mềm có kích thước 40 KLOC. Trong toàn bộ quá trình kiểm thử, nhóm QA đã ghi nhận tổng cộng 48 lỗi. MẬT ĐỘ LỖI (Defect Density) của phần mềm này là bao nhiêu?",
-    "options": [
-      "A. 0.83 lỗi / KLOC",
-      "B. 1.50 lỗi / KLOC",
-      "C. 1.20 lỗi / KLOC",
-      "D. 2.40 lỗi / KLOC"
-    ],
-    "answer": 2,
-    "explanation": "Mật độ lỗi (Defect Density) = Tổng số lỗi / Kích thước KLOC = 48 / 40 = 1.2 lỗi/KLOC.",
-    "tip": "Defect Density = Defects / KLOC = 48 / 40 = 1.2."
-  },
-  {
-    "id": 41,
-    "chapter": 2,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Trên biểu đồ kiểm soát SPC, một điểm số liệu về tỷ lệ lỗi của sprint vừa qua bất ngờ vọt lên NẰM PHÍA TRÊN đường giới hạn kiểm soát trên (UCL). Hiện tượng này chỉ báo điều gì?",
-    "options": [
-      "A. Quy trình đang hoạt động với độ ổn định rất cao và tối ưu",
-      "B. Quy trình kiểm thử đang phát hiện được ít lỗi hơn bình thường",
-      "C. Dự án đã hoàn thành vượt mức tiến độ và ngân sách được giao",
-      "D. Quy trình đang mất kiểm soát (Out of Control), cần điều tra nguyên nhân đặc biệt"
-    ],
-    "answer": 3,
-    "explanation": "Khi dữ liệu vượt ra ngoài giới hạn kiểm soát (trên UCL hoặc dưới LCL), quy trình được coi là mất kiểm soát (Out of Control), nguyên nhân đặc biệt cần được điều tra và xử lý.",
-    "tip": "Vượt ra ngoài UCL/LCL => Quy trình mất kiểm soát (Out of Control)."
-  },
-  {
-    "id": 42,
-    "chapter": 2,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Mục đích tối cao của việc thu thập và phân tích các SỐ LIỆU DỰ ÁN (Project Metrics) là gì?",
-    "options": [
-      "A. Theo dõi tiến độ, kiểm soát chi phí và điều chỉnh kịp thời các sai lệch",
-      "B. Lập báo cáo thành tích để xin thêm vốn đầu tư mạo hiểm",
-      "C. Thay thế hoàn toàn người quản lý dự án trong việc đưa ra quyết định",
-      "D. Công khai toàn bộ mã nguồn của công ty ra cộng đồng quốc tế"
-    ],
-    "answer": 0,
-    "explanation": "Project Metrics giúp theo dõi tiến độ, phát hiện sớm các sai lệch so với kế hoạch về chi phí, chất lượng, thời gian để PM kịp thời điều chỉnh.",
-    "tip": "Project metrics: Theo dõi và điều chỉnh dự án hiện tại."
-  },
-  {
-    "id": 43,
-    "chapter": 2,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Mục đích cốt lõi dài hạn của việc thu thập các SỐ LIỆU QUY TRÌNH (Process Metrics) trong tổ chức là gì?",
-    "options": [
-      "A. Đánh giá chất lượng của một đoạn code cụ thể trong ngày",
-      "B. Cải tiến liên tục năng lực và hiệu quả của quy trình phần mềm cho tổ chức",
-      "C. Trừ điểm thưởng của các kỹ sư kiểm thử nếu phát hiện ít lỗi",
-      "D. Cung cấp dữ liệu cho phòng nhân sự tính tiền lương theo giờ"
-    ],
-    "answer": 1,
-    "explanation": "Process Metrics được thu thập xuyên suốt nhiều dự án nhằm đánh giá điểm mạnh/yếu của quy trình, từ đó cải tiến liên tục năng lực của tổ chức.",
-    "tip": "Process metrics: Cải tiến liên tục quy trình dài hạn cho tổ chức."
-  },
-  {
-    "id": 44,
-    "chapter": 2,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Nếu công ty áp dụng chính sách thưởng tiền cho lập trình viên dựa trên số lượng dòng code (LOC) viết được, hậu quả tiêu cực nào sau đây RẤT DỄ XẢY RA?",
-    "options": [
-      "A. Lập trình viên sẽ viết code cực kỳ ngắn gọn, tối ưu thuật toán",
-      "B. Không ai thèm viết mã nguồn nữa vì tiền thưởng quá thấp",
-      "C. Lập trình viên cố tình viết code rườm rà, lặp lại để tăng số dòng nhận thưởng",
-      "D. Toàn bộ mã nguồn sẽ tự động chuyển đổi sang ngôn ngữ Assembly"
-    ],
-    "answer": 2,
-    "explanation": "Thưởng theo LOC tạo động cơ tiêu cực (Perverse Incentive): lập trình viên viết code dài dòng, tránh tái sử dụng thư viện, copy-paste để tăng số dòng mã.",
-    "tip": "Thưởng theo LOC => Viết code dài dòng, phình mã nguồn để lấy thưởng."
-  },
-  {
-    "id": 45,
-    "chapter": 2,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Đặc tính nào của số liệu đảm bảo rằng hai người khác nhau khi đo đạc trên cùng một phần mềm thì thu được kết quả giống nhau?",
-    "options": [
-      "A. Tính trừu tượng (Abstract)",
-      "B. Tính chủ quan (Subjective)",
-      "C. Tính bảo mật (Confidential)",
-      "D. Tính khách quan và nhất quán (Objective & Consistent)"
-    ],
-    "answer": 3,
-    "explanation": "Số liệu tốt phải có tính Khách quan và Nhất quán, loại bỏ yếu tố cảm tính để người đo khác nhau trong điều kiện như nhau đều cho kết quả tương đương.",
-    "tip": "Hai người đo ra cùng kết quả = Tính khách quan và nhất quán."
-  },
-  {
-    "id": 46,
-    "chapter": 2,
-    "tag": "Tính toán",
-    "type": "single",
-    "question": "Trong giai đoạn kiểm thử nội bộ phát hiện 90 lỗi. Sau khi bàn giao cho khách hàng phát hiện thêm 10 lỗi nữa. Hiệu quả loại bỏ lỗi (Defect Removal Efficiency - DRE) là bao nhiêu?",
-    "options": [
-      "A. 90%",
-      "B. 10%",
-      "C. 80%",
-      "D. 100%"
-    ],
-    "answer": 0,
-    "explanation": "DRE = E / (E + D) = 90 / (90 + 10) = 90 / 100 = 90%. (Trong đó E là lỗi nội bộ, D là lỗi khách hàng phát hiện sau bàn giao).",
-    "tip": "DRE = E / (E + D) = 90 / (90 + 10) = 90%."
-  },
-  {
-    "id": 47,
-    "chapter": 2,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Một số liệu đo lường phần mềm chỉ thực sự mang lại GIÁ TRỊ THỰC TẾ khi nó thỏa mãn điều kiện nào sau đây?",
-    "options": [
-      "A. Được tính toán bằng thuật toán học máy phức tạp nhất",
-      "B. Giúp nhà quản lý đưa ra quyết định can thiệp hoặc cải tiến đúng đắn",
-      "C. Được xuất bản trong các bài báo khoa học quốc tế uy tín",
-      "D. Luôn giữ nguyên một giá trị cố định không bao giờ biến động"
-    ],
-    "answer": 1,
-    "explanation": "Tom DeMarco từng nói 'Đo lường mà không dẫn đến hành động là vô nghĩa'. Số liệu chỉ có giá trị khi nó cung cấp thông tin để PM đưa ra quyết định đúng.",
-    "tip": "Số liệu có giá trị = Giúp đưa ra quyết định hành động đúng đắn."
-  },
-  {
-    "id": 48,
-    "chapter": 2,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Khi đang ở giai đoạn phân tích yêu cầu sơ bộ (chưa viết một dòng code nào), kỹ thuật đo lường quy mô nào sau đây là KHẢ THI NHẤT?",
-    "options": [
-      "A. Đo đếm số dòng mã nguồn (LOC)",
-      "B. Đếm số lượng tệp nhị phân (.exe) tạo ra",
-      "C. Đo lường theo Điểm chức năng (Function Points - FP)",
-      "D. Đo dung lượng tệp cơ sở dữ liệu sau 5 năm vận hành"
-    ],
-    "answer": 2,
-    "explanation": "Function Points (FP) dựa trên các yêu cầu chức năng bên ngoài (đầu vào, đầu ra, tệp dữ liệu...), cho phép ước lượng quy mô ngay từ khâu đặc tả yêu cầu khi chưa có mã nguồn.",
-    "tip": "Chưa có code, đầu dự án => Dùng Function Points (FP)."
-  },
-  {
-    "id": 49,
-    "chapter": 2,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Trong biểu đồ kiểm soát SPC chuẩn, các giới hạn kiểm soát trên (UCL) và dưới (LCL) thường được thiết lập cách đường trung bình (Mean) một khoảng là:",
-    "options": [
-      "A. Đúng bằng 1 lần độ lệch chuẩn (± 1 sigma)",
-      "B. Đúng bằng 2 lần độ lệch chuẩn (± 2 sigma)",
-      "C. Đúng bằng 6 lần độ lệch chuẩn (± 6 sigma)",
-      "D. Đúng bằng 3 lần độ lệch chuẩn (± 3 sigma)"
-    ],
-    "answer": 3,
-    "explanation": "Theo lý thuyết kiểm soát quy trình thống kê SPC của Shewhart, giới hạn kiểm soát UCL và LCL được đặt tại khoảng cách 3 độ lệch chuẩn (± 3σ) so với đường trung bình.",
-    "tip": "SPC chuẩn: UCL và LCL đặt tại ± 3 sigma."
-  },
-  {
-    "id": 50,
     "chapter": 3,
-    "tag": "Khái niệm",
+    "tag": "Slide 3",
     "type": "multiple",
-    "question": "Theo bài giảng slide, VÌ SAO PHẢI LẬP KẾ HOẠCH DỰ ÁN? (Chọn tất cả các đáp án đúng - đúng theo từng gạch đầu dòng slide)",
+    "question": "Một số lập trình viên cho rằng: *\"Dự án phần mềm thay đổi liên tục theo phương pháp Agile, việc gì phải mất công ngồi lập kế hoạch dự án ban đầu?\"*. Dựa trên nội dung cốt lõi của bài học (Slide 3), người quản lý dự án phải khẳng định **Vì sao bắt buộc phải lập kế hoạch dự án** dựa trên 3 nguyên nhân nền tảng nào?",
     "options": [
-      "A. Phần mềm phức tạp",
-      "B. Đảm bảo phần mềm không cần kiểm thử vẫn chạy đúng",
-      "C. Nhiều rủi ro",
-      "D. Thay thế hoàn toàn vai trò của lập trình viên",
-      "E. Nguồn lực hạn chế",
-      "F. Khách hàng không cần tham gia nghiệm thu"
+      "A. Phần mềm có độ phức tạp cao (nhiều thành phần, nhiều luồng tương tác logic phức tạp)",
+      "B. Vì phần mềm là sản phẩm có độ lặp lại hoàn toàn giống hệt sản xuất công nghiệp hàng loạt",
+      "C. Dự án tiềm ẩn nhiều rủi ro (rủi ro công nghệ, rủi ro con người, rủi ro biến động yêu cầu)",
+      "D. Nguồn lực của tổ chức luôn ở trạng thái hạn chế (giới hạn về thời gian, ngân sách và nhân sự)",
+      "E. Để có lý do kéo dài thời gian phát triển và trì hoãn ngày giao hàng cho khách hàng"
     ],
     "answer": [
       0,
-      2,
-      4
-    ],
-    "explanation": "Theo đúng gạch đầu dòng slide bài giảng: VÌ SAO PHẢI LẬP KẾ HOẠCH DỰ ÁN? • Phần mềm phức tạp • Nhiều rủi ro • Nguồn lực hạn chế.",
-    "tip": "3 lý do lập kế hoạch: Phần mềm phức tạp + Nhiều rủi ro + Nguồn lực hạn chế."
-  },
-  {
-    "id": 51,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "multiple",
-    "question": "Theo Roger Pressman, 3 NGUỒN LỰC DỰ ÁN cơ bản cần xác định khi lập kế hoạch là những nguồn lực nào? (Chọn tất cả các đáp án đúng)",
-    "options": [
-      "A. Nguồn lực Con người (Human Resources / People)",
-      "B. Nguồn lực Vốn đầu tư mạo hiểm từ ngân hàng",
-      "C. Thành phần phần mềm có thể tái sử dụng (Reusable Software Components)",
-      "D. Bằng sáng chế độc quyền vô thời hạn",
-      "E. Môi trường phát triển: phần cứng, mạng, công cụ (Environmental Resources)"
-    ],
-    "answer": [
-      0,
-      2,
-      4
-    ],
-    "explanation": "Pressman xác định 3 nguồn lực: 1. Con người (People) 2. Thành phần phần mềm tái sử dụng (Reusable components) 3. Môi trường phát triển (Environment).",
-    "tip": "3 nguồn lực Pressman: Con người + Thành phần tái sử dụng + Môi trường."
-  },
-  {
-    "id": 52,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "multiple",
-    "question": "Các loại THÀNH PHẦN PHẦN MỀM TÁI SỬ DỤNG được Pressman phân loại bao gồm những nhóm nào sau đây? (Chọn tất cả các đáp án đúng)",
-    "options": [
-      "A. Thành phần có sẵn thương mại đóng gói (Off-the-shelf components - COTS)",
-      "B. Thành phần có trải nghiệm đầy đủ (Full-experience components)",
-      "C. Thành phần có trải nghiệm một phần (Partial-experience components)",
-      "D. Thành phần mới hoàn toàn phải xây dựng (New components)",
-      "E. Các đoạn mã nguồn vi phạm bản quyền trôi nổi trên mạng"
-    ],
-    "answer": [
-      0,
-      1,
       2,
       3
     ],
-    "explanation": "4 loại thành phần tái sử dụng theo Pressman: Off-the-shelf (COTS), Full-experience, Partial-experience, và New components.",
-    "tip": "4 loại component: Off-the-shelf (COTS) + Full-exp + Partial-exp + New."
+    "explanation": "Slide 3 nêu 3 nguyên nhân cốt lõi: *Phần mềm phức tạp • Nhiều rủi ro • Nguồn lực hạn chế*.",
+    "tip": "Slide 3 nêu 3 nguyên nhân cốt lõi: *Phần mềm phức tạp • Nhiều rủi ro • Nguồn lực..."
   },
   {
-    "id": 53,
+    "id": 36,
     "chapter": 3,
-    "tag": "Phương pháp",
+    "tag": "Slide 4, 32",
     "type": "multiple",
-    "question": "Hai KỸ THUẬT PHÂN RÃ (Decomposition Techniques) cơ bản thường được áp dụng khi lập kế hoạch dự án là gì? (Chọn tất cả các đáp án đúng)",
+    "question": "Theo Roger Pressman, kế hoạch dự án được ví như *\"bản lộ trình (roadmap) định hướng cho cả nhóm\"*. Việc **Lập kế hoạch dự án nhằm đạt được những mục đích trọng yếu** nào sau đây?",
     "options": [
-      "A. Phân rã theo các chức năng bài toán cần giải quyết (Decomposition by Functions)",
-      "B. Phân rã theo quy trình thực hiện các tác vụ công việc (Decomposition by Process Tasks)",
-      "C. Phân rã theo mức lương thưởng hàng tháng của từng nhân sự",
-      "D. Phân rã theo các văn phòng địa lý của khách hàng"
+      "A. Phân bổ và tối ưu hóa các nguồn lực dự án",
+      "B. Nhận diện sớm các rủi ro tiềm ẩn để có phương án phòng ngừa",
+      "C. Giúp người quản lý dự án rảnh rỗi không cần giám sát gì trong suốt quá trình phát triển",
+      "D. Thiết lập đường cơ sở (Baseline) làm cơ sở cho việc theo dõi và kiểm soát dự án",
+      "E. Dự báo chính xác thời gian hoàn thành và chi phí ngân sách cần thiết",
+      "F. Xác định rõ ràng các công việc và phạm vi cần làm"
     ],
     "answer": [
       0,
-      1
+      1,
+      3,
+      4,
+      5
     ],
-    "explanation": "Lập kế hoạch phân rã theo 2 cách: Phân rã theo chức năng sản phẩm (Functions) và Phân rã theo quy trình các bước công việc (Process tasks).",
-    "tip": "2 kỹ thuật phân rã: Phân rã Chức năng (Functions) & Phân rã Quy trình (Process)."
+    "explanation": "Slide 4 & 32 quy định mục đích lập kế hoạch: *Xác định công việc cần làm, dự báo thời gian & chi phí, phân bổ nguồn lực; Theo Pressman: Xác định phạm vi rõ ràng, Ước lượng chi phí & thời gian, Phân bổ nguồn lực, Nhận diện rủi ro, Làm cơ sở kiểm soát dự án (\"A project plan provides a roadmap for the team\")*.",
+    "tip": "Slide 4 & 32 quy định mục đích lập kế hoạch: *Xác định công việc cần làm, dự báo..."
   },
   {
-    "id": 54,
+    "id": 37,
     "chapter": 3,
-    "tag": "Khái niệm",
+    "tag": "Slide 5, 32",
     "type": "multiple",
-    "question": "Những NGUYÊN NHÂN phổ biến nào sau đây dẫn đến hiện tượng Phình phạm vi (Scope Creep) làm vỡ kế hoạch dự án? (Chọn tất cả các đáp án đúng)",
+    "question": "Một **Bản kế hoạch dự án phần mềm hoàn chỉnh** cấu thành từ 4 thành phần trụ cột nào và điều gì sẽ xảy ra nếu dự án **Không có kế hoạch**?",
     "options": [
-      "A. Yêu cầu ban đầu của khách hàng mơ hồ, không được làm rõ",
-      "B. Khách hàng liên tục đòi thêm tính năng nhỏ không qua phê duyệt chính thức",
-      "C. Đội ngũ tự ý 'mạ vàng' (Gold Plating) thêm tính năng kỹ thuật mà khách không cần",
-      "D. Áp dụng quy trình kiểm soát thay đổi (Change Control) quá chặt chẽ",
-      "E. Thiếu sự quản lý và theo dõi đường cơ sở phạm vi (Scope Baseline)"
+      "A. Nếu không có kế hoạch: Người quản lý không có thước đo chuẩn để đánh giá được các sai lệch công việc",
+      "B. Dự án không có kế hoạch sẽ luôn hoàn thành đúng hạn vì nhân sự làm việc thoải mái không bị áp lực",
+      "C. Nếu không có kế hoạch: Tổ chức không thể kiểm soát chi phí, dễ dẫn đến tình trạng vỡ ngân sách",
+      "D. Nếu không có kế hoạch: Nhóm sẽ mất khả năng kiểm soát tiến độ thực tế",
+      "E. Kế hoạch dự án chỉ cần ghi tên các thành viên trong nhóm, không cần ước lượng hay phân tích rủi ro",
+      "F. Kế hoạch dự án gồm 4 phần: Phạm vi (Scope), Ước lượng (Estimates), Lịch trình (Schedule), Rủi ro (Risks)"
+    ],
+    "answer": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "explanation": "Slide 5 & 32: *Kế hoạch dự án gồm: Phạm vi, Ước lượng, Lịch trình, Rủi ro*; *Nếu không có kế hoạch: Không kiểm soát tiến độ, Không kiểm soát chi phí, Không đánh giá được sai lệch*.",
+    "tip": "Slide 5 & 32: *Kế hoạch dự án gồm: Phạm vi, Ước lượng, Lịch trình, Rủi ro*; *Nếu..."
+  },
+  {
+    "id": 38,
+    "chapter": 3,
+    "tag": "Slide 6, 7, 8",
+    "type": "multiple",
+    "question": "Khi bắt đầu lập kế hoạch dự án, việc **Xác định Phạm vi phần mềm (Scope)** đòi hỏi người quản lý dự án phải làm rõ những nội dung gì và sử dụng các tài liệu nào?",
+    "options": [
+      "A. Xác định rõ Mục tiêu của hệ thống, các Chức năng chính và các Ràng buộc kỹ thuật/nghiệp vụ",
+      "B. Để phạm vi ở trạng thái mở, khách hàng muốn thêm bất kỳ chức năng nào nhóm cũng phải làm ngay mà không cần bàn bạc",
+      "C. Văn bản hóa phạm vi thông qua các tài liệu chuẩn: Tài liệu tầm nhìn (Vision document) và Tài liệu đặc tả yêu cầu mức cao (High-level SRS)",
+      "D. Phạm vi phần mềm chỉ bao gồm danh sách các dòng code sẽ viết, không cần quan tâm đến mục tiêu kinh doanh",
+      "E. Định nghĩa rõ ranh giới hệ thống: Những gì hệ thống sẽ làm và Những gì hệ thống không làm"
+    ],
+    "answer": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Slide 6, 7, 8 chỉ rõ: *Phạm vi là: Những gì hệ thống sẽ làm & Những gì hệ thống không làm*; *Xác định phạm vi: Mục tiêu, Chức năng chính, Ràng buộc*; *Tài liệu: Vision, SRS mức cao*.",
+    "tip": "Slide 6, 7, 8 chỉ rõ: *Phạm vi là: Những gì hệ thống sẽ làm & Những gì hệ thống ..."
+  },
+  {
+    "id": 39,
+    "chapter": 3,
+    "tag": "Slide 33",
+    "type": "multiple",
+    "question": "Theo Roger Pressman (Slide 33), một **Bản mô tả phạm vi phần mềm đầy đủ** bắt buộc phải bao quát 4 thành phần nào và **Hậu quả nghiêm trọng nếu phạm vi không rõ ràng** là gì?",
+    "options": [
+      "A. Hậu quả nếu phạm vi không rõ: Dẫn đến ước lượng sai lệch nghiêm trọng về thời gian và chi phí",
+      "B. Hậu quả nếu phạm vi không rõ: Dẫn đến xung đột, mâu thuẫn gay gắt với khách hàng trong giai đoạn nghiệm thu",
+      "C. Phạm vi không rõ ràng là cơ hội tốt để nhóm phát triển kéo dài dự án thêm nhiều năm mà không sợ bị phàn nàn",
+      "D. Nguyên tắc vàng của Pressman: *\"The scope must be bounded and clearly understood\"* (Phạm vi phải có ranh giới và được thấu hiểu rõ ràng)",
+      "E. 4 thành phần phạm vi gồm: Chức năng (Functions), Hiệu năng (Performance), Ràng buộc (Constraints), Giao diện tương tác (Interfaces)",
+      "F. Hậu quả nếu phạm vi không rõ: Dẫn đến hiện tượng Scope Creep (phạm vi phình to không kiểm soát)"
+    ],
+    "answer": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Slide 33 nêu chi tiết: *Phạm vi gồm: Chức năng (Functions), Hiệu năng (Performance), Ràng buộc (Constraints), Giao diện (Interfaces)*; *Hậu quả nếu phạm vi không rõ: Scope creep, Ước lượng sai, Mâu thuẫn khách hàng*; *Pressman: The scope must be bounded and clearly understood*.",
+    "tip": "Slide 33 nêu chi tiết: *Phạm vi gồm: Chức năng (Functions), Hiệu năng (Performan..."
+  },
+  {
+    "id": 40,
+    "chapter": 3,
+    "tag": "Slide 10, 11, 12",
+    "type": "multiple",
+    "question": "Trong công tác lập kế hoạch, **Nguồn lực dự án phần mềm** được phân loại như thế nào và nhóm thường đối mặt với những vấn đề nguồn lực nào?",
+    "options": [
+      "A. Phân loại nguồn lực tổng quát (Slide 10) gồm 4 yếu tố: Nhân lực, Phần cứng, Phần mềm, Thời gian",
+      "B. Các vấn đề phổ biến về nguồn lực (Slide 12): Thiếu người, Thiếu kỹ năng chuyên môn phù hợp, Phân bổ nguồn lực sai lệch/thiếu cân đối",
+      "C. Thời gian là đại lượng vô hạn trong dự án phần mềm nên không cần quản lý",
+      "D. Cơ cấu nhân lực dự án (Slide 11) gồm các vai trò chính: Project Manager (PM), Developer (Lập trình), Tester (Kiểm thử)",
+      "E. Nguồn lực phần cứng và phần mềm luôn có sẵn miễn phí nên không cần đưa vào kế hoạch"
+    ],
+    "answer": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Slide 10: *Phân loại nguồn lực: Nhân lực, Phần cứng, Phần mềm, Thời gian*; Slide 11: *Nhân lực gồm: PM, Developer, Tester*; Slide 12: *Vấn đề nguồn lực: Thiếu người, Thiếu kỹ năng, Phân bổ sai*.",
+    "tip": "Slide 10: *Phân loại nguồn lực: Nhân lực, Phần cứng, Phần mềm, Thời gian*; Slide..."
+  },
+  {
+    "id": 41,
+    "chapter": 3,
+    "tag": "Slide 13, 35",
+    "type": "multiple",
+    "question": "Roger Pressman phân chia tài nguyên dự án thành **3 nhóm nguồn lực (Resources) kinh điển**. Hãy xác định tên chuẩn của 3 nhóm này cùng ví dụ cụ thể của chúng:",
+    "options": [
+      "A. **Human Resources (Nhân lực)**: Gồm đội ngũ phát triển như Developer, Tester, PM (được bài giảng nhấn mạnh là nguồn lực quan trọng nhất)",
+      "B. Financial Speculation Resources: Hoạt động đầu tư chứng khoán của công ty phát triển",
+      "C. **Environmental Resources (Môi trường)**: Gồm hạ tầng phần cứng, Server máy chủ, máy tính phát triển, mạng nội bộ, công cụ kiểm thử",
+      "D. Nhân lực chỉ đóng vai trò thứ cấp so với phần cứng máy tính và đường truyền Internet",
+      "E. **Reusable Software Resources (Phần mềm tái sử dụng)**: Gồm Frameworks, thư viện mã nguồn, các thành phần COTS (Commercial Off-The-Shelf)"
+    ],
+    "answer": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Slide 13 & 35: 3 nhóm nguồn lực theo Pressman gồm: *1. Human Resources (Nhân lực - quan trọng nhất), 2. Reusable Software Resources (Phần mềm tái sử dụng), 3. Environmental Resources (Môi trường)*.",
+    "tip": "Slide 13 & 35: 3 nhóm nguồn lực theo Pressman gồm: *1. Human Resources (Nhân lực..."
+  },
+  {
+    "id": 42,
+    "chapter": 3,
+    "tag": "Slide 14, 15, 16",
+    "type": "multiple",
+    "question": "Hoạt động **Định lượng dự án phần mềm (Project Estimation)** là bước then chốt để lập kế hoạch. Những phát biểu nào sau đây đúng về bản chất của hoạt động này?",
+    "options": [
+      "A. Các đại lượng và đơn vị đo lường thường dùng: Số dòng lệnh (LOC), Điểm chức năng (Function Point), Người-tháng (Person-month)",
+      "B. Định lượng dự án là hoạt động: Ước lượng kích thước (Size), Ước lượng công sức nỗ lực (Effort), Ước lượng chi phí (Cost)",
+      "C. Person-month (người-tháng) là đơn vị dùng để đo kích thước dung lượng file cài đặt phần mềm",
+      "D. Định lượng phần mềm là hoạt động đoán mò và ép con số deadline theo ý muốn chủ quan của khách hàng",
+      "E. Cơ sở để định lượng đáng tin cậy dựa trên: Kinh nghiệm chuyên gia, Dữ liệu lịch sử từ các dự án tương tự, và Các mô hình toán học/kinh nghiệm"
+    ],
+    "answer": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Slide 14, 15, 16 nêu rõ: *Định lượng là: Ước lượng kích thước, công sức, chi phí*; *Dựa trên: Kinh nghiệm, Dữ liệu lịch sử, Mô hình toán học*; *Đại lượng: LOC, Function Point, Person-month*.",
+    "tip": "Slide 14, 15, 16 nêu rõ: *Định lượng là: Ước lượng kích thước, công sức, chi phí..."
+  },
+  {
+    "id": 43,
+    "chapter": 3,
+    "tag": "Slide 17, 36",
+    "type": "multiple",
+    "question": "Một dự án phần mềm dự kiến có quy mô 20,000 dòng lệnh (20,000 LOC). Năng suất trung bình của đội ngũ là 800 LOC / người-tháng. Nếu bố trí nhóm 5 lập trình viên làm việc toàn thời gian:",
+    "options": [
+      "A. Trong thực tế, mối quan hệ giữa số người và thời gian phát triển phần mềm không hoàn toàn là quan hệ tuyến tính hoàn hảo",
+      "B. Thời gian hoàn thành dự kiến: $Duration = \frac{25\text{ person-month}}{5\text{ người}} = 5\text{ tháng}$",
+      "C. Cảnh báo quan trọng của Pressman: Phép ước lượng theo LOC chỉ mang tính chất tương đối và phụ thuộc rất lớn vào ngôn ngữ lập trình",
+      "D. Nếu tuyển ngay 25 người vào làm thì chắc chắn dự án sẽ hoàn thành tuyệt đối chỉ trong vòng đúng 1 tháng mà không phát sinh thêm chi phí giao tiếp",
+      "E. Nỗ lực công sức tính theo công thức: $Effort = \frac{20,000\text{ LOC}}{800\text{ LOC/PM}} = 25\text{ person-month}$"
     ],
     "answer": [
       0,
@@ -995,635 +952,435 @@ const MCQ_QUESTIONS = [
       2,
       4
     ],
-    "explanation": "Scope Creep xuất phát từ: Yêu cầu mơ hồ ban đầu, chấp nhận thay đổi tùy tiện không qua quy trình, tự ý thêm tính năng không cần thiết (Gold Plating), thiếu baseline.",
-    "tip": "Nguyên nhân Scope Creep: Yêu cầu mơ hồ + Đổi tùy tiện + Gold Plating + Thiếu baseline."
+    "explanation": "Slide 17, 36: $Effort = 25\text{ PM}$; $Duration = 5\text{ tháng}$; Cảnh báo Pressman: *LOC chỉ ước lượng tương đối, phụ thuộc ngôn ngữ*.",
+    "tip": "Slide 17, 36: $Effort = 25\text{ PM}$; $Duration = 5\text{ tháng}$; Cảnh báo Pre..."
   },
   {
-    "id": 55,
+    "id": 44,
     "chapter": 3,
-    "tag": "Khái niệm",
+    "tag": "Slide 18, 37",
     "type": "multiple",
-    "question": "Mô hình ước lượng Basic COCOMO của Barry Boehm phân loại dự án phần mềm thành 3 CHẾ ĐỘ (Modes) nào? (Chọn tất cả các đáp án đúng)",
+    "question": "Một dự án phân tích có tổng Điểm chức năng chưa điều chỉnh là $UFP = 200$. Theo dữ liệu tổ chức, trung bình $1\text{ FP} \approx 50\text{ LOC}$ đối với ngôn ngữ lập trình đang dùng, năng suất đội ngũ đạt $1,000\text{ LOC/person-month}$. Dựa trên bài tập thực hành trong bài giảng:",
     "options": [
-      "A. Chế độ Dự án đơn giản, quen thuộc (Organic Mode)",
-      "B. Chế độ Dự án quy mô vừa, độ phức tạp trung bình (Semi-detached Mode)",
-      "C. Chế độ Dự án nhúng, ràng buộc phần cứng khắt khe (Embedded Mode)",
-      "D. Chế độ Dự án mã nguồn mở toàn cầu (Open Source Mode)",
-      "E. Chế độ Dự án điện toán đám mây phân tán (Cloud Distributed Mode)"
+      "A. Quy mô tương đương: $LOC = 200 \times 50 = 10,000\text{ LOC}$",
+      "B. Ước lượng bằng Function Point tốn kém hơn và bắt buộc phải viết mã nguồn trước mới tính được điểm chức năng",
+      "C. Nỗ lực công sức: $Effort = \frac{10,000\text{ LOC}}{1,000\text{ LOC/PM}} = 10\text{ person-month}$",
+      "D. Điểm nhấn bài học: Ước lượng theo Function Point (FP) có thể triển khai được ngay từ giai đoạn rất sớm (ngay khi có tài liệu phân tích yêu cầu)",
+      "E. Điểm nhấn bài học: Ước lượng theo Function Point (FP) tốt hơn LOC vì FP không phụ thuộc ngôn ngữ lập trình"
+    ],
+    "answer": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 18 & 37: $LOC = 10,000$; $Effort = 10\text{ person-month}$; FP tốt hơn LOC vì: *Không phụ thuộc ngôn ngữ, Dùng được từ giai đoạn sớm*.",
+    "tip": "Slide 18 & 37: $LOC = 10,000$; $Effort = 10\text{ person-month}$; FP tốt hơn LOC..."
+  },
+  {
+    "id": 45,
+    "chapter": 3,
+    "tag": "Slide 19, 20, 21, 22",
+    "type": "multiple",
+    "question": "Kỹ thuật **Phân rã phần mềm (Decomposition)** là kỹ năng quan trọng bậc nhất của người làm lập kế hoạch. Hãy chọn các nhận định đúng về kỹ thuật này:",
+    "options": [
+      "A. Công cụ trực quan và phổ biến nhất để thực hiện phân rã là Cấu trúc phân rã công việc WBS (Work Breakdown Structure)",
+      "B. Phân rã dự án làm nhóm phát triển mất thời gian vô ích và làm tăng độ rủi ro của hệ thống",
+      "C. Nhận định của Roger Pressman: *\"Decomposition reduces uncertainty\"* (Phân rã làm giảm thiểu độ không chắc chắn của dự án)",
+      "D. Phân rã theo chức năng: Chia hệ thống thành các Module, Sub-module, Feature (ví dụ: Module giỏ hàng, Module thanh toán)",
+      "E. Phân rã theo công việc: Chia dự án theo các giai đoạn quy trình phát triển (Phân tích $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử $\rightarrow$ Triển khai)",
+      "F. Bản chất của phân rã là chia nhỏ dự án lớn thành các phần việc cụ thể, giúp dự án dễ ước lượng và dễ quản lý hơn"
+    ],
+    "answer": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Slide 19, 20, 21, 22: *Phân rã: Chia nhỏ, dễ ước lượng, dễ quản lý (\"Decomposition reduces uncertainty\")*; *2 cách phân rã: Theo chức năng (Module, Feature) và Theo công việc (Phân tích, Thiết kế, Lập trình, Kiểm thử)*; *Công cụ: WBS*.",
+    "tip": "Slide 19, 20, 21, 22: *Phân rã: Chia nhỏ, dễ ước lượng, dễ quản lý (\"Decompositi..."
+  },
+  {
+    "id": 46,
+    "chapter": 3,
+    "tag": "Slide 24, 25, 26, 27",
+    "type": "multiple",
+    "question": "Để hạn chế việc ước lượng dựa vào cảm tính cá nhân, ngành công nghệ phần mềm sử dụng các **Mô hình định lượng dựa trên kinh nghiệm (Empirical Estimation Models)** như COCOMO. Những nhận định nào sau đây đúng?",
+    "options": [
+      "A. Ưu và nhược điểm của mô hình kinh nghiệm: Tính toán nhanh chóng, nhưng phụ thuộc rất lớn vào độ chính xác của dữ liệu đầu vào",
+      "B. Mục tiêu của mô hình ước lượng: Giảm sự phụ thuộc vào trực giác cảm tính và cung cấp cơ sở khoa học, có thể lượng hóa được",
+      "C. Các mô hình kinh nghiệm cho phép PM không cần hiểu nghiệp vụ mà vẫn đưa ra kết quả ước lượng đúng tuyệt đối 100%",
+      "D. Mô hình COCOMO cơ bản giúp tính toán 3 thông số then chốt: Kích thước (Size), Công sức (Effort), và Thời gian biểu (Schedule)",
+      "E. Cơ chế hoạt động: Mô hình kinh nghiệm dựa trên việc phân tích dữ liệu quá khứ của hàng trăm dự án và căn cứ vào đặc trưng cụ thể của dự án mới"
     ],
     "answer": [
       0,
       1,
-      2
+      3,
+      4
     ],
-    "explanation": "Basic COCOMO chia làm 3 chế độ: Organic (đơn giản, đội ngũ nhỏ quen thuộc), Semi-detached (vừa phải, hỗn hợp kinh nghiệm), Embedded (nhúng, ràng buộc khắt khe).",
-    "tip": "3 chế độ COCOMO = Organic + Semi-detached + Embedded."
+    "explanation": "Slide 24, 25, 26, 27 nêu rõ: *Giảm phụ thuộc cảm tính, có cơ sở khoa học • Dựa dữ liệu quá khứ và đặc trưng dự án • COCOMO: Size, Effort, Schedule • Ưu nhược điểm: Nhanh, nhưng phụ thuộc dữ liệu đầu vào*.",
+    "tip": "Slide 24, 25, 26, 27 nêu rõ: *Giảm phụ thuộc cảm tính, có cơ sở khoa học • Dựa d..."
   },
   {
-    "id": 56,
+    "id": 47,
     "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Theo Slide bài giảng Chương 3 (Slide 10), nguồn lực của dự án phần mềm được phân loại thành những yếu tố nào?",
-    "options": [
-      "A. Nhân lực, Phần cứng, Phần mềm, Thời gian",
-      "B. Tiền vốn, Mặt bằng văn phòng, Cổ phiếu, Trái phiếu",
-      "C. Khách hàng, Giám đốc, Kế toán, Thủ kho",
-      "D. Mã nguồn mở, Mã nguồn đóng, Bản quyền, Bằng sáng chế"
-    ],
-    "answer": 0,
-    "explanation": "Theo Slide 10 Chương 3, Phân loại nguồn lực gồm: Nhân lực, Phần cứng, Phần mềm, Thời gian.",
-    "tip": "Slide 10: Nguồn lực gồm Nhân lực, Phần cứng, Phần mềm, Thời gian."
-  },
-  {
-    "id": 57,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Công thức toán học chuẩn để tính Công sức (Effort) theo mô hình ước lượng Basic COCOMO là gì?",
-    "options": [
-      "A. Effort = a + b * (KLOC)",
-      "B. Effort = a * (KLOC)^b",
-      "C. Effort = (a * KLOC) / b",
-      "D. Effort = a * b * (KLOC)"
-    ],
-    "answer": 1,
-    "explanation": "Công thức Basic COCOMO: Effort = a * (KLOC)^b (Đơn vị tính là Person-Months / Người-tháng, trong đó a và b là các hệ số phụ thuộc chế độ dự án).",
-    "tip": "Basic COCOMO: Effort = a * (KLOC)^b."
-  },
-  {
-    "id": 58,
-    "chapter": 3,
-    "tag": "Tính toán",
-    "type": "single",
-    "question": "Dự án chế độ Organic có hệ số a = 2.4, b = 1.05. Quy mô ước tính là KLOC = 10. Giá trị công sức Effort ước tính xấp xỉ bằng bao nhiêu người-tháng?",
-    "options": [
-      "A. 15.6 Person-Months",
-      "B. 42.1 Person-Months",
-      "C. 26.9 Person-Months",
-      "D. 55.4 Person-Months"
-    ],
-    "answer": 2,
-    "explanation": "Effort = 2.4 * (10)^1.05 ≈ 2.4 * 11.22 ≈ 26.93 Person-Months.",
-    "tip": "Effort = 2.4 * 10^1.05 ≈ 26.9 PM."
-  },
-  {
-    "id": 59,
-    "chapter": 3,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Nhóm lập trình tự ý thiết kế thêm các hiệu ứng 3D và thuật toán phức tạp vào phần mềm quản lý kho dù khách hàng không hề yêu cầu. Hành vi này trong QLDA gọi là gì?",
-    "options": [
-      "A. Scope Creep (Phình phạm vi do khách hàng yêu cầu)",
-      "B. Value Engineering (Kỹ thuật tối ưu hóa giá trị sản phẩm)",
-      "C. Agile Refactoring (Tái cấu trúc mã nguồn theo chuẩn linh hoạt)",
-      "D. Gold Plating (Mạ vàng sản phẩm do nhóm phát triển tự ý làm)"
-    ],
-    "answer": 3,
-    "explanation": "Gold Plating (Mạ vàng) là việc đội dự án tự ý thêm vào các tính năng hoặc sự hoàn hảo kỹ thuật không có trong yêu cầu đã thỏa thuận, gây lãng phí thời gian và rủi ro lỗi.",
-    "tip": "Đội tự ý làm thêm cái khách không yêu cầu = Gold Plating."
-  },
-  {
-    "id": 60,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Trong 3 nguồn lực dự án theo Pressman, nguồn lực nào giữ vị trí NÒNG CỐT quyết định việc huy động và sử dụng hiệu quả các nguồn lực còn lại?",
-    "options": [
-      "A. Nguồn lực Con người (Human Resources / People)",
-      "B. Nguồn lực Môi trường phát triển (Environmental Resources)",
-      "C. Nguồn lực Thành phần phần mềm có sẵn (COTS Components)",
-      "D. Nguồn lực Công cụ kiểm thử tự động (Testing Tools)"
-    ],
-    "answer": 0,
-    "explanation": "Con người (People) là nguồn lực quan trọng nhất, trực tiếp quyết định việc lựa chọn công nghệ, sử dụng môi trường phát triển và tái sử dụng linh kiện phần mềm.",
-    "tip": "Nòng cốt nhất trong 3 nguồn lực = Con người (People)."
-  },
-  {
-    "id": 61,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Khi xác định Phạm vi phần mềm (Software Scope), hai yếu tố CỐT LÕI BẮT BUỘC phải làm rõ ngay từ ban đầu là gì?",
-    "options": [
-      "A. Danh sách phần cứng máy chủ và địa chỉ IP cụ thể của mạng nội bộ",
-      "B. Chức năng/hành vi của hệ thống và Giới hạn/ràng buộc về hiệu năng",
-      "C. Tên tuổi và địa chỉ nhà riêng của toàn bộ lập trình viên tham gia",
-      "D. Bảng giá cổ phiếu của công ty khách hàng trên thị trường chứng khoán"
-    ],
-    "answer": 1,
-    "explanation": "Scope xác định: 1. Chức năng và hành vi của phần mềm (hệ thống làm được gì) và 2. Giới hạn/ràng buộc về hiệu năng, độ tin cậy và giao diện.",
-    "tip": "Software Scope: Chức năng/Hành vi + Giới hạn/Ràng buộc."
-  },
-  {
-    "id": 62,
-    "chapter": 3,
-    "tag": "Phương pháp",
-    "type": "single",
-    "question": "Nhóm dự án áp dụng kỹ thuật Ước lượng từ dưới lên (Bottom-up Estimating). Nhóm sẽ tiến hành các bước như thế nào?",
-    "options": [
-      "A. Ước lượng tổng chi phí toàn dự án rồi chia đều xuống từng tuần",
-      "B. Lấy báo giá của đối thủ cạnh tranh rẻ nhất rồi giảm thêm 20%",
-      "C. Ước lượng công sức cho từng gói công việc nhỏ nhất ở đáy WBS rồi cộng dồn lên",
-      "D. Nhờ ban giám đốc tự áp đặt con số ngân sách và thời hạn bàn giao"
-    ],
-    "answer": 2,
-    "explanation": "Bottom-up Estimating: Phân rã dự án xuống mức gói công việc nhỏ nhất (Work Package), ước lượng cho từng gói này rồi tổng hợp cộng dồn ngược lên trên.",
-    "tip": "Bottom-up: Ước lượng từ gói nhỏ nhất ở đáy WBS rồi cộng dồn lên."
-  },
-  {
-    "id": 63,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Đơn vị đo chuẩn của Công sức dự án phần mềm là 'Person-Month' (Người-tháng). Đơn vị này phản ánh điều gì?",
-    "options": [
-      "A. Một người phải làm việc liên tục 24 giờ mỗi ngày trong vòng một tháng",
-      "B. Chi phí tiền lương cố định của một nhân viên trong một tháng làm việc",
-      "C. Số lượng dòng mã nguồn tối đa mà một nhóm lập trình viên viết được",
-      "D. Khối lượng công việc mà một kỹ sư bình thường thực hiện trong một tháng"
-    ],
-    "answer": 3,
-    "explanation": "Person-Month là đơn vị đo công sức lao động, đại diện cho khối lượng công việc hoàn thành bởi một người làm việc bình thường trong một tháng tiêu chuẩn.",
-    "tip": "Person-Month = Khối lượng công việc một người làm trong một tháng."
-  },
-  {
-    "id": 64,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Theo bài giảng Chương 3 (Slide 20-21), có hai cách phân rã phần mềm (Decomposition) phổ biến là gì?",
-    "options": [
-      "A. Phân rã theo chức năng (Module, Feature) và Phân rã theo công việc (Phân tích, Thiết kế, Lập trình, Kiểm thử)",
-      "B. Phân rã theo mức lương nhân sự và Phân rã theo độ tuổi nhân viên",
-      "C. Phân rã theo số dòng code frontend và Phân rã theo số dòng code backend",
-      "D. Phân rã theo dung lượng ổ cứng và Phân rã theo băng thông đường truyền mạng"
-    ],
-    "answer": 0,
-    "explanation": "Slide 20-21 Chương 3 nêu rõ 2 cách phân rã: Phân rã theo chức năng (Module, Feature) và Phân rã theo công việc (Phân tích, Thiết kế, Lập trình, Kiểm thử).",
-    "tip": "2 cách phân rã: Theo chức năng (Module/Feature) và Theo công việc."
-  },
-  {
-    "id": 65,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Trong mô hình COCOMO, chế độ dự án nào có hệ số b lớn nhất, phản ánh mức độ phức tạp và ràng buộc công nghệ khắt khe nhất?",
-    "options": [
-      "A. Chế độ Organic Mode (Hệ số b = 1.05)",
-      "B. Chế độ Embedded Mode (Hệ số b = 1.20)",
-      "C. Chế độ Semi-detached Mode (Hệ số b = 1.12)",
-      "D. Chế độ Agile Mode (Hệ số b = 1.00)"
-    ],
-    "answer": 1,
-    "explanation": "Chế độ Embedded (Dự án nhúng, ràng buộc phần cứng/quy chuẩn khắt khe) có hệ số b = 1.20 cao nhất, công sức tăng nhanh nhất theo quy mô.",
-    "tip": "Embedded Mode có hệ số b = 1.20 (lớn nhất)."
-  },
-  {
-    "id": 66,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Khái niệm 'Baseline' (Đường cơ sở) của kế hoạch dự án phần mềm có ý nghĩa cốt lõi nào sau đây?",
-    "options": [
-      "A. Là bản kế hoạch sơ bộ ban đầu trước khi thảo luận với khách hàng",
-      "B. Là danh sách các công việc kiểm thử tự động do nhóm QA lập ra",
-      "C. Là bản kế hoạch chính thức đã phê duyệt, làm mốc so sánh kiểm soát sai lệch",
-      "D. Là bản cam kết bảo hành sản phẩm sau khi đã bàn giao 1 năm"
-    ],
-    "answer": 2,
-    "explanation": "Baseline là bản kế hoạch đã được phê chuẩn chính thức, dùng làm chuẩn đối chiếu để phát hiện và đo lường sự sai lệch về tiến độ, chi phí trong quá trình thực hiện.",
-    "tip": "Baseline = Mốc chuẩn đã phê duyệt để đo lường sai lệch."
-  },
-  {
-    "id": 67,
-    "chapter": 3,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Một kế hoạch dự án phần mềm được cộng đồng chuyên gia đánh giá là 'TỐT VÀ KHẢ THI' khi thỏa mãn tiêu chí nào?",
-    "options": [
-      "A. Không bao giờ được phép thay đổi bất kỳ chi tiết nào dù tình hình biến động",
-      "B. Luôn cam kết bàn giao sớm hơn yêu cầu của khách hàng ít nhất 3 tháng",
-      "C. Được xây dựng hoàn toàn bởi trí tuệ nhân tạo mà không cần PM tham gia",
-      "D. Có tính thực tế, linh hoạt thích ứng khi có biến động và được các bên đồng thuận"
-    ],
-    "answer": 3,
-    "explanation": "Kế hoạch tốt là kế hoạch dựa trên cơ sở thực tế, có tính linh hoạt thích ứng khi điều kiện thay đổi và nhận được sự cam kết đồng thuận từ các bên liên quan.",
-    "tip": "Kế hoạch tốt: Khả thi + Linh hoạt thích ứng + Được đồng thuận."
-  },
-  {
-    "id": 68,
-    "chapter": 4,
-    "tag": "Khái niệm",
+    "tag": "Slide 28, 39",
     "type": "multiple",
-    "question": "Sự khác biệt bản chất giữa RỦI RO (Risk) và SỰ CỐ (Issue) được thể hiện qua những ý nào sau đây? (Chọn tất cả các đáp án đúng)",
+    "question": "Trong mô hình **Basic COCOMO (COCOMO cơ bản)** do Barry Boehm phát triển:",
     "options": [
-      "A. Rủi ro là sự kiện chưa xảy ra ở hiện tại, chỉ có khả năng xảy ra trong tương lai",
-      "B. Sự cố là vấn đề ĐÃ xảy ra ở hiện tại và đang gây tác động tiêu cực",
-      "C. Rủi ro có tính bất định, xác suất nằm trong khoảng 0 < P < 1",
-      "D. Sự cố mang tính chắc chắn, xác suất đã là P = 1 (100%)",
-      "E. Quản lý rủi ro mang tính chủ động phòng ngừa, xử lý sự cố mang tính khắc phục",
-      "F. Rủi ro và sự cố hoàn toàn là một khái niệm đồng nghĩa không có gì khác nhau"
+      "A. Ở chế độ phát triển thông thường (Organic mode - nhóm nhỏ, quen thuộc với bài toán), các hệ số chuẩn là: $a = 2.4$ và $b = 1.05$",
+      "B. Công thức Basic COCOMO là hàm bậc nhất: $Effort = a \times KLOC + b$",
+      "C. Với dự án Organic mode có quy mô $KLOC = 32$, biết $32^{1.05} \approx 35$, nỗ lực tính được là: $Effort \approx 2.4 \times 35 \approx 84\text{ person-month}$",
+      "D. Nhận xét quản trị: Số mũ $b = 1.05 > 1$ phản ánh rằng khi kích thước phần mềm tăng lên thì độ phức tạp và công sức cần thiết sẽ tăng theo hàm phi tuyến, chứ không phải tăng đều tuyến tính đơn giản",
+      "E. Công thức tính toán nỗ lực công sức chuẩn: $Effort = a \times (KLOC)^b$ (đơn vị: person-month)"
+    ],
+    "answer": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 28 & 39: Công thức chuẩn: $Effort = a \times (KLOC)^b$; Organic mode: $a = 2.4; b = 1.05$; KLOC = 32 $\rightarrow Effort \approx 84\text{ PM}$; Nhận xét: *Effort cao hơn tính đơn giản, COCOMO phản ánh độ phức tạp tăng phi tuyến*.",
+    "tip": "Slide 28 & 39: Công thức chuẩn: $Effort = a \times (KLOC)^b$; Organic mode: $a =..."
+  },
+  {
+    "id": 48,
+    "chapter": 3,
+    "tag": "Slide 29, 40",
+    "type": "multiple",
+    "question": "Trong một dự án thực tế, người Quản lý dự án (PM) ước lượng theo trực giác và kinh nghiệm cá nhân là mất **6 tháng**, trong khi mô hình định lượng COCOMO lại đưa ra kết quả là **10 tháng**. Người PM chuyên nghiệp cần xử lý tình huống bất đồng này như thế nào?",
+    "options": [
+      "A. Giải pháp: Sử dụng kết hợp nhiều phương pháp ước lượng khác nhau (ước lượng từ dưới lên, tương đương, mô hình toán học)",
+      "B. Giải pháp: Đặt kết quả của các phương pháp lên bàn cân để so sánh và phân tích nguyên nhân tạo ra sự sai lệch",
+      "C. Giải pháp: Hiệu chỉnh kết quả tính toán dựa trên kinh nghiệm thực tế và đặc thù riêng của tổ chức",
+      "D. Cách xử lý tốt nhất là luôn chọn ngay con số 6 tháng để làm khách hàng vui lòng ký hợp đồng trước rồi tính sau",
+      "E. Lời khuyên của Pressman: *\"Estimation should be iterative\"* (Ước lượng phải là một quá trình liên tục lặp lại và tinh chỉnh dần qua từng giai đoạn)",
+      "F. Nguyên tắc nền tảng: Không bao giờ nên tin cậy tuyệt đối vào một nguồn ước lượng duy nhất"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "explanation": "Slide 29 & 40: *Không nên tin một nguồn duy nhất; Giải pháp: Dùng nhiều phương pháp, So sánh kết quả, Điều chỉnh theo kinh nghiệm tổ chức; Pressman: Estimation should be iterative*.",
+    "tip": "Slide 29 & 40: *Không nên tin một nguồn duy nhất; Giải pháp: Dùng nhiều phương p..."
+  },
+  {
+    "id": 49,
+    "chapter": 4,
+    "tag": "Slide 4, 5, 6",
+    "type": "multiple",
+    "question": "Khi bàn về công tác quản trị dự án phần mềm, người quản lý dự án (PM) cần hiểu đúng bản chất **Khái niệm và Thuộc tính của Rủi ro (Risk)** thông qua những đặc trưng cốt lõi nào sau đây?",
+    "options": [
+      "A. Rủi ro về bản chất mang tính \"không chắc chắn\" (uncertainty)",
+      "B. Rủi ro là sự kiện có khả năng xảy ra trong tương lai (chưa xảy ra ở thời điểm hiện tại)",
+      "C. Rủi ro là những sai sót, sự cố kỹ thuật chắc chắn 100% đã xảy ra trên môi trường máy chủ thực tế",
+      "D. Công thức định lượng mối quan hệ: $Risk = Probability \times Impact$ (Xác suất $\times$ Tác động)",
+      "E. Thuộc tính của rủi ro bao gồm: Có xác suất xảy ra ($0 < P < 1$) và Có hậu quả / mức độ thiệt hại (Loss)",
+      "F. Rủi ro là sự kiện có thể gây ra ảnh hưởng hoặc thiệt hại tiêu cực đối với mục tiêu dự án"
+    ],
+    "answer": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "explanation": "Slide 4, 5, 6 xác định chuẩn: *Rủi ro = sự kiện có khả năng xảy ra trong tương lai • Có thể gây ảnh hưởng tiêu cực • Thuộc tính: Không chắc chắn, Có xác suất xảy ra, Có hậu quả (thiệt hại) • Risk = Probability x Impact*. Sự kiện đã xảy ra 100% là Issue, không phải Risk.",
+    "tip": "Slide 4, 5, 6 xác định chuẩn: *Rủi ro = sự kiện có khả năng xảy ra trong tương l..."
+  },
+  {
+    "id": 50,
+    "chapter": 4,
+    "tag": "Slide 7",
+    "type": "multiple",
+    "question": "Trong các cuộc họp tiến độ, việc nhầm lẫn giữa **Rủi ro (Risk)** và **Vấn đề / Sự cố (Issue)** thường dẫn đến hành động sai lệch. Bảng đối chiếu ở Slide 7 phân biệt sự khác nhau mang tính bản chất giữa hai khái niệm này dựa trên những tiêu chí nào?",
+    "options": [
+      "A. Về hành động ứng phó: Rủi ro đòi hỏi phải lập kế hoạch dự phòng (Precaution/Contingency); Vấn đề đòi hỏi phải kích hoạt xử lý giải quyết ngay lập tức (Action/Resolve)",
+      "B. Về xác suất: Rủi ro gắn liền với xác suất ($0 < P < 1$); Vấn đề có xác suất là 100% xảy ra",
+      "C. Rủi ro và Vấn đề là hai từ hoàn toàn đồng nghĩa, cùng phản ánh một sự việc đã xảy ra trên máy chủ",
+      "D. Về trạng thái xảy ra: Rủi ro là sự kiện chưa xảy ra; Vấn đề (Issue) là sự kiện đã xảy ra",
+      "E. Về chi phí: Rủi ro luôn gây tốn kém tiền bạc gấp đôi so với các vấn đề đã xảy ra"
+    ],
+    "answer": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Bảng so sánh Slide 7 quy định rõ: *Trạng thái (Risk: Chưa xảy ra vs Issue: Đã xảy ra) • Xác suất (Risk: Có xác suất vs Issue: 100% xảy ra) • Hành động (Risk: Cần dự phòng vs Issue: Cần xử lý)*.",
+    "tip": "Bảng so sánh Slide 7 quy định rõ: *Trạng thái (Risk: Chưa xảy ra vs Issue: Đã xả..."
+  },
+  {
+    "id": 51,
+    "chapter": 4,
+    "tag": "Slide 8",
+    "type": "multiple",
+    "question": "Đại lượng **Mức độ phơi nhiễm rủi ro (Risk Exposure - RE)** là chỉ số tài chính và định lượng quan trọng nhất để PM so sánh các rủi ro. Hãy chọn các phát biểu đúng về RE:",
+    "options": [
+      "A. RE càng thấp thì rủi ro đó càng đòi hỏi mức độ ưu tiên xử lý khẩn cấp nhất",
+      "B. Ví dụ bài học: Nếu rủi ro có xác suất xảy ra $P = 0.4$ và thiệt hại ước tính $Loss = 50,000\$$, thì mức độ phơi nhiễm là $RE = 0.4 \times 50,000\$ = 20,000\$$",
+      "C. Đơn vị của RE thường được quy đổi thành tiền tệ (USD hoặc VNĐ) hoặc đơn vị công sức (người-tháng)",
+      "D. Công thức tính toán là thương số: $RE = \frac{Probability}{Loss}$",
+      "E. Công thức tính toán chuẩn: $RE = Probability \times Loss$ (Xác suất xảy ra $\times$ Mức độ thiệt hại ước tính)"
+    ],
+    "answer": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "Slide 8 nêu rõ: $RE = Probability \times Loss$; Ví dụ $P = 0.4, Loss = 50,000\$ \rightarrow RE = 20,000\$$.",
+    "tip": "Slide 8 nêu rõ: $RE = Probability \times Loss$; Ví dụ $P = 0.4, Loss = 50,000\$ ..."
+  },
+  {
+    "id": 52,
+    "chapter": 4,
+    "tag": "Slide 9, 10",
+    "type": "multiple",
+    "question": "Tại sao các chuyên gia kỹ nghệ phần mềm đều nhận định **Dự án phần mềm có mức độ rủi ro rất cao** và **Vai trò của quản lý rủi ro** là gì?",
+    "options": [
+      "A. Vì sao rủi ro cao: Sản phẩm phần mềm mang tính vô hình, khó kiểm soát chất lượng bằng mắt thường",
+      "B. Quản lý rủi ro giúp triệt tiêu hoàn toàn 100% mọi bất trắc và đảm bảo phần mềm không có lỗi",
+      "C. Vì sao rủi ro cao: Yêu cầu của khách hàng liên tục thay đổi trong suốt quá trình phát triển",
+      "D. Vai trò của quản lý rủi ro: Nâng cao tỷ lệ khả năng thành công và cải thiện chất lượng của các quyết định quản lý",
+      "E. Vai trò của quản lý rủi ro: Giúp giảm bớt sự bất ngờ thụ động cho nhóm",
+      "F. Vì sao rủi ro cao: Công nghệ thông tin biến đổi với tốc độ rất nhanh, công cụ cũ nhanh chóng bị lỗi thời",
+      "G. Vì sao rủi ro cao: Quá trình phát triển phụ thuộc rất lớn vào năng lực và tâm lý của con người"
+    ],
+    "answer": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "explanation": "Slide 9 nêu lý do rủi ro cao: *Yêu cầu thay đổi • Sản phẩm vô hình • Phụ thuộc con người • Công nghệ thay đổi nhanh*; Slide 10 nêu vai trò: *Giảm bất ngờ • Tăng khả năng thành công • Cải thiện ra quyết định*.",
+    "tip": "Slide 9 nêu lý do rủi ro cao: *Yêu cầu thay đổi • Sản phẩm vô hình • Phụ thuộc c..."
+  },
+  {
+    "id": 53,
+    "chapter": 4,
+    "tag": "Slide 11, 12, 13, 14, 17",
+    "type": "multiple",
+    "question": "Roger Pressman phân chia rủi ro phần mềm thành **3 nhóm rủi ro chính (Three Major Risk Categories)**. Hãy chọn các phát biểu đúng về định nghĩa và ví dụ cụ thể của từng nhóm:",
+    "options": [
+      "A. Rủi ro kinh doanh (Business Risk) được coi là nguy hiểm nhất vì dù phần mềm làm ra hoàn hảo về mặt kỹ thuật, nhưng nếu khách hàng hủy dự án hoặc không ai mua thì toàn bộ giá trị dự án vẫn trở về con số 0",
+      "B. Technical Risks chỉ gồm các rủi ro liên quan đến việc hỏng hóc chuột và bàn phím máy tính",
+      "C. **Project Risks (Rủi ro dự án)**: Đe dọa trực tiếp đến tiến độ và nguồn lực dự án (ví dụ: Trễ tiến độ, Ước lượng sai, Thiếu nhân lực, Thay đổi phạm vi)",
+      "D. **Technical Risks (Rủi ro kỹ thuật)**: Đe dọa chất lượng và tính khả thi kỹ thuật của phần mềm (ví dụ: Sử dụng công nghệ mới chưa kiểm chứng, Thiết kế kiến trúc chưa rõ, Lỗi tích hợp hệ thống, Hiệu năng không đạt)",
+      "E. **Business Risks (Rủi ro kinh doanh)**: Đe dọa khả năng sinh lời và sự tồn tại thương mại của sản phẩm (ví dụ: Thị trường biến động, Khách hàng đột ngột hủy dự án, Sản phẩm không sinh lợi, Thay đổi chiến lược kinh doanh)"
+    ],
+    "answer": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 11–14 & 17 phân tích chi tiết 3 nhóm rủi ro: *Project Risks • Technical Risks • Business Risks*; Thảo luận Slide 17: *Business Risk nguy hiểm nhất vì dù làm tốt kỹ thuật nhưng không bán được hoặc khách hủy thì dự án bằng 0*.",
+    "tip": "Slide 11–14 & 17 phân tích chi tiết 3 nhóm rủi ro: *Project Risks • Technical Ri..."
+  },
+  {
+    "id": 54,
+    "chapter": 4,
+    "tag": "Slide 15",
+    "type": "multiple",
+    "question": "Theo giáo trình của Roger Pressman (Slide 15), có **4 nguồn rủi ro phổ biến hàng đầu** xuất hiện trong hầu hết các dự án công nghệ thông tin gồm những nguồn rủi ro nào?",
+    "options": [
+      "A. Fluctuations in office rental prices (Biến động giá thuê văn phòng làm việc)",
+      "B. **Customer characteristics** (Đặc trưng của khách hàng: khả năng giao tiếp, tính quyết đoán, hiểu biết về CNTT)",
+      "C. **Staff experience** (Kinh nghiệm và trình độ kỹ năng thực tế của đội ngũ nhân sự)",
+      "D. **Size uncertainty** (Sự không chắc chắn về kích thước và quy mô thực tế của phần mềm)",
+      "E. **Process maturity** (Độ trưởng thành của quy trình phát triển phần mềm trong tổ chức)",
+      "F. Power outages during rainstorms (Hiện tượng mất điện khi trời mưa bão)"
+    ],
+    "answer": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 15 liệt kê chính xác 4 nguồn rủi ro phổ biến theo Pressman: *Size uncertainty • Customer characteristics • Process maturity • Staff experience*.",
+    "tip": "Slide 15 liệt kê chính xác 4 nguồn rủi ro phổ biến theo Pressman: *Size uncertai..."
+  },
+  {
+    "id": 55,
+    "chapter": 4,
+    "tag": "Slide 18, 42",
+    "type": "multiple",
+    "question": "**Quy trình quản lý rủi ro chuẩn mực** trong kỹ nghệ phần mềm bao gồm 4 bước nối tiếp nhau theo đúng chu trình nào sau đây?",
+    "options": [
+      "A. Bước 4: Theo dõi và giám sát rủi ro (Risk Monitoring)",
+      "B. Bước 3: Lập kế hoạch ứng phó rủi ro (Risk Planning)",
+      "C. Bước 1: Nhận diện rủi ro (Risk Identification)",
+      "D. Bước 2: Phân tích và định lượng rủi ro (Risk Analysis)",
+      "E. Chu trình ngược lại: Monitor rủi ro trước rồi mới đi tìm hiểu xem rủi ro đó là gì",
+      "F. Chu trình tóm tắt chuẩn xác: Identify $\rightarrow$ Analyze $\rightarrow$ Plan $\rightarrow$ Monitor"
     ],
     "answer": [
       0,
       1,
       2,
       3,
-      4
+      5
     ],
-    "explanation": "Phân biệt kinh điển: Risk (chưa xảy ra, 0 < P < 1, chủ động phòng ngừa) vs Issue (đã xảy ra, P = 1, bị động khắc phục xử lý).",
-    "tip": "Chưa xảy ra = Risk. Đã xảy ra = Issue."
+    "explanation": "Slide 18 & 42 quy định quy trình 4 bước: *Nhận diện (Identify) $\rightarrow$ Phân tích (Analyze) $\rightarrow$ Lập kế hoạch (Plan) $\rightarrow$ Theo dõi (Monitor)*.",
+    "tip": "Slide 18 & 42 quy định quy trình 4 bước: *Nhận diện (Identify) $\rightarrow$ Phâ..."
   },
   {
-    "id": 69,
+    "id": 56,
     "chapter": 4,
-    "tag": "Khái niệm",
+    "tag": "Slide 19, 20, 21, 22, 23",
     "type": "multiple",
-    "question": "3 NHÓM RỦI RO PHẦN MỀM cơ bản được phân loại trong bài giảng bao gồm những nhóm nào? (Chọn tất cả các đáp án đúng)",
+    "question": "Trong bước đầu tiên (Nhận diện rủi ro), bài giảng giới thiệu **4 kỹ thuật xác định rủi ro kinh điển**. Hãy chọn các nhận định đúng về bản chất của từng kỹ thuật:",
     "options": [
-      "A. Rủi ro dự án (Project Risks - ảnh hưởng tiến độ, ngân sách, nhân sự)",
-      "B. Rủi ro kỹ thuật (Technical Risks - ảnh hưởng thiết kế, công nghệ, chất lượng)",
-      "C. Rủi ro kinh doanh (Business Risks - ảnh hưởng thị trường, doanh thu, khả năng bán)",
-      "D. Rủi ro chính trị quốc gia (Political Risks)",
-      "E. Rủi ro địa chất và thời tiết vũ trụ (Geological Risks)"
+      "A. Checklist là kỹ thuật chỉ áp dụng cho kiểm thử phần cứng, không dùng cho phần mềm",
+      "B. **SWOT**: Ma trận phân tích điểm mạnh (Strength), điểm yếu (Weakness), cơ hội (Opportunity) và thách thức (Threat) trong dự án",
+      "C. **Historical data**: Khai thác dữ liệu lịch sử từ các dự án trước, báo cáo bài học kinh nghiệm (Lessons learned) và hồ sơ lưu trữ lỗi cũ",
+      "D. Brainstorming quy định ai đưa ra rủi ro viển vông sẽ bị đuổi ngay ra khỏi phòng họp",
+      "E. **Brainstorming**: Kỹ thuật họp động não nhóm, khuyến khích các thành viên liệt kê rủi ro tự do và tuyệt đối không phê phán ý kiến của nhau trong lúc liệt kê",
+      "F. **Checklist**: Sử dụng bảng danh mục rủi ro chuẩn đã được đúc kết từ trước (như danh mục về Scope change, Schedule slip, Technology risk, People risk)"
     ],
     "answer": [
-      0,
-      1,
-      2
-    ],
-    "explanation": "3 nhóm rủi ro chuẩn: 1. Project risks (tiến độ, ngân sách, tài nguyên) 2. Technical risks (thiết kế, công nghệ, chất lượng) 3. Business risks (thị trường, khả năng bán).",
-    "tip": "3 nhóm rủi ro = Project risks + Technical risks + Business risks."
-  },
-  {
-    "id": 70,
-    "chapter": 4,
-    "tag": "Chiến lược",
-    "type": "multiple",
-    "question": "4 CHIẾN LƯỢC ỨNG PHÓ RỦI RO (Risk Response Strategies) kinh điển gồm những chiến lược nào? (Chọn tất cả các đáp án đúng)",
-    "options": [
-      "A. Tránh rủi ro (Risk Avoidance)",
-      "B. Giảm thiểu rủi ro (Risk Mitigation)",
-      "C. Chuyển giao rủi ro (Risk Transfer)",
-      "D. Chấp nhận rủi ro (Risk Acceptance)",
-      "E. Phớt lờ và che giấu rủi ro (Risk Concealment)",
-      "F. Đổ lỗi rủi ro cho nhà phát triển khác (Risk Blaming)"
-    ],
-    "answer": [
-      0,
       1,
       2,
-      3
+      4,
+      5
     ],
-    "explanation": "4 chiến lược ứng phó chuẩn: Tránh (Avoidance), Giảm thiểu (Mitigation), Chuyển giao (Transfer), Chấp nhận (Acceptance).",
-    "tip": "4 chiến lược rủi ro: Tránh - Giảm thiểu - Chuyển giao - Chấp nhận."
+    "explanation": "Slide 19–23 trình bày 4 kỹ thuật: *Brainstorming (Họp nhóm, Liệt kê tự do, Không phê phán) • Checklist (Danh mục rủi ro chuẩn) • Historical data (Dự án trước, Lessons learned, Báo cáo lỗi) • SWOT*.",
+    "tip": "Slide 19–23 trình bày 4 kỹ thuật: *Brainstorming (Họp nhóm, Liệt kê tự do, Không..."
   },
   {
-    "id": 71,
+    "id": 57,
     "chapter": 4,
-    "tag": "Công cụ",
+    "tag": "Slide 26, 28, 29, 30, 32",
     "type": "multiple",
-    "question": "Sổ theo dõi rủi ro (Risk Register) chuẩn cần ghi nhận những THÔNG TIN QUAN TRỌNG nào sau đây? (Chọn tất cả các đáp án đúng)",
+    "question": "Về các công cụ và nguyên tắc dùng cho hoạt động **Định lượng, Xếp hạng và Sàng lọc rủi ro**:",
     "options": [
-      "A. Mô tả chi tiết nội dung rủi ro",
-      "B. Xác suất xảy ra của rủi ro (Probability - P)",
-      "C. Mức độ thiệt hại nếu rủi ro xảy ra (Loss / Impact)",
-      "D. Giá trị mức độ phơi nhiễm rủi ro (Risk Exposure - RE)",
-      "E. Kế hoạch và biện pháp ứng phó cụ thể",
-      "F. Người chịu trách nhiệm theo dõi và kích hoạt xử lý (Risk Owner)"
+      "A. Khi sàng lọc, PM chỉ cần quan tâm đến rủi ro có xác suất cao nhất, còn mức độ thiệt hại bao nhiêu không quan trọng",
+      "B. Nguyên tắc sàng lọc (Slide 32): Tuyệt đối không được bỏ qua các rủi ro có xác suất xảy ra thấp nhưng nếu xảy ra thì mức độ thiệt hại mang tính hủy diệt (ví dụ sự cố rò rỉ dữ liệu khách hàng)",
+      "C. Ma trận rủi ro (Risk Matrix 3x3) trực quan hóa mức độ nghiêm trọng dựa trên hai trục: Xác suất (Probability: Low - Med - High) và Tác động (Impact: Low - Med - High)",
+      "D. Xếp hạng rủi ro thường chia thành 3 cấp độ ưu tiên: Cao (High), Trung bình (Medium), Thấp (Low)",
+      "E. Hoạt động định lượng rủi ro gồm việc: Gán xác suất xảy ra (từ 0 đến 1), Ước lượng mức độ thiệt hại (Loss), và Tính chỉ số RE",
+      "F. Nguyên tắc sàng lọc (Slide 32): Ưu tiên tập trung nguồn lực xử lý các rủi ro có chỉ số RE cao nhất"
     ],
     "answer": [
-      0,
       1,
       2,
       3,
       4,
       5
     ],
-    "explanation": "Sổ rủi ro (Risk Register) lưu trữ: ID/Mô tả, Xác suất P, Mức thiệt hại Loss, RE = P x Loss, Chiến lược ứng phó, và Risk Owner (người chịu trách nhiệm).",
-    "tip": "Risk Register: Mô tả + P + Loss + RE + Biện pháp + Risk Owner."
+    "explanation": "Slide 26, 28, 29, 30, 32 nêu rõ: *Định lượng: Gán xác suất (0-1), Ước lượng thiệt hại, Tính RE • Xếp hạng: High, Medium, Low • Risk Matrix 3x3 • Nguyên tắc sàng lọc: Ưu tiên RE cao, Không bỏ qua rủi ro hiếm nhưng thiệt hại lớn*.",
+    "tip": "Slide 26, 28, 29, 30, 32 nêu rõ: *Định lượng: Gán xác suất (0-1), Ước lượng thiệ..."
   },
   {
-    "id": 72,
+    "id": 58,
     "chapter": 4,
-    "tag": "Quy trình",
+    "tag": "Slide 34, 35",
     "type": "multiple",
-    "question": "Quy trình Quản lý rủi ro phần mềm chuyên nghiệp bao gồm các HOẠT ĐỘNG CHÍNH nào sau đây? (Chọn tất cả các đáp án đúng)",
+    "question": "Khi lập kế hoạch ứng phó rủi ro, người quản lý dự án có **4 chiến lược xử lý rủi ro kinh điển**. Hãy chọn các cặp ghép nối chính xác giữa tên chiến lược và hành động thực tế:",
     "options": [
-      "A. Nhận diện rủi ro (Risk Identification)",
-      "B. Phân tích và đánh giá rủi ro (Risk Analysis & Evaluation)",
-      "C. Lập kế hoạch ứng phó rủi ro (Risk Response Planning)",
-      "D. Theo dõi và kiểm soát rủi ro định kỳ (Risk Monitoring & Control)",
-      "E. Xóa bỏ các rủi ro có khả năng xảy ra cao khỏi báo cáo để tránh lo lắng"
+      "A. Chiến lược Avoid và Transfer là giống hệt nhau về bản chất thực hiện",
+      "B. **Mitigate (Giảm thiểu rủi ro)**: Thực hiện các hành động chủ động nhằm làm giảm xác suất xảy ra hoặc làm giảm mức độ thiệt hại của rủi ro (ví dụ: làm bản prototype thử nghiệm trước, đào tạo nhân sự, tăng cường kiểm thử sớm)",
+      "C. **Transfer (Chuyển giao rủi ro)**: Chuyển trách nhiệm thiệt hại sang bên thứ ba (ví dụ: thuê ngoài đơn vị chuyên gia bảo mật uy tín phát triển cổng thanh toán, mua bảo hiểm rủi ro phần mềm)",
+      "D. **Accept (Chấp nhận rủi ro)**: Chấp nhận khả năng rủi ro có thể xảy ra và chủ động thiết lập quỹ dự phòng ngân sách và quỹ thời gian đệm (Buffer) để khắc phục nếu rủi ro ập đến",
+      "E. **Avoid (Tránh rủi ro)**: Thay đổi kế hoạch hoặc thiết kế để loại bỏ hoàn toàn nguyên nhân gây ra rủi ro (ví dụ: quyết định không dùng công nghệ AI thử nghiệm nữa mà chuyển sang dùng thuật toán truyền thống đã ổn định)",
+      "F. **Ignore (Lờ đi rủi ro)**: Giả vờ không biết để dự án không bị tăng chi phí dự phòng"
     ],
     "answer": [
-      0,
       1,
       2,
-      3
-    ],
-    "explanation": "Quy trình quản lý rủi ro gồm 4 bước: 1. Nhận diện (Identification) -> 2. Phân tích (Analysis) -> 3. Lập kế hoạch ứng phó (Planning) -> 4. Theo dõi & kiểm soát (Monitoring).",
-    "tip": "Quy trình: Nhận diện -> Phân tích -> Kế hoạch -> Theo dõi."
-  },
-  {
-    "id": 73,
-    "chapter": 4,
-    "tag": "Khái niệm",
-    "type": "multiple",
-    "question": "Những tình huống nào sau đây được xếp vào nhóm RỦI RO KỸ THUẬT (Technical Risks)? (Chọn tất cả các đáp án đúng)",
-    "options": [
-      "A. Sử dụng một framework công nghệ hoàn toàn mới mà nhóm chưa từng có kinh nghiệm",
-      "B. Yêu cầu tải 100.000 truy cập đồng thời vượt quá khả năng chịu đựng của kiến trúc",
-      "C. Dịch vụ API thanh toán của bên thứ ba không cung cấp tài liệu tích hợp chuẩn",
-      "D. Khách hàng cắt giảm 40% ngân sách thanh toán do khủng hoảng tài chính",
-      "E. Đối thủ cạnh tranh tung ra phần mềm tương tự với giá rẻ hơn một nửa"
-    ],
-    "answer": [
-      0,
-      1,
-      2
-    ],
-    "explanation": "Rủi ro kỹ thuật liên quan đến: công nghệ mới, kiến trúc không đáp ứng tải, tích hợp bên thứ ba, thuật toán khó. Khách giảm ngân sách hay đối thủ cạnh tranh là Business/Project risk.",
-    "tip": "Kỹ thuật: Công nghệ mới + Kiến trúc/Tải + Giao tiếp tích hợp API."
-  },
-  {
-    "id": 74,
-    "chapter": 4,
-    "tag": "Khái niệm",
-    "type": "multiple",
-    "question": "Những sự kiện nào sau đây là ví dụ điển hình của nhóm RỦI RO KINH DOANH (Business Risks)? (Chọn tất cả các đáp án đúng)",
-    "options": [
-      "A. Xây dựng một sản phẩm phần mềm xuất sắc nhưng thị trường không có nhu cầu sử dụng",
-      "B. Sản phẩm không còn phù hợp với định hướng chiến lược kinh doanh của công ty",
-      "C. Đội ngũ bán hàng không hiểu sản phẩm nên không bán được cho khách hàng",
-      "D. Thuật toán sắp xếp dữ liệu bị lỗi tràn bộ nhớ khi chạy trên server",
-      "E. Đối thủ cạnh tranh ra mắt tính năng tương tự sớm hơn 2 tháng và chiếm lĩnh thị phần"
-    ],
-    "answer": [
-      0,
-      1,
-      2,
+      3,
       4
     ],
-    "explanation": "Rủi ro kinh doanh đe dọa khả năng sinh lời và thương mại: thị trường không đón nhận, không phù hợp chiến lược, bán hàng yếu, đối thủ cạnh tranh.",
-    "tip": "Kinh doanh: Thị trường không cần + Đối thủ vượt mặt + Bán hàng yếu."
+    "explanation": "Slide 34, 35 định nghĩa 4 chiến lược chuẩn: *Avoid (Tránh) • Mitigate (Giảm thiểu) • Transfer (Chuyển giao) • Accept (Chấp nhận)*.",
+    "tip": "Slide 34, 35 định nghĩa 4 chiến lược chuẩn: *Avoid (Tránh) • Mitigate (Giảm thiể..."
   },
   {
-    "id": 75,
+    "id": 59,
     "chapter": 4,
-    "tag": "Khái niệm",
+    "tag": "Slide 35, 57",
     "type": "single",
-    "question": "Công thức toán học chuẩn để xác định Mức độ phơi nhiễm rủi ro (Risk Exposure - RE) là gì?",
+    "question": "Trong một dự án xây dựng ứng dụng tài chính, đội ngũ nhận diện được rủi ro: *\"Công nghệ thư viện AI nhận diện khuôn mặt mới chọn chưa thực sự ổn định\"*. PM quyết định chỉ đạo: **Cho một nhóm nhỏ làm bản Prototype thử nghiệm trước trong 2 tuần, đồng thời gửi lập trình viên đi đào tạo chuyên sâu và đưa quy trình kiểm thử vào sớm**. Đây là biểu hiện cụ thể của chiến lược xử lý nào?",
     "options": [
-      "A. RE = P * Loss (Xác suất nhân với mức độ thiệt hại)",
-      "B. RE = P + Loss (Tổng xác suất và thiệt hại)",
-      "C. RE = Loss / P (Thiệt hại chia cho xác suất)",
-      "D. RE = (P * 100) - Loss"
-    ],
-    "answer": 0,
-    "explanation": "Risk Exposure (RE) = P * Loss (Trong đó P là xác suất xảy ra 0 < P < 1, Loss là mức độ tổn thất khi rủi ro xảy ra).",
-    "tip": "Công thức RE = P * Loss."
-  },
-  {
-    "id": 76,
-    "chapter": 4,
-    "tag": "Tính toán",
-    "type": "single",
-    "question": "Rủi ro 'Máy chủ lưu trữ bị tấn công mạng' có xác suất xảy ra P = 0.25 (25%), ước tính tổn thất nếu xảy ra là 40.000 USD. Giá trị phơi nhiễm RE là:",
-    "options": [
-      "A. 5.000 USD",
-      "B. 10.000 USD",
-      "C. 15.000 USD",
-      "D. 20.000 USD"
+      "A. Chiến lược Chấp nhận (Accept)",
+      "B. Chiến lược Giảm thiểu (Mitigate)",
+      "C. Chiến lược Tránh (Avoid)",
+      "D. Chiến lược Chuyển giao (Transfer)"
     ],
     "answer": 1,
-    "explanation": "RE = P * Loss = 0.25 * 40.000 USD = 10.000 USD.",
-    "tip": "RE = 0.25 * 40.000 = 10.000 USD."
+    "explanation": "Slide 35 & 57 nêu rõ: *Mitigate = Giảm xác suất hoặc giảm tác động bằng cách làm Prototype trước, Đào tạo nhân sự, Kiểm thử sớm*.",
+    "tip": "Slide 35 & 57 nêu rõ: *Mitigate = Giảm xác suất hoặc giảm tác động bằng cách làm..."
   },
   {
-    "id": 77,
+    "id": 60,
     "chapter": 4,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Nhận thấy tính năng nạp tiền bằng thẻ cào điện thoại tiềm ẩn rủi ro lừa đảo quá lớn, ban quản trị quyết định LOẠI BỎ HOÀN TOÀN tính năng này ra khỏi phạm vi. Đây là chiến lược gì?",
+    "tag": "Slide 36, 37, 41",
+    "type": "multiple",
+    "question": "Về công tác **Theo dõi rủi ro (Risk Monitoring)** và tài liệu **Sổ đăng ký rủi ro (Risk Register)**:",
     "options": [
-      "A. Giảm thiểu rủi ro (Risk Mitigation)",
-      "B. Chuyển giao rủi ro (Risk Transfer)",
-      "C. Tránh rủi ro (Risk Avoidance)",
-      "D. Chấp nhận rủi ro (Risk Acceptance)"
+      "A. Risk Register là tài liệu tĩnh, chỉ lập một lần trong tuần đầu tiên rồi khóa lại không chỉnh sửa",
+      "B. Theo dõi rủi ro bao gồm việc: Thường xuyên theo dõi các dấu hiệu cảnh báo sớm (triggers) và Cập nhật định kỳ nội dung bảng Risk Register",
+      "C. Hoạt động theo dõi rủi ro chỉ bắt đầu khi dự án đã bị trễ hạn bàn giao ít nhất 1 tháng",
+      "D. Rủi ro cần phải được giám sát liên tục theo suốt vòng đời dự án: Lập kế hoạch $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử $\rightarrow$ Triển khai",
+      "E. Các cột thông tin tiêu chuẩn cấu thành một bảng Risk Register gồm: Mã nhận diện (ID), Mô tả rủi ro (Description), Xác suất (Probability), Tác động/Thiệt hại (Impact/Loss), Người chịu trách nhiệm theo dõi (Owner), Chỉ số RE và Chiến lược xử lý"
     ],
-    "answer": 2,
-    "explanation": "Tránh rủi ro (Risk Avoidance) là thay đổi kế hoạch hoặc loại bỏ hoàn toàn tính năng/hoạt động có rủi ro để đưa xác suất xảy ra về 0.",
-    "tip": "Cắt bỏ hoàn toàn tính năng rủi ro = Tránh rủi ro (Risk Avoidance)."
+    "answer": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Slide 36, 37, 41 quy định: *Theo dõi trigger, Cập nhật Risk Register • Cột bảng: ID, Description, Probability, Impact, Owner, RE, Strategy • Giám sát suốt vòng đời dự án*.",
+    "tip": "Slide 36, 37, 41 quy định: *Theo dõi trigger, Cập nhật Risk Register • Cột bảng:..."
   },
   {
-    "id": 78,
+    "id": 61,
     "chapter": 4,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Công ty ký hợp đồng thuê hạ tầng đám mây AWS với cam kết bảo đảm uptime 99.99% và mua gói bảo hiểm sự cố dữ liệu. Đây là ví dụ của chiến lược nào?",
+    "tag": "Slide 46, 55",
+    "type": "multiple",
+    "question": "Xem xét bài toán so sánh giữa hai rủi ro thực tế (Slide 46, 55): - Rủi ro A: Xác suất $P = 0.5$, Thiệt hại ước tính $Loss = 10,000\$$ - Rủi ro B: Xác suất $P = 0.2$, Thiệt hại ước tính $Loss = 50,000\$$ Dưới góc độ người quản lý dự án được đào tạo bài bản, những kết luận nào sau đây là chính xác?",
     "options": [
-      "A. Tránh rủi ro (Risk Avoidance)",
-      "B. Giảm thiểu rủi ro (Risk Mitigation)",
-      "C. Chấp nhận rủi ro (Risk Acceptance)",
-      "D. Chuyển giao rủi ro (Risk Transfer)"
+      "A. Rủi ro A chắc chắn nguy hiểm hơn Rủi ro B vì xác suất 50% lớn hơn 20% gấp 2.5 lần",
+      "B. Mức độ phơi nhiễm rủi ro A là: $RE(A) = 0.5 \times 10,000\$ = 5,000\$$",
+      "C. Mức độ phơi nhiễm rủi ro B là: $RE(B) = 0.2 \times 50,000\$ = 10,000\$$",
+      "D. Bài học quản trị rút ra: \"Khi đánh giá rủi ro, người quản lý không được chỉ nhìn vào mỗi xác suất xảy ra, mà bắt buộc phải nhân với mức độ thiệt hại để nhìn ra tổng thiệt hại kỳ vọng (RE)\"",
+      "E. Vì $RE(B) = 10,000\$ > RE(A) = 5,000\$$, nên Rủi ro B nguy hiểm hơn và cần được ưu tiên xử lý trước",
+      "F. Không thể so sánh được vì hai rủi ro này có xác suất và số tiền khác nhau"
     ],
-    "answer": 3,
-    "explanation": "Chuyển giao rủi ro (Risk Transfer) là chuyển phần lớn tác động tiêu cực hoặc trách nhiệm xử lý sang bên thứ ba (qua bảo hiểm, thuê ngoài, cam kết SLA).",
-    "tip": "Thuê ngoài có cam kết SLA / Mua bảo hiểm = Chuyển giao (Risk Transfer)."
+    "answer": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Slide 46 & 55: $RE(A) = 5,000\$$; $RE(B) = 10,000\$$; Kết luận: *Risk B nguy hiểm hơn • Không chỉ nhìn xác suất, phải nhìn tổng thiệt hại*.",
+    "tip": "Slide 46 & 55: $RE(A) = 5,000\$$; $RE(B) = 10,000\$$; Kết luận: *Risk B nguy hiể..."
   },
   {
-    "id": 79,
+    "id": 62,
     "chapter": 4,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Để phòng ngừa rủi ro lập trình viên chính nghỉ việc đột xuất, PM yêu cầu thành viên phải viết tài liệu chi tiết hàng ngày và làm việc theo cặp (Pair Programming). Đây là chiến lược nào?",
+    "tag": "Slide 43, 52",
+    "type": "multiple",
+    "question": "Dựa vào bài tập phân loại rủi ro chuẩn trong bài giảng (Slide 43, 52), hãy xác định đúng nhóm rủi ro tương ứng của từng tình huống thực tế sau đây:",
     "options": [
-      "A. Giảm thiểu rủi ro (Risk Mitigation)",
-      "B. Chuyển giao rủi ro (Risk Transfer)",
-      "C. Tránh rủi ro (Risk Avoidance)",
-      "D. Chấp nhận rủi ro (Risk Acceptance)"
+      "A. \"Công nghệ mới áp dụng vào hệ thống chưa ổn định, hay bị lỗi timeout\" $\rightarrow$ Được phân loại vào nhóm **Technical Risk (Rủi ro kỹ thuật)**",
+      "B. \"Khách hàng cắt giảm ngân sách đầu tư\" $\rightarrow$ Thuộc nhóm Technical Risk vì làm giảm tiền mua bản quyền công nghệ",
+      "C. \"Khách hàng gặp khủng hoảng tài chính và cắt giảm 50% ngân sách đầu tư\" $\rightarrow$ Được phân loại vào nhóm **Business Risk (Rủi ro kinh doanh)**",
+      "D. \"Phía khách hàng liên tục thay đổi và bổ sung yêu cầu nghiệp vụ mỗi tuần\" $\rightarrow$ Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**",
+      "E. \"Lập trình viên chủ chốt phụ trách kiến trúc đột ngột xin nghỉ việc\" $\rightarrow$ Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**"
     ],
-    "answer": 0,
-    "explanation": "Giảm thiểu rủi ro (Risk Mitigation) là hành động chủ động thực hiện các biện pháp phòng ngừa để giảm xác suất xảy ra hoặc giảm mức độ thiệt hại của rủi ro.",
-    "tip": "Chủ động viết tài liệu, làm theo cặp để giảm tác hại = Giảm thiểu (Mitigation)."
-  },
-  {
-    "id": 80,
-    "chapter": 4,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Một lỗi hiển thị lệch 1 pixel trên trình duyệt cũ có xác suất xuất hiện dưới 0.1%, chi phí sửa lại cao hơn giá trị mang lại. PM quyết định ghi nhận và không can thiệp. Đây là chiến lược nào?",
-    "options": [
-      "A. Tránh rủi ro (Risk Avoidance)",
-      "B. Chấp nhận rủi ro (Risk Acceptance)",
-      "C. Chuyển giao rủi ro (Risk Transfer)",
-      "D. Giảm thiểu rủi ro (Risk Mitigation)"
+    "answer": [
+      0,
+      2,
+      3,
+      4
     ],
-    "answer": 1,
-    "explanation": "Chấp nhận rủi ro (Risk Acceptance) là quyết định có ý thức không thực hiện hành động phòng ngừa nào, chấp nhận hậu quả nếu nó xảy ra (thường áp dụng cho rủi ro mức thấp).",
-    "tip": "Rủi ro quá nhỏ, chấp nhận không sửa = Chấp nhận (Risk Acceptance)."
-  },
-  {
-    "id": 81,
-    "chapter": 4,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Sáng nay lúc 8h30, ổ cứng máy chủ lưu trữ chính của công ty bất ngờ phát nổ và toàn bộ dịch vụ ngân hàng trực tuyến bị tê liệt. Sự việc này được xếp loại chính xác là gì?",
-    "options": [
-      "A. Một Rủi ro tiềm ẩn (Potential Risk)",
-      "B. Một Cơ hội kinh doanh mới (Business Opportunity)",
-      "C. Một Sự cố kỹ thuật (Issue / Incident)",
-      "D. Một Rào cản phạm vi dự án (Scope Constraint)"
-    ],
-    "answer": 2,
-    "explanation": "Sự việc đã thực sự xảy ra ở hiện tại (xác suất P = 1) và đang gây tác động tiêu cực, do đó nó là Sự cố (Issue), không còn là Rủi ro nữa.",
-    "tip": "Đã xảy ra ở hiện tại = Sự cố (Issue)."
-  },
-  {
-    "id": 82,
-    "chapter": 4,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Ma trận đánh giá rủi ro (Risk Matrix) tiêu chuẩn kết hợp 2 trục thông tin nào để xác định mức độ ưu tiên?",
-    "options": [
-      "A. Trục Chi phí dự án và Trục Thời gian bàn giao",
-      "B. Trục Số lượng nhân sự và Trục Số dòng mã nguồn",
-      "C. Trục Đánh giá của khách hàng và Trục Lương của lập trình viên",
-      "D. Trục Xác suất xảy ra (Probability) và Trục Mức độ tổn thất (Impact/Loss)"
-    ],
-    "answer": 3,
-    "explanation": "Ma trận rủi ro (Risk Matrix) kết hợp: Trục Xác suất (Probability) và Trục Mức độ tổn thất (Impact/Loss) để phân chia rủi ro thành các vùng: Rất cao, Cao, Vừa, Thấp.",
-    "tip": "Ma trận rủi ro: Xác suất (Probability) x Tác động (Impact/Loss)."
-  },
-  {
-    "id": 83,
-    "chapter": 4,
-    "tag": "Phương pháp",
-    "type": "single",
-    "question": "Khi sắp xếp thứ tự ưu tiên xử lý các rủi ro trong Sổ theo dõi rủi ro (Risk Register), người quản lý căn cứ vào tiêu chí nào đầu tiên?",
-    "options": [
-      "A. Giá trị mức độ phơi nhiễm rủi ro (RE = P * Loss) từ cao xuống thấp",
-      "B. Tên chữ cái của rủi ro theo bảng chữ cái từ A đến Z",
-      "C. Rủi ro nào do khách hàng trực tiếp báo cáo sẽ làm trước",
-      "D. Rủi ro nào có chi phí xử lý rẻ nhất sẽ ưu tiên làm trước"
-    ],
-    "answer": 0,
-    "explanation": "Ưu tiên xử lý rủi ro luôn được xếp theo giá trị phơi nhiễm rủi ro (Risk Exposure - RE) giảm dần: Rủi ro có RE lớn nhất được ưu tiên phân bổ nguồn lực xử lý trước.",
-    "tip": "Xếp ưu tiên xử lý: Căn cứ vào RE từ cao xuống thấp."
-  },
-  {
-    "id": 84,
-    "chapter": 4,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Trưởng nhóm kiểm thử xin nghỉ thai sản đột xuất trùng đúng thời điểm bắt đầu đợt kiểm thử tích hợp (UAT), đe dọa chậm tiến độ 3 tuần. Rủi ro này thuộc nhóm nào?",
-    "options": [
-      "A. Rủi ro kỹ thuật (Technical Risk)",
-      "B. Rủi ro dự án (Project Risk)",
-      "C. Rủi ro kinh doanh (Business Risk)",
-      "D. Rủi ro thị trường (Market Risk)"
-    ],
-    "answer": 1,
-    "explanation": "Rủi ro thiếu hụt nhân sự, tác động trực tiếp đến tiến độ và ngân sách dự án được phân loại vào nhóm Rủi ro dự án (Project Risk).",
-    "tip": "Mất nhân sự, chậm tiến độ = Rủi ro dự án (Project Risk)."
-  },
-  {
-    "id": 85,
-    "chapter": 4,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Thuật ngữ 'Risk Owner' (Chủ sở hữu rủi ro) trong quản lý dự án được hiểu chính xác là ai?",
-    "options": [
-      "A. Người vô tình gây ra rủi ro cho toàn bộ dự án",
-      "B. Giám đốc điều hành cao nhất của doanh nghiệp phần mềm",
-      "C. Cá nhân được giao trách nhiệm theo dõi và kích hoạt kế hoạch ứng phó cho rủi ro đó",
-      "D. Khách hàng chi trả tiền cho hợp đồng phát triển phần mềm"
-    ],
-    "answer": 2,
-    "explanation": "Risk Owner là người được chỉ định chịu trách nhiệm giám sát một rủi ro cụ thể và kích hoạt các hành động ứng phó khi các dấu hiệu cảnh báo xuất hiện.",
-    "tip": "Risk Owner = Người chịu trách nhiệm theo dõi và kích hoạt xử lý rủi ro."
-  },
-  {
-    "id": 86,
-    "chapter": 4,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Kế hoạch ứng phó dự phòng (Contingency Plan) được xây dựng với mục đích nào sau đây?",
-    "options": [
-      "A. Kích hoạt ngay lập tức ngay từ ngày đầu tiên bắt đầu dự án",
-      "B. Dùng để xin thêm kinh phí đầu tư từ khách hàng mỗi tháng",
-      "C. Dùng để thay thế toàn bộ bản kế hoạch WBS hiện có",
-      "D. Là kế hoạch thay thế chỉ được kích hoạt khi rủi ro thực sự biến thành sự cố"
-    ],
-    "answer": 3,
-    "explanation": "Contingency Plan (Kế hoạch dự phòng) là các bước hành động đã được chuẩn bị sẵn và chỉ được kích hoạt khi rủi ro được cảnh báo xảy ra trở thành sự cố.",
-    "tip": "Contingency Plan = Kế hoạch chuẩn bị sẵn, chỉ kích hoạt khi rủi ro xảy ra."
-  },
-  {
-    "id": 87,
-    "chapter": 4,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Nếu một rủi ro có xác suất xảy ra được đánh giá là P = 100% (P = 1.0), thì theo lý thuyết quản lý dự án, nó được coi là gì?",
-    "options": [
-      "A. Một sự thật hiển nhiên / Ràng buộc chắc chắn của dự án, không còn là rủi ro",
-      "B. Vẫn là một rủi ro thông thường nhưng ở mức cực kỳ nguy hiểm",
-      "C. Một cơ hội thuận lợi để gia tăng lợi nhuận cho dự án",
-      "D. Một sai số trong quá trình tính toán của người quản lý"
-    ],
-    "answer": 0,
-    "explanation": "Rủi ro bắt buộc phải có tính bất định (0 < P < 1). Nếu xác suất chắc chắn 100% (P = 1), nó trở thành một Ràng buộc (Constraint) hoặc một Sự việc chắc chắn cần lập kế hoạch xử lý.",
-    "tip": "Xác suất 100% => Không còn là rủi ro, mà là Ràng buộc / Sự việc chắc chắn."
-  },
-  {
-    "id": 88,
-    "chapter": 4,
-    "tag": "Quy trình",
-    "type": "single",
-    "question": "Hoạt động rà soát và đánh giá lại rủi ro (Risk Review) nên được thực hiện với tần suất như thế nào trong dự án?",
-    "options": [
-      "A. Chỉ thực hiện duy nhất 1 lần khi bắt đầu khởi động dự án",
-      "B. Thực hiện định kỳ liên tục trong suốt vòng đời dự án ở các buổi họp tiến độ",
-      "C. Chỉ thực hiện khi dự án đã bị trễ hạn hơn 1 tháng",
-      "D. Chỉ thực hiện sau khi dự án đã bàn giao và thanh lý hợp đồng"
-    ],
-    "answer": 1,
-    "explanation": "Quản lý rủi ro là một quy trình liên tục lặp lại. Rủi ro cũ có thể biến mất, rủi ro mới có thể xuất hiện, nên cần rà soát định kỳ ở các cuộc họp tiến độ.",
-    "tip": "Rà soát rủi ro: Thực hiện định kỳ liên tục trong suốt dự án."
-  },
-  {
-    "id": 89,
-    "chapter": 4,
-    "tag": "Khái niệm",
-    "type": "single",
-    "question": "Mục đích tối cao của việc Quản trị rủi ro trong một dự án phần mềm là gì?",
-    "options": [
-      "A. Loại bỏ tuyệt đối 100% mọi bất trắc để dự án không bao giờ có lỗi",
-      "B. Chứng minh với khách hàng rằng nhóm phát triển không bao giờ có sai sót",
-      "C. Giảm thiểu các tác động tiêu cực và chủ động bảo vệ mục tiêu dự án",
-      "D. Tăng thời gian và chi phí của dự án lên mức tối đa có thể"
-    ],
-    "answer": 2,
-    "explanation": "Không thể loại bỏ 100% mọi rủi ro trong phần mềm. Mục đích của QLRR là chủ động nhận biết, giảm thiểu tác động tiêu cực để bảo đảm đạt được mục tiêu dự án.",
-    "tip": "Mục đích QLRR: Chủ động giảm thiểu tác động tiêu cực, bảo vệ mục tiêu."
-  },
-  {
-    "id": 90,
-    "chapter": 4,
-    "tag": "Vận dụng",
-    "type": "single",
-    "question": "Một PM tuyên bố: 'Dự án của chúng tôi lập kế hoạch hoàn hảo nên xác suất có rủi ro là 0%'. Phát biểu này thể hiện điều gì?",
-    "options": [
-      "A. Dự án có quy trình quản lý chất lượng ở mức tối thượng CMMI mức 5",
-      "B. Đội ngũ phát triển có trình độ kỹ thuật vượt trội so với thế giới",
-      "C. Khách hàng đã thanh toán toàn bộ 100% chi phí ngay từ ngày đầu",
-      "D. Sự thiếu hiểu biết thực tế, vì phần mềm luôn tiềm ẩn rủi ro do tính vô hình và biến động"
-    ],
-    "answer": 3,
-    "explanation": "Dự án phần mềm luôn có rủi ro cao vì sản phẩm vô hình, yêu cầu thay đổi liên tục và phụ thuộc con người. Tuyên bố rủi ro 0% là ảo tưởng và phi thực tế.",
-    "tip": "Phần mềm luôn có rủi ro cao. Tuyên bố rủi ro 0% là ảo tưởng."
+    "explanation": "Slide 43 & 52 phân loại chuẩn xác: *Dev nghỉ việc $\rightarrow$ Project Risk • Công nghệ mới $\rightarrow$ Technical Risk • Cắt ngân sách $\rightarrow$ Business Risk • Thay đổi yêu cầu $\rightarrow$ Project Risk*.",
+    "tip": "Slide 43 & 52 phân loại chuẩn xác: *Dev nghỉ việc $\rightarrow$ Project Risk • C..."
   }
 ];
 
