@@ -31,12 +31,15 @@ Toàn bộ hệ thống được xây dựng với mục tiêu:
 
 ## ✨ Tính Năng Nổi Bật (Key Features)
 
-### 1. 🎯 Chế độ Luyện Trắc Nghiệm Thông Minh (90 câu)
-- **Chấm điểm tức thì (Instant Feedback)**: Hiển thị ngay Đúng/Sai khi chọn, làm nổi bật phương án chuẩn và phương án thí sinh chọn.
-- **Giải thích & Mẹo nhớ (Tips & Explanations)**: Mỗi câu hỏi đều đi kèm trích dẫn nguyên văn gạch đầu dòng slide và mẹo nhớ nhanh để nhận diện bẫy đề thi.
+### 1. 🎯 Chế độ Luyện Trắc Nghiệm Thông Minh (90 câu - Đơn & Đa đáp án)
+- **Hỗ trợ 2 dạng câu hỏi chuẩn khảo thí**:
+  - **Dạng Chọn Nhiều Đáp Án (Multi-select Checkbox)**: Áp dụng cho các khái niệm có nhiều gạch đầu dòng (định nghĩa dự án, đặc thù phần mềm, 4P, 4 nhiệm vụ PM, lý do lập kế hoạch, 3 nguồn lực, 4 chiến lược rủi ro...). Tích hợp nhiều phương án nhiễu tinh vi và nút **"Kiểm tra đáp án"** chấm điểm chi tiết (xanh lá: chọn đúng, đỏ: chọn sai, vàng viền đứt: bị thiếu).
+  - **Dạng 1 Đáp Án Cân Bằng (Balanced Single-select)**: Phân bổ ngẫu nhiên và đồng đều 25% cho mỗi phương án A, B, C, D. Độ dài các phương án tương đương nhau, xóa bỏ triệt để bẫy "đáp án dài nhất luôn đúng".
+- **Tích hợp sâu câu hỏi Vận Dụng Tình Huống (Scenario Questions)**: Brooks' Law, Scope Creep, Gold Plating, Tam giác dự án, Công thức $RE$, Risk vs Issue.
+- **Chấm điểm tức thì & Mẹo nhớ**: Trích xuất nguyên văn slide bài giảng và mẹo nhận diện bẫy đề thi.
 - **Bộ lọc đa chiều**: Lọc theo từng chương (Chương 1: 28 câu, Chương 2: 21 câu, Chương 3: 18 câu, Chương 4: 23 câu) hoặc tìm kiếm theo từ khóa thực tế (`RE`, `LOC`, `FP`, `WBS`, `COCOMO`, `Brooks`...).
 - **Chế độ Thi Thử (Mock Exam)**:
-  - Chọn ngẫu nhiên 20 câu từ kho dữ liệu.
+  - Chọn ngẫu nhiên 20 câu từ kho dữ liệu (bao gồm cả câu đơn và câu đa đáp án).
   - Đồng hồ đếm ngược 20 phút.
   - Chấm điểm chuẩn thang 10 kèm phân tích kết quả chi tiết từng câu sau khi nộp bài.
 

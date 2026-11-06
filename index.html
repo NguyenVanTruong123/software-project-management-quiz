@@ -607,6 +607,7 @@
     let examTimeLeft = 20 * 60; // 20 mins
     let examQuestions = [];
     let examUserAnswers = {};
+    let practiceMultiAnswers = {};
 
     // Flashcard State
     let fcIndex = 0;
@@ -717,26 +718,58 @@
         card.className = "bg-white rounded-2xl p-6 shadow-sm border border-slate-200 transition-all hover:border-slate-300";
         card.id = `quiz-card-${q.id}`;
 
-        const isAnswered = isMockExam && examUserAnswers[q.id] !== undefined;
-
+        const isMulti = q.type === 'multiple';
         let optionsHtml = '';
+
         q.options.forEach((opt, optIdx) => {
-          optionsHtml += `
-            <button onclick="selectQuizOption(${q.id}, ${optIdx})" id="opt-${q.id}-${optIdx}" 
-              class="quiz-opt-btn w-full text-left p-3.5 rounded-xl border border-slate-200 text-sm font-medium transition-all hover:bg-slate-50 flex items-start space-x-3">
-              <span class="w-6 h-6 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
-                ${String.fromCharCode(65 + optIdx)}
-              </span>
-              <span class="text-slate-800 leading-relaxed">${opt.substring(3)}</span>
-            </button>
-          `;
+          if (isMulti) {
+            const isCheckedInMock = isMockExam && Array.isArray(examUserAnswers[q.id]) && examUserAnswers[q.id].includes(optIdx);
+            const isCheckedInPrac = !isMockExam && Array.isArray(practiceMultiAnswers[q.id]) && practiceMultiAnswers[q.id].includes(optIdx);
+            const isChecked = isCheckedInMock || isCheckedInPrac;
+
+            optionsHtml += `
+              <button onclick="toggleQuizOption(${q.id}, ${optIdx})" id="opt-${q.id}-${optIdx}" 
+                class="quiz-opt-btn w-full text-left p-3.5 rounded-xl border ${isChecked ? 'border-2 border-indigo-600 bg-indigo-50/70 text-indigo-950 font-semibold' : 'border-slate-200 text-slate-800 hover:bg-slate-50'} text-sm transition-all flex items-start justify-between group">
+                <div class="flex items-start space-x-3 pr-2">
+                  <span id="chk-${q.id}-${optIdx}" class="w-6 h-6 rounded-lg ${isChecked ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-400 group-hover:bg-slate-200'} flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 transition-colors">
+                    <i class="${isChecked ? 'fa-solid fa-check' : 'fa-regular fa-square'}"></i>
+                  </span>
+                  <span class="leading-relaxed">${opt.substring(3)}</span>
+                </div>
+                <span id="badge-${q.id}-${optIdx}" class="hidden text-xs font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5"></span>
+              </button>
+            `;
+          } else {
+            optionsHtml += `
+              <button onclick="selectQuizOption(${q.id}, ${optIdx})" id="opt-${q.id}-${optIdx}" 
+                class="quiz-opt-btn w-full text-left p-3.5 rounded-xl border border-slate-200 text-sm font-medium transition-all hover:bg-slate-50 flex items-start space-x-3">
+                <span class="w-6 h-6 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
+                  ${String.fromCharCode(65 + optIdx)}
+                </span>
+                <span class="text-slate-800 leading-relaxed">${opt.substring(3)}</span>
+              </button>
+            `;
+          }
         });
+
+        const multiActionHtml = isMulti && !isMockExam ? `
+          <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3" id="action-group-${q.id}">
+            <button onclick="checkMultipleAnswer(${q.id})" id="btn-check-${q.id}" class="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-xl text-xs shadow-sm flex items-center space-x-2 transition-all">
+              <i class="fa-solid fa-circle-check"></i>
+              <span id="btn-check-text-${q.id}">Kiểm tra đáp án</span>
+            </button>
+            <span id="multi-status-${q.id}" class="text-xs text-slate-500 font-medium italic">
+              <i class="fa-solid fa-circle-info text-blue-500 mr-1"></i>Chọn các ý đúng rồi bấm Kiểm tra
+            </span>
+          </div>
+        ` : '';
 
         card.innerHTML = `
           <div class="flex items-center justify-between text-xs font-bold mb-3">
             <div class="flex items-center space-x-2">
               <span class="px-2.5 py-1 bg-blue-100 text-blue-800 rounded-md">Chương ${q.chapter}</span>
               <span class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md">#${q.tag}</span>
+              ${isMulti ? '<span class="px-2.5 py-1 bg-purple-100 text-purple-800 rounded-md flex items-center space-x-1"><i class="fa-solid fa-list-check"></i><span>Chọn nhiều đáp án</span></span>' : '<span class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md">1 đáp án</span>'}
             </div>
             <span class="text-slate-400">Câu ${q.id}/${MCQ_QUESTIONS.length}</span>
           </div>
@@ -749,12 +782,14 @@
             ${optionsHtml}
           </div>
 
-          <!-- Explanation Box (Hidden until selected in study mode) -->
+          ${multiActionHtml}
+
+          <!-- Explanation Box -->
           <div id="explain-${q.id}" class="hidden mt-4 pt-4 border-t border-slate-100 space-y-2">
             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 leading-relaxed">
               <strong class="text-slate-900 block mb-1 flex items-center space-x-1.5">
                 <i class="fa-solid fa-circle-info text-blue-600"></i>
-                <span>Giải thích chi tiết:</span>
+                <span>Giải thích chi tiết (Trích chuẩn Slide):</span>
               </strong>
               ${q.explanation}
             </div>
@@ -766,6 +801,143 @@
         `;
         container.appendChild(card);
       });
+    }
+
+    // Toggle Multi-select option
+    function toggleQuizOption(qid, optIdx) {
+      const q = MCQ_QUESTIONS.find(item => item.id === qid);
+      if (!q) return;
+
+      if (isMockExam) {
+        if (!Array.isArray(examUserAnswers[qid])) {
+          examUserAnswers[qid] = [];
+        }
+        const arr = examUserAnswers[qid];
+        const idxInArr = arr.indexOf(optIdx);
+        if (idxInArr > -1) {
+          arr.splice(idxInArr, 1);
+        } else {
+          arr.push(optIdx);
+        }
+
+        const isChecked = arr.includes(optIdx);
+        const btn = document.getElementById(`opt-${qid}-${optIdx}`);
+        const chk = document.getElementById(`chk-${qid}-${optIdx}`);
+        if (btn && chk) {
+          if (isChecked) {
+            btn.className = "quiz-opt-btn w-full text-left p-3.5 rounded-xl border-2 border-indigo-600 bg-indigo-50/70 text-indigo-950 font-semibold text-sm transition-all flex items-start justify-between group";
+            chk.className = "w-6 h-6 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 transition-colors";
+            chk.innerHTML = '<i class="fa-solid fa-check"></i>';
+          } else {
+            btn.className = "quiz-opt-btn w-full text-left p-3.5 rounded-xl border border-slate-200 text-slate-800 hover:bg-slate-50 text-sm transition-all flex items-start justify-between group";
+            chk.className = "w-6 h-6 rounded-lg bg-slate-100 text-slate-400 group-hover:bg-slate-200 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 transition-colors";
+            chk.innerHTML = '<i class="fa-regular fa-square"></i>';
+          }
+        }
+        updateExamProgress();
+        return;
+      }
+
+      // Practice Mode
+      if (!Array.isArray(practiceMultiAnswers[qid])) {
+        practiceMultiAnswers[qid] = [];
+      }
+      const arr = practiceMultiAnswers[qid];
+      const idxInArr = arr.indexOf(optIdx);
+      if (idxInArr > -1) {
+        arr.splice(idxInArr, 1);
+      } else {
+        arr.push(optIdx);
+      }
+
+      const isChecked = arr.includes(optIdx);
+      const btn = document.getElementById(`opt-${qid}-${optIdx}`);
+      const chk = document.getElementById(`chk-${qid}-${optIdx}`);
+      if (btn && chk) {
+        if (isChecked) {
+          btn.className = "quiz-opt-btn w-full text-left p-3.5 rounded-xl border-2 border-indigo-600 bg-indigo-50/70 text-indigo-950 font-semibold text-sm transition-all flex items-start justify-between group";
+          chk.className = "w-6 h-6 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 transition-colors";
+          chk.innerHTML = '<i class="fa-solid fa-check"></i>';
+        } else {
+          btn.className = "quiz-opt-btn w-full text-left p-3.5 rounded-xl border border-slate-200 text-slate-800 hover:bg-slate-50 text-sm transition-all flex items-start justify-between group";
+          chk.className = "w-6 h-6 rounded-lg bg-slate-100 text-slate-400 group-hover:bg-slate-200 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 transition-colors";
+          chk.innerHTML = '<i class="fa-regular fa-square"></i>';
+        }
+      }
+
+      const status = document.getElementById(`multi-status-${qid}`);
+      if (status) {
+        status.innerHTML = `<span class="text-indigo-600 font-bold">Đã chọn: ${arr.length} ý</span> (Nhấn nút Kiểm tra để chấm điểm)`;
+      }
+    }
+
+    // Check Multi-select in Practice Mode
+    function checkMultipleAnswer(qid) {
+      const q = MCQ_QUESTIONS.find(item => item.id === qid);
+      if (!q) return;
+
+      const selected = practiceMultiAnswers[qid] || [];
+      if (selected.length === 0) {
+        alert('Vui lòng chọn ít nhất 1 phương án trước khi bấm Kiểm tra!');
+        return;
+      }
+
+      const checkBtn = document.getElementById(`btn-check-${qid}`);
+      if (checkBtn) {
+        checkBtn.disabled = true;
+        checkBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      }
+
+      const correctSet = new Set(q.answer);
+      const userSet = new Set(selected);
+      const isAllCorrect = (q.answer.length === selected.length) && q.answer.every(x => userSet.has(x));
+
+      q.options.forEach((_, optIdx) => {
+        const btn = document.getElementById(`opt-${qid}-${optIdx}`);
+        const chk = document.getElementById(`chk-${qid}-${optIdx}`);
+        const badge = document.getElementById(`badge-${qid}-${optIdx}`);
+        if (!btn) return;
+
+        btn.disabled = true;
+        const isShouldSelect = correctSet.has(optIdx);
+        const isUserSelected = userSet.has(optIdx);
+
+        if (isShouldSelect && isUserSelected) {
+          btn.className = "quiz-opt-btn w-full text-left p-3.5 rounded-xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 font-bold text-sm flex items-start justify-between";
+          chk.className = "w-6 h-6 rounded-lg bg-emerald-500 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5";
+          chk.innerHTML = '<i class="fa-solid fa-check"></i>';
+          badge.className = "text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 flex-shrink-0 mt-0.5";
+          badge.innerText = "✓ Đúng";
+          badge.classList.remove('hidden');
+        } else if (!isShouldSelect && isUserSelected) {
+          btn.className = "quiz-opt-btn w-full text-left p-3.5 rounded-xl border-2 border-rose-500 bg-rose-50 text-rose-950 font-medium text-sm flex items-start justify-between";
+          chk.className = "w-6 h-6 rounded-lg bg-rose-500 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5";
+          chk.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+          badge.className = "text-xs font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800 flex-shrink-0 mt-0.5";
+          badge.innerText = "✗ Chọn sai";
+          badge.classList.remove('hidden');
+        } else if (isShouldSelect && !isUserSelected) {
+          btn.className = "quiz-opt-btn w-full text-left p-3.5 rounded-xl border-2 border-dashed border-amber-500 bg-amber-50/70 text-amber-950 font-bold text-sm flex items-start justify-between";
+          chk.className = "w-6 h-6 rounded-lg border-2 border-amber-500 text-amber-600 bg-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5";
+          chk.innerHTML = '<i class="fa-solid fa-exclamation"></i>';
+          badge.className = "text-xs font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-900 flex-shrink-0 mt-0.5";
+          badge.innerText = "⚠ Bị thiếu";
+          badge.classList.remove('hidden');
+        } else {
+          btn.className = "quiz-opt-btn w-full text-left p-3.5 rounded-xl border border-slate-100 text-slate-400 text-sm opacity-50 flex items-start justify-between";
+        }
+      });
+
+      const status = document.getElementById(`multi-status-${qid}`);
+      if (status) {
+        if (isAllCorrect) {
+          status.innerHTML = `<span class="px-2.5 py-1 bg-emerald-100 text-emerald-800 font-bold rounded-lg text-xs"><i class="fa-solid fa-circle-check mr-1"></i>Chính xác 100%! Bạn đã chọn đúng tất cả các ý.</span>`;
+        } else {
+          status.innerHTML = `<span class="px-2.5 py-1 bg-rose-100 text-rose-800 font-bold rounded-lg text-xs"><i class="fa-solid fa-triangle-exclamation mr-1"></i>Chưa chính xác hoặc còn thiếu! Hãy xem các ý đánh dấu ở trên.</span>`;
+        }
+      }
+
+      document.getElementById(`explain-${qid}`).classList.remove('hidden');
     }
 
     function selectQuizOption(qid, selectedOpt) {
@@ -808,7 +980,6 @@
       examTimeLeft = 20 * 60;
       examUserAnswers = {};
 
-      // Shuffle & pick 20 questions
       const shuffled = [...MCQ_QUESTIONS].sort(() => 0.5 - Math.random());
       examQuestions = shuffled.slice(0, 20);
 
@@ -836,7 +1007,10 @@
     }
 
     function updateExamProgress() {
-      const answeredCount = Object.keys(examUserAnswers).length;
+      const answeredCount = Object.keys(examUserAnswers).filter(k => {
+        const val = examUserAnswers[k];
+        return Array.isArray(val) ? val.length > 0 : val !== undefined;
+      }).length;
       document.getElementById('exam-progress').innerText = `Đã làm: ${answeredCount}/20`;
     }
 
@@ -858,8 +1032,16 @@
 
       let correct = 0;
       examQuestions.forEach(q => {
-        if (examUserAnswers[q.id] === q.answer) {
-          correct++;
+        if (q.type === 'multiple') {
+          const userAns = Array.isArray(examUserAnswers[q.id]) ? examUserAnswers[q.id].slice().sort() : [];
+          const correctAns = q.answer.slice().sort();
+          if (JSON.stringify(userAns) === JSON.stringify(correctAns)) {
+            correct++;
+          }
+        } else {
+          if (examUserAnswers[q.id] === q.answer) {
+            correct++;
+          }
         }
       });
 
@@ -887,30 +1069,79 @@ Hệ thống sẽ hiển thị lại bài thi kèm đáp án chi tiết và gi�
 
       examQuestions.forEach((q, idx) => {
         const userChoice = examUserAnswers[q.id];
-        const isRight = userChoice === q.answer;
+        const isMulti = q.type === 'multiple';
+        
+        let isRight = false;
+        if (isMulti) {
+          const userAns = Array.isArray(userChoice) ? userChoice.slice().sort() : [];
+          const correctAns = q.answer.slice().sort();
+          isRight = JSON.stringify(userAns) === JSON.stringify(correctAns);
+        } else {
+          isRight = userChoice === q.answer;
+        }
 
         const card = document.createElement('div');
         card.className = `bg-white rounded-2xl p-6 shadow-sm border-2 ${isRight ? 'border-emerald-300' : 'border-rose-300'}`;
 
         let opts = '';
-        q.options.forEach((opt, oIdx) => {
-          let style = "p-3 rounded-xl border text-sm font-medium flex items-center space-x-3 ";
-          if (oIdx === q.answer) {
-            style += "border-emerald-500 bg-emerald-50 text-emerald-900 font-bold";
-          } else if (oIdx === userChoice) {
-            style += "border-rose-500 bg-rose-50 text-rose-900 font-semibold";
-          } else {
-            style += "border-slate-100 text-slate-400 opacity-60";
-          }
-          opts += `<div class="${style}"><span class="w-6 h-6 rounded bg-white flex items-center justify-center text-xs font-bold">${String.fromCharCode(65 + oIdx)}</span><span>${opt.substring(3)}</span></div>`;
-        });
+        if (isMulti) {
+          const correctSet = new Set(q.answer);
+          const userSet = new Set(Array.isArray(userChoice) ? userChoice : []);
+
+          q.options.forEach((opt, oIdx) => {
+            const isShouldSelect = correctSet.has(oIdx);
+            const isUserSelected = userSet.has(oIdx);
+            let style = "p-3 rounded-xl border text-sm font-medium flex items-center justify-between ";
+            let icon = '';
+            let badgeText = '';
+
+            if (isShouldSelect && isUserSelected) {
+              style += "border-emerald-500 bg-emerald-50 text-emerald-950 font-bold";
+              icon = '<i class="fa-solid fa-check text-emerald-600"></i>';
+              badgeText = '<span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-200 text-emerald-800">✓ Chọn đúng</span>';
+            } else if (!isShouldSelect && isUserSelected) {
+              style += "border-rose-500 bg-rose-50 text-rose-950 font-semibold";
+              icon = '<i class="fa-solid fa-xmark text-rose-600"></i>';
+              badgeText = '<span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-200 text-rose-800">✗ Chọn sai</span>';
+            } else if (isShouldSelect && !isUserSelected) {
+              style += "border-dashed border-amber-500 bg-amber-50/70 text-amber-950 font-bold";
+              icon = '<i class="fa-solid fa-exclamation text-amber-600"></i>';
+              badgeText = '<span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-200 text-amber-900">⚠ Bị thiếu</span>';
+            } else {
+              style += "border-slate-100 text-slate-400 opacity-60";
+              icon = '<i class="fa-regular fa-square text-slate-300"></i>';
+            }
+
+            opts += `
+              <div class="${style}">
+                <div class="flex items-center space-x-3">
+                  <span class="w-6 h-6 rounded bg-white flex items-center justify-center text-xs font-bold border border-slate-200">${icon}</span>
+                  <span>${opt.substring(3)}</span>
+                </div>
+                ${badgeText}
+              </div>
+            `;
+          });
+        } else {
+          q.options.forEach((opt, oIdx) => {
+            let style = "p-3 rounded-xl border text-sm font-medium flex items-center space-x-3 ";
+            if (oIdx === q.answer) {
+              style += "border-emerald-500 bg-emerald-50 text-emerald-900 font-bold";
+            } else if (oIdx === userChoice) {
+              style += "border-rose-500 bg-rose-50 text-rose-900 font-semibold";
+            } else {
+              style += "border-slate-100 text-slate-400 opacity-60";
+            }
+            opts += `<div class="${style}"><span class="w-6 h-6 rounded bg-white flex items-center justify-center text-xs font-bold">${String.fromCharCode(65 + oIdx)}</span><span>${opt.substring(3)}</span></div>`;
+          });
+        }
 
         card.innerHTML = `
           <div class="flex items-center justify-between text-xs font-bold mb-2">
             <span class="px-2 py-0.5 rounded ${isRight ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
               ${isRight ? 'ĐÚNG +0.5đ' : 'SAI 0đ'}
             </span>
-            <span class="text-slate-400">Câu ${idx + 1}/20</span>
+            <span class="text-slate-400">Câu ${idx + 1}/20 (${isMulti ? 'Chọn nhiều ý' : '1 đáp án'})</span>
           </div>
           <h3 class="text-base font-bold text-slate-800 mb-3">${idx + 1}. ${q.question}</h3>
           <div class="space-y-2 mb-4">${opts}</div>
@@ -1068,9 +1299,26 @@ ${eq.model_answer}
       if (fcList.length === 0) return;
       const q = fcList[fcIndex];
 
-      document.getElementById('fc-tag').innerText = `Chương ${q.chapter} • #${q.tag}`;
+      document.getElementById('fc-tag').innerText = `Chương ${q.chapter} • #${q.tag}${q.type === 'multiple' ? ' • Chọn nhiều ý' : ''}`;
       document.getElementById('fc-question').innerText = q.question;
-      document.getElementById('fc-answer').innerText = `Đáp án: ${q.options[q.answer]}`;
+
+      const fcAnswerEl = document.getElementById('fc-answer');
+      if (q.type === 'multiple') {
+        const bullets = q.answer.map(idx => `<li class="flex items-start space-x-2"><i class="fa-solid fa-check text-emerald-400 mt-1 flex-shrink-0 text-xs"></i><span>${q.options[idx]}</span></li>`).join('');
+        fcAnswerEl.innerHTML = `
+          <div class="text-xs font-bold text-emerald-400 mb-2 uppercase tracking-wider flex items-center space-x-1.5">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Các đáp án đúng (${q.answer.length} ý):</span>
+          </div>
+          <ul class="space-y-1.5 text-xs sm:text-sm text-slate-100 text-left font-normal">${bullets}</ul>
+        `;
+      } else {
+        fcAnswerEl.innerHTML = `
+          <div class="text-xs font-bold text-emerald-400 mb-1 uppercase tracking-wider">Đáp án chính xác:</div>
+          <div class="text-sm sm:text-base font-bold text-white">${q.options[q.answer]}</div>
+        `;
+      }
+
       document.getElementById('fc-explanation').innerText = q.explanation;
       document.getElementById('fc-tip').innerText = `Mẹo nhớ: ${q.tip}`;
       document.getElementById('flashcard-counter').innerText = `Thẻ ${fcIndex + 1} / ${fcList.length}`;
