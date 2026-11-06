@@ -432,8 +432,8 @@ const MCQ_QUESTIONS = [
     "type": "multiple",
     "question": "Một giám đốc kỹ thuật tuyên bố: *\"Nhóm chúng tôi toàn lập trình viên giỏi nên cứ tập trung viết mã nguồn, không cần tốn thời gian đo đạc các số liệu làm gì cho rườm rà\"*. Dựa trên lý thuyết kỹ nghệ phần mềm (Slide 3), người quản lý dự án cần phản biện nhận định trên bằng những luận điểm chuẩn mực nào?",
     "options": [
-      "A. Không đo lường $\rightarrow$ Sẽ không thể kiểm soát được tiến độ và chất lượng",
-      "B. Không kiểm soát $\rightarrow$ Sẽ không có cơ sở dữ liệu thực chứng để cải tiến quy trình",
+      "A. Không đo lường → Sẽ không thể kiểm soát được tiến độ và chất lượng",
+      "B. Không kiểm soát → Sẽ không có cơ sở dữ liệu thực chứng để cải tiến quy trình",
       "C. Đo lường chỉ là thủ tục hành chính hình thức, không mang lại giá trị thực tế cho việc quản trị",
       "D. Phần mềm vốn mang tính chất vô hình, nếu không đo lường bằng các số liệu cụ thể thì không thể biết được trạng thái thực tế của sản phẩm",
       "E. Chỉ cần sản phẩm chạy được là đủ, không cần biết năng suất và chất lượng ở mức độ nào"
@@ -451,7 +451,7 @@ const MCQ_QUESTIONS = [
     "chapter": 2,
     "tag": "Slide 4, 6",
     "type": "multiple",
-    "question": "Để quản trị và cải tiến quy trình công nghệ phần mềm, dữ liệu phải trải qua chu trình chuyển hóa 3 cấp độ: **Measurement $\rightarrow$ Metrics $\rightarrow$ Indicators**. Hãy chọn những phát biểu đúng về bản chất của từng cấp độ:",
+    "question": "Để quản trị và cải tiến quy trình công nghệ phần mềm, dữ liệu phải trải qua chu trình chuyển hóa 3 cấp độ: **Measurement → Metrics → Indicators**. Hãy chọn những phát biểu đúng về bản chất của từng cấp độ:",
     "options": [
       "A. **Metrics**: Là đại lượng định lượng được tính toán và chuẩn hóa từ một hoặc nhiều phép đo (ví dụ: Defect Density = 50 lỗi / 10 KLOC = 5 lỗi/KLOC)",
       "B. Metric và Measurement là hai từ đồng nghĩa hoàn toàn, có thể dùng thay thế cho nhau trong mọi tình huống",
@@ -544,7 +544,7 @@ const MCQ_QUESTIONS = [
       "A. Nguyên tắc quản trị: Không nên dùng chỉ số LOC/PM này để so sánh trực tiếp giữa các dự án sử dụng các ngôn ngữ lập trình khác nhau (ví dụ Assembly vs Python)",
       "B. Đội ngũ nào viết được 100,000 LOC cho cùng một tính năng chắc chắn có năng suất cao gấp 10 lần đội ngũ viết 10,000 LOC",
       "C. Nguyên tắc quản trị: Chỉ nên so sánh năng suất LOC trong cùng tổ chức và có sự tương đồng về công nghệ/môi trường",
-      "D. Năng suất tính theo công thức: $Productivity = \frac{8,000\text{ LOC}}{10\text{ person-month}} = 800\text{ LOC/person-month}$",
+      "D. Năng suất tính theo công thức: Productivity = (8 / ,000 LOC10 person)-month = 800 LOC/person-month",
       "E. Mức năng suất 800 LOC/PM được đánh giá là ở mức trung bình – khá"
     ],
     "answer": [
@@ -553,8 +553,8 @@ const MCQ_QUESTIONS = [
       3,
       4
     ],
-    "explanation": "Slide 15, 16 tính chuẩn: $Productivity = 800\text{ LOC/PM}$; Nhận xét: *Mức trung bình – khá • Không nên so sánh giữa các ngôn ngữ khác nhau • Chỉ so sánh trong cùng tổ chức*.",
-    "tip": "Slide 15, 16 tính chuẩn: $Productivity = 800\text{ LOC/PM}$; Nhận xét: *Mức trun..."
+    "explanation": "Slide 15, 16 tính chuẩn: Productivity = 800 LOC/PM; Nhận xét: *Mức trung bình – khá • Không nên so sánh giữa các ngôn ngữ khác nhau • Chỉ so sánh trong cùng tổ chức*.",
+    "tip": "Slide 15, 16 tính chuẩn: Productivity = 800 LOC/PM; Nhận xét: *Mức trun..."
   },
   {
     "id": 26,
@@ -599,7 +599,7 @@ const MCQ_QUESTIONS = [
       3,
       4
     ],
-    "explanation": "Slide 23 khẳng định: *Phụ thuộc ngôn ngữ (LOC: Có, FP: Không) • Dùng sớm (LOC: Khó, FP: Dễ) • So sánh dự án (LOC: Kém, FP: Tốt) $\rightarrow$ FP phù hợp hơn cho quản lý dự án*.",
+    "explanation": "Slide 23 khẳng định: *Phụ thuộc ngôn ngữ (LOC: Có, FP: Không) • Dùng sớm (LOC: Khó, FP: Dễ) • So sánh dự án (LOC: Kém, FP: Tốt) → FP phù hợp hơn cho quản lý dự án*.",
     "tip": "Slide 23 khẳng định: *Phụ thuộc ngôn ngữ (LOC: Có, FP: Không) • Dùng sớm (LOC: K..."
   },
   {
@@ -657,7 +657,7 @@ const MCQ_QUESTIONS = [
       "C. Khi mật độ lỗi đạt 5 lỗi/KLOC, PM có thể yên tâm bàn giao hệ thống thanh toán tự động ngay mà không cần kiểm thử thêm",
       "D. Điểm nhấn bài học: \"Defect density là chỉ báo chất lượng, không phải chỉ để báo cáo hình thức\"",
       "E. Đối với các hệ thống có độ quan trọng cao (như ngân hàng, y tế, hàng không), mức 5 lỗi/KLOC là CHƯA ĐẠT yêu cầu chất lượng",
-      "F. Mật độ lỗi: $Defect\ Density = \frac{60\text{ lỗi}}{12\text{ KLOC}} = 5\text{ lỗi/KLOC}$"
+      "F. Mật độ lỗi: Defect Density = (6 / 0 l)ỗi12 KLOC = 5 lỗi/KLOC"
     ],
     "answer": [
       0,
@@ -666,8 +666,8 @@ const MCQ_QUESTIONS = [
       4,
       5
     ],
-    "explanation": "Slide 32, 33 giải quyết bài toán: $Defect\ Density = 5\text{ lỗi/KLOC}$; Đánh giá: *Mức trung bình; Với hệ thống quan trọng: chưa đạt; Cần tăng kiểm thử, rà soát quy trình; Defect density là chỉ báo chất lượng, không phải chỉ để báo cáo*.",
-    "tip": "Slide 32, 33 giải quyết bài toán: $Defect\ Density = 5\text{ lỗi/KLOC}$; Đánh gi..."
+    "explanation": "Slide 32, 33 giải quyết bài toán: Defect Density = 5 lỗi/KLOC; Đánh giá: *Mức trung bình; Với hệ thống quan trọng: chưa đạt; Cần tăng kiểm thử, rà soát quy trình; Defect density là chỉ báo chất lượng, không phải chỉ để báo cáo*.",
+    "tip": "Slide 32, 33 giải quyết bài toán: Defect Density = 5 lỗi/KLOC; Đánh gi..."
   },
   {
     "id": 31,
@@ -679,7 +679,7 @@ const MCQ_QUESTIONS = [
       "A. Khai thác dữ liệu để phát hiện các điểm nghẽn, điểm yếu trong quy trình và ra quyết định cải tiến",
       "B. Thu thập số liệu nhằm mục đích chính là tìm lỗi của lập trình viên để trừ lương thưởng",
       "C. Chỉ thu thập số liệu vào ngày cuối cùng trước khi đóng dự án",
-      "D. Đo lường liên tục trong các giai đoạn: Phân tích $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử",
+      "D. Đo lường liên tục trong các giai đoạn: Phân tích → Thiết kế → Lập trình → Kiểm thử",
       "E. Xây dựng quy trình thu thập và công cụ lưu trữ số liệu tập trung để tạo kho dữ liệu lịch sử"
     ],
     "answer": [
@@ -941,10 +941,10 @@ const MCQ_QUESTIONS = [
     "question": "Một dự án phần mềm dự kiến có quy mô 20,000 dòng lệnh (20,000 LOC). Năng suất trung bình của đội ngũ là 800 LOC / người-tháng. Nếu bố trí nhóm 5 lập trình viên làm việc toàn thời gian:",
     "options": [
       "A. Trong thực tế, mối quan hệ giữa số người và thời gian phát triển phần mềm không hoàn toàn là quan hệ tuyến tính hoàn hảo",
-      "B. Thời gian hoàn thành dự kiến: $Duration = \frac{25\text{ person-month}}{5\text{ người}} = 5\text{ tháng}$",
+      "B. Thời gian hoàn thành dự kiến: Duration = (2 / 5 person)-month5 người = 5 tháng",
       "C. Cảnh báo quan trọng của Pressman: Phép ước lượng theo LOC chỉ mang tính chất tương đối và phụ thuộc rất lớn vào ngôn ngữ lập trình",
       "D. Nếu tuyển ngay 25 người vào làm thì chắc chắn dự án sẽ hoàn thành tuyệt đối chỉ trong vòng đúng 1 tháng mà không phát sinh thêm chi phí giao tiếp",
-      "E. Nỗ lực công sức tính theo công thức: $Effort = \frac{20,000\text{ LOC}}{800\text{ LOC/PM}} = 25\text{ person-month}$"
+      "E. Nỗ lực công sức tính theo công thức: Effort = (2 / 0,000 LOC800 LOC)/PM = 25 person-month"
     ],
     "answer": [
       0,
@@ -952,19 +952,19 @@ const MCQ_QUESTIONS = [
       2,
       4
     ],
-    "explanation": "Slide 17, 36: $Effort = 25\text{ PM}$; $Duration = 5\text{ tháng}$; Cảnh báo Pressman: *LOC chỉ ước lượng tương đối, phụ thuộc ngôn ngữ*.",
-    "tip": "Slide 17, 36: $Effort = 25\text{ PM}$; $Duration = 5\text{ tháng}$; Cảnh báo Pre..."
+    "explanation": "Slide 17, 36: Effort = 25 PM; Duration = 5 tháng; Cảnh báo Pressman: *LOC chỉ ước lượng tương đối, phụ thuộc ngôn ngữ*.",
+    "tip": "Slide 17, 36: Effort = 25 PM; Duration = 5 tháng; Cảnh báo Pre..."
   },
   {
     "id": 44,
     "chapter": 3,
     "tag": "Slide 18, 37",
     "type": "multiple",
-    "question": "Một dự án phân tích có tổng Điểm chức năng chưa điều chỉnh là $UFP = 200$. Theo dữ liệu tổ chức, trung bình $1\text{ FP} \approx 50\text{ LOC}$ đối với ngôn ngữ lập trình đang dùng, năng suất đội ngũ đạt $1,000\text{ LOC/person-month}$. Dựa trên bài tập thực hành trong bài giảng:",
+    "question": "Một dự án phân tích có tổng Điểm chức năng chưa điều chỉnh là UFP = 200. Theo dữ liệu tổ chức, trung bình 1 FP ≈ 50 LOC đối với ngôn ngữ lập trình đang dùng, năng suất đội ngũ đạt 1,000 LOC/person-month. Dựa trên bài tập thực hành trong bài giảng:",
     "options": [
-      "A. Quy mô tương đương: $LOC = 200 \times 50 = 10,000\text{ LOC}$",
+      "A. Quy mô tương đương: LOC = 200 × 50 = 10,000 LOC",
       "B. Ước lượng bằng Function Point tốn kém hơn và bắt buộc phải viết mã nguồn trước mới tính được điểm chức năng",
-      "C. Nỗ lực công sức: $Effort = \frac{10,000\text{ LOC}}{1,000\text{ LOC/PM}} = 10\text{ person-month}$",
+      "C. Nỗ lực công sức: Effort = (1 / 0,000 LOC1,000 LOC)/PM = 10 person-month",
       "D. Điểm nhấn bài học: Ước lượng theo Function Point (FP) có thể triển khai được ngay từ giai đoạn rất sớm (ngay khi có tài liệu phân tích yêu cầu)",
       "E. Điểm nhấn bài học: Ước lượng theo Function Point (FP) tốt hơn LOC vì FP không phụ thuộc ngôn ngữ lập trình"
     ],
@@ -974,8 +974,8 @@ const MCQ_QUESTIONS = [
       3,
       4
     ],
-    "explanation": "Slide 18 & 37: $LOC = 10,000$; $Effort = 10\text{ person-month}$; FP tốt hơn LOC vì: *Không phụ thuộc ngôn ngữ, Dùng được từ giai đoạn sớm*.",
-    "tip": "Slide 18 & 37: $LOC = 10,000$; $Effort = 10\text{ person-month}$; FP tốt hơn LOC..."
+    "explanation": "Slide 18 & 37: LOC = 10,000; Effort = 10 person-month; FP tốt hơn LOC vì: *Không phụ thuộc ngôn ngữ, Dùng được từ giai đoạn sớm*.",
+    "tip": "Slide 18 & 37: LOC = 10,000; Effort = 10 person-month; FP tốt hơn LOC..."
   },
   {
     "id": 45,
@@ -988,7 +988,7 @@ const MCQ_QUESTIONS = [
       "B. Phân rã dự án làm nhóm phát triển mất thời gian vô ích và làm tăng độ rủi ro của hệ thống",
       "C. Nhận định của Roger Pressman: *\"Decomposition reduces uncertainty\"* (Phân rã làm giảm thiểu độ không chắc chắn của dự án)",
       "D. Phân rã theo chức năng: Chia hệ thống thành các Module, Sub-module, Feature (ví dụ: Module giỏ hàng, Module thanh toán)",
-      "E. Phân rã theo công việc: Chia dự án theo các giai đoạn quy trình phát triển (Phân tích $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử $\rightarrow$ Triển khai)",
+      "E. Phân rã theo công việc: Chia dự án theo các giai đoạn quy trình phát triển (Phân tích → Thiết kế → Lập trình → Kiểm thử → Triển khai)",
       "F. Bản chất của phân rã là chia nhỏ dự án lớn thành các phần việc cụ thể, giúp dự án dễ ước lượng và dễ quản lý hơn"
     ],
     "answer": [
@@ -1030,11 +1030,11 @@ const MCQ_QUESTIONS = [
     "type": "multiple",
     "question": "Trong mô hình **Basic COCOMO (COCOMO cơ bản)** do Barry Boehm phát triển:",
     "options": [
-      "A. Ở chế độ phát triển thông thường (Organic mode - nhóm nhỏ, quen thuộc với bài toán), các hệ số chuẩn là: $a = 2.4$ và $b = 1.05$",
-      "B. Công thức Basic COCOMO là hàm bậc nhất: $Effort = a \times KLOC + b$",
-      "C. Với dự án Organic mode có quy mô $KLOC = 32$, biết $32^{1.05} \approx 35$, nỗ lực tính được là: $Effort \approx 2.4 \times 35 \approx 84\text{ person-month}$",
-      "D. Nhận xét quản trị: Số mũ $b = 1.05 > 1$ phản ánh rằng khi kích thước phần mềm tăng lên thì độ phức tạp và công sức cần thiết sẽ tăng theo hàm phi tuyến, chứ không phải tăng đều tuyến tính đơn giản",
-      "E. Công thức tính toán nỗ lực công sức chuẩn: $Effort = a \times (KLOC)^b$ (đơn vị: person-month)"
+      "A. Ở chế độ phát triển thông thường (Organic mode - nhóm nhỏ, quen thuộc với bài toán), các hệ số chuẩn là: a = 2.4 và b = 1.05",
+      "B. Công thức Basic COCOMO là hàm bậc nhất: Effort = a × KLOC + b",
+      "C. Với dự án Organic mode có quy mô KLOC = 32, biết 32^1.05 ≈ 35, nỗ lực tính được là: Effort ≈ 2.4 × 35 ≈ 84 person-month",
+      "D. Nhận xét quản trị: Số mũ b = 1.05 > 1 phản ánh rằng khi kích thước phần mềm tăng lên thì độ phức tạp và công sức cần thiết sẽ tăng theo hàm phi tuyến, chứ không phải tăng đều tuyến tính đơn giản",
+      "E. Công thức tính toán nỗ lực công sức chuẩn: Effort = a × (KLOC)^b (đơn vị: person-month)"
     ],
     "answer": [
       0,
@@ -1042,8 +1042,8 @@ const MCQ_QUESTIONS = [
       3,
       4
     ],
-    "explanation": "Slide 28 & 39: Công thức chuẩn: $Effort = a \times (KLOC)^b$; Organic mode: $a = 2.4; b = 1.05$; KLOC = 32 $\rightarrow Effort \approx 84\text{ PM}$; Nhận xét: *Effort cao hơn tính đơn giản, COCOMO phản ánh độ phức tạp tăng phi tuyến*.",
-    "tip": "Slide 28 & 39: Công thức chuẩn: $Effort = a \times (KLOC)^b$; Organic mode: $a =..."
+    "explanation": "Slide 28 & 39: Công thức chuẩn: Effort = a × (KLOC)^b; Organic mode: a = 2.4; b = 1.05; KLOC = 32 → Effort ≈ 84 PM; Nhận xét: *Effort cao hơn tính đơn giản, COCOMO phản ánh độ phức tạp tăng phi tuyến*.",
+    "tip": "Slide 28 & 39: Công thức chuẩn: Effort = a × (KLOC)^b; Organic mode: a =..."
   },
   {
     "id": 48,
@@ -1079,8 +1079,8 @@ const MCQ_QUESTIONS = [
       "A. Rủi ro về bản chất mang tính \"không chắc chắn\" (uncertainty)",
       "B. Rủi ro là sự kiện có khả năng xảy ra trong tương lai (chưa xảy ra ở thời điểm hiện tại)",
       "C. Rủi ro là những sai sót, sự cố kỹ thuật chắc chắn 100% đã xảy ra trên môi trường máy chủ thực tế",
-      "D. Công thức định lượng mối quan hệ: $Risk = Probability \times Impact$ (Xác suất $\times$ Tác động)",
-      "E. Thuộc tính của rủi ro bao gồm: Có xác suất xảy ra ($0 < P < 1$) và Có hậu quả / mức độ thiệt hại (Loss)",
+      "D. Công thức định lượng mối quan hệ: Risk = Probability × Impact (Xác suất × Tác động)",
+      "E. Thuộc tính của rủi ro bao gồm: Có xác suất xảy ra (0 < P < 1) và Có hậu quả / mức độ thiệt hại (Loss)",
       "F. Rủi ro là sự kiện có thể gây ra ảnh hưởng hoặc thiệt hại tiêu cực đối với mục tiêu dự án"
     ],
     "answer": [
@@ -1101,7 +1101,7 @@ const MCQ_QUESTIONS = [
     "question": "Trong các cuộc họp tiến độ, việc nhầm lẫn giữa **Rủi ro (Risk)** và **Vấn đề / Sự cố (Issue)** thường dẫn đến hành động sai lệch. Bảng đối chiếu ở Slide 7 phân biệt sự khác nhau mang tính bản chất giữa hai khái niệm này dựa trên những tiêu chí nào?",
     "options": [
       "A. Về hành động ứng phó: Rủi ro đòi hỏi phải lập kế hoạch dự phòng (Precaution/Contingency); Vấn đề đòi hỏi phải kích hoạt xử lý giải quyết ngay lập tức (Action/Resolve)",
-      "B. Về xác suất: Rủi ro gắn liền với xác suất ($0 < P < 1$); Vấn đề có xác suất là 100% xảy ra",
+      "B. Về xác suất: Rủi ro gắn liền với xác suất (0 < P < 1); Vấn đề có xác suất là 100% xảy ra",
       "C. Rủi ro và Vấn đề là hai từ hoàn toàn đồng nghĩa, cùng phản ánh một sự việc đã xảy ra trên máy chủ",
       "D. Về trạng thái xảy ra: Rủi ro là sự kiện chưa xảy ra; Vấn đề (Issue) là sự kiện đã xảy ra",
       "E. Về chi phí: Rủi ro luôn gây tốn kém tiền bạc gấp đôi so với các vấn đề đã xảy ra"
@@ -1122,18 +1122,18 @@ const MCQ_QUESTIONS = [
     "question": "Đại lượng **Mức độ phơi nhiễm rủi ro (Risk Exposure - RE)** là chỉ số tài chính và định lượng quan trọng nhất để PM so sánh các rủi ro. Hãy chọn các phát biểu đúng về RE:",
     "options": [
       "A. RE càng thấp thì rủi ro đó càng đòi hỏi mức độ ưu tiên xử lý khẩn cấp nhất",
-      "B. Ví dụ bài học: Nếu rủi ro có xác suất xảy ra $P = 0.4$ và thiệt hại ước tính $Loss = 50,000\$$, thì mức độ phơi nhiễm là $RE = 0.4 \times 50,000\$ = 20,000\$$",
+      "B. Ví dụ bài học: Nếu rủi ro có xác suất xảy ra P = 0.4 và thiệt hại ước tính Loss = 50,000 USD, thì mức độ phơi nhiễm là RE = 0.4 × 50,000 USD = 20,000 USD",
       "C. Đơn vị của RE thường được quy đổi thành tiền tệ (USD hoặc VNĐ) hoặc đơn vị công sức (người-tháng)",
-      "D. Công thức tính toán là thương số: $RE = \frac{Probability}{Loss}$",
-      "E. Công thức tính toán chuẩn: $RE = Probability \times Loss$ (Xác suất xảy ra $\times$ Mức độ thiệt hại ước tính)"
+      "D. Công thức tính toán là thương số: RE = (Probability / Loss)",
+      "E. Công thức tính toán chuẩn: RE = Probability × Loss (Xác suất xảy ra × Mức độ thiệt hại ước tính)"
     ],
     "answer": [
       1,
       2,
       4
     ],
-    "explanation": "Slide 8 nêu rõ: $RE = Probability \times Loss$; Ví dụ $P = 0.4, Loss = 50,000\$ \rightarrow RE = 20,000\$$.",
-    "tip": "Slide 8 nêu rõ: $RE = Probability \times Loss$; Ví dụ $P = 0.4, Loss = 50,000\$ ..."
+    "explanation": "Slide 8 nêu rõ: RE = Probability × Loss; Ví dụ P = 0.4, Loss = 50,000 USD → RE = 20,000 USD.",
+    "tip": "Slide 8 nêu rõ: RE = Probability × Loss; Ví dụ P = 0.4, Loss = 50,000 USD ..."
   },
   {
     "id": 52,
@@ -1218,7 +1218,7 @@ const MCQ_QUESTIONS = [
       "C. Bước 1: Nhận diện rủi ro (Risk Identification)",
       "D. Bước 2: Phân tích và định lượng rủi ro (Risk Analysis)",
       "E. Chu trình ngược lại: Monitor rủi ro trước rồi mới đi tìm hiểu xem rủi ro đó là gì",
-      "F. Chu trình tóm tắt chuẩn xác: Identify $\rightarrow$ Analyze $\rightarrow$ Plan $\rightarrow$ Monitor"
+      "F. Chu trình tóm tắt chuẩn xác: Identify → Analyze → Plan → Monitor"
     ],
     "answer": [
       0,
@@ -1227,8 +1227,8 @@ const MCQ_QUESTIONS = [
       3,
       5
     ],
-    "explanation": "Slide 18 & 42 quy định quy trình 4 bước: *Nhận diện (Identify) $\rightarrow$ Phân tích (Analyze) $\rightarrow$ Lập kế hoạch (Plan) $\rightarrow$ Theo dõi (Monitor)*.",
-    "tip": "Slide 18 & 42 quy định quy trình 4 bước: *Nhận diện (Identify) $\rightarrow$ Phâ..."
+    "explanation": "Slide 18 & 42 quy định quy trình 4 bước: *Nhận diện (Identify) → Phân tích (Analyze) → Lập kế hoạch (Plan) → Theo dõi (Monitor)*.",
+    "tip": "Slide 18 & 42 quy định quy trình 4 bước: *Nhận diện (Identify) → Phâ..."
   },
   {
     "id": 56,
@@ -1326,7 +1326,7 @@ const MCQ_QUESTIONS = [
       "A. Risk Register là tài liệu tĩnh, chỉ lập một lần trong tuần đầu tiên rồi khóa lại không chỉnh sửa",
       "B. Theo dõi rủi ro bao gồm việc: Thường xuyên theo dõi các dấu hiệu cảnh báo sớm (triggers) và Cập nhật định kỳ nội dung bảng Risk Register",
       "C. Hoạt động theo dõi rủi ro chỉ bắt đầu khi dự án đã bị trễ hạn bàn giao ít nhất 1 tháng",
-      "D. Rủi ro cần phải được giám sát liên tục theo suốt vòng đời dự án: Lập kế hoạch $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử $\rightarrow$ Triển khai",
+      "D. Rủi ro cần phải được giám sát liên tục theo suốt vòng đời dự án: Lập kế hoạch → Thiết kế → Lập trình → Kiểm thử → Triển khai",
       "E. Các cột thông tin tiêu chuẩn cấu thành một bảng Risk Register gồm: Mã nhận diện (ID), Mô tả rủi ro (Description), Xác suất (Probability), Tác động/Thiệt hại (Impact/Loss), Người chịu trách nhiệm theo dõi (Owner), Chỉ số RE và Chiến lược xử lý"
     ],
     "answer": [
@@ -1342,13 +1342,13 @@ const MCQ_QUESTIONS = [
     "chapter": 4,
     "tag": "Slide 46, 55",
     "type": "multiple",
-    "question": "Xem xét bài toán so sánh giữa hai rủi ro thực tế (Slide 46, 55): - Rủi ro A: Xác suất $P = 0.5$, Thiệt hại ước tính $Loss = 10,000\$$ - Rủi ro B: Xác suất $P = 0.2$, Thiệt hại ước tính $Loss = 50,000\$$ Dưới góc độ người quản lý dự án được đào tạo bài bản, những kết luận nào sau đây là chính xác?",
+    "question": "Xem xét bài toán so sánh giữa hai rủi ro thực tế (Slide 46, 55): - Rủi ro A: Xác suất P = 0.5, Thiệt hại ước tính Loss = 10,000 USD - Rủi ro B: Xác suất P = 0.2, Thiệt hại ước tính Loss = 50,000 USD Dưới góc độ người quản lý dự án được đào tạo bài bản, những kết luận nào sau đây là chính xác?",
     "options": [
       "A. Rủi ro A chắc chắn nguy hiểm hơn Rủi ro B vì xác suất 50% lớn hơn 20% gấp 2.5 lần",
-      "B. Mức độ phơi nhiễm rủi ro A là: $RE(A) = 0.5 \times 10,000\$ = 5,000\$$",
-      "C. Mức độ phơi nhiễm rủi ro B là: $RE(B) = 0.2 \times 50,000\$ = 10,000\$$",
+      "B. Mức độ phơi nhiễm rủi ro A là: RE(A) = 0.5 × 10,000 USD = 5,000 USD",
+      "C. Mức độ phơi nhiễm rủi ro B là: RE(B) = 0.2 × 50,000 USD = 10,000 USD",
       "D. Bài học quản trị rút ra: \"Khi đánh giá rủi ro, người quản lý không được chỉ nhìn vào mỗi xác suất xảy ra, mà bắt buộc phải nhân với mức độ thiệt hại để nhìn ra tổng thiệt hại kỳ vọng (RE)\"",
-      "E. Vì $RE(B) = 10,000\$ > RE(A) = 5,000\$$, nên Rủi ro B nguy hiểm hơn và cần được ưu tiên xử lý trước",
+      "E. Vì RE(B) = 10,000 USD > RE(A) = 5,000 USD, nên Rủi ro B nguy hiểm hơn và cần được ưu tiên xử lý trước",
       "F. Không thể so sánh được vì hai rủi ro này có xác suất và số tiền khác nhau"
     ],
     "answer": [
@@ -1357,8 +1357,8 @@ const MCQ_QUESTIONS = [
       3,
       4
     ],
-    "explanation": "Slide 46 & 55: $RE(A) = 5,000\$$; $RE(B) = 10,000\$$; Kết luận: *Risk B nguy hiểm hơn • Không chỉ nhìn xác suất, phải nhìn tổng thiệt hại*.",
-    "tip": "Slide 46 & 55: $RE(A) = 5,000\$$; $RE(B) = 10,000\$$; Kết luận: *Risk B nguy hiể..."
+    "explanation": "Slide 46 & 55: RE(A) = 5,000 USD; RE(B) = 10,000 USD; Kết luận: *Risk B nguy hiểm hơn • Không chỉ nhìn xác suất, phải nhìn tổng thiệt hại*.",
+    "tip": "Slide 46 & 55: RE(A) = 5,000 USD; RE(B) = 10,000 USD; Kết luận: *Risk B nguy hiể..."
   },
   {
     "id": 62,
@@ -1367,11 +1367,11 @@ const MCQ_QUESTIONS = [
     "type": "multiple",
     "question": "Dựa vào bài tập phân loại rủi ro chuẩn trong bài giảng (Slide 43, 52), hãy xác định đúng nhóm rủi ro tương ứng của từng tình huống thực tế sau đây:",
     "options": [
-      "A. \"Công nghệ mới áp dụng vào hệ thống chưa ổn định, hay bị lỗi timeout\" $\rightarrow$ Được phân loại vào nhóm **Technical Risk (Rủi ro kỹ thuật)**",
-      "B. \"Khách hàng cắt giảm ngân sách đầu tư\" $\rightarrow$ Thuộc nhóm Technical Risk vì làm giảm tiền mua bản quyền công nghệ",
-      "C. \"Khách hàng gặp khủng hoảng tài chính và cắt giảm 50% ngân sách đầu tư\" $\rightarrow$ Được phân loại vào nhóm **Business Risk (Rủi ro kinh doanh)**",
-      "D. \"Phía khách hàng liên tục thay đổi và bổ sung yêu cầu nghiệp vụ mỗi tuần\" $\rightarrow$ Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**",
-      "E. \"Lập trình viên chủ chốt phụ trách kiến trúc đột ngột xin nghỉ việc\" $\rightarrow$ Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**"
+      "A. \"Công nghệ mới áp dụng vào hệ thống chưa ổn định, hay bị lỗi timeout\" → Được phân loại vào nhóm **Technical Risk (Rủi ro kỹ thuật)**",
+      "B. \"Khách hàng cắt giảm ngân sách đầu tư\" → Thuộc nhóm Technical Risk vì làm giảm tiền mua bản quyền công nghệ",
+      "C. \"Khách hàng gặp khủng hoảng tài chính và cắt giảm 50% ngân sách đầu tư\" → Được phân loại vào nhóm **Business Risk (Rủi ro kinh doanh)**",
+      "D. \"Phía khách hàng liên tục thay đổi và bổ sung yêu cầu nghiệp vụ mỗi tuần\" → Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**",
+      "E. \"Lập trình viên chủ chốt phụ trách kiến trúc đột ngột xin nghỉ việc\" → Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**"
     ],
     "answer": [
       0,
@@ -1379,8 +1379,8 @@ const MCQ_QUESTIONS = [
       3,
       4
     ],
-    "explanation": "Slide 43 & 52 phân loại chuẩn xác: *Dev nghỉ việc $\rightarrow$ Project Risk • Công nghệ mới $\rightarrow$ Technical Risk • Cắt ngân sách $\rightarrow$ Business Risk • Thay đổi yêu cầu $\rightarrow$ Project Risk*.",
-    "tip": "Slide 43 & 52 phân loại chuẩn xác: *Dev nghỉ việc $\rightarrow$ Project Risk • C..."
+    "explanation": "Slide 43 & 52 phân loại chuẩn xác: *Dev nghỉ việc → Project Risk • Công nghệ mới → Technical Risk • Cắt ngân sách → Business Risk • Thay đổi yêu cầu → Project Risk*.",
+    "tip": "Slide 43 & 52 phân loại chuẩn xác: *Dev nghỉ việc → Project Risk • C..."
   }
 ];
 

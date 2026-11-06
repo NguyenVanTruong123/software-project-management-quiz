@@ -10,36 +10,36 @@ Khi bàn về công tác quản trị dự án phần mềm, người quản lý
 - [ ] A. Rủi ro về bản chất mang tính "không chắc chắn" (uncertainty)
 - [ ] B. Rủi ro là sự kiện có khả năng xảy ra trong tương lai (chưa xảy ra ở thời điểm hiện tại)
 - [ ] C. Rủi ro là những sai sót, sự cố kỹ thuật chắc chắn 100% đã xảy ra trên môi trường máy chủ thực tế
-- [ ] D. Công thức định lượng mối quan hệ: $Risk = Probability \times Impact$ (Xác suất $\times$ Tác động)
-- [ ] E. Thuộc tính của rủi ro bao gồm: Có xác suất xảy ra ($0 < P < 1$) và Có hậu quả / mức độ thiệt hại (Loss)
+- [ ] D. Công thức định lượng mối quan hệ: Risk = Probability × Impact (Xác suất × Tác động)
+- [ ] E. Thuộc tính của rủi ro bao gồm: Có xác suất xảy ra (0 < P < 1) và Có hậu quả / mức độ thiệt hại (Loss)
 - [ ] F. Rủi ro là sự kiện có thể gây ra ảnh hưởng hoặc thiệt hại tiêu cực đối với mục tiêu dự án
 
-> **Đáp án đúng**: **A, B, D, E, F**  
+> **Đáp án đúng**: **A, B, D, E, F**
 > **Giải thích**: Slide 4, 5, 6 xác định chuẩn: *Rủi ro = sự kiện có khả năng xảy ra trong tương lai • Có thể gây ảnh hưởng tiêu cực • Thuộc tính: Không chắc chắn, Có xác suất xảy ra, Có hậu quả (thiệt hại) • Risk = Probability x Impact*. Sự kiện đã xảy ra 100% là Issue, không phải Risk.
 
 ---
 ### Câu 2 [CHỌN NHIỀU ĐÁP ÁN] (Slide 7)
 Trong các cuộc họp tiến độ, việc nhầm lẫn giữa **Rủi ro (Risk)** và **Vấn đề / Sự cố (Issue)** thường dẫn đến hành động sai lệch. Bảng đối chiếu ở Slide 7 phân biệt sự khác nhau mang tính bản chất giữa hai khái niệm này dựa trên những tiêu chí nào?
 - [ ] A. Về hành động ứng phó: Rủi ro đòi hỏi phải lập kế hoạch dự phòng (Precaution/Contingency); Vấn đề đòi hỏi phải kích hoạt xử lý giải quyết ngay lập tức (Action/Resolve)
-- [ ] B. Về xác suất: Rủi ro gắn liền với xác suất ($0 < P < 1$); Vấn đề có xác suất là 100% xảy ra
+- [ ] B. Về xác suất: Rủi ro gắn liền với xác suất (0 < P < 1); Vấn đề có xác suất là 100% xảy ra
 - [ ] C. Rủi ro và Vấn đề là hai từ hoàn toàn đồng nghĩa, cùng phản ánh một sự việc đã xảy ra trên máy chủ
 - [ ] D. Về trạng thái xảy ra: Rủi ro là sự kiện chưa xảy ra; Vấn đề (Issue) là sự kiện đã xảy ra
 - [ ] E. Về chi phí: Rủi ro luôn gây tốn kém tiền bạc gấp đôi so với các vấn đề đã xảy ra
 
-> **Đáp án đúng**: **A, B, D**  
+> **Đáp án đúng**: **A, B, D**
 > **Giải thích**: Bảng so sánh Slide 7 quy định rõ: *Trạng thái (Risk: Chưa xảy ra vs Issue: Đã xảy ra) • Xác suất (Risk: Có xác suất vs Issue: 100% xảy ra) • Hành động (Risk: Cần dự phòng vs Issue: Cần xử lý)*.
 
 ---
 ### Câu 3 [CHỌN NHIỀU ĐÁP ÁN] (Slide 8)
 Đại lượng **Mức độ phơi nhiễm rủi ro (Risk Exposure - RE)** là chỉ số tài chính và định lượng quan trọng nhất để PM so sánh các rủi ro. Hãy chọn các phát biểu đúng về RE:
 - [ ] A. RE càng thấp thì rủi ro đó càng đòi hỏi mức độ ưu tiên xử lý khẩn cấp nhất
-- [ ] B. Ví dụ bài học: Nếu rủi ro có xác suất xảy ra $P = 0.4$ và thiệt hại ước tính $Loss = 50,000\$$, thì mức độ phơi nhiễm là $RE = 0.4 \times 50,000\$ = 20,000\$$
+- [ ] B. Ví dụ bài học: Nếu rủi ro có xác suất xảy ra P = 0.4 và thiệt hại ước tính Loss = 50,000 USD, thì mức độ phơi nhiễm là RE = 0.4 × 50,000 USD = 20,000 USD
 - [ ] C. Đơn vị của RE thường được quy đổi thành tiền tệ (USD hoặc VNĐ) hoặc đơn vị công sức (người-tháng)
-- [ ] D. Công thức tính toán là thương số: $RE = \frac{Probability}{Loss}$
-- [ ] E. Công thức tính toán chuẩn: $RE = Probability \times Loss$ (Xác suất xảy ra $\times$ Mức độ thiệt hại ước tính)
+- [ ] D. Công thức tính toán là thương số: RE = (Probability / Loss)
+- [ ] E. Công thức tính toán chuẩn: RE = Probability × Loss (Xác suất xảy ra × Mức độ thiệt hại ước tính)
 
-> **Đáp án đúng**: **B, C, E**  
-> **Giải thích**: Slide 8 nêu rõ: $RE = Probability \times Loss$; Ví dụ $P = 0.4, Loss = 50,000\$ \rightarrow RE = 20,000\$$.
+> **Đáp án đúng**: **B, C, E**
+> **Giải thích**: Slide 8 nêu rõ: RE = Probability × Loss; Ví dụ P = 0.4, Loss = 50,000 USD → RE = 20,000 USD.
 
 ---
 ### Câu 4 [CHỌN NHIỀU ĐÁP ÁN] (Slide 9, 10)
@@ -52,7 +52,7 @@ Tại sao các chuyên gia kỹ nghệ phần mềm đều nhận định **Dự
 - [ ] F. Vì sao rủi ro cao: Công nghệ thông tin biến đổi với tốc độ rất nhanh, công cụ cũ nhanh chóng bị lỗi thời
 - [ ] G. Vì sao rủi ro cao: Quá trình phát triển phụ thuộc rất lớn vào năng lực và tâm lý của con người
 
-> **Đáp án đúng**: **A, C, D, E, F, G**  
+> **Đáp án đúng**: **A, C, D, E, F, G**
 > **Giải thích**: Slide 9 nêu lý do rủi ro cao: *Yêu cầu thay đổi • Sản phẩm vô hình • Phụ thuộc con người • Công nghệ thay đổi nhanh*; Slide 10 nêu vai trò: *Giảm bất ngờ • Tăng khả năng thành công • Cải thiện ra quyết định*.
 
 ---
@@ -64,7 +64,7 @@ Roger Pressman phân chia rủi ro phần mềm thành **3 nhóm rủi ro chính
 - [ ] D. **Technical Risks (Rủi ro kỹ thuật)**: Đe dọa chất lượng và tính khả thi kỹ thuật của phần mềm (ví dụ: Sử dụng công nghệ mới chưa kiểm chứng, Thiết kế kiến trúc chưa rõ, Lỗi tích hợp hệ thống, Hiệu năng không đạt)
 - [ ] E. **Business Risks (Rủi ro kinh doanh)**: Đe dọa khả năng sinh lời và sự tồn tại thương mại của sản phẩm (ví dụ: Thị trường biến động, Khách hàng đột ngột hủy dự án, Sản phẩm không sinh lợi, Thay đổi chiến lược kinh doanh)
 
-> **Đáp án đúng**: **A, C, D, E**  
+> **Đáp án đúng**: **A, C, D, E**
 > **Giải thích**: Slide 11–14 & 17 phân tích chi tiết 3 nhóm rủi ro: *Project Risks • Technical Risks • Business Risks*; Thảo luận Slide 17: *Business Risk nguy hiểm nhất vì dù làm tốt kỹ thuật nhưng không bán được hoặc khách hủy thì dự án bằng 0*.
 
 ---
@@ -77,7 +77,7 @@ Theo giáo trình của Roger Pressman (Slide 15), có **4 nguồn rủi ro ph�
 - [ ] E. **Process maturity** (Độ trưởng thành của quy trình phát triển phần mềm trong tổ chức)
 - [ ] F. Power outages during rainstorms (Hiện tượng mất điện khi trời mưa bão)
 
-> **Đáp án đúng**: **B, C, D, E**  
+> **Đáp án đúng**: **B, C, D, E**
 > **Giải thích**: Slide 15 liệt kê chính xác 4 nguồn rủi ro phổ biến theo Pressman: *Size uncertainty • Customer characteristics • Process maturity • Staff experience*.
 
 ---
@@ -88,10 +88,10 @@ Theo giáo trình của Roger Pressman (Slide 15), có **4 nguồn rủi ro ph�
 - [ ] C. Bước 1: Nhận diện rủi ro (Risk Identification)
 - [ ] D. Bước 2: Phân tích và định lượng rủi ro (Risk Analysis)
 - [ ] E. Chu trình ngược lại: Monitor rủi ro trước rồi mới đi tìm hiểu xem rủi ro đó là gì
-- [ ] F. Chu trình tóm tắt chuẩn xác: Identify $\rightarrow$ Analyze $\rightarrow$ Plan $\rightarrow$ Monitor
+- [ ] F. Chu trình tóm tắt chuẩn xác: Identify → Analyze → Plan → Monitor
 
-> **Đáp án đúng**: **A, B, C, D, F**  
-> **Giải thích**: Slide 18 & 42 quy định quy trình 4 bước: *Nhận diện (Identify) $\rightarrow$ Phân tích (Analyze) $\rightarrow$ Lập kế hoạch (Plan) $\rightarrow$ Theo dõi (Monitor)*.
+> **Đáp án đúng**: **A, B, C, D, F**
+> **Giải thích**: Slide 18 & 42 quy định quy trình 4 bước: *Nhận diện (Identify) → Phân tích (Analyze) → Lập kế hoạch (Plan) → Theo dõi (Monitor)*.
 
 ---
 ### Câu 8 [CHỌN NHIỀU ĐÁP ÁN] (Slide 19, 20, 21, 22, 23)
@@ -103,7 +103,7 @@ Trong bước đầu tiên (Nhận diện rủi ro), bài giảng giới thiệu
 - [ ] E. **Brainstorming**: Kỹ thuật họp động não nhóm, khuyến khích các thành viên liệt kê rủi ro tự do và tuyệt đối không phê phán ý kiến của nhau trong lúc liệt kê
 - [ ] F. **Checklist**: Sử dụng bảng danh mục rủi ro chuẩn đã được đúc kết từ trước (như danh mục về Scope change, Schedule slip, Technology risk, People risk)
 
-> **Đáp án đúng**: **B, C, E, F**  
+> **Đáp án đúng**: **B, C, E, F**
 > **Giải thích**: Slide 19–23 trình bày 4 kỹ thuật: *Brainstorming (Họp nhóm, Liệt kê tự do, Không phê phán) • Checklist (Danh mục rủi ro chuẩn) • Historical data (Dự án trước, Lessons learned, Báo cáo lỗi) • SWOT*.
 
 ---
@@ -116,7 +116,7 @@ Về các công cụ và nguyên tắc dùng cho hoạt động **Định lượ
 - [ ] E. Hoạt động định lượng rủi ro gồm việc: Gán xác suất xảy ra (từ 0 đến 1), Ước lượng mức độ thiệt hại (Loss), và Tính chỉ số RE
 - [ ] F. Nguyên tắc sàng lọc (Slide 32): Ưu tiên tập trung nguồn lực xử lý các rủi ro có chỉ số RE cao nhất
 
-> **Đáp án đúng**: **B, C, D, E, F**  
+> **Đáp án đúng**: **B, C, D, E, F**
 > **Giải thích**: Slide 26, 28, 29, 30, 32 nêu rõ: *Định lượng: Gán xác suất (0-1), Ước lượng thiệt hại, Tính RE • Xếp hạng: High, Medium, Low • Risk Matrix 3x3 • Nguyên tắc sàng lọc: Ưu tiên RE cao, Không bỏ qua rủi ro hiếm nhưng thiệt hại lớn*.
 
 ---
@@ -129,7 +129,7 @@ Khi lập kế hoạch ứng phó rủi ro, người quản lý dự án có **4
 - [ ] E. **Avoid (Tránh rủi ro)**: Thay đổi kế hoạch hoặc thiết kế để loại bỏ hoàn toàn nguyên nhân gây ra rủi ro (ví dụ: quyết định không dùng công nghệ AI thử nghiệm nữa mà chuyển sang dùng thuật toán truyền thống đã ổn định)
 - [ ] F. **Ignore (Lờ đi rủi ro)**: Giả vờ không biết để dự án không bị tăng chi phí dự phòng
 
-> **Đáp án đúng**: **B, C, D, E**  
+> **Đáp án đúng**: **B, C, D, E**
 > **Giải thích**: Slide 34, 35 định nghĩa 4 chiến lược chuẩn: *Avoid (Tránh) • Mitigate (Giảm thiểu) • Transfer (Chuyển giao) • Accept (Chấp nhận)*.
 
 ---
@@ -140,7 +140,7 @@ Trong một dự án xây dựng ứng dụng tài chính, đội ngũ nhận di
 - C. Chiến lược Tránh (Avoid)
 - D. Chiến lược Chuyển giao (Transfer)
 
-> **Đáp án đúng**: **B**  
+> **Đáp án đúng**: **B**
 > **Giải thích**: Slide 35 & 57 nêu rõ: *Mitigate = Giảm xác suất hoặc giảm tác động bằng cách làm Prototype trước, Đào tạo nhân sự, Kiểm thử sớm*.
 
 ---
@@ -149,36 +149,37 @@ Về công tác **Theo dõi rủi ro (Risk Monitoring)** và tài liệu **Sổ 
 - [ ] A. Risk Register là tài liệu tĩnh, chỉ lập một lần trong tuần đầu tiên rồi khóa lại không chỉnh sửa
 - [ ] B. Theo dõi rủi ro bao gồm việc: Thường xuyên theo dõi các dấu hiệu cảnh báo sớm (triggers) và Cập nhật định kỳ nội dung bảng Risk Register
 - [ ] C. Hoạt động theo dõi rủi ro chỉ bắt đầu khi dự án đã bị trễ hạn bàn giao ít nhất 1 tháng
-- [ ] D. Rủi ro cần phải được giám sát liên tục theo suốt vòng đời dự án: Lập kế hoạch $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử $\rightarrow$ Triển khai
+- [ ] D. Rủi ro cần phải được giám sát liên tục theo suốt vòng đời dự án: Lập kế hoạch → Thiết kế → Lập trình → Kiểm thử → Triển khai
 - [ ] E. Các cột thông tin tiêu chuẩn cấu thành một bảng Risk Register gồm: Mã nhận diện (ID), Mô tả rủi ro (Description), Xác suất (Probability), Tác động/Thiệt hại (Impact/Loss), Người chịu trách nhiệm theo dõi (Owner), Chỉ số RE và Chiến lược xử lý
 
-> **Đáp án đúng**: **B, D, E**  
+> **Đáp án đúng**: **B, D, E**
 > **Giải thích**: Slide 36, 37, 41 quy định: *Theo dõi trigger, Cập nhật Risk Register • Cột bảng: ID, Description, Probability, Impact, Owner, RE, Strategy • Giám sát suốt vòng đời dự án*.
 
 ---
 ### Câu 13 [CHỌN NHIỀU ĐÁP ÁN] (Slide 46, 55)
 Xem xét bài toán so sánh giữa hai rủi ro thực tế (Slide 46, 55):
-- Rủi ro A: Xác suất $P = 0.5$, Thiệt hại ước tính $Loss = 10,000\$$
-- Rủi ro B: Xác suất $P = 0.2$, Thiệt hại ước tính $Loss = 50,000\$$
+- Rủi ro A: Xác suất P = 0.5, Thiệt hại ước tính Loss = 10,000 USD
+- Rủi ro B: Xác suất P = 0.2, Thiệt hại ước tính Loss = 50,000 USD
 Dưới góc độ người quản lý dự án được đào tạo bài bản, những kết luận nào sau đây là chính xác?
 - [ ] A. Rủi ro A chắc chắn nguy hiểm hơn Rủi ro B vì xác suất 50% lớn hơn 20% gấp 2.5 lần
-- [ ] B. Mức độ phơi nhiễm rủi ro A là: $RE(A) = 0.5 \times 10,000\$ = 5,000\$$
-- [ ] C. Mức độ phơi nhiễm rủi ro B là: $RE(B) = 0.2 \times 50,000\$ = 10,000\$$
+- [ ] B. Mức độ phơi nhiễm rủi ro A là: RE(A) = 0.5 × 10,000 USD = 5,000 USD
+- [ ] C. Mức độ phơi nhiễm rủi ro B là: RE(B) = 0.2 × 50,000 USD = 10,000 USD
 - [ ] D. Bài học quản trị rút ra: "Khi đánh giá rủi ro, người quản lý không được chỉ nhìn vào mỗi xác suất xảy ra, mà bắt buộc phải nhân với mức độ thiệt hại để nhìn ra tổng thiệt hại kỳ vọng (RE)"
-- [ ] E. Vì $RE(B) = 10,000\$ > RE(A) = 5,000\$$, nên Rủi ro B nguy hiểm hơn và cần được ưu tiên xử lý trước
+- [ ] E. Vì RE(B) = 10,000 USD > RE(A) = 5,000 USD, nên Rủi ro B nguy hiểm hơn và cần được ưu tiên xử lý trước
 - [ ] F. Không thể so sánh được vì hai rủi ro này có xác suất và số tiền khác nhau
 
-> **Đáp án đúng**: **B, C, D, E**  
-> **Giải thích**: Slide 46 & 55: $RE(A) = 5,000\$$; $RE(B) = 10,000\$$; Kết luận: *Risk B nguy hiểm hơn • Không chỉ nhìn xác suất, phải nhìn tổng thiệt hại*.
+> **Đáp án đúng**: **B, C, D, E**
+> **Giải thích**: Slide 46 & 55: RE(A) = 5,000 USD; RE(B) = 10,000 USD; Kết luận: *Risk B nguy hiểm hơn • Không chỉ nhìn xác suất, phải nhìn tổng thiệt hại*.
 
 ---
 ### Câu 14 [CHỌN NHIỀU ĐÁP ÁN] (Slide 43, 52)
 Dựa vào bài tập phân loại rủi ro chuẩn trong bài giảng (Slide 43, 52), hãy xác định đúng nhóm rủi ro tương ứng của từng tình huống thực tế sau đây:
-- [ ] A. "Công nghệ mới áp dụng vào hệ thống chưa ổn định, hay bị lỗi timeout" $\rightarrow$ Được phân loại vào nhóm **Technical Risk (Rủi ro kỹ thuật)**
-- [ ] B. "Khách hàng cắt giảm ngân sách đầu tư" $\rightarrow$ Thuộc nhóm Technical Risk vì làm giảm tiền mua bản quyền công nghệ
-- [ ] C. "Khách hàng gặp khủng hoảng tài chính và cắt giảm 50% ngân sách đầu tư" $\rightarrow$ Được phân loại vào nhóm **Business Risk (Rủi ro kinh doanh)**
-- [ ] D. "Phía khách hàng liên tục thay đổi và bổ sung yêu cầu nghiệp vụ mỗi tuần" $\rightarrow$ Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**
-- [ ] E. "Lập trình viên chủ chốt phụ trách kiến trúc đột ngột xin nghỉ việc" $\rightarrow$ Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**
+- [ ] A. "Công nghệ mới áp dụng vào hệ thống chưa ổn định, hay bị lỗi timeout" → Được phân loại vào nhóm **Technical Risk (Rủi ro kỹ thuật)**
+- [ ] B. "Khách hàng cắt giảm ngân sách đầu tư" → Thuộc nhóm Technical Risk vì làm giảm tiền mua bản quyền công nghệ
+- [ ] C. "Khách hàng gặp khủng hoảng tài chính và cắt giảm 50% ngân sách đầu tư" → Được phân loại vào nhóm **Business Risk (Rủi ro kinh doanh)**
+- [ ] D. "Phía khách hàng liên tục thay đổi và bổ sung yêu cầu nghiệp vụ mỗi tuần" → Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**
+- [ ] E. "Lập trình viên chủ chốt phụ trách kiến trúc đột ngột xin nghỉ việc" → Được phân loại vào nhóm **Project Risk (Rủi ro dự án)**
 
-> **Đáp án đúng**: **A, C, D, E**  
-> **Giải thích**: Slide 43 & 52 phân loại chuẩn xác: *Dev nghỉ việc $\rightarrow$ Project Risk • Công nghệ mới $\rightarrow$ Technical Risk • Cắt ngân sách $\rightarrow$ Business Risk • Thay đổi yêu cầu $\rightarrow$ Project Risk*.
+> **Đáp án đúng**: **A, C, D, E**
+> **Giải thích**: Slide 43 & 52 phân loại chuẩn xác: *Dev nghỉ việc → Project Risk • Công nghệ mới → Technical Risk • Cắt ngân sách → Business Risk • Thay đổi yêu cầu → Project Risk*.
+

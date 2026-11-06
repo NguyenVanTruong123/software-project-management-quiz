@@ -13,7 +13,7 @@ Một số lập trình viên cho rằng: *"Dự án phần mềm thay đổi li
 - [ ] D. Nguồn lực của tổ chức luôn ở trạng thái hạn chế (giới hạn về thời gian, ngân sách và nhân sự)
 - [ ] E. Để có lý do kéo dài thời gian phát triển và trì hoãn ngày giao hàng cho khách hàng
 
-> **Đáp án đúng**: **A, C, D**  
+> **Đáp án đúng**: **A, C, D**
 > **Giải thích**: Slide 3 nêu 3 nguyên nhân cốt lõi: *Phần mềm phức tạp • Nhiều rủi ro • Nguồn lực hạn chế*.
 
 ---
@@ -26,7 +26,7 @@ Theo Roger Pressman, kế hoạch dự án được ví như *"bản lộ trình
 - [ ] E. Dự báo chính xác thời gian hoàn thành và chi phí ngân sách cần thiết
 - [ ] F. Xác định rõ ràng các công việc và phạm vi cần làm
 
-> **Đáp án đúng**: **A, B, D, E, F**  
+> **Đáp án đúng**: **A, B, D, E, F**
 > **Giải thích**: Slide 4 & 32 quy định mục đích lập kế hoạch: *Xác định công việc cần làm, dự báo thời gian & chi phí, phân bổ nguồn lực; Theo Pressman: Xác định phạm vi rõ ràng, Ước lượng chi phí & thời gian, Phân bổ nguồn lực, Nhận diện rủi ro, Làm cơ sở kiểm soát dự án ("A project plan provides a roadmap for the team")*.
 
 ---
@@ -39,7 +39,7 @@ Một **Bản kế hoạch dự án phần mềm hoàn chỉnh** cấu thành t�
 - [ ] E. Kế hoạch dự án chỉ cần ghi tên các thành viên trong nhóm, không cần ước lượng hay phân tích rủi ro
 - [ ] F. Kế hoạch dự án gồm 4 phần: Phạm vi (Scope), Ước lượng (Estimates), Lịch trình (Schedule), Rủi ro (Risks)
 
-> **Đáp án đúng**: **A, C, D, F**  
+> **Đáp án đúng**: **A, C, D, F**
 > **Giải thích**: Slide 5 & 32: *Kế hoạch dự án gồm: Phạm vi, Ước lượng, Lịch trình, Rủi ro*; *Nếu không có kế hoạch: Không kiểm soát tiến độ, Không kiểm soát chi phí, Không đánh giá được sai lệch*.
 
 ---
@@ -51,7 +51,7 @@ Khi bắt đầu lập kế hoạch dự án, việc **Xác định Phạm vi ph
 - [ ] D. Phạm vi phần mềm chỉ bao gồm danh sách các dòng code sẽ viết, không cần quan tâm đến mục tiêu kinh doanh
 - [ ] E. Định nghĩa rõ ranh giới hệ thống: Những gì hệ thống sẽ làm và Những gì hệ thống không làm
 
-> **Đáp án đúng**: **A, C, E**  
+> **Đáp án đúng**: **A, C, E**
 > **Giải thích**: Slide 6, 7, 8 chỉ rõ: *Phạm vi là: Những gì hệ thống sẽ làm & Những gì hệ thống không làm*; *Xác định phạm vi: Mục tiêu, Chức năng chính, Ràng buộc*; *Tài liệu: Vision, SRS mức cao*.
 
 ---
@@ -64,7 +64,7 @@ Theo Roger Pressman (Slide 33), một **Bản mô tả phạm vi phần mềm đ
 - [ ] E. 4 thành phần phạm vi gồm: Chức năng (Functions), Hiệu năng (Performance), Ràng buộc (Constraints), Giao diện tương tác (Interfaces)
 - [ ] F. Hậu quả nếu phạm vi không rõ: Dẫn đến hiện tượng Scope Creep (phạm vi phình to không kiểm soát)
 
-> **Đáp án đúng**: **A, B, D, E, F**  
+> **Đáp án đúng**: **A, B, D, E, F**
 > **Giải thích**: Slide 33 nêu chi tiết: *Phạm vi gồm: Chức năng (Functions), Hiệu năng (Performance), Ràng buộc (Constraints), Giao diện (Interfaces)*; *Hậu quả nếu phạm vi không rõ: Scope creep, Ước lượng sai, Mâu thuẫn khách hàng*; *Pressman: The scope must be bounded and clearly understood*.
 
 ---
@@ -76,7 +76,7 @@ Trong công tác lập kế hoạch, **Nguồn lực dự án phần mềm** đ�
 - [ ] D. Cơ cấu nhân lực dự án (Slide 11) gồm các vai trò chính: Project Manager (PM), Developer (Lập trình), Tester (Kiểm thử)
 - [ ] E. Nguồn lực phần cứng và phần mềm luôn có sẵn miễn phí nên không cần đưa vào kế hoạch
 
-> **Đáp án đúng**: **A, B, D**  
+> **Đáp án đúng**: **A, B, D**
 > **Giải thích**: Slide 10: *Phân loại nguồn lực: Nhân lực, Phần cứng, Phần mềm, Thời gian*; Slide 11: *Nhân lực gồm: PM, Developer, Tester*; Slide 12: *Vấn đề nguồn lực: Thiếu người, Thiếu kỹ năng, Phân bổ sai*.
 
 ---
@@ -88,7 +88,7 @@ Roger Pressman phân chia tài nguyên dự án thành **3 nhóm nguồn lực (
 - [ ] D. Nhân lực chỉ đóng vai trò thứ cấp so với phần cứng máy tính và đường truyền Internet
 - [ ] E. **Reusable Software Resources (Phần mềm tái sử dụng)**: Gồm Frameworks, thư viện mã nguồn, các thành phần COTS (Commercial Off-The-Shelf)
 
-> **Đáp án đúng**: **A, C, E**  
+> **Đáp án đúng**: **A, C, E**
 > **Giải thích**: Slide 13 & 35: 3 nhóm nguồn lực theo Pressman gồm: *1. Human Resources (Nhân lực - quan trọng nhất), 2. Reusable Software Resources (Phần mềm tái sử dụng), 3. Environmental Resources (Môi trường)*.
 
 ---
@@ -100,32 +100,32 @@ Hoạt động **Định lượng dự án phần mềm (Project Estimation)** l
 - [ ] D. Định lượng phần mềm là hoạt động đoán mò và ép con số deadline theo ý muốn chủ quan của khách hàng
 - [ ] E. Cơ sở để định lượng đáng tin cậy dựa trên: Kinh nghiệm chuyên gia, Dữ liệu lịch sử từ các dự án tương tự, và Các mô hình toán học/kinh nghiệm
 
-> **Đáp án đúng**: **A, B, E**  
+> **Đáp án đúng**: **A, B, E**
 > **Giải thích**: Slide 14, 15, 16 nêu rõ: *Định lượng là: Ước lượng kích thước, công sức, chi phí*; *Dựa trên: Kinh nghiệm, Dữ liệu lịch sử, Mô hình toán học*; *Đại lượng: LOC, Function Point, Person-month*.
 
 ---
 ### Câu 9 [CHỌN NHIỀU ĐÁP ÁN] (Slide 17, 36)
 Một dự án phần mềm dự kiến có quy mô 20,000 dòng lệnh (20,000 LOC). Năng suất trung bình của đội ngũ là 800 LOC / người-tháng. Nếu bố trí nhóm 5 lập trình viên làm việc toàn thời gian:
 - [ ] A. Trong thực tế, mối quan hệ giữa số người và thời gian phát triển phần mềm không hoàn toàn là quan hệ tuyến tính hoàn hảo
-- [ ] B. Thời gian hoàn thành dự kiến: $Duration = \frac{25\text{ person-month}}{5\text{ người}} = 5\text{ tháng}$
+- [ ] B. Thời gian hoàn thành dự kiến: Duration = \frac25 person-month5 người = 5 tháng
 - [ ] C. Cảnh báo quan trọng của Pressman: Phép ước lượng theo LOC chỉ mang tính chất tương đối và phụ thuộc rất lớn vào ngôn ngữ lập trình
 - [ ] D. Nếu tuyển ngay 25 người vào làm thì chắc chắn dự án sẽ hoàn thành tuyệt đối chỉ trong vòng đúng 1 tháng mà không phát sinh thêm chi phí giao tiếp
-- [ ] E. Nỗ lực công sức tính theo công thức: $Effort = \frac{20,000\text{ LOC}}{800\text{ LOC/PM}} = 25\text{ person-month}$
+- [ ] E. Nỗ lực công sức tính theo công thức: Effort = \frac20,000 LOC800 LOC/PM = 25 person-month
 
-> **Đáp án đúng**: **A, B, C, E**  
-> **Giải thích**: Slide 17, 36: $Effort = 25\text{ PM}$; $Duration = 5\text{ tháng}$; Cảnh báo Pressman: *LOC chỉ ước lượng tương đối, phụ thuộc ngôn ngữ*.
+> **Đáp án đúng**: **A, B, C, E**
+> **Giải thích**: Slide 17, 36: Effort = 25 PM; Duration = 5 tháng; Cảnh báo Pressman: *LOC chỉ ước lượng tương đối, phụ thuộc ngôn ngữ*.
 
 ---
 ### Câu 10 [CHỌN NHIỀU ĐÁP ÁN] (Slide 18, 37)
-Một dự án phân tích có tổng Điểm chức năng chưa điều chỉnh là $UFP = 200$. Theo dữ liệu tổ chức, trung bình $1\text{ FP} \approx 50\text{ LOC}$ đối với ngôn ngữ lập trình đang dùng, năng suất đội ngũ đạt $1,000\text{ LOC/person-month}$. Dựa trên bài tập thực hành trong bài giảng:
-- [ ] A. Quy mô tương đương: $LOC = 200 \times 50 = 10,000\text{ LOC}$
+Một dự án phân tích có tổng Điểm chức năng chưa điều chỉnh là UFP = 200. Theo dữ liệu tổ chức, trung bình 1 FP ≈ 50 LOC đối với ngôn ngữ lập trình đang dùng, năng suất đội ngũ đạt 1,000 LOC/person-month. Dựa trên bài tập thực hành trong bài giảng:
+- [ ] A. Quy mô tương đương: LOC = 200 × 50 = 10,000 LOC
 - [ ] B. Ước lượng bằng Function Point tốn kém hơn và bắt buộc phải viết mã nguồn trước mới tính được điểm chức năng
-- [ ] C. Nỗ lực công sức: $Effort = \frac{10,000\text{ LOC}}{1,000\text{ LOC/PM}} = 10\text{ person-month}$
+- [ ] C. Nỗ lực công sức: Effort = \frac10,000 LOC1,000 LOC/PM = 10 person-month
 - [ ] D. Điểm nhấn bài học: Ước lượng theo Function Point (FP) có thể triển khai được ngay từ giai đoạn rất sớm (ngay khi có tài liệu phân tích yêu cầu)
 - [ ] E. Điểm nhấn bài học: Ước lượng theo Function Point (FP) tốt hơn LOC vì FP không phụ thuộc ngôn ngữ lập trình
 
-> **Đáp án đúng**: **A, C, D, E**  
-> **Giải thích**: Slide 18 & 37: $LOC = 10,000$; $Effort = 10\text{ person-month}$; FP tốt hơn LOC vì: *Không phụ thuộc ngôn ngữ, Dùng được từ giai đoạn sớm*.
+> **Đáp án đúng**: **A, C, D, E**
+> **Giải thích**: Slide 18 & 37: LOC = 10,000; Effort = 10 person-month; FP tốt hơn LOC vì: *Không phụ thuộc ngôn ngữ, Dùng được từ giai đoạn sớm*.
 
 ---
 ### Câu 11 [CHỌN NHIỀU ĐÁP ÁN] (Slide 19, 20, 21, 22)
@@ -134,10 +134,10 @@ Kỹ thuật **Phân rã phần mềm (Decomposition)** là kỹ năng quan tr�
 - [ ] B. Phân rã dự án làm nhóm phát triển mất thời gian vô ích và làm tăng độ rủi ro của hệ thống
 - [ ] C. Nhận định của Roger Pressman: *"Decomposition reduces uncertainty"* (Phân rã làm giảm thiểu độ không chắc chắn của dự án)
 - [ ] D. Phân rã theo chức năng: Chia hệ thống thành các Module, Sub-module, Feature (ví dụ: Module giỏ hàng, Module thanh toán)
-- [ ] E. Phân rã theo công việc: Chia dự án theo các giai đoạn quy trình phát triển (Phân tích $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử $\rightarrow$ Triển khai)
+- [ ] E. Phân rã theo công việc: Chia dự án theo các giai đoạn quy trình phát triển (Phân tích → Thiết kế → Lập trình → Kiểm thử → Triển khai)
 - [ ] F. Bản chất của phân rã là chia nhỏ dự án lớn thành các phần việc cụ thể, giúp dự án dễ ước lượng và dễ quản lý hơn
 
-> **Đáp án đúng**: **A, C, D, E, F**  
+> **Đáp án đúng**: **A, C, D, E, F**
 > **Giải thích**: Slide 19, 20, 21, 22: *Phân rã: Chia nhỏ, dễ ước lượng, dễ quản lý ("Decomposition reduces uncertainty")*; *2 cách phân rã: Theo chức năng (Module, Feature) và Theo công việc (Phân tích, Thiết kế, Lập trình, Kiểm thử)*; *Công cụ: WBS*.
 
 ---
@@ -149,20 +149,20 @@ Kỹ thuật **Phân rã phần mềm (Decomposition)** là kỹ năng quan tr�
 - [ ] D. Mô hình COCOMO cơ bản giúp tính toán 3 thông số then chốt: Kích thước (Size), Công sức (Effort), và Thời gian biểu (Schedule)
 - [ ] E. Cơ chế hoạt động: Mô hình kinh nghiệm dựa trên việc phân tích dữ liệu quá khứ của hàng trăm dự án và căn cứ vào đặc trưng cụ thể của dự án mới
 
-> **Đáp án đúng**: **A, B, D, E**  
+> **Đáp án đúng**: **A, B, D, E**
 > **Giải thích**: Slide 24, 25, 26, 27 nêu rõ: *Giảm phụ thuộc cảm tính, có cơ sở khoa học • Dựa dữ liệu quá khứ và đặc trưng dự án • COCOMO: Size, Effort, Schedule • Ưu nhược điểm: Nhanh, nhưng phụ thuộc dữ liệu đầu vào*.
 
 ---
 ### Câu 13 [CHỌN NHIỀU ĐÁP ÁN] (Slide 28, 39)
 Trong mô hình **Basic COCOMO (COCOMO cơ bản)** do Barry Boehm phát triển:
-- [ ] A. Ở chế độ phát triển thông thường (Organic mode - nhóm nhỏ, quen thuộc với bài toán), các hệ số chuẩn là: $a = 2.4$ và $b = 1.05$
-- [ ] B. Công thức Basic COCOMO là hàm bậc nhất: $Effort = a \times KLOC + b$
-- [ ] C. Với dự án Organic mode có quy mô $KLOC = 32$, biết $32^{1.05} \approx 35$, nỗ lực tính được là: $Effort \approx 2.4 \times 35 \approx 84\text{ person-month}$
-- [ ] D. Nhận xét quản trị: Số mũ $b = 1.05 > 1$ phản ánh rằng khi kích thước phần mềm tăng lên thì độ phức tạp và công sức cần thiết sẽ tăng theo hàm phi tuyến, chứ không phải tăng đều tuyến tính đơn giản
-- [ ] E. Công thức tính toán nỗ lực công sức chuẩn: $Effort = a \times (KLOC)^b$ (đơn vị: person-month)
+- [ ] A. Ở chế độ phát triển thông thường (Organic mode - nhóm nhỏ, quen thuộc với bài toán), các hệ số chuẩn là: a = 2.4 và b = 1.05
+- [ ] B. Công thức Basic COCOMO là hàm bậc nhất: Effort = a × KLOC + b
+- [ ] C. Với dự án Organic mode có quy mô KLOC = 32, biết 32^1.05 ≈ 35, nỗ lực tính được là: Effort ≈ 2.4 × 35 ≈ 84 person-month
+- [ ] D. Nhận xét quản trị: Số mũ b = 1.05 > 1 phản ánh rằng khi kích thước phần mềm tăng lên thì độ phức tạp và công sức cần thiết sẽ tăng theo hàm phi tuyến, chứ không phải tăng đều tuyến tính đơn giản
+- [ ] E. Công thức tính toán nỗ lực công sức chuẩn: Effort = a × (KLOC)^b (đơn vị: person-month)
 
-> **Đáp án đúng**: **A, C, D, E**  
-> **Giải thích**: Slide 28 & 39: Công thức chuẩn: $Effort = a \times (KLOC)^b$; Organic mode: $a = 2.4; b = 1.05$; KLOC = 32 $\rightarrow Effort \approx 84\text{ PM}$; Nhận xét: *Effort cao hơn tính đơn giản, COCOMO phản ánh độ phức tạp tăng phi tuyến*.
+> **Đáp án đúng**: **A, C, D, E**
+> **Giải thích**: Slide 28 & 39: Công thức chuẩn: Effort = a × (KLOC)^b; Organic mode: a = 2.4; b = 1.05; KLOC = 32 → Effort ≈ 84 PM; Nhận xét: *Effort cao hơn tính đơn giản, COCOMO phản ánh độ phức tạp tăng phi tuyến*.
 
 ---
 ### Câu 14 [CHỌN NHIỀU ĐÁP ÁN] (Slide 29, 40)
@@ -174,5 +174,6 @@ Trong một dự án thực tế, người Quản lý dự án (PM) ước lư�
 - [ ] E. Lời khuyên của Pressman: *"Estimation should be iterative"* (Ước lượng phải là một quá trình liên tục lặp lại và tinh chỉnh dần qua từng giai đoạn)
 - [ ] F. Nguyên tắc nền tảng: Không bao giờ nên tin cậy tuyệt đối vào một nguồn ước lượng duy nhất
 
-> **Đáp án đúng**: **A, B, C, E, F**  
+> **Đáp án đúng**: **A, B, C, E, F**
 > **Giải thích**: Slide 29 & 40: *Không nên tin một nguồn duy nhất; Giải pháp: Dùng nhiều phương pháp, So sánh kết quả, Điều chỉnh theo kinh nghiệm tổ chức; Pressman: Estimation should be iterative*.
+
