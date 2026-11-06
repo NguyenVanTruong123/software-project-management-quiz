@@ -111,11 +111,11 @@ B. Effort = a * (KLOC)^b
 C. Effort = (KLOC / a)^b  
 D. Effort = a * b * KLOC
 
-**Câu 18:** Định luật Brooks phát biểu rằng:
-A. Thêm tiền sẽ rút ngắn một nửa thời gian  
-B. Thêm nhân lực vào một dự án phần mềm đang trễ hạn chỉ làm cho nó trễ hạn hơn  
-C. Càng nhiều dev thì càng ít lỗi  
-D. 30 người có thể làm xong phần mềm trong 1 ngày
+**Câu 18:** Kỹ thuật phân rã phần mềm (Decomposition) nhằm mục đích gì theo bài giảng?
+A. Tăng số lượng dòng mã nguồn để dự án trông quy mô hơn  
+B. Chia nhỏ dự án thành các phần việc cụ thể để dễ ước lượng và dễ quản lý, giảm thiểu độ không chắc chắn  
+C. Để chia nhỏ nhóm phát triển thành nhiều công ty độc lập  
+D. Loại bỏ hoàn toàn các yêu cầu phi chức năng khỏi dự án
 
 **Câu 19:** Khác biệt cốt lõi nhất giữa Rủi ro (Risk) và Vấn đề (Issue) là gì?
 A. Rủi ro tốn tiền hơn  
@@ -157,11 +157,11 @@ D. Chấp nhận (Accept)
 
 ## PHẦN II: TỰ LUẬN & TÌNH HUỐNG THỰC TẾ (4.0 ĐIỂM - 2 CÂU)
 
-### Câu 1 (2.0 điểm): Bài toán Ước lượng & Định luật Brooks
-Một dự án phần mềm có quy mô $32	ext{ KLOC}$ thuộc chế độ Organic mode trong mô hình Basic COCOMO ($a = 2.4; b = 1.05$; biết $32^{1.05} pprox 38$). Đội ngũ dự kiến bố trí 4 lập trình viên.
-1. Tính nỗ lực công sức (Effort) theo mô hình Basic COCOMO. *(0.75 điểm)*
-2. Tính thời gian hoàn thành lý thuyết (Duration) của dự án. *(0.5 điểm)*
-3. Giám đốc yêu cầu rút ngắn thời gian hoàn thành xuống còn một nửa bằng cách tuyển gấp đôi nhân sự lên 8 người. Dựa trên Định luật Brooks và lý thuyết kỹ nghệ phần mềm của Pressman, bạn hãy giải thích cho Giám đốc hiểu vì sao phương án này KHÔNG THỂ rút ngắn thời gian xuống một nửa trong thực tế. *(0.75 điểm)*
+### Câu 1 (2.0 điểm): Bài toán Ước lượng Basic COCOMO & Phân rã dự án
+Một dự án phần mềm có quy mô 32 KLOC thuộc chế độ Organic mode trong mô hình Basic COCOMO ($a = 2.4; b = 1.05$; trong bài giảng slide 39 cho biết: $32^{1.05} pprox 35$). Đội ngũ dự kiến bố trí 4 lập trình viên.
+1. Tính nỗ lực công sức (Effort) theo công thức mô hình Basic COCOMO trong slide. *(0.75 điểm)*
+2. Tính thời gian hoàn thành lý thuyết (Duration) của dự án nếu phân bổ đều cho 4 người. *(0.5 điểm)*
+3. Dựa trên lý thuyết Chương 3 slide 19–21, vì sao phân rã phần mềm (Decomposition) là cần thiết trước khi ước lượng? Nêu rõ 2 cách phân rã được giảng dạy trong slide và cho ví dụ cụ thể của từng cách. *(0.75 điểm)*
 
 ### Câu 2 (2.0 điểm): Xây dựng Bảng Sổ theo dõi rủi ro (Risk Register)
 Hãy lập một bảng **Risk Register** hoàn chỉnh cho dự án **"Ứng dụng Mobile Banking"** gồm ít nhất 5 rủi ro thực tế:
@@ -183,16 +183,17 @@ Hãy lập một bảng **Risk Register** hoàn chỉnh cho dự án **"Ứng d�
 
 #### Lời giải Câu 1 (2.0 điểm):
 1. **Tính Effort (0.75 đ)**:
-   - Công thức: $	ext{Effort} = a 	imes (	ext{KLOC})^b = 2.4 	imes (32)^{1.05}$
-   - Thay số: $	ext{Effort} = 2.4 	imes 38 pprox 91.2	ext{ person-month}$ *(hoặc theo slide } pprox 84	ext{ PM)*.
+   - Công thức theo slide: $	ext{Effort} = a 	imes (	ext{KLOC})^b = 2.4 	imes (32)^{1.05}$
+   - Với $a = 2.4, b = 1.05$, $32^{1.05} pprox 35$:
+     $	ext{Effort} pprox 2.4 	imes 35 pprox 84	ext{ person-month}$ (slide 39).
+     *(Nhận xét: Effort cao hơn tính đơn giản, COCOMO phản ánh độ phức tạp).*
 2. **Tính Duration (0.5 đ)**:
-   - Công thức: $	ext{Duration} = rac{	ext{Effort}}{	ext{Số dev}} = rac{91.2}{4} = 22.8	ext{ tháng}$ (khoảng gần 2 năm).
-3. **Phân tích Định luật Brooks (0.75 đ)**:
-   - Khẳng định: Phương án tăng từ 4 lên 8 người KHÔNG THỂ rút ngắn một nửa thời gian.
-   - Giải thích:
-     + Theo Định luật Brooks: *"Thêm người vào một dự án đang chậm chỉ làm nó chậm hơn"*.
-     + Số kênh giao tiếp tăng vọt theo công thức $N(N-1)/2$: Với 4 người có 6 kênh giao tiếp, với 8 người tăng lên 28 kênh (tăng gần gấp 5 lần).
-     + Người mới vào cần người cũ bỏ thời gian đào tạo lại, mã nguồn dễ xung đột khi tích hợp, dẫn đến chi phí giao tiếp và quản lý tăng vọt triệt tiêu hiệu quả làm việc.
+   - Công thức: $	ext{Duration} = rac{	ext{Effort}}{	ext{Số dev}} = rac{84}{4} = 21	ext{ tháng}$.
+3. **Phân rã phần mềm (Decomposition) theo slide (0.75 đ)**:
+   - Mục đích: Chia nhỏ dự án để dễ ước lượng, dễ quản lý, giảm thiểu độ không chắc chắn ("Decomposition reduces uncertainty").
+   - 2 cách phân rã trong slide:
+     + **Phân rã theo chức năng**: Chia theo Module, Feature (ví dụ: Module sản phẩm, Module giỏ hàng, Module thanh toán).
+     + **Phân rã theo công việc**: Chia theo giai đoạn quy trình (ví dụ: Phân tích, Thiết kế, Lập trình, Kiểm thử, Triển khai).
 
 #### Lời giải Câu 2 (2.0 điểm):
 1. **Lập bảng Risk Register chuẩn (1.5 đ)**:
@@ -208,5 +209,7 @@ Hãy lập một bảng **Risk Register** hoàn chỉnh cho dự án **"Ứng d�
 *(Đạt 1.5 điểm khi có đủ 5 cột, tính đúng RE và có đủ 3 nhóm: Project, Technical, Business)*.
 
 2. **Nguyên tắc sàng lọc rủi ro của Pressman (0.5 đ)**:
-   - Ưu tiên phân bổ nguồn lực xử lý các rủi ro có chỉ số **RE cao nhất** trước ($R_1 ightarrow R_2 ightarrow R_3...$).
+   - Ưu tiên phân bổ nguồn lực xử lý các rủi ro có chỉ số **RE cao nhất** trước ($R_1 
+ightarrow R_2 
+ightarrow R_3...$).
    - **Tuyệt đối không bỏ qua các rủi ro có xác suất hiếm nhưng nếu xảy ra thì thiệt hại mang tính hủy diệt** (như rủi ro $R_1$: $P = 20\%$ nhưng $Loss = 200,000\$$).

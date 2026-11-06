@@ -1,19 +1,54 @@
-# CÁC CÂU HỎI, KHÁI NIỆM CẦN HỌC
-## CHƯƠNG 1: GIỚI THIỆU VỀ QUẢN LÝ DỰ ÁN
+# BÀI GIẢNG CHUẨN SLIDE: CHƯƠNG 1 - GIỚI THIỆU VỀ QUẢN LÝ DỰ ÁN
+> Trích xuất chính xác 100% nguyên bản từng slide theo bài giảng môn Quản lý Dự án Phần mềm - ĐH Thăng Long.
+
+### [Slide 1]
+QUẢN LÝ DỰ ÁN PHẦN MỀM
+Hà Nội, tháng 01 năm 2026
+Giảng viên:
+Vũ Duy Khương
 
 ---
 
-### 1. DỰ ÁN LÀ GÌ?
-Dự án = tập hợp các hoạt động có:
+### [Slide 2]
+QUẢN LÝ DỰ ÁN PHẦN MỀM
+Hà Nội, tháng 01 năm 2026
+CHƯƠNG 1: GIỚI THIỆU VỀ QUẢN LÝ DỰ ÁN
+
+---
+
+### [Slide 3]
+1.1. Quản lý dự án là gì
+1.2. Dự án thất bại và dự án thành công
+1.3. Các vấn đề cần quản lý
+1.3.1 Quản lý tiến trình thực hiện dự án
+1.3.2 Quản lý sản phẩm
+1.3.3 Quản lý nhân lực
+1.3.4 Quản lý môi trường và các nguồn lực khác
+CHƯƠNG 1: GIỚI THIỆU VỀ QUẢN LÝ DỰ ÁN
+
+---
+
+### [Slide 4]
+MỤC TIÊU BÀI HỌC
+§ Hiểu quản lý dự án là gì
+• Phân biệt thành công & thất bại
+• Nhận diện các vấn đề cần quản lý
+
+---
+
+### [Slide 5]
+DỰ ÁN LÀ GÌ?
+§ Dự án = tập hợp các hoạt động có:
 • Mục tiêu cụ thể
 • Thời gian xác định
 • Nguồn lực giới hạn
 • Kết quả đầu ra rõ ràng
-*Ví dụ*: Xây dựng website bán hàng, triển khai hệ thống ERP.
+§ Ví dụ: Xây dựng website bán hàng, triển khai hệthống ERP
 
 ---
 
-### 2. ĐẶC ĐIỂM DỰ ÁN PHẦN MỀM
+### [Slide 6]
+ĐẶC ĐIỂM DỰ ÁN PHẦN MỀM
 • Sản phẩm vô hình
 • Yêu cầu thay đổi liên tục
 • Phụ thuộc con người nhiều hơn máy móc
@@ -21,32 +56,36 @@ Dự án = tập hợp các hoạt động có:
 
 ---
 
-### 3. QUẢN LÝ DỰ ÁN LÀ GÌ?
-Quản lý dự án là áp dụng kiến thức, kỹ năng, công cụ và kỹ thuật vào các hoạt động của dự án nhằm đáp ứng yêu cầu của dự án.
+### [Slide 7]
+QUẢN LÝ DỰ ÁN?
+Quản lý dự án là áp dụng kiến thức, kỹ năng, công cụ và kỹ thuật vào các
+hoạt động của dự án nhằm đáp ứng yêu cầu của dự án.
 • Đạt mục tiêu dự án
-• Đạt hoặc vượt các yêu cầu hay kỳ vọng của những người có quyền lợi và nghĩa vụ liên quan (stakeholders)
+• Đạt hoặc vượt các yêu cầu hay kỳ vọng của những người có quyền lợi
+và nghĩa vụ liên quan (stakeholders)
 • Cân bằng giữa các yếu tố: thời gian, chi phí, chất lượng sản phẩm
 
-Quản lý dự án là quá trình:
-• Lập kế hoạch (Planning)
-• Tổ chức (Organizing)
+---
+
+### [Slide 8]
+QUẢN LÝ DỰ ÁN LÀ GÌ?
+§ Quản lý dựán là quá trình:
+• Lập kếhoạch (Planning)
+• Tổchức (Organizing)
 • Điều phối (Coordinating)
 • Theo dõi & kiểm soát (Monitoring & Controlling)
-Nhằm đạt mục tiêu dự án trong các ràng buộc.
+§ Nhằm đạt mục tiêu dựán trong các ràng buộc
 
 ---
 
-### 4. CÁC NHIỆM VỤ TRONG QUẢN LÝ DỰ ÁN
-(Quay quanh Tài nguyên của dự án)
-• **Lập kế hoạch (Planning)**: Nhắm tới mục tiêu nào, tại sao?
-• **Tổ chức (Organizing)**: Liên quan đến cái gì, tại sao?
-• **Chỉ đạo (Directing)**: Ai quyết định cái gì, khi nào?
-• **Tạo động lực (Motivation)**: Điều gì khiến mọi người có thể bộc lộ những phẩm chất tốt nhất trong công việc?
-• **Kiểm soát (Controlling)**: Ai thẩm định kết quả? Dựa vào các tiêu chuẩn nào?
+### [Slide 9]
+QUẢN LÝ DỰ ÁN LÀ GÌ?
+Các nhiệm vụ trong quản lý dự án
 
 ---
 
-### 5. TAM GIÁC DỰ ÁN
+### [Slide 10]
+TAM GIÁC DỰ ÁN
 • Phạm vi (Scope)
 • Thời gian (Time)
 • Chi phí (Cost)
@@ -54,23 +93,42 @@ Nhằm đạt mục tiêu dự án trong các ràng buộc.
 
 ---
 
-### 6. 4 YẾU TỐ LIÊN QUAN ĐẾN QUẢN LÝ DỰ ÁN (4P)
-• **Con người** — yếu tố quan trọng nhất của dự án
-• **Sản phẩm** — phần mềm được xây dựng
-• **Quy trình** — tập hợp các hoạt động chương trình khung và nhiệm vụ của phần mềm để thực hiện công việc
-• **Dự án** — tất cả các công việc để sản phẩm trở thành hiện thực
+### [Slide 11]
+CÁC LĨNH VỰC TRONG QUẢN LÝ DỰ ÁN
 
 ---
 
-### 7. VAI TRÒ PM
-• Kết nối giữa khách hàng – đội dự án – tổ chức
+### [Slide 12]
+4 YẾU TỐ LIÊN QUAN ĐẾN QUẢN LÝ DỰ ÁN
+• Con người— yếu tố quan trọng nhất của dự án
+• Sản phẩm — phần mềm được xây dựng
+• Quy trình — tập hợp các hoạt động chương trình khung và nhiệm vụ
+cảu phần mềm để thực hiên công việc
+• Dự án — tất cả các công việc để sản phẩm trở thành hiện thực
+
+---
+
+### [Slide 13]
+VAI TRÒ PM
+• Kết nối giữa khách hàng – đội dựán – tổchức
 • Ra quyết định
 • Quản lý rủi ro
 • Đảm bảo giao tiếp hiệu quả
 
 ---
 
-### 8. DỰ ÁN THÀNH CÔNG
+### [Slide 14]
+THỰC HÀNH
+• Câu hỏi 1: Theo bạn, yếu tố nào khó quản lý nhất trong dựán phần
+mềm? Vì sao?
+• Câu hỏi 2: Ví dụ thực tế: Dự án app đặt xe. “Theo bạn, PM có code
+không?”
+• Thảo luận nhóm nhỏ (3–4 SV)
+
+---
+
+### [Slide 15]
+DỰ ÁN THÀNH CÔNG
 • Hoàn thành đúng hạn
 • Trong ngân sách
 • Đáp ứng yêu cầu người dùng
@@ -78,7 +136,8 @@ Nhằm đạt mục tiêu dự án trong các ràng buộc.
 
 ---
 
-### 9. DỰ ÁN THẤT BẠI
+### [Slide 16]
+DỰ ÁN THẤT BẠI
 • Trễ tiến độ
 • Vượt chi phí
 • Sản phẩm không dùng được
@@ -86,7 +145,8 @@ Nhằm đạt mục tiêu dự án trong các ràng buộc.
 
 ---
 
-### 10. NGUYÊN NHÂN THẤT BẠI
+### [Slide 17]
+NGUYÊN NHÂN THẤT BẠI
 • Yêu cầu không rõ ràng
 • Thiếu quản lý rủi ro
 • Giao tiếp kém
@@ -95,20 +155,35 @@ Nhằm đạt mục tiêu dự án trong các ràng buộc.
 
 ---
 
-### 11. SO SÁNH THÀNH CÔNG – THẤT BẠI
+### [Slide 18]
+SO SÁNH THÀNH CÔNG – THẤT BẠI
 • Kế hoạch rõ ràng vs mơ hồ
 • Giao tiếp tốt vs kém
 • Kiểm soát thay đổi vs buông lỏng
-
-| Tiêu chí | Thành công | Thất bại |
-| :--- | :--- | :--- |
-| **Yêu cầu** | Rõ ràng | Mơ hồ |
-| **Giao tiếp** | Thường xuyên | Rời rạc |
-| **Kế hoạch** | Thực tế | Hình thức |
+Tiêu chí
+Thành công
+Thất bại
+Yêu cầu
+Rõ ràng
+Mơ hồ
+Giao tiếp
+Thường xuyên
+Rời rạc
+Kế hoạch
+Thực tế
+Hình thức
 
 ---
 
-### 12. CÁC VẤN ĐỀ CẦN QUẢN LÝ
+### [Slide 19]
+TÌNH HUỐNG
+• Case Study : Website triển khai trễ 6 tháng
+• SV xác định 3 nguyên nhân chính
+
+---
+
+### [Slide 20]
+CÁC VẤN ĐỀ CẦN QUẢN LÝ
 • Tiến trình (Process / Schedule)
 • Sản phẩm (Product)
 • Nhân lực (People)
@@ -116,56 +191,85 @@ Nhằm đạt mục tiêu dự án trong các ràng buộc.
 
 ---
 
-### 13. QUẢN LÝ TIẾN TRÌNH
-• Xác định các công việc cần làm
+### [Slide 21]
+QUẢN LÝ TIẾN TRÌNH
+§ Xác định các công việc cần làm
 • Thứ tự thực hiện
 • Theo dõi tiến độ
-
-Công cụ quản lý tiến trình:
+§ Công cụ quản lý tiến trình :
 • WBS (Work Breakdown Structure)
 • Gantt Chart
 • Milestone
 
 ---
 
-### 14. WBS (WORK BREAKDOWN STRUCTURE)
-• Chia nhỏ công việc
+### [Slide 22]
+WBS
+§ Chia nhỏ công việc
 • Dễ ước lượng
 • Dễ quản lý
-
-**Hai loại cấu trúc phân rã công việc WBS**:
-1. **WBS dạng hợp đồng (Contract WBS - CWBS)**: chỉ gồm hai hoặc ba mức đầu tiên, thường dùng để theo dõi các công việc ở mức cao.
-2. **WBS dạng dự án (Project WBS - PWBS)**: được định nghĩa bởi giám đốc dự án và các thành viên của đội. Với dạng WBS này, các công việc được gắn liền với các sản phẩm phân phối. Loại này được dùng trong trường hợp cần theo dõi các công việc ở mức thấp nhất.
-
-**Các mức độ trong WBS**:
-Một cấu trúc WBS đầy đủ có thể lên tới 6 mức, thông thường số mức nằm từ 3-6:
-• **3 mức trên (Managerial levels)**: dùng cho khách hàng và cấp quản lý báo cáo (Mức 1: người trao quyền, Mức 2: người làm ngân sách, Mức 3: lập lịch).
-• **3 mức dưới (Technical levels)**: Subtask, Work Package, Level of Effort dùng cho quản lý công việc bên trong của đội dự án.
+Hai loại cấu trúc phân rã công việc WBS
+1- WBS dạng hợp đồng (Contract WBS-CWBS): chỉ gồm hai hoặc ba mức
+đầu tiên, thường dùng để theo dõi các công việc ở mức cao
+2- WBS dạng dự án (Project WBS- PWBS) được định nghĩa bởi giám đốc
+dự án và các thành viên của đội. Với dạng WBS này, các công việc được
+gắn liền với các sản phẩm phân phối. Loại này được dùng trong trường
+hợp cần theo dõi các công việc ở mức thấp nhất
 
 ---
 
-### 15. GANTT CHART
-• Trực quan tiến độ
+### [Slide 23]
+WBS
+Một cấu trúc WBS đầy đủ có thể lên tới 6 mức, thông thường số mức nằm
+từ 3-6 như ví dụ sau
+Trong ví dụ trên, 3 mức trên có thể được sử dụng bởi khách hàng cho việc
+báo cáo, 3 mức dưới dùng cho việc quản lý các công việc bên trong của
+đội dự án. Các mức khác nhau có thể được áp dụng cho những người sử
+dụng khác nhau. Ví dụ: Mức 1 dành cho người trao quyền, mức 2 cho
+người làm ngân sách, mức 3 cho lập lịch.
+
+---
+
+### [Slide 24]
+GANTT CHART
+§ Trực quan tiến độ
 • Theo dõi thời gian
 • Xác định milestone
 
 ---
 
-### 16. QUẢN LÝ SẢN PHẨM & PHẠM VI (SCOPE)
-• Xác định phạm vi (Scope)
+### [Slide 25]
+THỰC HÀNH WBS
+§ Dự án: App quản lý sinh viên
+• Xác định 5–7 công việc
+
+---
+
+### [Slide 26]
+QUẢN LÝ SẢN PHẨM
+§ Xác định phạm vi (Scope)
 • Quản lý yêu cầu
 • Kiểm soát thay đổi
 
-**Scope là gì?**
+---
+
+### [Slide 27]
+SCOPE LÀ GÌ?
 • Những gì được làm
 • Những gì không làm
 
-**Yêu cầu phần mềm gồm**:
-• Chức năng
+---
+
+### [Slide 28]
+YÊU CẦU PHẦN MỀM
+§ Chức năng
 • Phi chức năng
 • Ưu tiên
 
-**Các câu hỏi cốt lõi (W5HH – Pressman)**:
+---
+
+### [Slide 29]
+CÁC CÂU HỎI CỐT LÕI (W5HH – PRESSMAN)
 • Why
 • What
 • When
@@ -176,63 +280,125 @@ Một cấu trúc WBS đầy đủ có thể lên tới 6 mức, thông thườn
 
 ---
 
-### 17. QUẢN LÝ NHÂN LỰC
+### [Slide 30]
+THỰC HÀNH SCOPE
+• Website đặt vé xem phim
+• Xác định Scope cho bài toán: Website đặt vé xem phim
+
+---
+
+### [Slide 31]
+QUẢN LÝ NHÂN LỰC
 • Vai trò của con người trong dự án
 • Con người là yếu tố quyết định thành bại
 • Kỹ năng ≠ Hiệu quả nếu thiếu phối hợp
 
-**Cơ cấu nhóm dự án**:
+---
+
+### [Slide 32]
+CƠ CẤU NHÓM DỰ ÁN
 • PM
 • Dev
 • Tester
 • Stakeholder
 
-**Vấn đề nhân lực**:
+---
+
+### [Slide 33]
+VẤN ĐỀ NHÂN LỰC
 • Thiếu kỹ năng
 • Xung đột
 • Thiếu động lực
 
 ---
 
-### 18. QUẢN LÝ MÔI TRƯỜNG & TÀI NGUYÊN
-**Môi trường dự án gồm**:
+### [Slide 34]
+PHÂN VAI NHÓM
+• Nhóm 5 người
+• Mỗi người 1 vai
+
+---
+
+### [Slide 35]
+QUẢN LÝ MÔI TRƯỜNG
+§ Môi trường dự án gồm
 • Công cụ (IDE, Jira, Git)
 • Hạ tầng (Server, mạng)
 • Văn hóa tổ chức
-
-**Quản lý tài nguyên**:
+• Quản lý tài nguyên
 • Thời gian
 • Ngân sách
 • Thiết bị
 
-**Rủi ro môi trường**:
+---
+
+### [Slide 36]
+CÔNG CỤ DỰ ÁN
+• IDE
+• Git
+• Jira
+
+---
+
+### [Slide 37]
+NGUỒN LỰC
+• Thời gian
+• Ngân sách
+• Thiết bị
+
+---
+
+### [Slide 38]
+RỦI RO MÔI TRƯỜNG
 • Mạng yếu
 • Thiếu server
 • Thiếu license
 
 ---
 
-### 19. BÀI TẬP THỰC HÀNH CHƯƠNG 1 (THEO SLIDE)
+### [Slide 39]
+THỰC HÀNH TỔNG HỢP
+Bài tập nhóm: Mỗi nhóm chọn 1 dựán phần mềm nhỏ
+Trình bày:
+• Mục tiêu dựán
+• Các vấn đềcần quản lý
+• Rủi ro chính
+• Kết quảmong đợi
+Slide 5–7 trang hoặc trình bày miệng
 
-#### Bài tập 1 – Cá nhân: Trình bày 3 nguyên nhân khiến dự án phần mềm thất bại và cách phòng tránh
-• **Nguyên nhân 1: Yêu cầu không rõ ràng**
-  - Cách phòng tránh: Làm rõ yêu cầu ngay từ đầu (SRS), kiểm soát thay đổi (Change Request).
-• **Nguyên nhân 2: Ước lượng sai**
-  - Cách phòng tránh: Dùng WBS chia nhỏ công việc, dùng dữ liệu lịch sử và mô hình định lượng.
-• **Nguyên nhân 3: Giao tiếp kém**
-  - Cách phòng tránh: Họp thường xuyên (Daily Standup), báo cáo tiến độ minh bạch.
+---
 
-#### Bài tập 2 – Nhóm: Lập WBS mức cao cho dự án “Ứng dụng quản lý sinh viên”
-• Mức 1: Ứng dụng quản lý sinh viên
-• Mức 2:
-  - 1. Phân tích yêu cầu
-  - 2. Thiết kế
-  - 3. Lập trình
-  - 4. Kiểm thử
-  - 5. Triển khai
+### [Slide 40]
+THỰC HÀNH TỔNG HỢP
+Bài tập 1 – Cá nhân (10 điểm)
+Đề bài: Trình bày 3 nguyên nhân khiến dự án phần mềm thất bại và cách
+phòng tránh.
+Bài tập 2 – Nhóm (20 điểm)
+Đề bài: Lập WBS mức cao cho dự án “Ứng dụng quản lý sinh viên”.
+Bài tập 3 – Tình huống (20 điểm)
+Đề bài: Một dự án bị trễ tiến độ do thay đổi yêu cầu liên tục. PM cần làm
+gì?
 
-#### Bài tập 3 – Tình huống: Một dự án bị trễ tiến độ do thay đổi yêu cầu liên tục. PM cần làm gì?
-• Đóng băng phạm vi hiện tại (Scope Baseline).
-• Đánh giá tác động đến thời gian và chi phí.
-• Thương lượng với khách hàng: dời deadline, tăng ngân sách, hoặc cắt bớt tính năng phụ.
-• Thiết lập quy trình Change Request văn bản chính thức.
+---
+
+### [Slide 41]
+TIÊU CHÍ ĐÁNH GIÁ
+• Hiểu đúng
+• Logic
+• Áp dụng thực tế
+
+---
+
+### [Slide 42]
+TRÌNH BÀY NHÓM
+• 5–7 phút / nhóm
+
+---
+
+### [Slide 43]
+TỔNG KẾT KIẾN THỨC
+• Quản lý ≠ chỉ lập kế hoạch
+• Vì sao dự án thất bại?
+• Vai trò PM?
+
+---
