@@ -1022,18 +1022,18 @@ const MCQ_QUESTIONS = [
   {
     "id": 56,
     "chapter": 3,
-    "tag": "Vận dụng",
+    "tag": "Khái niệm",
     "type": "single",
-    "question": "Dự án đang chậm 2 tuần so với kế hoạch bàn giao. Giám đốc quyết định tuyển thêm gấp 3 lập trình viên mới. Dựa theo ĐỊNH LUẬT BROOKS, kết quả nào RẤT DỄ XẢY RA?",
+    "question": "Theo Slide bài giảng Chương 3 (Slide 10), nguồn lực của dự án phần mềm được phân loại thành những yếu tố nào?",
     "options": [
-      "A. Dự án sẽ càng bị chậm trễ nặng nề hơn do tốn thời gian đào tạo và tăng chi phí giao tiếp",
-      "B. Dự án sẽ lập tức bù lại 2 tuần bị chậm và hoàn thành đúng tiến độ",
-      "C. Chi phí dự án sẽ giảm đi một nửa nhờ chia sẻ khối lượng công việc",
-      "D. Năng suất của toàn bộ nhóm sẽ tự động tăng gấp đôi ngay ngày đầu tiên"
+      "A. Nhân lực, Phần cứng, Phần mềm, Thời gian",
+      "B. Tiền vốn, Mặt bằng văn phòng, Cổ phiếu, Trái phiếu",
+      "C. Khách hàng, Giám đốc, Kế toán, Thủ kho",
+      "D. Mã nguồn mở, Mã nguồn đóng, Bản quyền, Bằng sáng chế"
     ],
     "answer": 0,
-    "explanation": "Định luật Brooks: 'Thêm người vào dự án phần mềm đang muộn chỉ làm nó muộn hơn' vì chi phí giao tiếp tăng vọt theo $N(N-1)/2$ và nhân sự cũ mất thời gian hướng dẫn người mới.",
-    "tip": "Định luật Brooks: Thêm người vào dự án trễ => Dự án càng trễ hơn."
+    "explanation": "Theo Slide 10 Chương 3, Phân loại nguồn lực gồm: Nhân lực, Phần cứng, Phần mềm, Thời gian.",
+    "tip": "Slide 10: Nguồn lực gồm Nhân lực, Phần cứng, Phần mềm, Thời gian."
   },
   {
     "id": 57,
@@ -1150,18 +1150,18 @@ const MCQ_QUESTIONS = [
   {
     "id": 64,
     "chapter": 3,
-    "tag": "Vận dụng",
+    "tag": "Khái niệm",
     "type": "single",
-    "question": "Nguyên nhân toán học và tổ chức chính yếu khiến việc thêm người vào dự án trễ hạn làm dự án càng trễ hạn (Brooks' Law) là do:",
+    "question": "Theo bài giảng Chương 3 (Slide 20-21), có hai cách phân rã phần mềm (Decomposition) phổ biến là gì?",
     "options": [
-      "A. Số lượng kênh giao tiếp tăng theo công thức n(n-1)/2 gây quá tải trao đổi",
-      "B. Máy tính bị thiếu cổng cắm bàn phím khi có thêm lập trình viên",
-      "C. Tiền mua cà phê cho văn phòng bị thiếu hụt nghiêm trọng",
-      "D. Công ty bắt buộc phải đổi ngôn ngữ lập trình sang Java"
+      "A. Phân rã theo chức năng (Module, Feature) và Phân rã theo công việc (Phân tích, Thiết kế, Lập trình, Kiểm thử)",
+      "B. Phân rã theo mức lương nhân sự và Phân rã theo độ tuổi nhân viên",
+      "C. Phân rã theo số dòng code frontend và Phân rã theo số dòng code backend",
+      "D. Phân rã theo dung lượng ổ cứng và Phân rã theo băng thông đường truyền mạng"
     ],
     "answer": 0,
-    "explanation": "Khi có n người, số kênh giao tiếp là n(n-1)/2. Thêm người làm số kênh giao tiếp tăng theo cấp số nhân, đồng thời nhân sự cũ mất thời gian kèm cặp người mới.",
-    "tip": "Brooks' Law: Kênh giao tiếp tăng vọt theo n(n-1)/2 + mất công đào tạo."
+    "explanation": "Slide 20-21 Chương 3 nêu rõ 2 cách phân rã: Phân rã theo chức năng (Module, Feature) và Phân rã theo công việc (Phân tích, Thiết kế, Lập trình, Kiểm thử).",
+    "tip": "2 cách phân rã: Theo chức năng (Module/Feature) và Theo công việc."
   },
   {
     "id": 65,
@@ -1840,7 +1840,7 @@ const ESSAY_QUESTIONS = [
       "Effort = 25 person-month",
       "Duration = 5 tháng",
       "Quan hệ phi tuyến",
-      "Định luật Brooks"
+      "LOC ước lượng tương đối"
     ],
     "pm_insight": "Khi lập kế hoạch với khách hàng, luôn phải cộng thêm hệ số rủi ro dự phòng (Buffer time 10-20%) chứ không được báo sát nút con số 5 tháng lý thuyết."
   },
