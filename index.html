@@ -81,6 +81,11 @@
             <i class="fa-solid fa-file-signature"></i>
             <span>Tự Luận & Slide (16 bài)</span>
           </button>
+          <button onclick="switchTab('wbs')" id="nav-wbs"
+            class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center space-x-2 text-blue-100 hover:bg-white/10 hover:text-white">
+            <i class="fa-solid fa-sitemap"></i>
+            <span>WBS Dự Án Mẫu</span>
+          </button>
           <button onclick="switchTab('flashcard')" id="nav-flashcard"
             class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center space-x-2 text-blue-100 hover:bg-white/10 hover:text-white">
             <i class="fa-solid fa-clone"></i>
@@ -112,6 +117,10 @@
       <button onclick="switchTab('essay'); toggleMobileMenu();"
         class="w-full text-left px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 flex items-center space-x-2">
         <i class="fa-solid fa-file-signature w-5"></i><span>Tự Luận & Slide (16 bài)</span>
+      </button>
+      <button onclick="switchTab('wbs'); toggleMobileMenu();"
+        class="w-full text-left px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 flex items-center space-x-2">
+        <i class="fa-solid fa-sitemap w-5"></i><span>WBS Dự Án Mẫu</span>
       </button>
       <button onclick="switchTab('flashcard'); toggleMobileMenu();"
         class="w-full text-left px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700 flex items-center space-x-2">
@@ -230,6 +239,96 @@
 
       <!-- Essay List Container -->
       <div id="essay-list" class="space-y-4">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </section>
+
+    <!-- ================= TAB: WBS (CẤU TRÚC PHÂN RÃ CÔNG VIỆC) ================= -->
+    <section id="tab-wbs" class="tab-content hidden space-y-6">
+      <!-- WBS Control Header -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 space-y-4">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="px-2.5 py-1 bg-indigo-100 text-indigo-800 rounded-md text-xs font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-sitemap mr-1"></i>Dự Án Mẫu TMĐT
+              </span>
+              <span class="text-xs text-slate-400 font-medium">187 mã WBS • 4 Cấp độ</span>
+            </div>
+            <h2 class="text-lg sm:text-xl font-black text-slate-900 mt-1">
+              Cấu Trúc Phân Rã Công Việc (WBS) - Hệ Thống Website Thương Mại Điện Tử
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">
+              Phân rã chuẩn 100% từ 6 Giai đoạn (Cấp 1) đến 143 Gói công việc cơ sở (Work Packages)
+            </p>
+          </div>
+
+          <!-- Quick Stats Pills -->
+          <div class="flex flex-wrap items-center gap-2 text-xs">
+            <span class="px-3 py-1.5 bg-blue-50 border border-blue-200 text-blue-800 rounded-xl font-bold">
+              6 Giai đoạn (C1)
+            </span>
+            <span class="px-3 py-1.5 bg-indigo-50 border border-indigo-200 text-indigo-800 rounded-xl font-bold">
+              25 Gói chính (C2)
+            </span>
+            <span class="px-3 py-1.5 bg-slate-100 border border-slate-200 text-slate-700 rounded-xl font-medium">
+              110 Tác vụ (C3)
+            </span>
+            <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl font-medium">
+              46 Chi tiết (C4)
+            </span>
+          </div>
+        </div>
+
+        <!-- Controls Bar: Collapse by Level & Search -->
+        <div class="pt-4 border-t border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <!-- Level collapse buttons -->
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-1 flex items-center">
+              <i class="fa-solid fa-layer-group mr-1.5"></i>Thu gọn theo cấp:
+            </span>
+            <button onclick="setWBSLevel(1)" id="btn-wbs-lvl-1" class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
+              Chỉ Cấp 1 (Thu gọn hết)
+            </button>
+            <button onclick="setWBSLevel(2)" id="btn-wbs-lvl-2" class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
+              Hiện đến Cấp 2
+            </button>
+            <button onclick="setWBSLevel(3)" id="btn-wbs-lvl-3" class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
+              Hiện đến Cấp 3
+            </button>
+            <button onclick="setWBSLevel(4)" id="btn-wbs-lvl-4" class="wbs-lvl-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-indigo-600 text-white shadow-sm transition-all">
+              Mở tất cả (Cấp 4)
+            </button>
+          </div>
+
+          <!-- Search & View Toggle -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <div class="relative">
+              <input type="text" id="wbs-search" oninput="searchWBS()" placeholder="Tìm mã WBS (3.2), tên (giỏ hàng, ERD)..."
+                class="pl-9 pr-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 w-52 sm:w-64">
+              <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
+            </div>
+
+            <!-- View switch -->
+            <div class="flex items-center bg-slate-100 p-0.5 rounded-lg border border-slate-200 text-xs font-semibold">
+              <button onclick="setWBSViewMode('tree')" id="btn-wbs-view-tree" class="px-2.5 py-1 rounded-md bg-white text-indigo-700 shadow-sm transition-all">
+                <i class="fa-solid fa-network-wired mr-1"></i>Dạng Cây
+              </button>
+              <button onclick="setWBSViewMode('table')" id="btn-wbs-view-table" class="px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all">
+                <i class="fa-solid fa-table-list mr-1"></i>Dạng Bảng
+              </button>
+            </div>
+
+            <button onclick="copyWBSMarkdown()" title="Sao chép bảng WBS dạng Markdown" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg flex items-center space-x-1 border border-slate-200">
+              <i class="fa-regular fa-copy"></i>
+              <span class="hidden sm:inline">Sao chép</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- WBS Display Container -->
+      <div id="wbs-container" class="space-y-4">
         <!-- Rendered by JavaScript -->
       </div>
     </section>
@@ -618,6 +717,7 @@
     window.addEventListener('DOMContentLoaded', () => {
       renderQuizList();
       renderEssayList();
+      renderWBS();
       initFlashcards();
       calculateRE();
       calculateProdQuality();
@@ -1268,6 +1368,304 @@ ${eq.model_answer}
             btnIcon.classList.remove('rotate-180');
           }
         }
+      });
+    }
+
+    // ================= WBS LOGIC =================
+    let currentWBSMaxLevel = 4;
+    let wbsSearchTerm = '';
+    let wbsViewMode = 'tree';
+    let collapsedWBSNodes = new Set();
+
+    function setWBSLevel(maxLevel) {
+      currentWBSMaxLevel = maxLevel;
+      collapsedWBSNodes.clear();
+
+      document.querySelectorAll('.wbs-lvl-btn').forEach(btn => {
+        btn.classList.remove('bg-indigo-600', 'text-white', 'shadow-sm');
+        btn.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      const activeBtn = document.getElementById(`btn-wbs-lvl-${maxLevel}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-slate-100', 'text-slate-700');
+        activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow-sm');
+      }
+
+      if (maxLevel === 1) {
+        WBS_DATA.filter(n => n.level === 1).forEach(n => collapsedWBSNodes.add(n.code));
+      } else if (maxLevel === 2) {
+        WBS_DATA.filter(n => n.level === 2).forEach(n => collapsedWBSNodes.add(n.code));
+      } else if (maxLevel === 3) {
+        WBS_DATA.filter(n => n.level === 3 && n.hasChildren).forEach(n => collapsedWBSNodes.add(n.code));
+      }
+
+      renderWBS();
+    }
+
+    function toggleWBSNode(code) {
+      if (collapsedWBSNodes.has(code)) {
+        collapsedWBSNodes.delete(code);
+      } else {
+        collapsedWBSNodes.add(code);
+      }
+      renderWBS();
+    }
+
+    function searchWBS() {
+      wbsSearchTerm = document.getElementById('wbs-search').value.toLowerCase().trim();
+      renderWBS();
+    }
+
+    function setWBSViewMode(mode) {
+      wbsViewMode = mode;
+      const treeBtn = document.getElementById('btn-wbs-view-tree');
+      const tableBtn = document.getElementById('btn-wbs-view-table');
+      if (mode === 'tree') {
+        treeBtn.className = "px-2.5 py-1 rounded-md bg-white text-indigo-700 shadow-sm transition-all";
+        tableBtn.className = "px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all";
+      } else {
+        tableBtn.className = "px-2.5 py-1 rounded-md bg-white text-indigo-700 shadow-sm transition-all";
+        treeBtn.className = "px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all";
+      }
+      renderWBS();
+    }
+
+    function copyWBSMarkdown() {
+      let md = "# CẤU TRÚC PHÂN RÃ CÔNG VIỆC (WBS) - DỰ ÁN WEBSITE TMĐT\n\n| Mã WBS | Cấp độ | Tên công việc | Phân loại |\n| :--- | :---: | :--- | :--- |\n";
+      WBS_DATA.forEach(item => {
+        const indent = "&nbsp;&nbsp;".repeat((item.level - 1) * 2);
+        const typeLabel = item.level === 1 ? "Giai đoạn (Phase)" : (item.isWorkPackage ? "Work Package" : (item.level === 2 ? "Gói chính" : "Tác vụ"));
+        md += `| **${item.code}** | Cấp ${item.level} | ${indent}${item.name} | ${typeLabel} |\n`;
+      });
+      navigator.clipboard.writeText(md).then(() => {
+        alert("Đã sao chép 187 mã WBS chuẩn định dạng Markdown vào bộ nhớ tạm!");
+      }).catch(() => {
+        alert("Không thể sao chép tự động!");
+      });
+    }
+
+    function renderWBS() {
+      const container = document.getElementById('wbs-container');
+      if (!container || typeof WBS_DATA === 'undefined') return;
+      container.innerHTML = '';
+
+      if (wbsViewMode === 'table') {
+        renderWBSTable(container);
+      } else {
+        renderWBSTree(container);
+      }
+    }
+
+    function renderWBSTable(container) {
+      let list = WBS_DATA;
+      if (wbsSearchTerm) {
+        list = list.filter(item => item.code.toLowerCase().includes(wbsSearchTerm) || item.name.toLowerCase().includes(wbsSearchTerm));
+      }
+
+      if (list.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 bg-white rounded-2xl border border-slate-200">
+            <i class="fa-solid fa-magnifying-glass text-3xl text-slate-300 mb-2"></i>
+            <p class="text-slate-500 font-medium">Không tìm thấy mã WBS hoặc công việc phù hợp.</p>
+          </div>
+        `;
+        return;
+      }
+
+      let rowsHtml = '';
+      list.forEach(item => {
+        const indent = (item.level - 1) * 20;
+        let badgeColor = "bg-slate-100 text-slate-700";
+        let typeText = "Tác vụ con";
+        if (item.level === 1) {
+          badgeColor = "bg-blue-600 text-white font-bold";
+          typeText = "Giai đoạn chính";
+        } else if (item.level === 2) {
+          badgeColor = "bg-indigo-100 text-indigo-800 font-semibold";
+          typeText = "Gói công việc chính";
+        } else if (item.isWorkPackage) {
+          badgeColor = "bg-emerald-100 text-emerald-800 font-bold";
+          typeText = "Work Package";
+        }
+
+        rowsHtml += `
+          <tr class="border-b border-slate-100 hover:bg-slate-50/80 transition-colors ${item.level === 1 ? 'bg-slate-50/50 font-bold text-slate-900' : ''}">
+            <td class="p-3 text-xs font-mono font-bold text-indigo-700 whitespace-nowrap">${item.code}</td>
+            <td class="p-3 text-xs whitespace-nowrap"><span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-slate-100 text-slate-600">Cấp ${item.level}</span></td>
+            <td class="p-3 text-xs text-slate-800" style="padding-left: ${indent + 12}px;">
+              <span class="flex items-center space-x-1.5">
+                ${item.level === 1 ? '<i class="fa-solid fa-folder text-blue-600 mr-1"></i>' : (item.isWorkPackage ? '<i class="fa-solid fa-cube text-emerald-500 text-[10px] mr-1"></i>' : '<i class="fa-solid fa-turn-up rotate-90 text-slate-300 mr-1 text-[10px]"></i>')}
+                <span>${item.name}</span>
+              </span>
+            </td>
+            <td class="p-3 text-xs whitespace-nowrap">
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] ${badgeColor}">${typeText}</span>
+            </td>
+          </tr>
+        `;
+      });
+
+      container.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100/80 text-slate-600 text-xs font-bold uppercase tracking-wider border-b border-slate-200">
+                  <th class="p-3 w-28">Mã WBS</th>
+                  <th class="p-3 w-20">Cấp</th>
+                  <th class="p-3">Tên Công Việc</th>
+                  <th class="p-3 w-36">Phân Loại</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rowsHtml}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderWBSTree(container) {
+      const phases = WBS_DATA.filter(n => n.level === 1);
+
+      phases.forEach(p => {
+        let matchSearch = true;
+        if (wbsSearchTerm) {
+          const subItems = WBS_DATA.filter(n => n.code.startsWith(p.code));
+          matchSearch = subItems.some(n => n.code.toLowerCase().includes(wbsSearchTerm) || n.name.toLowerCase().includes(wbsSearchTerm));
+          if (!matchSearch) return;
+        }
+
+        const isPhaseCollapsed = !wbsSearchTerm && collapsedWBSNodes.has(p.code);
+        const l2Children = WBS_DATA.filter(n => n.level === 2 && n.parent === p.code);
+        const allPhaseSubNodes = WBS_DATA.filter(n => n.code.startsWith(p.code + '.'));
+        const wpCount = allPhaseSubNodes.filter(n => n.isWorkPackage).length;
+
+        const phaseCard = document.createElement('div');
+        phaseCard.className = "bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden transition-all";
+
+        let l2Html = '';
+        l2Children.forEach(l2 => {
+          let matchL2 = true;
+          if (wbsSearchTerm) {
+            const l2Subs = WBS_DATA.filter(n => n.code.startsWith(l2.code));
+            matchL2 = l2Subs.some(n => n.code.toLowerCase().includes(wbsSearchTerm) || n.name.toLowerCase().includes(wbsSearchTerm));
+            if (!matchL2) return;
+          }
+
+          const isL2Collapsed = !wbsSearchTerm && (isPhaseCollapsed || collapsedWBSNodes.has(l2.code));
+          const l3Children = WBS_DATA.filter(n => n.level === 3 && n.parent === l2.code);
+
+          let l3Html = '';
+          l3Children.forEach(l3 => {
+            let matchL3 = true;
+            if (wbsSearchTerm) {
+              const l3Subs = WBS_DATA.filter(n => n.code.startsWith(l3.code));
+              matchL3 = l3Subs.some(n => n.code.toLowerCase().includes(wbsSearchTerm) || n.name.toLowerCase().includes(wbsSearchTerm));
+              if (!matchL3) return;
+            }
+
+            const l4Children = WBS_DATA.filter(n => n.level === 4 && n.parent === l3.code);
+            const hasL4 = l4Children.length > 0;
+            const isL3Collapsed = !wbsSearchTerm && (isL2Collapsed || collapsedWBSNodes.has(l3.code));
+
+            let l4Html = '';
+            if (hasL4) {
+              l4Children.forEach(l4 => {
+                if (wbsSearchTerm && !l4.code.toLowerCase().includes(wbsSearchTerm) && !l4.name.toLowerCase().includes(wbsSearchTerm)) return;
+                l4Html += `
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-50/80 hover:bg-slate-100/80 text-xs border border-slate-100 transition-colors ml-6">
+                    <div class="flex items-center space-x-2.5">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                      <span class="font-mono font-bold text-indigo-700">${l4.code}</span>
+                      <span class="text-slate-700 font-medium">${l4.name}</span>
+                    </div>
+                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 flex-shrink-0">Work Package</span>
+                  </div>
+                `;
+              });
+            }
+
+            if (hasL4) {
+              l3Html += `
+                <div class="space-y-1.5 border border-slate-200/70 rounded-xl p-3 bg-white">
+                  <div onclick="toggleWBSNode('${l3.code}')" class="flex items-center justify-between cursor-pointer select-none group">
+                    <div class="flex items-center space-x-2">
+                      <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-indigo-600 text-xs transition-transform duration-200 ${isL3Collapsed ? '' : 'rotate-90'}"></i>
+                      <span class="font-mono font-bold text-xs px-2 py-0.5 bg-slate-100 text-indigo-700 rounded">${l3.code}</span>
+                      <span class="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-indigo-700">${l3.name}</span>
+                    </div>
+                    <span class="text-[11px] font-semibold text-slate-400">${l4Children.length} chi tiết</span>
+                  </div>
+                  <div class="${isL3Collapsed ? 'hidden' : 'space-y-1.5 pt-2 border-t border-slate-100'}">
+                    ${l4Html}
+                  </div>
+                </div>
+              `;
+            } else {
+              l3Html += `
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-white hover:bg-slate-50 text-xs border border-slate-200/70 transition-colors">
+                  <div class="flex items-center space-x-2.5">
+                    <i class="fa-solid fa-cube text-emerald-500 text-xs flex-shrink-0"></i>
+                    <span class="font-mono font-bold text-indigo-700">${l3.code}</span>
+                    <span class="text-slate-800 font-medium">${l3.name}</span>
+                  </div>
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 flex-shrink-0">Work Package</span>
+                </div>
+              `;
+            }
+          });
+
+          l2Html += `
+            <div class="bg-slate-50/70 border border-slate-200 rounded-2xl overflow-hidden p-4 space-y-3">
+              <div onclick="toggleWBSNode('${l2.code}')" class="flex items-center justify-between cursor-pointer select-none group">
+                <div class="flex items-center space-x-2.5">
+                  <div class="w-6 h-6 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center text-xs font-bold">
+                    <i class="fa-solid fa-chevron-right transition-transform duration-200 ${isL2Collapsed ? '' : 'rotate-90'}"></i>
+                  </div>
+                  <span class="font-mono font-bold text-xs px-2 py-0.5 bg-white text-indigo-800 rounded border border-indigo-200">${l2.code}</span>
+                  <h4 class="text-sm font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">${l2.name}</h4>
+                </div>
+                <span class="text-xs font-medium text-slate-500">${l3Children.length} tác vụ</span>
+              </div>
+              <div class="${isL2Collapsed ? 'hidden' : 'space-y-2 pt-2 border-t border-slate-200/60'}">
+                ${l3Html}
+              </div>
+            </div>
+          `;
+        });
+
+        phaseCard.innerHTML = `
+          <div onclick="toggleWBSNode('${p.code}')" class="p-5 cursor-pointer bg-gradient-to-r from-blue-700 via-indigo-700 to-indigo-800 text-white flex items-center justify-between select-none group">
+            <div class="flex items-center space-x-3 sm:space-x-4">
+              <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg font-black text-yellow-300 border border-white/20 shadow-inner">
+                ${p.code}
+              </div>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <span class="px-2 py-0.5 bg-white/20 text-blue-100 text-[10px] font-bold rounded uppercase tracking-wider">Giai đoạn ${p.code}</span>
+                  <span class="text-blue-200 text-xs font-medium">${allPhaseSubNodes.length} công việc</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-yellow-200 transition-colors mt-0.5">${p.name}</h3>
+              </div>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="hidden sm:inline-block px-3 py-1 bg-white/10 text-emerald-300 rounded-full text-xs font-bold border border-white/10">
+                ${wpCount} Work Packages
+              </span>
+              <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-white text-xs transition-transform duration-300 ${isPhaseCollapsed ? '' : 'rotate-180'}">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="${isPhaseCollapsed ? 'hidden' : 'p-4 sm:p-5 space-y-4 bg-white'}">
+            ${l2Html}
+          </div>
+        `;
+
+        container.appendChild(phaseCard);
       });
     }
 

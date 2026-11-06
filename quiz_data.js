@@ -1942,3 +1942,1502 @@ const ESSAY_QUESTIONS = [
     "pm_insight": "Risk Register phải được cập nhật hàng tuần trong các buổi họp giao ban, không phải lập ra rồi cất vào ngăn kéo."
   }
 ];
+
+const WBS_DATA = [
+  {
+    "code": "1",
+    "name": "Phân tích yêu cầu hệ thống",
+    "level": 1,
+    "parent": "",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "1.1",
+    "name": "Khảo sát và thu thập thông tin",
+    "level": 2,
+    "parent": "1",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "1.1.1",
+    "name": "Xác định đối tượng khách hàng",
+    "level": 3,
+    "parent": "1.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.1.2",
+    "name": "Khảo sát nhu cầu khách hàng",
+    "level": 3,
+    "parent": "1.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.1.3",
+    "name": "Phân tích quy trình kinh doanh",
+    "level": 3,
+    "parent": "1.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.2",
+    "name": "Thu thập yêu cầu hệ thống",
+    "level": 2,
+    "parent": "1",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "1.2.1",
+    "name": "Thu thập yêu cầu chức năng",
+    "level": 3,
+    "parent": "1.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.2.2",
+    "name": "Thu thập yêu cầu phi chức năng",
+    "level": 3,
+    "parent": "1.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.2.3",
+    "name": "Xác định yêu cầu người dùng",
+    "level": 3,
+    "parent": "1.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.2.4",
+    "name": "Xác định yêu cầu quản trị viên",
+    "level": 3,
+    "parent": "1.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.3",
+    "name": "Phân tích yêu cầu",
+    "level": 2,
+    "parent": "1",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "1.3.1",
+    "name": "Phân tích chức năng quản lý tài khoản",
+    "level": 3,
+    "parent": "1.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.3.2",
+    "name": "Phân tích chức năng quản lý sản phẩm",
+    "level": 3,
+    "parent": "1.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.3.3",
+    "name": "Phân tích chức năng giỏ hàng",
+    "level": 3,
+    "parent": "1.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.3.4",
+    "name": "Phân tích chức năng đặt hàng",
+    "level": 3,
+    "parent": "1.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.3.5",
+    "name": "Phân tích chức năng thanh toán",
+    "level": 3,
+    "parent": "1.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.3.6",
+    "name": "Phân tích chức năng quản lý đơn hàng",
+    "level": 3,
+    "parent": "1.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.4",
+    "name": "Lập tài liệu yêu cầu",
+    "level": 2,
+    "parent": "1",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "1.4.1",
+    "name": "Xây dựng tài liệu đặc tả yêu cầu phần mềm (SRS)",
+    "level": 3,
+    "parent": "1.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.4.2",
+    "name": "Xác định phạm vi chức năng hệ thống",
+    "level": 3,
+    "parent": "1.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "1.4.3",
+    "name": "Xác nhận yêu cầu với khách hàng",
+    "level": 3,
+    "parent": "1.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2",
+    "name": "Thiết kế hệ thống",
+    "level": 1,
+    "parent": "",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "2.1",
+    "name": "Phân tích mô hình hệ thống",
+    "level": 2,
+    "parent": "2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "2.1.1",
+    "name": "Xác định tác nhân hệ thống",
+    "level": 3,
+    "parent": "2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.1.2",
+    "name": "Xây dựng biểu đồ Use Case",
+    "level": 3,
+    "parent": "2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.1.3",
+    "name": "Xây dựng biểu đồ Activity",
+    "level": 3,
+    "parent": "2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.1.4",
+    "name": "Xây dựng biểu đồ Sequence",
+    "level": 3,
+    "parent": "2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.1.5",
+    "name": "Xây dựng mô hình nghiệp vụ",
+    "level": 3,
+    "parent": "2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.2",
+    "name": "Thiết kế giao diện người dùng",
+    "level": 2,
+    "parent": "2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "2.2.1",
+    "name": "Thiết kế giao diện trang chủ",
+    "level": 3,
+    "parent": "2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.2.2",
+    "name": "Thiết kế giao diện danh sách sản phẩm",
+    "level": 3,
+    "parent": "2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.2.3",
+    "name": "Thiết kế giao diện chi tiết sản phẩm",
+    "level": 3,
+    "parent": "2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.2.4",
+    "name": "Thiết kế giao diện giỏ hàng",
+    "level": 3,
+    "parent": "2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.2.5",
+    "name": "Thiết kế giao diện thanh toán",
+    "level": 3,
+    "parent": "2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.2.6",
+    "name": "Thiết kế giao diện đăng ký và đăng nhập",
+    "level": 3,
+    "parent": "2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.2.7",
+    "name": "Thiết kế giao diện quản trị viên",
+    "level": 3,
+    "parent": "2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.3",
+    "name": "Thiết kế cơ sở dữ liệu",
+    "level": 2,
+    "parent": "2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "2.3.1",
+    "name": "Xác định các thực thể",
+    "level": 3,
+    "parent": "2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.3.2",
+    "name": "Xây dựng biểu đồ ERD",
+    "level": 3,
+    "parent": "2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.3.3",
+    "name": "Xác định mối quan hệ giữa các thực thể",
+    "level": 3,
+    "parent": "2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.3.4",
+    "name": "Thiết kế các bảng dữ liệu",
+    "level": 3,
+    "parent": "2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.3.5",
+    "name": "Xác định khóa chính và khóa ngoại",
+    "level": 3,
+    "parent": "2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.4",
+    "name": "Thiết kế kiến trúc hệ thống",
+    "level": 2,
+    "parent": "2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "2.4.1",
+    "name": "Thiết kế kiến trúc giao diện",
+    "level": 3,
+    "parent": "2.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.4.2",
+    "name": "Thiết kế kiến trúc xử lý phía máy chủ",
+    "level": 3,
+    "parent": "2.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.4.3",
+    "name": "Thiết kế kiến trúc cơ sở dữ liệu",
+    "level": 3,
+    "parent": "2.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "2.4.4",
+    "name": "Thiết kế giao tiếp giữa các thành phần hệ thống",
+    "level": 3,
+    "parent": "2.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3",
+    "name": "Phát triển hệ thống",
+    "level": 1,
+    "parent": "",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.1",
+    "name": "Thiết lập môi trường phát triển",
+    "level": 2,
+    "parent": "3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.1.1",
+    "name": "Cài đặt công cụ lập trình",
+    "level": 3,
+    "parent": "3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.1.2",
+    "name": "Khởi tạo dự án",
+    "level": 3,
+    "parent": "3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.1.3",
+    "name": "Cấu hình môi trường phát triển",
+    "level": 3,
+    "parent": "3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.1.4",
+    "name": "Kết nối cơ sở dữ liệu",
+    "level": 3,
+    "parent": "3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.1.5",
+    "name": "Thiết lập quản lý mã nguồn",
+    "level": 3,
+    "parent": "3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2",
+    "name": "Phát triển giao diện người dùng",
+    "level": 2,
+    "parent": "3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.2.1",
+    "name": "Phát triển trang chủ",
+    "level": 3,
+    "parent": "3.2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.2.1.1",
+    "name": "Xây dựng phần đầu trang",
+    "level": 4,
+    "parent": "3.2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.1.2",
+    "name": "Xây dựng thanh tìm kiếm",
+    "level": 4,
+    "parent": "3.2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.1.3",
+    "name": "Hiển thị danh mục sản phẩm",
+    "level": 4,
+    "parent": "3.2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.1.4",
+    "name": "Hiển thị sản phẩm nổi bật",
+    "level": 4,
+    "parent": "3.2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.1.5",
+    "name": "Xây dựng phần cuối trang",
+    "level": 4,
+    "parent": "3.2.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.2",
+    "name": "Phát triển trang danh sách sản phẩm",
+    "level": 3,
+    "parent": "3.2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.2.2.1",
+    "name": "Hiển thị danh sách sản phẩm",
+    "level": 4,
+    "parent": "3.2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.2.2",
+    "name": "Xây dựng chức năng lọc sản phẩm",
+    "level": 4,
+    "parent": "3.2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.2.3",
+    "name": "Xây dựng chức năng phân trang",
+    "level": 4,
+    "parent": "3.2.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.3",
+    "name": "Phát triển trang chi tiết sản phẩm",
+    "level": 3,
+    "parent": "3.2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.2.3.1",
+    "name": "Hiển thị hình ảnh sản phẩm",
+    "level": 4,
+    "parent": "3.2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.3.2",
+    "name": "Hiển thị mô tả sản phẩm",
+    "level": 4,
+    "parent": "3.2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.3.3",
+    "name": "Hiển thị giá sản phẩm",
+    "level": 4,
+    "parent": "3.2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.3.4",
+    "name": "Xây dựng giao diện thêm vào giỏ hàng",
+    "level": 4,
+    "parent": "3.2.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.4",
+    "name": "Phát triển giao diện giỏ hàng",
+    "level": 3,
+    "parent": "3.2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.2.4.1",
+    "name": "Hiển thị sản phẩm trong giỏ hàng",
+    "level": 4,
+    "parent": "3.2.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.4.2",
+    "name": "Cập nhật số lượng sản phẩm",
+    "level": 4,
+    "parent": "3.2.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.4.3",
+    "name": "Xóa sản phẩm khỏi giỏ hàng",
+    "level": 4,
+    "parent": "3.2.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.4.4",
+    "name": "Hiển thị tổng giá trị giỏ hàng",
+    "level": 4,
+    "parent": "3.2.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.5",
+    "name": "Phát triển giao diện thanh toán",
+    "level": 3,
+    "parent": "3.2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.2.5.1",
+    "name": "Xây dựng biểu mẫu thông tin khách hàng",
+    "level": 4,
+    "parent": "3.2.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.5.2",
+    "name": "Xây dựng giao diện chọn phương thức thanh toán",
+    "level": 4,
+    "parent": "3.2.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.5.3",
+    "name": "Xây dựng giao diện xác nhận đơn hàng",
+    "level": 4,
+    "parent": "3.2.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.5.4",
+    "name": "Hiển thị kết quả thanh toán",
+    "level": 4,
+    "parent": "3.2.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.6",
+    "name": "Phát triển giao diện đăng ký và đăng nhập",
+    "level": 3,
+    "parent": "3.2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.2.6.1",
+    "name": "Xây dựng biểu mẫu đăng ký",
+    "level": 4,
+    "parent": "3.2.6",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.6.2",
+    "name": "Xây dựng biểu mẫu đăng nhập",
+    "level": 4,
+    "parent": "3.2.6",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.6.3",
+    "name": "Xây dựng giao diện thông tin cá nhân",
+    "level": 4,
+    "parent": "3.2.6",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.7",
+    "name": "Phát triển giao diện quản trị viên",
+    "level": 3,
+    "parent": "3.2",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.2.7.1",
+    "name": "Xây dựng trang tổng quan",
+    "level": 4,
+    "parent": "3.2.7",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.7.2",
+    "name": "Xây dựng giao diện quản lý sản phẩm",
+    "level": 4,
+    "parent": "3.2.7",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.7.3",
+    "name": "Xây dựng giao diện quản lý đơn hàng",
+    "level": 4,
+    "parent": "3.2.7",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.2.7.4",
+    "name": "Xây dựng giao diện quản lý người dùng",
+    "level": 4,
+    "parent": "3.2.7",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3",
+    "name": "Phát triển xử lý phía máy chủ",
+    "level": 2,
+    "parent": "3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.3.1",
+    "name": "Phát triển chức năng quản lý người dùng",
+    "level": 3,
+    "parent": "3.3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.3.1.1",
+    "name": "Xây dựng chức năng đăng ký",
+    "level": 4,
+    "parent": "3.3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.1.2",
+    "name": "Xây dựng chức năng đăng nhập",
+    "level": 4,
+    "parent": "3.3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.1.3",
+    "name": "Xây dựng chức năng cập nhật thông tin",
+    "level": 4,
+    "parent": "3.3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.1.4",
+    "name": "Xây dựng chức năng phân quyền",
+    "level": 4,
+    "parent": "3.3.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.2",
+    "name": "Phát triển chức năng quản lý sản phẩm",
+    "level": 3,
+    "parent": "3.3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.3.2.1",
+    "name": "Xây dựng chức năng thêm sản phẩm",
+    "level": 4,
+    "parent": "3.3.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.2.2",
+    "name": "Xây dựng chức năng sửa sản phẩm",
+    "level": 4,
+    "parent": "3.3.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.2.3",
+    "name": "Xây dựng chức năng xóa sản phẩm",
+    "level": 4,
+    "parent": "3.3.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.2.4",
+    "name": "Xây dựng chức năng lấy danh sách sản phẩm",
+    "level": 4,
+    "parent": "3.3.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.3",
+    "name": "Phát triển chức năng quản lý danh mục",
+    "level": 3,
+    "parent": "3.3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.3.3.1",
+    "name": "Xây dựng chức năng thêm danh mục",
+    "level": 4,
+    "parent": "3.3.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.3.2",
+    "name": "Xây dựng chức năng sửa danh mục",
+    "level": 4,
+    "parent": "3.3.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.3.3",
+    "name": "Xây dựng chức năng xóa danh mục",
+    "level": 4,
+    "parent": "3.3.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.4",
+    "name": "Phát triển chức năng quản lý giỏ hàng",
+    "level": 3,
+    "parent": "3.3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.3.4.1",
+    "name": "Xây dựng chức năng thêm sản phẩm vào giỏ",
+    "level": 4,
+    "parent": "3.3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.4.2",
+    "name": "Xây dựng chức năng cập nhật giỏ hàng",
+    "level": 4,
+    "parent": "3.3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.4.3",
+    "name": "Xây dựng chức năng xóa sản phẩm khỏi giỏ",
+    "level": 4,
+    "parent": "3.3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.5",
+    "name": "Phát triển chức năng quản lý đơn hàng",
+    "level": 3,
+    "parent": "3.3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.3.5.1",
+    "name": "Xây dựng chức năng tạo đơn hàng",
+    "level": 4,
+    "parent": "3.3.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.5.2",
+    "name": "Xây dựng chức năng cập nhật trạng thái đơn hàng",
+    "level": 4,
+    "parent": "3.3.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.5.3",
+    "name": "Xây dựng chức năng xem danh sách đơn hàng",
+    "level": 4,
+    "parent": "3.3.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.6",
+    "name": "Phát triển chức năng thanh toán",
+    "level": 3,
+    "parent": "3.3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.3.6.1",
+    "name": "Tích hợp phương thức thanh toán",
+    "level": 4,
+    "parent": "3.3.6",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.3.6.2",
+    "name": "Xử lý kết quả thanh toán",
+    "level": 4,
+    "parent": "3.3.6",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.4",
+    "name": "Phát triển cơ sở dữ liệu",
+    "level": 2,
+    "parent": "3",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "3.4.1",
+    "name": "Tạo bảng người dùng",
+    "level": 3,
+    "parent": "3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.4.2",
+    "name": "Tạo bảng sản phẩm",
+    "level": 3,
+    "parent": "3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.4.3",
+    "name": "Tạo bảng danh mục",
+    "level": 3,
+    "parent": "3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.4.4",
+    "name": "Tạo bảng giỏ hàng",
+    "level": 3,
+    "parent": "3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.4.5",
+    "name": "Tạo bảng đơn hàng",
+    "level": 3,
+    "parent": "3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.4.6",
+    "name": "Tạo bảng chi tiết đơn hàng",
+    "level": 3,
+    "parent": "3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "3.4.7",
+    "name": "Thiết lập quan hệ và ràng buộc dữ liệu",
+    "level": 3,
+    "parent": "3.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4",
+    "name": "Kiểm thử hệ thống",
+    "level": 1,
+    "parent": "",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "4.1",
+    "name": "Kiểm thử chức năng",
+    "level": 2,
+    "parent": "4",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "4.1.1",
+    "name": "Kiểm thử đăng ký",
+    "level": 3,
+    "parent": "4.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.1.2",
+    "name": "Kiểm thử đăng nhập",
+    "level": 3,
+    "parent": "4.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.1.3",
+    "name": "Kiểm thử quản lý sản phẩm",
+    "level": 3,
+    "parent": "4.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.1.4",
+    "name": "Kiểm thử giỏ hàng",
+    "level": 3,
+    "parent": "4.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.1.5",
+    "name": "Kiểm thử thanh toán",
+    "level": 3,
+    "parent": "4.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.1.6",
+    "name": "Kiểm thử quản lý đơn hàng",
+    "level": 3,
+    "parent": "4.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.2",
+    "name": "Kiểm thử giao diện",
+    "level": 2,
+    "parent": "4",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "4.2.1",
+    "name": "Kiểm thử khả năng hiển thị trên các thiết bị",
+    "level": 3,
+    "parent": "4.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.2.2",
+    "name": "Kiểm thử giao diện trên các trình duyệt",
+    "level": 3,
+    "parent": "4.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.2.3",
+    "name": "Kiểm thử tính nhất quán giao diện",
+    "level": 3,
+    "parent": "4.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.3",
+    "name": "Kiểm thử tích hợp",
+    "level": 2,
+    "parent": "4",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "4.3.1",
+    "name": "Kiểm thử giao tiếp giữa giao diện và máy chủ",
+    "level": 3,
+    "parent": "4.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.3.2",
+    "name": "Kiểm thử kết nối máy chủ và cơ sở dữ liệu",
+    "level": 3,
+    "parent": "4.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.3.3",
+    "name": "Kiểm thử tích hợp thanh toán",
+    "level": 3,
+    "parent": "4.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.4",
+    "name": "Kiểm thử phi chức năng",
+    "level": 2,
+    "parent": "4",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "4.4.1",
+    "name": "Kiểm thử hiệu năng",
+    "level": 3,
+    "parent": "4.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.4.2",
+    "name": "Kiểm thử bảo mật cơ bản",
+    "level": 3,
+    "parent": "4.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.4.3",
+    "name": "Kiểm thử khả năng tương thích",
+    "level": 3,
+    "parent": "4.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.5",
+    "name": "Sửa lỗi và kiểm thử lại",
+    "level": 2,
+    "parent": "4",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "4.5.1",
+    "name": "Sửa lỗi giao diện",
+    "level": 3,
+    "parent": "4.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.5.2",
+    "name": "Sửa lỗi xử lý phía máy chủ",
+    "level": 3,
+    "parent": "4.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.5.3",
+    "name": "Sửa lỗi cơ sở dữ liệu",
+    "level": 3,
+    "parent": "4.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "4.5.4",
+    "name": "Kiểm thử hồi quy",
+    "level": 3,
+    "parent": "4.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5",
+    "name": "Triển khai hệ thống",
+    "level": 1,
+    "parent": "",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "5.1",
+    "name": "Chuẩn bị môi trường triển khai",
+    "level": 2,
+    "parent": "5",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "5.1.1",
+    "name": "Cấu hình máy chủ",
+    "level": 3,
+    "parent": "5.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.1.2",
+    "name": "Cấu hình cơ sở dữ liệu thực tế",
+    "level": 3,
+    "parent": "5.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.1.3",
+    "name": "Cấu hình tên miền và dịch vụ lưu trữ",
+    "level": 3,
+    "parent": "5.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.1.4",
+    "name": "Cấu hình các thông số hệ thống",
+    "level": 3,
+    "parent": "5.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.2",
+    "name": "Triển khai website",
+    "level": 2,
+    "parent": "5",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "5.2.1",
+    "name": "Triển khai giao diện người dùng",
+    "level": 3,
+    "parent": "5.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.2.2",
+    "name": "Triển khai xử lý phía máy chủ",
+    "level": 3,
+    "parent": "5.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.2.3",
+    "name": "Triển khai cơ sở dữ liệu",
+    "level": 3,
+    "parent": "5.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.2.4",
+    "name": "Kết nối các thành phần hệ thống",
+    "level": 3,
+    "parent": "5.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.3",
+    "name": "Kiểm tra sau triển khai",
+    "level": 2,
+    "parent": "5",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "5.3.1",
+    "name": "Kiểm tra khả năng truy cập website",
+    "level": 3,
+    "parent": "5.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.3.2",
+    "name": "Kiểm tra các chức năng chính",
+    "level": 3,
+    "parent": "5.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.3.3",
+    "name": "Kiểm tra hiệu năng hệ thống",
+    "level": 3,
+    "parent": "5.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "5.3.4",
+    "name": "Kiểm tra bảo mật cơ bản",
+    "level": 3,
+    "parent": "5.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6",
+    "name": "Bàn giao và kết thúc dự án",
+    "level": 1,
+    "parent": "",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "6.1",
+    "name": "Chuẩn bị tài liệu kỹ thuật",
+    "level": 2,
+    "parent": "6",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "6.1.1",
+    "name": "Tài liệu kiến trúc hệ thống",
+    "level": 3,
+    "parent": "6.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.1.2",
+    "name": "Tài liệu cơ sở dữ liệu",
+    "level": 3,
+    "parent": "6.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.1.3",
+    "name": "Tài liệu giao diện lập trình",
+    "level": 3,
+    "parent": "6.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.1.4",
+    "name": "Tài liệu mã nguồn",
+    "level": 3,
+    "parent": "6.1",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.2",
+    "name": "Chuẩn bị tài liệu hướng dẫn",
+    "level": 2,
+    "parent": "6",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "6.2.1",
+    "name": "Tài liệu hướng dẫn người dùng",
+    "level": 3,
+    "parent": "6.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.2.2",
+    "name": "Tài liệu hướng dẫn quản trị viên",
+    "level": 3,
+    "parent": "6.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.2.3",
+    "name": "Tài liệu cài đặt và cấu hình",
+    "level": 3,
+    "parent": "6.2",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.3",
+    "name": "Bàn giao sản phẩm",
+    "level": 2,
+    "parent": "6",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "6.3.1",
+    "name": "Bàn giao mã nguồn",
+    "level": 3,
+    "parent": "6.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.3.2",
+    "name": "Bàn giao website đã triển khai",
+    "level": 3,
+    "parent": "6.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.3.3",
+    "name": "Bàn giao cơ sở dữ liệu",
+    "level": 3,
+    "parent": "6.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.3.4",
+    "name": "Hướng dẫn khách hàng sử dụng hệ thống",
+    "level": 3,
+    "parent": "6.3",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.4",
+    "name": "Nghiệm thu dự án",
+    "level": 2,
+    "parent": "6",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "6.4.1",
+    "name": "Kiểm tra các sản phẩm bàn giao",
+    "level": 3,
+    "parent": "6.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.4.2",
+    "name": "Xác nhận đáp ứng yêu cầu",
+    "level": 3,
+    "parent": "6.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.4.3",
+    "name": "Xác nhận nghiệm thu với khách hàng",
+    "level": 3,
+    "parent": "6.4",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.5",
+    "name": "Kết thúc dự án",
+    "level": 2,
+    "parent": "6",
+    "hasChildren": true,
+    "isWorkPackage": false
+  },
+  {
+    "code": "6.5.1",
+    "name": "Lập báo cáo tổng kết",
+    "level": 3,
+    "parent": "6.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.5.2",
+    "name": "Tổng hợp kinh nghiệm dự án",
+    "level": 3,
+    "parent": "6.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  },
+  {
+    "code": "6.5.3",
+    "name": "Xác nhận hoàn thành dự án",
+    "level": 3,
+    "parent": "6.5",
+    "hasChildren": false,
+    "isWorkPackage": true
+  }
+];

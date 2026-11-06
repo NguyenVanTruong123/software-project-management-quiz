@@ -51,13 +51,21 @@ Toàn bộ hệ thống được xây dựng với mục tiêu:
   - **Lời giải mẫu chi tiết**: Trình bày theo văn phong kỹ sư PM chuyên nghiệp.
   - **Từ khóa ăn điểm & Góc nhìn Quản trị (PM Insight)**.
 
-### 3. 🗂 Flashcard Ghi Nhớ Nhanh 3D (90 thẻ)
+### 3. 🌲 Cấu Trúc Phân Rã Công Việc WBS Dự Án Mẫu (187 mã - 4 Cấp Độ)
+- **Chuẩn hóa hệ thống WBS dự án Website Thương mại điện tử**: Phân rã từ 6 Giai đoạn chính (Phân tích, Thiết kế, Phát triển, Kiểm thử, Triển khai, Bàn giao) xuống 143 Gói công việc cơ sở (Work Packages) tuân thủ quy tắc 100%.
+- **Chế độ thu gọn từng cấp linh hoạt**:
+  - `Chỉ Cấp 1`: Thu gọn toàn bộ vào 6 giai đoạn lớn.
+  - `Hiện đến Cấp 2 / Cấp 3 / Mở tất cả (Cấp 4)`.
+  - Hỗ trợ bấm vào từng nút cây để đóng/mở riêng biệt từng nhánh.
+- **2 Chế độ hiển thị**: Dạng Cây Thư Mục (Tree Accordion) và Dạng Bảng Phân Cấp (Table View), hỗ trợ tìm kiếm nhanh mã WBS và nút sao chép toàn bộ bảng sang định dạng Markdown.
+
+### 4. 🗂 Flashcard Ghi Nhớ Nhanh 3D (90 thẻ)
 - Mô phỏng thẻ lật không gian 3D tương tác cao.
 - Mặt trước: Câu hỏi kiểm tra kiến thức cốt lõi.
 - Mặt sau: Đáp án chính xác, trích dẫn slide và mẹo ghi nhớ.
 - **Hỗ trợ phím tắt**: Bấm `Space` để lật thẻ, phím `←` / `→` để chuyển đổi câu hỏi.
 
-### 4. 📐 Bộ Công Thức & Công Cụ Tính Toán Nhanh (Interactive Calculators)
+### 5. 📐 Bộ Công Thức & Công Cụ Tính Toán Nhanh (Interactive Calculators)
 - **Tool 1: Tính Mức độ Phơi nhiễm Rủi ro (Risk Exposure - $RE$)**:
   $$\text{RE} = P \times \text{Loss}$$
   Tự động phân nhóm rủi ro (Rất cao, Cao, Vừa, Thấp) theo ma trận rủi ro $3 \times 3$.
