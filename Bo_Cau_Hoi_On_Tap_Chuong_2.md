@@ -1,227 +1,207 @@
-# BỘ CÂU HỎI TRẮC NGHIỆM ÔN TẬP CHƯƠNG 2: QUY TRÌNH PHẦN MỀM VÀ CÁC SỐ LIỆU DỰ ÁN
-> **Mục tiêu**: Ghi nhớ chính xác 100% các từ khóa (keywords), định nghĩa và danh sách khái niệm nguyên bản từ Slide bài giảng môn Quản lý Dự án Phần mềm - ĐH Thăng Long.
-> **Quy ước**:
-> - Các câu có từ **2 ý trở lên** được thiết kế dưới dạng **[CHỌN NHIỀU ĐÁP ÁN]** kèm các phương án gây nhiễu để luyện phản xạ nhận diện từ khóa chuẩn.
-> - Các câu có 1 đáp án duy nhất được ghi rõ **[CHỌN 1 ĐÁP ÁN]**.
+# BỘ CÂU HỎI ÔN TẬP CHƯƠNG 2: QUY TRÌNH PHẦN MỀM VÀ CÁC SỐ LIỆU DỰ ÁN
+> **Tiêu chí biên soạn**:
+> - Bám sát 100% từ khóa chuẩn trong slide bài giảng môn Quản lý Dự án Phần mềm (ĐH Thăng Long).
+> - Đáp án nhiễu logic, bẫy các quan niệm sai lầm phổ biến trong thực tế công nghệ, loại bỏ hoàn toàn các phương án ngô nghê/liệt kê máy móc.
+> - Câu có từ 2 ý trở lên được thiết kế dạng **[CHỌN NHIỀU ĐÁP ÁN]**; các câu phân tích tình huống/khái niệm đơn để dạng **[CHỌN 1 ĐÁP ÁN]**.
 
 ---
 
 ### Câu 1 [CHỌN NHIỀU ĐÁP ÁN] (Slide 3)
-Theo Slide 3, **Vì sao cần đo lường trong phần mềm?**
-- [ ] A. Không đo → không kiểm soát
-- [ ] B. Không kiểm soát → không cải tiến
-- [ ] C. Phần mềm mang tính vô hình
-- [ ] D. Để phạt tiền lập trình viên khi viết code dài
-- [ ] E. Vì đo lường là thủ tục hình thức bắt buộc phải nộp báo cáo
+Một giám đốc kỹ thuật tuyên bố: *"Nhóm chúng tôi toàn lập trình viên giỏi nên cứ tập trung viết mã nguồn, không cần tốn thời gian đo đạc các số liệu làm gì cho rườm rà"*. Dựa trên lý thuyết kỹ nghệ phần mềm (Slide 3), người quản lý dự án cần phản biện nhận định trên bằng những luận điểm chuẩn mực nào?
+- [ ] A. Không đo lường $\rightarrow$ Sẽ không thể kiểm soát được tiến độ và chất lượng
+- [ ] B. Không kiểm soát $\rightarrow$ Sẽ không có cơ sở dữ liệu thực chứng để cải tiến quy trình
+- [ ] C. Phần mềm vốn mang tính chất vô hình, nếu không đo lường bằng các số liệu cụ thể thì không thể biết được trạng thái thực tế của sản phẩm
+- [ ] D. Đo lường chỉ là thủ tục hành chính hình thức, không mang lại giá trị thực tế cho việc quản trị
+- [ ] E. Chỉ cần sản phẩm chạy được là đủ, không cần biết năng suất và chất lượng ở mức độ nào
 
 > **Đáp án đúng**: **A, B, C**  
-> **Từ khóa bài học**: `Không đo → không kiểm soát` • `Không kiểm soát → không cải tiến` • `Phần mềm mang tính vô hình`.
+> **Giải thích**: Slide 3 nêu rõ triết lý cốt lõi: *Không đo → không kiểm soát • Không kiểm soát → không cải tiến • Phần mềm mang tính vô hình*.
 
 ---
 
 ### Câu 2 [CHỌN NHIỀU ĐÁP ÁN] (Slide 4, 6)
-Ba khái niệm cốt lõi trong **Đo lường kỹ nghệ phần mềm** có bản chất và ý nghĩa như thế nào?
-- [ ] A. Measurement ==> Phép đo thô (raw data) / hoạt động đo
-- [ ] B. Metrics ==> Đại lượng được tính từ measurement / số liệu định lượng
-- [ ] C. Indicators ==> Chỉ báo giúp ra quyết định quản lý / chỉ dẫn ra quyết định
-- [ ] D. Measurement không có ý nghĩa nếu không chuyển thành Metric và Indicator
-- [ ] E. Measurement là chỉ báo giúp ra quyết định mà không cần tính Metric
-- [ ] F. Metric là phép đo thô chưa qua tính toán
+Để quản trị và cải tiến quy trình công nghệ phần mềm, dữ liệu phải trải qua chu trình chuyển hóa 3 cấp độ: **Measurement $\rightarrow$ Metrics $\rightarrow$ Indicators**. Hãy chọn những phát biểu đúng về bản chất của từng cấp độ:
+- [ ] A. **Measurement**: Là phép đo thô (raw data) thu thập trực tiếp từ hoạt động đo (ví dụ: đếm được 50 lỗi trong quá trình kiểm thử)
+- [ ] B. **Metrics**: Là đại lượng định lượng được tính toán và chuẩn hóa từ một hoặc nhiều phép đo (ví dụ: Defect Density = 50 lỗi / 10 KLOC = 5 lỗi/KLOC)
+- [ ] C. **Indicators**: Là chỉ báo định hướng quản lý được đúc kết từ metrics, giúp PM đưa ra quyết định hành động (ví dụ: nhận thấy chất lượng mã nguồn chưa đạt, cần cải tiến khâu kiểm thử)
+- [ ] D. Measurement bản thân nó không có nhiều ý nghĩa quản lý nếu không được chuyển hóa thành Metric và Indicator
+- [ ] E. Measurement là cấp độ cao nhất dùng trực tiếp để ra quyết định sa thải nhân viên
+- [ ] F. Metric và Measurement là hai từ đồng nghĩa hoàn toàn, có thể dùng thay thế cho nhau trong mọi tình huống
 
 > **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `Measurement: Phép đo thô (raw data)` • `Metrics: Đại lượng tính từ measurement` • `Indicators: Chỉ báo giúp ra quyết định`.
+> **Giải thích**: Slide 4 & 6 phân biệt chuẩn: *Measurement = Phép đo thô (raw data) • Metrics = Đại lượng tính từ measurement • Indicators = Chỉ báo giúp ra quyết định quản lý*. Measurement vô nghĩa nếu không chuyển thành Metric và Indicator.
 
 ---
 
-### Câu 3 [CHỌN 1 ĐÁP ÁN] (Slide 4)
-Cho ví dụ: "Số lỗi được phát hiện = 50", "Defect Density = 50 lỗi / 10 KLOC = 5 lỗi/KLOC", "Chất lượng mã nguồn chưa đạt, cần cải tiến quy trình kiểm thử". Đại lượng **"Defect Density = 5 lỗi/KLOC"** là:
-- A. Measurement
-- B. Metric
-- C. Indicator
-- D. Baseline
-
-> **Đáp án đúng**: **B**
-
----
-
-### Câu 4 [CHỌN NHIỀU ĐÁP ÁN] (Slide 7)
-Theo Pressman, **Đặc điểm của một số liệu tốt (Pressman)** gồm những tiêu chí nào sau đây?
-- [ ] A. Đơn giản
-- [ ] B. Có ý nghĩa
-- [ ] C. Thu thập được
-- [ ] D. Có thể hành động
-- [ ] E. Phức tạp và bí mật
-- [ ] F. Tốn kém chi phí thu thập tối đa
+### Câu 3 [CHỌN NHIỀU ĐÁP ÁN] (Slide 7)
+Theo Roger Pressman, việc áp dụng số liệu tràn lan không chọn lọc sẽ gây lãng phí nguồn lực. Một **Số liệu tốt (Pressman)** bắt buộc phải thỏa mãn 4 đặc điểm cốt lõi nào sau đây?
+- [ ] A. **Đơn giản** (Dễ hiểu, dễ tính toán, không đòi hỏi công thức toán học quá phức tạp)
+- [ ] B. **Có ý nghĩa** (Phản ánh đúng bản chất mục tiêu quản lý và chất lượng thực tế)
+- [ ] C. **Thu thập được** (Khả thi về chi phí và công sức khi lấy dữ liệu trong quá trình làm việc)
+- [ ] D. **Có thể hành động** (Cung cấp cơ sở rõ ràng để PM đưa ra quyết định cải tiến cụ thể)
+- [ ] E. Phức tạp tối đa với hàng chục biến số ngầm để thể hiện tính hàn lâm
+- [ ] F. Giữ bí mật tuyệt đối, không cho các thành viên trong nhóm biết kết quả đo
 
 > **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `Đơn giản` • `Có ý nghĩa` • `Thu thập được` • `Có thể hành động`.
+> **Giải thích**: Slide 7 nêu chính xác 4 đặc điểm: *Đơn giản • Có ý nghĩa • Thu thập được • Có thể hành động*.
 
 ---
 
-### Câu 5 [CHỌN NHIỀU ĐÁP ÁN] (Slide 8)
-**Phân loại số liệu** trong dự án phần mềm gồm 3 nhóm nào?
-- [ ] A. Số liệu quy trình (Process Metrics)
-- [ ] B. Số liệu dự án (Project Metrics)
-- [ ] C. Số liệu sản phẩm (Product Metrics)
-- [ ] D. Số liệu thị trường tài chính
-- [ ] E. Số liệu tiền lương nhân viên
+### Câu 4 [CHỌN NHIỀU ĐÁP ÁN] (Slide 8, 9)
+Trong quản lý kỹ nghệ phần mềm, hệ thống số liệu được phân thành 3 nhóm lớn: **Số liệu quy trình (Process Metrics)**, **Số liệu dự án (Project Metrics)** và **Số liệu sản phẩm (Product Metrics)**. Hãy chọn các nhận định đúng về mục tiêu và ví dụ điển hình của từng loại:
+- [ ] A. **Process Metrics**: Tập trung vào việc đánh giá hiệu quả của quy trình nhằm cải tiến quy trình phần mềm (ví dụ: Defect Removal Efficiency - Hiệu quả loại bỏ lỗi)
+- [ ] B. **Project Metrics**: Dùng để điều hành và theo dõi dự án đang chạy (ví dụ: Cost Variance - Chênh lệch chi phí, Schedule Variance - Chênh lệch tiến độ)
+- [ ] C. Số liệu quy trình giúp tổ chức so sánh hiệu quả giữa các dự án khác nhau và nâng cao độ trưởng thành quy trình
+- [ ] D. Process Metrics chỉ dùng riêng cho lập trình viên mới vào nghề, không áp dụng cho quản lý cấp cao
+- [ ] E. Project Metrics chỉ tính toán một lần sau khi dự án đã bàn giao và thanh lý hợp đồng
 
 > **Đáp án đúng**: **A, B, C**  
-> **Từ khóa bài học**: `Số liệu quy trình` • `Số liệu dự án` • `Số liệu sản phẩm`.
+> **Giải thích**: Slide 8, 9, 12 xác định rõ mục tiêu: *Process Metrics: Cải tiến quy trình, so sánh giữa các dự án (ví dụ Defect removal efficiency)*; *Project Metrics: Quản lý dự án (ví dụ Cost variance, Schedule variance)*.
 
 ---
 
-### Câu 6 [CHỌN NHIỀU ĐÁP ÁN] (Slide 9, 11, 12)
-Về **Số liệu quy trình (Process Metrics)**, những phát biểu nào sau đây là đúng?
-- [ ] A. Mục tiêu: Cải tiến quy trình, So sánh giữa các dự án
-- [ ] B. Nội dung: Thời gian thực hiện, Hiệu suất, Tỷ lệ lỗi theo giai đoạn
-- [ ] C. Ví dụ điển hình: Defect removal efficiency
-- [ ] D. Mục tiêu: Quản lý chi phí hàng ngày của dự án
-- [ ] E. Không thể dùng để so sánh giữa các dự án
+### Câu 5 [CHỌN NHIỀU ĐÁP ÁN] (Slide 11, 13, 14)
+Khi theo dõi sức khỏe của một dự án phần mềm đang diễn ra, người quản lý dự án thường xuyên thu thập các **Số liệu quy trình (Process Metrics)** và **Số liệu dự án (Project Metrics)** cụ thể nào sau đây?
+- [ ] A. Số liệu quy trình: Thời gian thực hiện các công đoạn, Hiệu suất làm việc, Tỷ lệ lỗi theo từng giai đoạn phát triển
+- [ ] B. Số liệu dự án: Tiến độ thực tế, Chi phí tiêu hao, Năng suất của đội ngũ
+- [ ] C. Các đơn vị đo lường dự án phổ biến: Số dòng lệnh trên tháng (LOC/tháng), Điểm chức năng trên người-tháng (FP/person-month)
+- [ ] D. Số liệu dự án: Chỉ số huyết áp và nhịp tim trung bình của lập trình viên
+- [ ] E. Số liệu quy trình: Số lượng email rác nhận được trong hòm thư công ty
 
 > **Đáp án đúng**: **A, B, C**  
-> **Từ khóa bài học**: `Mục tiêu: Cải tiến quy trình, so sánh giữa các dự án` • `Thời gian thực hiện, Hiệu suất, Tỷ lệ lỗi theo giai đoạn` • `Defect removal efficiency`.
+> **Giải thích**: Slide 11, 13, 14 liệt kê: *Process Metrics gồm Thời gian thực hiện, Hiệu suất, Tỷ lệ lỗi theo giai đoạn*; *Project Metrics gồm Tiến độ, Chi phí, Năng suất (LOC/tháng, FP/người-tháng)*.
 
 ---
 
-### Câu 7 [CHỌN NHIỀU ĐÁP ÁN] (Slide 9, 13, 14)
-Về **Số liệu dự án (Project Metrics)**, những phát biểu nào sau đây là đúng?
-- [ ] A. Mục tiêu: Quản lý dự án
-- [ ] B. Nội dung: Tiến độ, Chi phí, Năng suất
-- [ ] C. Ví dụ điển hình: Cost variance, Schedule variance
-- [ ] D. Ví dụ đo lường: LOC / tháng, Function Point / người-tháng
-- [ ] E. Chỉ dùng để so sánh trình độ cá nhân của từng lập trình viên
+### Câu 6 [CHỌN NHIỀU ĐÁP ÁN] (Slide 15, 16)
+Một dự án hoàn thành việc viết 8,000 dòng lệnh (8,000 LOC) với tổng nỗ lực công sức là 10 người-tháng (10 person-month). Dựa trên bài tập thực hành trong bài giảng:
+- [ ] A. Năng suất tính theo công thức: $Productivity = \frac{8,000\text{ LOC}}{10\text{ person-month}} = 800\text{ LOC/person-month}$
+- [ ] B. Mức năng suất 800 LOC/PM được đánh giá là ở mức trung bình – khá
+- [ ] C. Nguyên tắc quản trị: Không nên dùng chỉ số LOC/PM này để so sánh trực tiếp giữa các dự án sử dụng các ngôn ngữ lập trình khác nhau (ví dụ Assembly vs Python)
+- [ ] D. Nguyên tắc quản trị: Chỉ nên so sánh năng suất LOC trong cùng tổ chức và có sự tương đồng về công nghệ/môi trường
+- [ ] E. Đội ngũ nào viết được 100,000 LOC cho cùng một tính năng chắc chắn có năng suất cao gấp 10 lần đội ngũ viết 10,000 LOC
 
 > **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `Mục tiêu: Quản lý dự án` • `Tiến độ, Chi phí, Năng suất` • `Cost variance, Schedule variance` • `LOC/tháng, FP/người-tháng`.
+> **Giải thích**: Slide 15, 16 tính chuẩn: $Productivity = 800\text{ LOC/PM}$; Nhận xét: *Mức trung bình – khá • Không nên so sánh giữa các ngôn ngữ khác nhau • Chỉ so sánh trong cùng tổ chức*.
 
 ---
 
-### Câu 8 [CHỌN NHIỀU ĐÁP ÁN] (Slide 15, 16)
-Khi tính toán **Productivity (Năng suất)** theo LOC và nỗ lực (Effort):
-- [ ] A. Công thức: $Productivity = \frac{LOC}{Effort}$ (đơn vị: LOC / person-month)
-- [ ] B. Ví dụ Slide: 8,000 LOC với 10 person-month $\rightarrow Productivity = 800$ LOC/person-month (mức trung bình – khá)
-- [ ] C. Không nên so sánh giữa các ngôn ngữ khác nhau
-- [ ] D. Chỉ nên so sánh trong cùng tổ chức
-- [ ] E. Năng suất LOC càng cao thì chất lượng phần mềm chắc chắn càng tuyệt đối không có lỗi
+### Câu 7 [CHỌN NHIỀU ĐÁP ÁN] (Slide 18, 19, 20, 21)
+Hai phương pháp phổ biến nhất để **Đo kích thước phần mềm** là đo bằng số dòng mã lệnh (LOC - Lines of Code) và đo bằng Điểm chức năng (FP - Function Point). Những nhận định nào sau đây đúng về ưu/nhược điểm bản chất của chúng?
+- [ ] A. LOC có ưu điểm là dễ đo, trực quan, có thể đếm tự động bằng công cụ
+- [ ] B. LOC có nhược điểm lớn là phụ thuộc nặng nề vào ngôn ngữ lập trình (ngôn ngữ bậc cao tốn ít dòng code hơn ngôn ngữ bậc thấp để cùng giải quyết một bài toán)
+- [ ] C. Function Point đo kích thước dựa trên các chức năng nghiệp vụ mà người dùng nhìn thấy, hoàn toàn độc lập với công nghệ và ngôn ngữ triển khai
+- [ ] D. Đơn vị đo năng suất và chi phí tương ứng là: FP / Person-month hoặc LOC / Person-month
+- [ ] E. LOC có thể đo lường chính xác ngay từ giai đoạn lấy yêu cầu trước khi thiết kế hệ thống
+- [ ] F. Function Point không thể dùng để ước lượng chi phí vì không đo được số dòng lệnh thực tế
 
 > **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `Productivity = LOC / Effort` • `Không nên so sánh giữa ngôn ngữ khác nhau` • `Chỉ so sánh trong cùng tổ chức`.
+> **Giải thích**: Slide 18, 19, 20, 21 phân tích: *LOC: Dễ đo, Phụ thuộc ngôn ngữ*; *FP: Đo theo chức năng, Độc lập công nghệ*; *Đo năng suất: FP/Person-month, LOC/Person-month*.
 
 ---
 
-### Câu 9 [CHỌN NHIỀU ĐÁP ÁN] (Slide 18, 19, 20)
-Khi **Đo kích thước phần mềm**, đặc điểm của hai phương pháp **LOC** và **Function Point (FP)** là:
-- [ ] A. Hai phương pháp chính: LOC (Lines of Code) và Function Point (FP)
-- [ ] B. Ưu & nhược điểm của LOC: Dễ đo, nhưng Phụ thuộc ngôn ngữ
-- [ ] C. Đặc điểm của Function Point: Đo theo chức năng, Độc lập công nghệ
-- [ ] D. Đo năng suất & chi phí: FP / Person-month, LOC / Person-month
-- [ ] E. LOC hoàn toàn độc lập với ngôn ngữ lập trình
-- [ ] F. Function Point chỉ đo được sau khi đã viết xong toàn bộ code
+### Câu 8 [CHỌN NHIỀU ĐÁP ÁN] (Slide 22, 23)
+Bảng tổng kết so sánh giữa **LOC và Function Point (FP)** ở Slide 23 đưa ra những kết luận quan trọng nào sau đây mà người làm quản lý dự án phải ghi nhớ?
+- [ ] A. Tiêu chí "Phụ thuộc ngôn ngữ": LOC có phụ thuộc; FP không phụ thuộc
+- [ ] B. Tiêu chí "Khả năng dùng sớm (ở pha phân tích/đặc tả yêu cầu)": LOC rất khó dùng; FP rất dễ dùng
+- [ ] C. Tiêu chí "So sánh giữa các dự án khác nhau": LOC thể hiện kém; FP thể hiện tốt
+- [ ] D. Kết luận bài học: Phương pháp Function Point (FP) phù hợp hơn cho công tác quản lý dự án phần mềm
+- [ ] E. LOC phù hợp cho quản lý dự án hơn FP vì LOC phản ánh đúng số byte lưu trữ trên ổ đĩa
+- [ ] F. Không thể ước lượng nỗ lực sớm bằng FP vì khách hàng không hiểu điểm chức năng
 
 > **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `LOC: Dễ đo, Phụ thuộc ngôn ngữ` • `FP: Đo theo chức năng, Độc lập công nghệ` • `FP phù hợp hơn cho quản lý dự án`.
+> **Giải thích**: Slide 23 khẳng định: *Phụ thuộc ngôn ngữ (LOC: Có, FP: Không) • Dùng sớm (LOC: Khó, FP: Dễ) • So sánh dự án (LOC: Kém, FP: Tốt) $\rightarrow$ FP phù hợp hơn cho quản lý dự án*.
 
 ---
 
-### Câu 10 [CHỌN NHIỀU ĐÁP ÁN] (Slide 22, 23)
-Theo bảng **So sánh LOC vs Function Point (Slide 23)**:
-- [ ] A. Tiêu chí "Phụ thuộc ngôn ngữ": LOC = Có; FP = Không
-- [ ] B. Tiêu chí "Dùng sớm": LOC = Khó; FP = Dễ
-- [ ] C. Tiêu chí "So sánh dự án": LOC = Kém; FP = Tốt
-- [ ] D. Kết luận bài học: FP phù hợp hơn cho quản lý dự án
-- [ ] E. LOC dùng sớm dễ hơn Function Point
+### Câu 9 [CHỌN NHIỀU ĐÁP ÁN] (Slide 25, 26, 27)
+Tại sao trong quản trị dự án phần mềm hiện đại, các chuyên gia khuyến nghị **Cần nhiều cách đo và kết hợp cả LOC lẫn FP** thay vì chỉ dựa vào một thước đo duy nhất?
+- [ ] A. Mỗi phương pháp đo đều có những hạn chế cố hữu riêng
+- [ ] B. Trong kỹ nghệ phần mềm không tồn tại một số liệu đo lường nào là hoàn hảo tuyệt đối
+- [ ] C. LOC và FP bổ sung cho nhau rất tốt: FP dùng để ước lượng sớm ở pha yêu cầu/thiết kế, còn LOC dùng để kiểm soát chi tiết ở pha lập trình và kiểm thử
+- [ ] D. Giúp người quản lý điều phối số liệu linh hoạt phù hợp với từng mục tiêu quản trị cụ thể
+- [ ] E. Vì đo càng nhiều cách thì càng làm khách hàng bối rối và dễ dàng ký nghiệm thu dự án hơn
 
 > **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `Phụ thuộc ngôn ngữ: LOC (Có) vs FP (Không)` • `Dùng sớm: LOC (Khó) vs FP (Dễ)` • `So sánh dự án: LOC (Kém) vs FP (Tốt)`.
+> **Giải thích**: Slide 25, 26, 27 khẳng định: *Mỗi cách có hạn chế • Không có số liệu hoàn hảo • Kết hợp LOC & FP bổ sung cho nhau, phù hợp từng giai đoạn • Lựa chọn phù hợp mục tiêu*.
 
 ---
 
-### Câu 11 [CHỌN NHIỀU ĐÁP ÁN] (Slide 25, 26, 27)
-**Vì sao cần nhiều cách đo và kết hợp LOC & FP?**
-- [ ] A. Mỗi cách có hạn chế
-- [ ] B. Không có số liệu hoàn hảo
-- [ ] C. Kết hợp LOC & FP: Bổ sung cho nhau, Phù hợp từng giai đoạn
-- [ ] D. Điều phối số liệu trong dự án: Lựa chọn phù hợp mục tiêu
-- [ ] E. Chỉ cần một số liệu duy nhất là đủ cho mọi dự án
-
-> **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `Mỗi cách có hạn chế` • `Không có số liệu hoàn hảo` • `Bổ sung cho nhau` • `Phù hợp từng giai đoạn`.
-
----
-
-### Câu 12 [CHỌN NHIỀU ĐÁP ÁN] (Slide 29, 30, 31)
-Về **Chất lượng phần mềm** và **Số liệu chất lượng**:
-- [ ] A. Chất lượng phần mềm gồm: Độ tin cậy, Dễ bảo trì, Dễ sử dụng
-- [ ] B. Số liệu chất lượng gồm: Số lỗi, Mật độ lỗi (Defect Density), Thời gian sửa lỗi
-- [ ] C. Defect Density được tính bằng: Lỗi / KLOC hoặc Lỗi / FP
-- [ ] D. Chất lượng phần mềm chỉ được đánh giá bằng tốc độ gõ phím của lập trình viên
-- [ ] E. Defect Density chỉ dùng để làm báo cáo hình thức
+### Câu 10 [CHỌN NHIỀU ĐÁP ÁN] (Slide 29, 30, 31)
+Về khía cạnh **Số liệu cho chất lượng phần mềm**, những phát biểu nào sau đây đúng theo định nghĩa bài giảng?
+- [ ] A. Khái niệm chất lượng phần mềm bao hàm các thuộc tính cốt lõi: Độ tin cậy (Reliability), Dễ bảo trì (Maintainability), Dễ sử dụng (Usability)
+- [ ] B. Các số liệu đánh giá chất lượng phần mềm gồm: Số lượng lỗi, Mật độ lỗi (Defect Density), Thời gian sửa lỗi
+- [ ] C. Mật độ lỗi (Defect Density) được tính chuẩn hóa theo quy mô: Lỗi / KLOC (nghìn dòng lệnh) hoặc Lỗi / FP (điểm chức năng)
+- [ ] D. Phần mềm có chất lượng cao nhất là phần mềm viết nhiều dòng lệnh nhất bất kể số lỗi
+- [ ] E. Mật độ lỗi chỉ là con số lý thuyết, không phản ánh được mức độ ổn định của sản phẩm
 
 > **Đáp án đúng**: **A, B, C**  
-> **Từ khóa bài học**: `Chất lượng: Độ tin cậy, Dễ bảo trì, Dễ sử dụng` • `Số lỗi, Mật độ lỗi, Thời gian sửa lỗi` • `Defect Density: Lỗi/KLOC hoặc Lỗi/FP`.
+> **Giải thích**: Slide 29, 30, 31 chỉ rõ: *Chất lượng gồm Độ tin cậy, Dễ bảo trì, Dễ sử dụng*; *Số liệu: Số lỗi, Mật độ lỗi, Thời gian sửa lỗi*; *Defect Density = Lỗi/KLOC hoặc Lỗi/FP*.
 
 ---
 
-### Câu 13 [CHỌN NHIỀU ĐÁP ÁN] (Slide 32, 33)
-Bài tập Defect Density (12,000 LOC, 60 lỗi phát hiện trong kiểm thử) rút ra những kết luận quan trọng nào?
-- [ ] A. Defect Density = 60 / 12 = 5 lỗi / KLOC
-- [ ] B. 5 lỗi/KLOC $\rightarrow$ mức trung bình; Với hệ thống quan trọng: chưa đạt
-- [ ] C. Hành động cần thiết: Tăng kiểm thử, Rà soát quy trình phát triển
-- [ ] D. Điểm nhấn: "Defect density là chỉ báo chất lượng, không phải chỉ để báo cáo"
-- [ ] E. Đạt 5 lỗi/KLOC có nghĩa là phần mềm đã hoàn hảo có thể bàn giao ngay cho hệ thống y tế và hạt nhân
+### Câu 11 [CHỌN NHIỀU ĐÁP ÁN] (Slide 32, 33)
+Một dự án phần mềm có quy mô 12,000 dòng lệnh (12,000 LOC = 12 KLOC). Giai đoạn kiểm thử phát hiện tổng cộng 60 lỗi. Phân tích số liệu này dưới góc độ quản lý:
+- [ ] A. Mật độ lỗi: $Defect\ Density = \frac{60\text{ lỗi}}{12\text{ KLOC}} = 5\text{ lỗi/KLOC}$
+- [ ] B. Mức 5 lỗi/KLOC được đánh giá là ở mức trung bình trong ngành phần mềm thương mại
+- [ ] C. Đối với các hệ thống có độ quan trọng cao (như ngân hàng, y tế, hàng không), mức 5 lỗi/KLOC là CHƯA ĐẠT yêu cầu chất lượng
+- [ ] D. Hành động cần thiết của PM: Tăng cường kiểm thử và rà soát lại quy trình phát triển
+- [ ] E. Điểm nhấn bài học: "Defect density là chỉ báo chất lượng, không phải chỉ để báo cáo hình thức"
+- [ ] F. Khi mật độ lỗi đạt 5 lỗi/KLOC, PM có thể yên tâm bàn giao hệ thống thanh toán tự động ngay mà không cần kiểm thử thêm
+
+> **Đáp án đúng**: **A, B, C, D, E**  
+> **Giải thích**: Slide 32, 33 giải quyết bài toán: $Defect\ Density = 5\text{ lỗi/KLOC}$; Đánh giá: *Mức trung bình; Với hệ thống quan trọng: chưa đạt; Cần tăng kiểm thử, rà soát quy trình; Defect density là chỉ báo chất lượng, không phải chỉ để báo cáo*.
+
+---
+
+### Câu 12 [CHỌN NHIỀU ĐÁP ÁN] (Slide 35, 36, 37)
+Để việc đo lường phát huy hiệu quả thực tế, **Số liệu phải được tích hợp xuyên suốt vòng đời phần mềm**. Hoạt động này bao gồm những nội dung nào?
+- [ ] A. Đo lường liên tục trong các giai đoạn: Phân tích $\rightarrow$ Thiết kế $\rightarrow$ Lập trình $\rightarrow$ Kiểm thử
+- [ ] B. Xây dựng quy trình thu thập và công cụ lưu trữ số liệu tập trung để tạo kho dữ liệu lịch sử
+- [ ] C. Khai thác dữ liệu để phát hiện các điểm nghẽn, điểm yếu trong quy trình và ra quyết định cải tiến
+- [ ] D. Chỉ thu thập số liệu vào ngày cuối cùng trước khi đóng dự án
+- [ ] E. Thu thập số liệu nhằm mục đích chính là tìm lỗi của lập trình viên để trừ lương thưởng
+
+> **Đáp án đúng**: **A, B, C**  
+> **Giải thích**: Slide 35, 36, 37 nêu rõ: *Đo lường trong vòng đời: Phân tích, Thiết kế, Lập trình, Kiểm thử • Thu thập & lưu trữ: Công cụ, Quy trình • Sử dụng số liệu: Phát hiện điểm yếu, Ra quyết định cải tiến*.
+
+---
+
+### Câu 13 [CHỌN NHIỀU ĐÁP ÁN] (Slide 39, 40, 41)
+Phương pháp **Kiểm soát quy trình dựa trên thống kê (Statistical Process Control - SPC)** và **Biểu đồ kiểm soát (Control Chart)** ứng dụng trong quản lý phần mềm như thế nào?
+- [ ] A. Giúp quản lý các nguồn biến đổi nội tại của dự án: biến đổi về Yêu cầu, Nhân lực, Công nghệ
+- [ ] B. SPC dựa trên việc phân tích Dữ liệu lịch sử, Xu hướng biến thiên và thiết lập các Ngưỡng kiểm soát
+- [ ] C. Biểu đồ kiểm soát (Control Chart) thiết lập hai đường biên thống kê quan trọng: Giới hạn kiểm soát trên (Upper Control Limit - UCL) và Giới hạn kiểm soát dưới (Lower Control Limit - LCL)
+- [ ] D. Nếu số lỗi nằm trong dải giữa UCL và LCL thì quy trình được coi là ổn định và nằm trong tầm kiểm soát thống kê
+- [ ] E. Control Chart là biểu đồ dùng để vẽ sơ đồ đường đi của cáp mạng máy chủ
+- [ ] F. SPC chứng minh rằng mọi dự án phần mềm đều không có bất kỳ sự biến đổi nào xảy ra
 
 > **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `5 lỗi/KLOC` • `Chỉ báo chất lượng, không phải chỉ để báo cáo` • `Tăng kiểm thử, rà soát quy trình`.
+> **Giải thích**: Slide 39, 40, 41 xác định: *Biến đổi: Yêu cầu, Nhân lực, Công nghệ • SPC: Dữ liệu lịch sử, Xu hướng, Ngưỡng kiểm soát • Control Chart: Upper Control Limit (UCL) và Lower Control Limit (LCL)*.
 
 ---
 
-### Câu 14 [CHỌN NHIỀU ĐÁP ÁN] (Slide 35, 36, 37)
-Nội dung **Tích hợp số liệu trong quy trình phần mềm** gồm:
-- [ ] A. Đo lường trong vòng đời phần mềm: Phân tích, Thiết kế, Lập trình, Kiểm thử
-- [ ] B. Thu thập & lưu trữ số liệu: Công cụ, Quy trình
-- [ ] C. Sử dụng số liệu để cải tiến: Phát hiện điểm yếu, Ra quyết định
-- [ ] D. Chỉ thu thập số liệu ở bước viết code xong rồi xóa đi
-- [ ] E. Lưu trữ số liệu trên giấy không cần quy trình
-
-> **Đáp án đúng**: **A, B, C**  
-> **Từ khóa bài học**: `Vòng đời: Phân tích, Thiết kế, Lập trình, Kiểm thử` • `Công cụ, Quy trình` • `Phát hiện điểm yếu, Ra quyết định`.
-
----
-
-### Câu 15 [CHỌN NHIỀU ĐÁP ÁN] (Slide 38, 39, 40, 41)
-Về **Quản lý biến đổi – Kiểm soát quy trình dựa trên thống kê (SPC)**:
-- [ ] A. Biến đổi trong dự án phần mềm gồm: Yêu cầu, Nhân lực, Công nghệ
-- [ ] B. Statistical Process Control (SPC) dựa trên: Dữ liệu lịch sử, Xu hướng, Ngưỡng kiểm soát
-- [ ] C. Control Chart (Khái niệm) gồm 2 đường ngưỡng: Upper Control Limit (UCL) và Lower Control Limit (LCL)
-- [ ] D. Control Chart là sơ đồ chỉ dùng để theo dõi chấm công đi làm
-- [ ] E. Trong dự án phần mềm quy trình luôn cố định tuyệt đối không có biến đổi
-
-> **Đáp án đúng**: **A, B, C**  
-> **Từ khóa bài học**: `Biến đổi: Yêu cầu, Nhân lực, Công nghệ` • `SPC: Dữ liệu lịch sử, Xu hướng, Ngưỡng kiểm soát` • `Upper Control Limit & Lower Control Limit`.
-
----
-
-### Câu 16 [CHỌN NHIỀU ĐÁP ÁN] (Slide 42, 43)
-Bài tập Control Chart (SPC) - Khi dự án theo dõi số lỗi mỗi tuần thấy "Tuần 1–3 ổn định, Tuần 4 tăng đột biến", PM cần hiểu và hành động thế nào?
-- [ ] A. Ý nghĩa: Quy trình có dấu hiệu mất kiểm soát
-- [ ] B. Ý nghĩa: Xuất hiện biến đổi đặc biệt (special cause)
-- [ ] C. Hành động: Phân tích nguyên nhân, Không vội sửa code
-- [ ] D. Hành động: "Sửa quy trình, không sửa triệu chứng"
-- [ ] E. Hành động: Bắt lập trình viên tăng ca thâu đêm vá nhanh mã nguồn mà không cần tìm nguyên nhân
+### Câu 14 [CHỌN NHIỀU ĐÁP ÁN] (Slide 42, 43)
+Một dự án theo dõi số lượng lỗi phát hiện mỗi tuần bằng biểu đồ kiểm soát SPC. Trong 3 tuần đầu, số lỗi dao động rất ổn định dưới ngưỡng UCL. Đến tuần thứ 4, số lỗi tăng vọt vượt qua đường giới hạn kiểm soát trên (UCL). Dưới góc độ quản lý dự án chuyên nghiệp:
+- [ ] A. Hiện tượng này có ý nghĩa: Quy trình phát triển phần mềm đang có dấu hiệu mất kiểm soát
+- [ ] B. Hiện tượng này chứng tỏ đã xuất hiện biến đổi đặc biệt (special cause - ví dụ thay đổi công nghệ đột ngột, nhân sự mới chưa qua đào tạo)
+- [ ] C. Hành động đúng đắn của PM: Dừng lại phân tích nguyên nhân gốc rễ, không vội vàng thúc ép nhân viên sửa code một cách chắp vá
+- [ ] D. Nguyên tắc xử lý vàng của PM: "Sửa quy trình, không sửa triệu chứng"
+- [ ] E. Hành động đúng của PM: Lập tức xóa bỏ dữ liệu tuần 4 khỏi biểu đồ để báo cáo dự án trông vẫn đẹp và an toàn
+- [ ] F. Bắt đội kiểm thử giảm bớt số ca test để tuần sau số lỗi giảm xuống dưới ngưỡng UCL
 
 > **Đáp án đúng**: **A, B, C, D**  
-> **Từ khóa bài học**: `Quy trình mất kiểm soát` • `Biến đổi đặc biệt (special cause)` • `Phân tích nguyên nhân` • `Sửa quy trình, không sửa triệu chứng`.
+> **Giải thích**: Slide 42, 43 kết luận: *1. Ý nghĩa: Quy trình có dấu hiệu mất kiểm soát, Xuất hiện biến đổi đặc biệt (special cause); 2. Hành động: Phân tích nguyên nhân, Không vội sửa code, "Sửa quy trình, không sửa triệu chứng"*.
 
 ---
 
-### Câu 17 [CHỌN NHIỀU ĐÁP ÁN] (Slide 46)
-**Tổng kết Chương 2** nhấn mạnh 3 nguyên tắc đo lường nào?
-- [ ] A. Đo lường là nền tảng cải tiến quy trình
-- [ ] B. Số liệu phải phục vụ quyết định
-- [ ] C. Không đo hình thức
-- [ ] D. Càng đo nhiều số liệu vô nghĩa càng chứng tỏ dự án chuyên nghiệp
-- [ ] E. Đo lường để giám sát và trừ lương nhân viên
+### Câu 15 [CHỌN NHIỀU ĐÁP ÁN] (Slide 46)
+Để khép lại Chương 2, bài giảng đúc kết **3 thông điệp tổng kết mang tính nguyên tắc cốt tử** cho người làm quản lý dự án phần mềm gồm:
+- [ ] A. Đo lường là nền tảng để cải tiến quy trình
+- [ ] B. Số liệu thu thập bắt buộc phải phục vụ cho việc ra quyết định hành động
+- [ ] C. Tuyệt đối không đo lường theo kiểu hình thức, đối phó
+- [ ] D. Đo càng nhiều số liệu không dùng đến càng thể hiện trình độ chuyên môn cao
+- [ ] E. Số liệu sinh ra chỉ để phục vụ cho các đợt thanh tra bên ngoài công ty
 
 > **Đáp án đúng**: **A, B, C**  
-> **Từ khóa bài học**: `Đo lường là nền tảng cải tiến quy trình` • `Số liệu phải phục vụ quyết định` • `Không đo hình thức`.
+> **Giải thích**: Slide 46 nêu nguyên văn 3 kết luận: *Đo lường là nền tảng cải tiến quy trình • Số liệu phải phục vụ quyết định • Không đo hình thức*.
